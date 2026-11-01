@@ -1,0 +1,90 @@
+{
+  "research_version": "V003",
+  "sources": [
+    {
+      "id": "C23_0",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/exploratory_panels/V001/median_paired_delta"
+      },
+      "expected": 0.0
+    },
+    {
+      "id": "C23_1",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/exploratory_panels/V001/evidence_status"
+      },
+      "expected": "development-panel null"
+    },
+    {
+      "id": "C24_0",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/exploratory_panels/V002/median_paired_delta"
+      },
+      "expected": 0.0012239559767840066
+    },
+    {
+      "id": "C24_1",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/exploratory_panels/V002/evidence_status"
+      },
+      "expected": "development-panel null"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C23",
+      "object": "V001 is an exploratory development-panel null for the diagnostic component.",
+      "value": "V001 is an exploratory development-panel null for the diagnostic component.",
+      "unit": "source-bound registered claim",
+      "comparison": "V001 is an exploratory development-panel null for the diagnostic component.",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "C23_0",
+        "C23_1"
+      ]
+    },
+    {
+      "id": "C24",
+      "object": "V002 is an exploratory development-panel null for the cumulative-memory component.",
+      "value": "V002 is an exploratory development-panel null for the cumulative-memory component.",
+      "unit": "source-bound registered claim",
+      "comparison": "V002 is an exploratory development-panel null for the cumulative-memory component.",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "C24_0",
+        "C24_1"
+      ]
+    }
+  ],
+  "terminology": [
+    "research harness",
+    "active branch",
+    "frozen champion",
+    "probe-only exploration",
+    "atomic proposal",
+    "mean absolute IC",
+    "development panel",
+    "mean absolute IC",
+    "factor expression candidate",
+    "development panel"
+  ],
+  "paragraph_task": "Draft the English manuscript unit 'Scalar, cumulative-memory, and diagnostic information' using only the registered evidence and verified literature sources.",
+  "adjacent_context": {
+    "before": "Research harness and atomic proposals",
+    "after": "Paired V003 protocol and controls"
+  },
+  "editor_instruction": "Rewrite the supplied source-bound draft as polished academic English.  Preserve every protected LaTeX block, citation, number, comparison direction, and evidence scope.  Remove defensive writing, stacked hedging, repeated justification, preemptive clarification, imaginary objections, mechanical signposts, repetitive sentence patterns, list-form prose, and uniform paragraph scaffolding. Use coherent paragraphs and keep mean absolute IC attached to factor-expression candidates.",
+  "must_preserve": [
+    "\\section{Information conditions and controls}"
+  ],
+  "rewrite_from_draft": true,
+  "draft_provenance": "GPT source-bound draft auto_research/writing_runs/auto_research_harness_v003_20261031/drafts/06_information.tex"
+}

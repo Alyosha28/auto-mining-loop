@@ -1,0 +1,33 @@
+{
+  "schema": "AUTO-RESEARCH-MANUSCRIPT-MECHANICAL-CHECK-1",
+  "status": "PASS",
+  "content_units": 16,
+  "sections": 16,
+  "abstract_words": 207,
+  "citations": [
+    "agrawal2025gepa",
+    "chan2024mlebench",
+    "chandran2026production",
+    "chen2024scienceagentbench",
+    "huang2023mlagentbench",
+    "jansen2024discoveryworld",
+    "jiang2025aide",
+    "liu2023agentbench",
+    "liu2024evolution",
+    "liu2025cogalpha",
+    "lu2026towards",
+    "novikov2025alphaevolve",
+    "romera2023mathematical",
+    "schmidgall2025agent",
+    "wijk2024rebench",
+    "xu2026harness2",
+    "yang2024sweagent",
+    "yang2026aris",
+    "yu2023generating"
+  ],
+  "bibliography_entries": 19,
+  "labels": 28,
+  "figures": 5,
+  "list_environments": 0,
+  "banned_style_phrases": 0
+}

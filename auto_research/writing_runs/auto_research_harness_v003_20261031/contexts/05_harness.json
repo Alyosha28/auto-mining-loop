@@ -1,0 +1,63 @@
+{
+  "schema": "AUTO-RESEARCH-WRITING-CONTEXT-1",
+  "unit_id": "05_harness",
+  "title": "Research harness and atomic proposals",
+  "research_version": "V003",
+  "status": "drafted",
+  "sources": [
+    {
+      "id": "DESIGN",
+      "path": "auto_research/docs/DESIGN_CN.md",
+      "kind": "markdown",
+      "role": "system architecture and information boundaries"
+    },
+    {
+      "id": "EXECUTION-PLAN",
+      "path": "auto_research/docs/PAPER_READINESS_V003_EXECUTION_PLAN_CN.md",
+      "kind": "markdown",
+      "role": "execution record and evidence-role summary"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C04",
+      "object": "atomic-contract",
+      "statement": "One atomic proposal contains two to five edits and produces one final harness candidate.",
+      "source_id": "EXECUTION-PLAN",
+      "locators": [
+        {
+          "kind": "heading",
+          "text": "## 5. 原子提案契约"
+        }
+      ]
+    },
+    {
+      "claim_id": "C27",
+      "object": "random-control",
+      "statement": "Random legal atomic edits use the same editable surface and make zero model calls.",
+      "source_id": "EXECUTION-PLAN",
+      "locators": [
+        {
+          "kind": "heading",
+          "text": "## 5. 原子提案契约"
+        }
+      ]
+    }
+  ],
+  "terminology": [
+    "research harness",
+    "active branch",
+    "frozen champion",
+    "probe-only exploration",
+    "atomic proposal",
+    "mean absolute IC",
+    "development panel"
+  ],
+  "paragraph_task": "Draft the English manuscript unit 'Research harness and atomic proposals' using only the registered evidence and verified literature sources.",
+  "adjacent_context": {
+    "before": "Problem formulation and evidence scope",
+    "after": "Scalar, cumulative-memory, and diagnostic information"
+  },
+  "evidence_boundary": "Confirmatory development-panel evidence within 2017-01-01 through 2020-11-30; no independent real-data out-of-sample result.",
+  "writing_status": "Source-bound manuscript draft: drafts/05_harness.tex"
+}

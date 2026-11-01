@@ -1,0 +1,74 @@
+{
+ "schema": "AUTO-RESEARCH-PAPER-READINESS-PROTOCOL-1",
+ "protocol_version": "V003",
+ "date_frozen": "2026-10-31",
+ "model_id": "kimi/k3.1-pro[1m]",
+ "random_model_id": "random-atomic-edits-v1",
+ "random_seed": 20261031,
+ "generation": {
+  "effort": "low",
+  "temperature": "cli-default",
+  "tools": "disabled",
+  "session_persistence": false,
+  "cli_model_override": "kimi/k3.1-pro[1m]",
+  "cli_version": "2.1.314",
+  "python_version": "3.13.15",
+  "proposal_schema": "AUTO-RESEARCH-ATOMIC-PROPOSAL-1"
+ },
+ "proposer": "skills/current/factor-evolution-harness2/scripts/claude_proposer_command.py",
+ "random_proposer": "skills/current/factor-evolution-harness2/scripts/random_proposer_command.py",
+ "proposer_environment": {
+  "AUTO_RESEARCH_CLAUDE_MAX_OUTPUT_TOKENS": "8000",
+  "AUTO_RESEARCH_CLAUDE_MAX_USD": "0.50",
+  "AUTO_RESEARCH_CLAUDE_CLI_MODEL": "kimi/k3.1-pro[1m]",
+  "AUTO_RESEARCH_ATOMIC_PROPOSAL": "1"
+ },
+ "proposer_timeout_seconds": 600,
+ "execution_timeout_seconds": 600,
+ "run_root": "auto_research/agents/runs",
+ "task_files": [
+  "T9.json",
+  "T10.json",
+  "T11.json",
+  "T12.json",
+  "T13.json",
+  "T14.json"
+ ],
+ "seeds": [
+  11,
+  29
+ ],
+ "model_replicates": [
+  "A",
+  "B"
+ ],
+ "shared_decisions": 4,
+ "continuation_decisions": 4,
+ "candidate_budget": 12,
+ "dev_split": "seeded-year-blocks",
+ "shared_contract": "auto_research/config/paper_readiness_v003/shared_contract.json",
+ "continuation_contract": "auto_research/config/paper_readiness_v003/continuation_contract.json",
+ "coverage_log_only": true,
+ "demo": false,
+ "max_parallel_units": 2,
+ "screen_run_prefix": "PAPER_READINESS_TASK_SCREEN",
+ "screen_summary_file": "initial_defects.json",
+ "primary_estimands": [
+  "memory_minus_scalar",
+  "diagnostic_minus_memory",
+  "memory_minus_random",
+  "memory_minus_fixed"
+ ],
+ "analysis": {
+  "task_bootstrap_samples": 10000,
+  "task_sign_flip_exact": true,
+  "component_multiplicity": "Holm",
+  "bootstrap_seed": 20261031
+ },
+ "maximum_model_calls": 288,
+ "maximum_model_candidate_positions": 3456,
+ "maximum_random_candidate_positions": 1152,
+ "maximum_output_tokens": 2304000,
+ "score_window_read": false,
+ "independent_real_data_oos": false
+}

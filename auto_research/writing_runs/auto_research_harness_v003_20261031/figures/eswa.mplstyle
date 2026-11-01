@@ -1,0 +1,34 @@
+# V003 manuscript figure style.
+figure.facecolor: white
+axes.facecolor: white
+figure.dpi: 120
+savefig.dpi: 300
+font.family: DejaVu Sans
+font.size: 8
+mathtext.fontset: stix
+axes.labelsize: 8
+axes.titlesize: 8
+axes.linewidth: 0.6
+axes.spines.top: False
+axes.spines.right: False
+axes.axisbelow: True
+axes.grid: False
+axes.prop_cycle: cycler('color', [(0.0, 0.447059, 0.698039), (0.34902, 0.34902, 0.34902), (0.0, 0.619608, 0.45098), (0.8, 0.47451, 0.654902), (0.835294, 0.368627, 0.0), (0.337255, 0.705882, 0.913725)])
+xtick.labelsize: 7.5
+ytick.labelsize: 7.5
+xtick.major.width: 0.6
+ytick.major.width: 0.6
+xtick.major.size: 3
+ytick.major.size: 3
+lines.linewidth: 1.2
+lines.markersize: 4
+legend.fontsize: 7.5
+legend.frameon: False
+grid.color: (0.85098, 0.85098, 0.85098)
+grid.linewidth: 0.3
+pdf.fonttype: 42
+ps.fonttype: 42
+svg.fonttype: none
+savefig.bbox: standard
+savefig.facecolor: white
+savefig.transparent: False

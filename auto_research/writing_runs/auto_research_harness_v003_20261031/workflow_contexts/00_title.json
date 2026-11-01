@@ -1,0 +1,88 @@
+{
+  "research_version": "V003",
+  "sources": [
+    {
+      "id": "C01_0",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/paired_units"
+      },
+      "expected": 24
+    },
+    {
+      "id": "C01_1",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/evidence_status"
+      },
+      "expected": "development-panel complete"
+    },
+    {
+      "id": "C22_0",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/score_window_read"
+      },
+      "expected": false
+    },
+    {
+      "id": "C22_1",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/independent_real_data_oos"
+      },
+      "expected": false
+    }
+  ],
+  "claims": [
+    {
+      "id": "C01",
+      "object": "V003 contains 24 complete paired units and all protocol checks passed.",
+      "value": "V003 contains 24 complete paired units and all protocol checks passed.",
+      "unit": "source-bound registered claim",
+      "comparison": "V003 contains 24 complete paired units and all protocol checks passed.",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "C01_0",
+        "C01_1"
+      ]
+    },
+    {
+      "id": "C22",
+      "object": "The study does not read the score window and provides no independent real-data out-of-sample evaluation.",
+      "value": "The study does not read the score window and provides no independent real-data out-of-sample evaluation.",
+      "unit": "source-bound registered claim",
+      "comparison": "The study does not read the score window and provides no independent real-data out-of-sample evaluation.",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "C22_0",
+        "C22_1"
+      ]
+    }
+  ],
+  "terminology": [
+    "research harness",
+    "active branch",
+    "frozen champion",
+    "probe-only exploration",
+    "atomic proposal",
+    "mean absolute IC",
+    "development panel",
+    "mean absolute IC",
+    "factor expression candidate",
+    "development panel"
+  ],
+  "paragraph_task": "Draft the English manuscript unit 'Title' using only the registered evidence and verified literature sources.",
+  "adjacent_context": {
+    "before": "Document opening",
+    "after": "Abstract"
+  },
+  "editor_instruction": "Rewrite the supplied source-bound draft as polished academic English.  Preserve every protected LaTeX block, citation, number, comparison direction, and evidence scope.  Remove defensive writing, stacked hedging, repeated justification, preemptive clarification, imaginary objections, mechanical signposts, repetitive sentence patterns, list-form prose, and uniform paragraph scaffolding. Use coherent paragraphs and keep mean absolute IC attached to factor-expression candidates.",
+  "must_preserve": [],
+  "rewrite_from_draft": true,
+  "draft_provenance": "GPT source-bound draft auto_research/writing_runs/auto_research_harness_v003_20261031/drafts/00_title.tex"
+}

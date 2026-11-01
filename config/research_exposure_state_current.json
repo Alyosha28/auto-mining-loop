@@ -1,0 +1,10 @@
+{
+  "schema_version": "RESEARCH-EXPOSURE-2",
+  "as_of": "2026-09-21",
+  "intervals": [
+    {"name": "warmup", "start": "2016-01-01", "end": "2016-12-31", "status": "already_viewed"},
+    {"name": "development", "start": "2017-01-01", "end": "2019-12-31", "status": "already_used_for_selection"},
+    {"name": "historical_review", "start": "2020-01-01", "end": "2022-12-31", "status": "already_viewed"},
+    {"name": "released_2023_plus", "start": "2023-01-01", "end": "2026-09-21", "status": "authorized_for_research"}
+  ]
+}

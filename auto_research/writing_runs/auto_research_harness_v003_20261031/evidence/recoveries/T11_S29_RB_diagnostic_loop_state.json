@@ -1,0 +1,218 @@
+{
+ "schema": "AUTO-RESEARCH-LOOP-STATE-1",
+ "status": "STOPPED",
+ "stop_reason": "DECISION_BUDGET_EXHAUSTED",
+ "created_at": "2026-10-30T23:27:25.898040+00:00",
+ "updated_at": "2026-10-30T23:55:45.977179+00:00",
+ "contract": "auto_research/agents/runs/PAPER_READINESS_T11_S29_RB_V003/T11_S29_RB_DIAGNOSTIC_TIMEOUT_RECOVERY_001/contract.json",
+ "contract_sha256": "ec23259f73bd9aee7647f9a4cac6e12bb63fa59e274669611857194c2ff7858e",
+ "contract_source": "auto_research/config/paper_readiness_v003/shared_contract.json",
+ "proposer": "skills/current/factor-evolution-harness2/scripts/claude_proposer_command.py",
+ "proposer_sha256": "1194a65e03583d8d9abf2cde9ba6e12fb652cdd2163bf4f31bc0ecf0ba33df29",
+ "proposer_timeout_seconds": 600,
+ "execution_timeout_seconds": 600,
+ "mode": "local-only",
+ "prompt_feedback": "diagnostic",
+ "fixed_decisions": true,
+ "branchpoint_source": null,
+ "branchpoint_sha256": null,
+ "shared_memory": "auto_research/config/paper_readiness_v003/memory/shared_research_memory.json",
+ "model_id": "kimi/k3.1-pro[1m]",
+ "seed": 29,
+ "budget_candidates": 12,
+ "dev_split": "seeded-year-blocks",
+ "features": "momentum_20,volatility_20,turnover_mean_20,reversal_5,amihud_20,volume_ratio_5_20",
+ "coverage_log_only": true,
+ "demo": false,
+ "current_node_id": "node_0003",
+ "current_question": "在无残差化且八个组合槽的初始配置上，能否提高共同样本平均绝对 IC？",
+ "champion": {
+  "node_id": "node_0001",
+  "run_id": "T11_S29_RB_DIAGNOSTIC_d001",
+  "harness": "auto_research/agents/runs/PAPER_READINESS_T11_S29_RB_V003/T11_S29_RB_DIAGNOSTIC/decisions/T11_S29_RB_DIAGNOSTIC_d001/child/step/harness/adopted.json",
+  "trace_file": "auto_research/agents/runs/PAPER_READINESS_T11_S29_RB_V003/T11_S29_RB_DIAGNOSTIC/decisions/T11_S29_RB_DIAGNOSTIC_d001/child/step/generation/next_execution_trace.json",
+  "probe_score": 0.06804575464903606,
+  "contract": {
+   "supported": true,
+   "primary_delta": 0.01627109919501351,
+   "reject_reasons": [],
+   "delta": {
+    "delta_mean_abs_ic": 0.01627109919501351,
+    "delta_coverage": 0.0,
+    "delta_pass_rate": 0.08333333333333337,
+    "delta_turnover_proxy": -0.001042715892760504,
+    "delta_novelty": -0.5,
+    "delta_duplicate_rate": 0.04545454545454544
+   }
+  }
+ },
+ "nodes": [
+  {
+   "id": "root",
+   "parent_id": null,
+   "run_id": "PAPER_READINESS_TASK_SCREEN_V003_S29:T11",
+   "status": "COMPLETED",
+   "supported": true,
+   "probe_score": 0.05320714041950736,
+   "children_count": 1,
+   "harness": "auto_research/config/paper_readiness_v003/initial_harness/T11.json",
+   "trace_file": "auto_research/config/paper_readiness_v003/initial_traces/T11_S29.json",
+   "research_question": "在无残差化且八个组合槽的初始配置上，能否提高共同样本平均绝对 IC？",
+   "contract": null
+  },
+  {
+   "id": "node_0001",
+   "parent_id": "root",
+   "run_id": "T11_S29_RB_DIAGNOSTIC_d001",
+   "status": "COMPLETED",
+   "supported": true,
+   "probe_score": 0.06804575464903606,
+   "children_count": 1,
+   "harness": "auto_research/agents/runs/PAPER_READINESS_T11_S29_RB_V003/T11_S29_RB_DIAGNOSTIC/decisions/T11_S29_RB_DIAGNOSTIC_d001/child/step/harness/adopted.json",
+   "trace_file": "auto_research/agents/runs/PAPER_READINESS_T11_S29_RB_V003/T11_S29_RB_DIAGNOSTIC/decisions/T11_S29_RB_DIAGNOSTIC_d001/child/step/generation/next_execution_trace.json",
+   "research_question": "在无残差化且八个组合槽的初始配置上，能否提高共同样本平均绝对 IC？",
+   "contract": {
+    "supported": true,
+    "primary_delta": 0.01627109919501351,
+    "reject_reasons": [],
+    "delta": {
+     "delta_mean_abs_ic": 0.01627109919501351,
+     "delta_coverage": 0.0,
+     "delta_pass_rate": 0.08333333333333337,
+     "delta_turnover_proxy": -0.001042715892760504,
+     "delta_novelty": -0.5,
+     "delta_duplicate_rate": 0.04545454545454544
+    }
+   }
+  },
+  {
+   "id": "node_0002",
+   "parent_id": "node_0001",
+   "run_id": "T11_S29_RB_DIAGNOSTIC_d002",
+   "status": "COMPLETED",
+   "supported": false,
+   "probe_score": 0.06273846962044076,
+   "children_count": 1,
+   "harness": "auto_research/agents/runs/PAPER_READINESS_T11_S29_RB_V003/T11_S29_RB_DIAGNOSTIC/decisions/T11_S29_RB_DIAGNOSTIC_d002/child/step/harness/adopted.json",
+   "trace_file": "auto_research/agents/runs/PAPER_READINESS_T11_S29_RB_V003/T11_S29_RB_DIAGNOSTIC/decisions/T11_S29_RB_DIAGNOSTIC_d002/child/step/generation/next_execution_trace.json",
+   "research_question": "在无残差化且八个组合槽的初始配置上，能否提高共同样本平均绝对 IC？",
+   "contract": {
+    "supported": false,
+    "primary_delta": -0.005307285028595302,
+    "reject_reasons": [
+     "primary_delta_not_above_threshold"
+    ],
+    "delta": {
+     "delta_mean_abs_ic": -0.005307285028595302,
+     "delta_coverage": 0.0,
+     "delta_pass_rate": 0.0,
+     "delta_turnover_proxy": -0.01174853191488745,
+     "delta_novelty": 0.0,
+     "delta_duplicate_rate": -0.060606060606060594
+    }
+   }
+  },
+  {
+   "id": "node_0003",
+   "parent_id": "node_0002",
+   "run_id": "T11_S29_RB_DIAGNOSTIC_d003",
+   "status": "COMPLETED",
+   "supported": false,
+   "probe_score": 0.06804575464903606,
+   "children_count": 1,
+   "harness": "auto_research/agents/runs/PAPER_READINESS_T11_S29_RB_V003/T11_S29_RB_DIAGNOSTIC/decisions/T11_S29_RB_DIAGNOSTIC_d003/child/step/harness/adopted.json",
+   "trace_file": "auto_research/agents/runs/PAPER_READINESS_T11_S29_RB_V003/T11_S29_RB_DIAGNOSTIC/decisions/T11_S29_RB_DIAGNOSTIC_d003/child/step/generation/next_execution_trace.json",
+   "research_question": "在无残差化且八个组合槽的初始配置上，能否提高共同样本平均绝对 IC？",
+   "contract": {
+    "supported": false,
+    "primary_delta": 0.0,
+    "reject_reasons": [
+     "primary_delta_not_above_threshold"
+    ],
+    "delta": {
+     "delta_mean_abs_ic": 0.0,
+     "delta_coverage": 0.0,
+     "delta_pass_rate": 0.0,
+     "delta_turnover_proxy": 0.0,
+     "delta_novelty": 0.0,
+     "delta_duplicate_rate": 0.0
+    }
+   }
+  },
+  {
+   "id": "node_0004",
+   "parent_id": "node_0003",
+   "run_id": "T11_S29_RB_DIAGNOSTIC_d004",
+   "status": "FAILED",
+   "supported": false,
+   "probe_score": null,
+   "children_count": 0,
+   "harness": "auto_research/agents/runs/PAPER_READINESS_T11_S29_RB_V003/T11_S29_RB_DIAGNOSTIC/decisions/T11_S29_RB_DIAGNOSTIC_d003/child/step/harness/adopted.json",
+   "trace_file": "auto_research/agents/runs/PAPER_READINESS_T11_S29_RB_V003/T11_S29_RB_DIAGNOSTIC/decisions/T11_S29_RB_DIAGNOSTIC_d003/child/step/generation/next_execution_trace.json",
+   "research_question": "在无残差化且八个组合槽的初始配置上，能否提高共同样本平均绝对 IC？",
+   "contract": null
+  }
+ ],
+ "history": [
+  {
+   "run_id": "T11_S29_RB_DIAGNOSTIC_d001",
+   "mode": "local-only",
+   "action": "EXPLOIT",
+   "rationale": "local-only exploit execution",
+   "evidence_refs": [],
+   "base_harness_hash": "f1e0b7ea0ee51ebe3af6d7d0929b4550259f0cff363560ee10ce720b5dbc4951",
+   "status": "COMPLETED",
+   "child_run": "auto_research/agents/runs/PAPER_READINESS_T11_S29_RB_V003/T11_S29_RB_DIAGNOSTIC/decisions/T11_S29_RB_DIAGNOSTIC_d001/child/step",
+   "proposal_order": [
+    "atomic_proposal"
+   ]
+  },
+  {
+   "run_id": "T11_S29_RB_DIAGNOSTIC_d002",
+   "mode": "local-only",
+   "action": "EXPLOIT",
+   "rationale": "local-only exploit execution",
+   "evidence_refs": [],
+   "base_harness_hash": "d356bdc0784a74c1eaa4a1fc8ba59fe68119e23d620445dceb9fd6cfd5efff26",
+   "status": "COMPLETED",
+   "child_run": "auto_research/agents/runs/PAPER_READINESS_T11_S29_RB_V003/T11_S29_RB_DIAGNOSTIC/decisions/T11_S29_RB_DIAGNOSTIC_d002/child/step",
+   "proposal_order": [
+    "atomic_proposal"
+   ]
+  },
+  {
+   "run_id": "T11_S29_RB_DIAGNOSTIC_d003",
+   "mode": "local-only",
+   "action": "EXPLOIT",
+   "rationale": "local-only exploit execution",
+   "evidence_refs": [],
+   "base_harness_hash": "ae3790b969dd92a1200a6e5648f5d8991d834fa21b2e89b05be9f88c37932fd2",
+   "status": "COMPLETED",
+   "child_run": "auto_research/agents/runs/PAPER_READINESS_T11_S29_RB_V003/T11_S29_RB_DIAGNOSTIC/decisions/T11_S29_RB_DIAGNOSTIC_d003/child/step",
+   "proposal_order": [
+    "atomic_proposal"
+   ]
+  },
+  {
+   "run_id": "T11_S29_RB_DIAGNOSTIC_d004",
+   "mode": "local-only",
+   "action": "EXPLOIT",
+   "rationale": "invalid or failed proposal: proposer exceeded the per-call output budget; usage preserved",
+   "evidence_refs": [],
+   "base_harness_hash": "b64599be056146e3177d960e2c5cb242b130a5c775898648229aa54472ec8d0f",
+   "status": "FAILED"
+  }
+ ],
+ "usage": {
+  "decisions": 4,
+  "candidate_budget": 36,
+  "model_calls": 4,
+  "input_tokens": 133894,
+  "output_tokens": 14143
+ },
+ "no_improvement": 2,
+ "repair_parent_id": "node_0003",
+ "repair_depth": 1,
+ "pending": null,
+ "recovery_from": "auto_research/agents/runs/PAPER_READINESS_T11_S29_RB_V003/T11_S29_RB_DIAGNOSTIC"
+}

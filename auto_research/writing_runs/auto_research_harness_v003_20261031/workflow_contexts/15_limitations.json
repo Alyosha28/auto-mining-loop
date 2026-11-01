@@ -1,0 +1,113 @@
+{
+  "research_version": "V003",
+  "sources": [
+    {
+      "id": "C21_unit",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/interpretation/experimental_unit"
+      },
+      "expected": "task by development seed by independent model-call replicate"
+    },
+    {
+      "id": "C21_reps",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/protocol/model_replicates"
+      },
+      "expected": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "C22_0",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/score_window_read"
+      },
+      "expected": false
+    },
+    {
+      "id": "C22_1",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/independent_real_data_oos"
+      },
+      "expected": false
+    },
+    {
+      "id": "C28",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/interpretation/market_scope"
+      },
+      "expected": "2017-01-01 through 2020-11-30; no independent real-data out-of-sample evaluation"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C21",
+      "object": "Model replicates are independent calls; provider-controlled model seeds are not claimed.",
+      "value": "Model replicates are independent calls; provider-controlled model seeds are not claimed.",
+      "unit": "source-bound registered claim",
+      "comparison": "Model replicates are independent calls; provider-controlled model seeds are not claimed.",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "C21_unit",
+        "C21_reps"
+      ]
+    },
+    {
+      "id": "C22",
+      "object": "The study does not read the score window and provides no independent real-data out-of-sample evaluation.",
+      "value": "The study does not read the score window and provides no independent real-data out-of-sample evaluation.",
+      "unit": "source-bound registered claim",
+      "comparison": "The study does not read the score window and provides no independent real-data out-of-sample evaluation.",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "C22_0",
+        "C22_1"
+      ]
+    },
+    {
+      "id": "C28",
+      "object": "Fresh tasks within the development window do not constitute independent market-period out-of-sample evidence.",
+      "value": "Fresh tasks within the development window do not constitute independent market-period out-of-sample evidence.",
+      "unit": "source-bound registered claim",
+      "comparison": "Fresh tasks within the development window do not constitute independent market-period out-of-sample evidence.",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "C28"
+      ]
+    }
+  ],
+  "terminology": [
+    "research harness",
+    "active branch",
+    "frozen champion",
+    "probe-only exploration",
+    "atomic proposal",
+    "mean absolute IC",
+    "development panel",
+    "mean absolute IC",
+    "factor expression candidate",
+    "development panel"
+  ],
+  "paragraph_task": "Draft the English manuscript unit 'Limitations and evidence boundary' using only the registered evidence and verified literature sources.",
+  "adjacent_context": {
+    "before": "Discussion",
+    "after": "Conclusion"
+  },
+  "editor_instruction": "Rewrite the supplied source-bound draft as polished academic English.  Preserve every protected LaTeX block, citation, number, comparison direction, and evidence scope.  Remove defensive writing, stacked hedging, repeated justification, preemptive clarification, imaginary objections, mechanical signposts, repetitive sentence patterns, list-form prose, and uniform paragraph scaffolding. Use coherent paragraphs and keep mean absolute IC attached to factor-expression candidates.",
+  "must_preserve": [
+    "\\section{Limitations}"
+  ],
+  "rewrite_from_draft": true,
+  "draft_provenance": "GPT source-bound draft auto_research/writing_runs/auto_research_harness_v003_20261031/drafts/15_limitations.tex"
+}

@@ -1,0 +1,41 @@
+{
+  "schema": "AUTO-RESEARCH-MANUSCRIPT-LAYOUT-1",
+  "status": "prepared",
+  "style_parameters": "writing_skills/style_parameters.json",
+  "manuscript_entrypoint": "main.tex",
+  "profiles": {
+    "review": {
+      "page_mm": [210, 297],
+      "columns": 1,
+      "margins_mm": {"left": 25, "right": 25, "top": 25, "bottom": 25},
+      "body_size_bp": 12,
+      "body_leading_bp": 18,
+      "preferred_figure_width_mm": 150
+    },
+    "publication_preview": {
+      "page_mm": [210, 280],
+      "columns": 2,
+      "margins_mm": {"left": 13.26, "right": 13.26, "top": 18.5, "bottom": 18.5},
+      "column_gap_mm": 6.32,
+      "body_size_bp": 7.97,
+      "body_leading_bp": 10.46,
+      "single_column_figure_width_mm": 88.58,
+      "double_column_figure_width_mm": 183.48
+    }
+  },
+  "figure_policy": {
+    "manuscript_format": "PDF",
+    "preview_format": "PNG",
+    "preview_dpi": 300,
+    "background": "white",
+    "font_family": "DejaVu Sans",
+    "method_diagram_source": "figures/method_pipeline.mmd"
+  },
+  "export_policy": {
+    "deterministic_export": true,
+    "content_review_required": true,
+    "author_review_separate": true,
+    "watermark_status_separate": true,
+    "current_manuscript_status": "not drafted"
+  }
+}

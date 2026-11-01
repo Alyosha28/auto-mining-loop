@@ -1,0 +1,231 @@
+{
+  "research_version": "V003",
+  "sources": [
+    {
+      "id": "C12_0",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/behavior_effects/2/median"
+      },
+      "expected": "-0.125"
+    },
+    {
+      "id": "C13_0",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/behavior_effects/3/median"
+      },
+      "expected": "0.045454545454545456"
+    },
+    {
+      "id": "C14_0",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/behavior_effects/12/median"
+      },
+      "expected": "-0.09166666666666667"
+    },
+    {
+      "id": "C15_0",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/behavior_effects/13/median"
+      },
+      "expected": "0.03787878787878787"
+    },
+    {
+      "id": "date_scalar_n",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/date_block_summary/0/non_null_units"
+      },
+      "expected": "19"
+    },
+    {
+      "id": "date_scalar_median",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/date_block_summary/0/median_concentration"
+      },
+      "expected": "0.20857941676797792"
+    },
+    {
+      "id": "date_scalar_max",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/date_block_summary/0/max_concentration"
+      },
+      "expected": "0.5310366710548623"
+    },
+    {
+      "id": "date_diagnostic_n",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/date_block_summary/1/non_null_units"
+      },
+      "expected": "7"
+    },
+    {
+      "id": "date_diagnostic_median",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/date_block_summary/1/median_concentration"
+      },
+      "expected": "0.49410279334581575"
+    },
+    {
+      "id": "date_diagnostic_max",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/date_block_summary/1/max_concentration"
+      },
+      "expected": "1.0"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C12",
+      "object": "Memory minus scalar has novelty median -0.125.",
+      "value": "Memory minus scalar has novelty median -0.125.",
+      "unit": "source-bound registered claim",
+      "comparison": "Memory minus scalar has novelty median -0.125.",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "C12_0"
+      ]
+    },
+    {
+      "id": "C13",
+      "object": "Memory minus scalar has duplicate-rate median +0.045454545454545456.",
+      "value": "Memory minus scalar has duplicate-rate median +0.045454545454545456.",
+      "unit": "source-bound registered claim",
+      "comparison": "Memory minus scalar has duplicate-rate median +0.045454545454545456.",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "C13_0"
+      ]
+    },
+    {
+      "id": "C14",
+      "object": "Memory minus random has novelty median -0.09166666666666667.",
+      "value": "Memory minus random has novelty median -0.09166666666666667.",
+      "unit": "source-bound registered claim",
+      "comparison": "Memory minus random has novelty median -0.09166666666666667.",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "C14_0"
+      ]
+    },
+    {
+      "id": "C15",
+      "object": "Memory minus random has duplicate-rate median +0.03787878787878787.",
+      "value": "Memory minus random has duplicate-rate median +0.03787878787878787.",
+      "unit": "source-bound registered claim",
+      "comparison": "Memory minus random has duplicate-rate median +0.03787878787878787.",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "C15_0"
+      ]
+    },
+    {
+      "id": "date_scalar_n",
+      "object": "/tables/date_block_summary/0/non_null_units = 19",
+      "value": "/tables/date_block_summary/0/non_null_units = 19",
+      "unit": "source-bound registered claim",
+      "comparison": "/tables/date_block_summary/0/non_null_units = 19",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "date_scalar_n"
+      ]
+    },
+    {
+      "id": "date_scalar_median",
+      "object": "/tables/date_block_summary/0/median_concentration = 0.20857941676797792",
+      "value": "/tables/date_block_summary/0/median_concentration = 0.20857941676797792",
+      "unit": "source-bound registered claim",
+      "comparison": "/tables/date_block_summary/0/median_concentration = 0.20857941676797792",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "date_scalar_median"
+      ]
+    },
+    {
+      "id": "date_scalar_max",
+      "object": "/tables/date_block_summary/0/max_concentration = 0.5310366710548623",
+      "value": "/tables/date_block_summary/0/max_concentration = 0.5310366710548623",
+      "unit": "source-bound registered claim",
+      "comparison": "/tables/date_block_summary/0/max_concentration = 0.5310366710548623",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "date_scalar_max"
+      ]
+    },
+    {
+      "id": "date_diagnostic_n",
+      "object": "/tables/date_block_summary/1/non_null_units = 7",
+      "value": "/tables/date_block_summary/1/non_null_units = 7",
+      "unit": "source-bound registered claim",
+      "comparison": "/tables/date_block_summary/1/non_null_units = 7",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "date_diagnostic_n"
+      ]
+    },
+    {
+      "id": "date_diagnostic_median",
+      "object": "/tables/date_block_summary/1/median_concentration = 0.49410279334581575",
+      "value": "/tables/date_block_summary/1/median_concentration = 0.49410279334581575",
+      "unit": "source-bound registered claim",
+      "comparison": "/tables/date_block_summary/1/median_concentration = 0.49410279334581575",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "date_diagnostic_median"
+      ]
+    },
+    {
+      "id": "date_diagnostic_max",
+      "object": "/tables/date_block_summary/1/max_concentration = 1.0",
+      "value": "/tables/date_block_summary/1/max_concentration = 1.0",
+      "unit": "source-bound registered claim",
+      "comparison": "/tables/date_block_summary/1/max_concentration = 1.0",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "date_diagnostic_max"
+      ]
+    }
+  ],
+  "terminology": [
+    "research harness",
+    "active branch",
+    "frozen champion",
+    "probe-only exploration",
+    "atomic proposal",
+    "mean absolute IC",
+    "development panel",
+    "mean absolute IC",
+    "factor expression candidate",
+    "development panel"
+  ],
+  "paragraph_task": "Draft the English manuscript unit 'Novelty, duplication, and date-block diagnostics' using only the registered evidence and verified literature sources.",
+  "adjacent_context": {
+    "before": "Cumulative-memory and diagnostic component contrasts",
+    "after": "Execution losses, recovery, sensitivity, and cost"
+  },
+  "editor_instruction": "Rewrite the supplied source-bound draft as polished academic English.  Preserve every protected LaTeX block, citation, number, comparison direction, and evidence scope.  Remove defensive writing, stacked hedging, repeated justification, preemptive clarification, imaginary objections, mechanical signposts, repetitive sentence patterns, list-form prose, and uniform paragraph scaffolding. Use coherent paragraphs and keep mean absolute IC attached to factor-expression candidates.",
+  "must_preserve": [
+    "\\section{Behavioral and temporal diagnostics}",
+    "\\begin{figure*}[!htbp]\n\\centering\n\\includegraphics[width=\\ResearchWideWidth]{figures/figure_04_behavior_costs_\\ResearchFigureVariant.pdf}\n\\caption{Median paired differences in select novelty and duplicate rate across the same 24 development-panel units. Negative novelty differences indicate less behavioral novelty; positive duplicate-rate differences indicate more duplication. Panels use separate horizontal scales. These behavior diagnostics accompany the IC contrasts and are not independent out-of-sample evaluations.}\n\\label{fig:behavior}\n\\end{figure*}"
+  ],
+  "rewrite_from_draft": true,
+  "draft_provenance": "GPT source-bound draft auto_research/writing_runs/auto_research_harness_v003_20261031/drafts/12_behavior.tex"
+}

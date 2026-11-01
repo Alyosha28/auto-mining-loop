@@ -1,0 +1,7 @@
+{
+ "tasks": ["nonlinear", "regime", "hetero"],
+ "seeds": [1, 2, 3, 4, 5],
+ "budget": 24,
+ "baselines": ["random", "evolution", "bo", "qd"],
+ "tag": "ood_v0.2"
+}

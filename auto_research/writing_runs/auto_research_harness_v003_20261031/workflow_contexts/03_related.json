@@ -1,0 +1,429 @@
+{
+  "research_version": "V003",
+  "sources": [
+    {
+      "id": "lu2026towards",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/literature.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/entries/lu2026towards/supported_claim"
+      },
+      "expected": "The AI Scientist links idea generation, experiment coding and execution, analysis, manuscript writing, and automated review in an end-to-end research pipeline."
+    },
+    {
+      "id": "xu2026harness2",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/literature.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/entries/xu2026harness2/supported_claim"
+      },
+      "expected": "Harness^2 uses task-level contrastive Propose–Probe–Compose recursion and a harnessing-level recursion that extracts experience from edits for later tasks."
+    },
+    {
+      "id": "yang2026aris",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/literature.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/entries/yang2026aris/supported_claim"
+      },
+      "expected": "ARIS combines execution skills and a persistent research wiki with integrity verification, result-to-claim mapping, claim auditing, and reviewer-approved harness improvements."
+    },
+    {
+      "id": "chandran2026production",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/literature.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/entries/chandran2026production/supported_claim"
+      },
+      "expected": "Production-scale AutoResearch reports infrastructure fragility, agent memory decay, search-direction stagnation, iteration-cost asymmetry, and metric fixation, addressed through prevent, persist, and redirect principles."
+    },
+    {
+      "id": "romera2023mathematical",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/literature.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/entries/romera2023mathematical/supported_claim"
+      },
+      "expected": "FunSearch pairs a pretrained LLM with a systematic evaluator in an evolutionary search over solution-generating programs."
+    },
+    {
+      "id": "agrawal2025gepa",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/literature.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/entries/agrawal2025gepa/supported_claim"
+      },
+      "expected": "GEPA reflects on execution traces in natural language to propose and test prompt updates and combines complementary candidates from a Pareto frontier."
+    },
+    {
+      "id": "huang2023mlagentbench",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/literature.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/entries/huang2023mlagentbench/supported_claim"
+      },
+      "expected": "MLAgentBench evaluates language agents on 13 machine-learning experimentation tasks through actions including file editing, code execution, and output inspection."
+    },
+    {
+      "id": "novikov2025alphaevolve",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/literature.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/entries/novikov2025alphaevolve/supported_claim"
+      },
+      "expected": "AlphaEvolve evolves code through an autonomous LLM pipeline with feedback from one or more evaluators."
+    },
+    {
+      "id": "liu2024evolution",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/literature.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/entries/liu2024evolution/supported_claim"
+      },
+      "expected": "EoH evolves natural-language heuristic ideas and their executable code within an evolutionary search framework."
+    },
+    {
+      "id": "jiang2025aide",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/literature.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/entries/jiang2025aide/supported_claim"
+      },
+      "expected": "AIDE formulates machine-learning engineering as code optimization and uses tree search to reuse and refine promising solutions."
+    },
+    {
+      "id": "schmidgall2025agent",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/literature.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/entries/schmidgall2025agent/supported_claim"
+      },
+      "expected": "Agent Laboratory organizes LLM agents across literature review, experimentation, and report writing, while allowing human feedback at each stage."
+    },
+    {
+      "id": "wijk2024rebench",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/literature.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/entries/wijk2024rebench/supported_claim"
+      },
+      "expected": "RE-Bench compares language-model agents and human experts in seven open-ended ML research-engineering environments under varying time budgets."
+    },
+    {
+      "id": "chan2024mlebench",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/literature.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/entries/chan2024mlebench/supported_claim"
+      },
+      "expected": "MLE-bench evaluates agents on 75 Kaggle machine-learning engineering competitions and includes human leaderboard baselines."
+    },
+    {
+      "id": "yang2024sweagent",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/literature.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/entries/yang2024sweagent/supported_claim"
+      },
+      "expected": "SWE-agent studies how agent-computer interface design affects code editing, repository navigation, test execution, and agent performance."
+    },
+    {
+      "id": "chen2024scienceagentbench",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/literature.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/entries/chen2024scienceagentbench/supported_claim"
+      },
+      "expected": "ScienceAgentBench evaluates 102 expert-validated data-driven discovery tasks using program quality, execution results, and cost."
+    },
+    {
+      "id": "jansen2024discoveryworld",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/literature.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/entries/jansen2024discoveryworld/supported_claim"
+      },
+      "expected": "DiscoveryWorld provides 120 simulated tasks requiring hypotheses, experiment design and execution, analysis, and conclusions."
+    },
+    {
+      "id": "liu2023agentbench",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/literature.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/entries/liu2023agentbench/supported_claim"
+      },
+      "expected": "AgentBench evaluates LLM agents across eight interactive environments and analyzes reasoning, decision-making, and instruction-following failures."
+    },
+    {
+      "id": "liu2025cogalpha",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/literature.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/entries/liu2025cogalpha/supported_claim"
+      },
+      "expected": "CogAlpha represents alphas as code and combines LLM reasoning, evolutionary mutations and recombination, multi-stage prompts, and financial feedback."
+    },
+    {
+      "id": "yu2023generating",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/literature.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/entries/yu2023generating/supported_claim"
+      },
+      "expected": "AlphaGen uses reinforcement learning to optimize a synergistic collection of formulaic alphas through downstream combination-model performance."
+    }
+  ],
+  "claims": [
+    {
+      "id": "lu2026towards",
+      "object": "The AI Scientist links idea generation, experiment coding and execution, analysis, manuscript writing, and automated review in an end-to-end research pipeline.",
+      "value": "The AI Scientist links idea generation, experiment coding and execution, analysis, manuscript writing, and automated review in an end-to-end research pipeline.",
+      "unit": "source-scoped system description",
+      "comparison": "prior research system",
+      "scope": "Original bibliographic record and abstract",
+      "source_ids": [
+        "lu2026towards"
+      ]
+    },
+    {
+      "id": "xu2026harness2",
+      "object": "Harness^2 uses task-level contrastive Propose–Probe–Compose recursion and a harnessing-level recursion that extracts experience from edits for later tasks.",
+      "value": "Harness^2 uses task-level contrastive Propose–Probe–Compose recursion and a harnessing-level recursion that extracts experience from edits for later tasks.",
+      "unit": "source-scoped system description",
+      "comparison": "prior research system",
+      "scope": "Original bibliographic record and abstract",
+      "source_ids": [
+        "xu2026harness2"
+      ]
+    },
+    {
+      "id": "yang2026aris",
+      "object": "ARIS combines execution skills and a persistent research wiki with integrity verification, result-to-claim mapping, claim auditing, and reviewer-approved harness improvements.",
+      "value": "ARIS combines execution skills and a persistent research wiki with integrity verification, result-to-claim mapping, claim auditing, and reviewer-approved harness improvements.",
+      "unit": "source-scoped system description",
+      "comparison": "prior research system",
+      "scope": "Original bibliographic record and abstract",
+      "source_ids": [
+        "yang2026aris"
+      ]
+    },
+    {
+      "id": "chandran2026production",
+      "object": "Production-scale AutoResearch reports infrastructure fragility, agent memory decay, search-direction stagnation, iteration-cost asymmetry, and metric fixation, addressed through prevent, persist, and redirect principles.",
+      "value": "Production-scale AutoResearch reports infrastructure fragility, agent memory decay, search-direction stagnation, iteration-cost asymmetry, and metric fixation, addressed through prevent, persist, and redirect principles.",
+      "unit": "source-scoped system description",
+      "comparison": "prior research system",
+      "scope": "Original bibliographic record and abstract",
+      "source_ids": [
+        "chandran2026production"
+      ]
+    },
+    {
+      "id": "romera2023mathematical",
+      "object": "FunSearch pairs a pretrained LLM with a systematic evaluator in an evolutionary search over solution-generating programs.",
+      "value": "FunSearch pairs a pretrained LLM with a systematic evaluator in an evolutionary search over solution-generating programs.",
+      "unit": "source-scoped system description",
+      "comparison": "prior research system",
+      "scope": "Original bibliographic record and abstract",
+      "source_ids": [
+        "romera2023mathematical"
+      ]
+    },
+    {
+      "id": "agrawal2025gepa",
+      "object": "GEPA reflects on execution traces in natural language to propose and test prompt updates and combines complementary candidates from a Pareto frontier.",
+      "value": "GEPA reflects on execution traces in natural language to propose and test prompt updates and combines complementary candidates from a Pareto frontier.",
+      "unit": "source-scoped system description",
+      "comparison": "prior research system",
+      "scope": "Original bibliographic record and abstract",
+      "source_ids": [
+        "agrawal2025gepa"
+      ]
+    },
+    {
+      "id": "huang2023mlagentbench",
+      "object": "MLAgentBench evaluates language agents on 13 machine-learning experimentation tasks through actions including file editing, code execution, and output inspection.",
+      "value": "MLAgentBench evaluates language agents on 13 machine-learning experimentation tasks through actions including file editing, code execution, and output inspection.",
+      "unit": "source-scoped system description",
+      "comparison": "prior research system",
+      "scope": "Original bibliographic record and abstract",
+      "source_ids": [
+        "huang2023mlagentbench"
+      ]
+    },
+    {
+      "id": "novikov2025alphaevolve",
+      "object": "AlphaEvolve evolves code through an autonomous LLM pipeline with feedback from one or more evaluators.",
+      "value": "AlphaEvolve evolves code through an autonomous LLM pipeline with feedback from one or more evaluators.",
+      "unit": "source-scoped system description",
+      "comparison": "prior research system",
+      "scope": "Original bibliographic record and abstract",
+      "source_ids": [
+        "novikov2025alphaevolve"
+      ]
+    },
+    {
+      "id": "liu2024evolution",
+      "object": "EoH evolves natural-language heuristic ideas and their executable code within an evolutionary search framework.",
+      "value": "EoH evolves natural-language heuristic ideas and their executable code within an evolutionary search framework.",
+      "unit": "source-scoped system description",
+      "comparison": "prior research system",
+      "scope": "Original bibliographic record and abstract",
+      "source_ids": [
+        "liu2024evolution"
+      ]
+    },
+    {
+      "id": "jiang2025aide",
+      "object": "AIDE formulates machine-learning engineering as code optimization and uses tree search to reuse and refine promising solutions.",
+      "value": "AIDE formulates machine-learning engineering as code optimization and uses tree search to reuse and refine promising solutions.",
+      "unit": "source-scoped system description",
+      "comparison": "prior research system",
+      "scope": "Original bibliographic record and abstract",
+      "source_ids": [
+        "jiang2025aide"
+      ]
+    },
+    {
+      "id": "schmidgall2025agent",
+      "object": "Agent Laboratory organizes LLM agents across literature review, experimentation, and report writing, while allowing human feedback at each stage.",
+      "value": "Agent Laboratory organizes LLM agents across literature review, experimentation, and report writing, while allowing human feedback at each stage.",
+      "unit": "source-scoped system description",
+      "comparison": "prior research system",
+      "scope": "Original bibliographic record and abstract",
+      "source_ids": [
+        "schmidgall2025agent"
+      ]
+    },
+    {
+      "id": "wijk2024rebench",
+      "object": "RE-Bench compares language-model agents and human experts in seven open-ended ML research-engineering environments under varying time budgets.",
+      "value": "RE-Bench compares language-model agents and human experts in seven open-ended ML research-engineering environments under varying time budgets.",
+      "unit": "source-scoped system description",
+      "comparison": "prior research system",
+      "scope": "Original bibliographic record and abstract",
+      "source_ids": [
+        "wijk2024rebench"
+      ]
+    },
+    {
+      "id": "chan2024mlebench",
+      "object": "MLE-bench evaluates agents on 75 Kaggle machine-learning engineering competitions and includes human leaderboard baselines.",
+      "value": "MLE-bench evaluates agents on 75 Kaggle machine-learning engineering competitions and includes human leaderboard baselines.",
+      "unit": "source-scoped system description",
+      "comparison": "prior research system",
+      "scope": "Original bibliographic record and abstract",
+      "source_ids": [
+        "chan2024mlebench"
+      ]
+    },
+    {
+      "id": "yang2024sweagent",
+      "object": "SWE-agent studies how agent-computer interface design affects code editing, repository navigation, test execution, and agent performance.",
+      "value": "SWE-agent studies how agent-computer interface design affects code editing, repository navigation, test execution, and agent performance.",
+      "unit": "source-scoped system description",
+      "comparison": "prior research system",
+      "scope": "Original bibliographic record and abstract",
+      "source_ids": [
+        "yang2024sweagent"
+      ]
+    },
+    {
+      "id": "chen2024scienceagentbench",
+      "object": "ScienceAgentBench evaluates 102 expert-validated data-driven discovery tasks using program quality, execution results, and cost.",
+      "value": "ScienceAgentBench evaluates 102 expert-validated data-driven discovery tasks using program quality, execution results, and cost.",
+      "unit": "source-scoped system description",
+      "comparison": "prior research system",
+      "scope": "Original bibliographic record and abstract",
+      "source_ids": [
+        "chen2024scienceagentbench"
+      ]
+    },
+    {
+      "id": "jansen2024discoveryworld",
+      "object": "DiscoveryWorld provides 120 simulated tasks requiring hypotheses, experiment design and execution, analysis, and conclusions.",
+      "value": "DiscoveryWorld provides 120 simulated tasks requiring hypotheses, experiment design and execution, analysis, and conclusions.",
+      "unit": "source-scoped system description",
+      "comparison": "prior research system",
+      "scope": "Original bibliographic record and abstract",
+      "source_ids": [
+        "jansen2024discoveryworld"
+      ]
+    },
+    {
+      "id": "liu2023agentbench",
+      "object": "AgentBench evaluates LLM agents across eight interactive environments and analyzes reasoning, decision-making, and instruction-following failures.",
+      "value": "AgentBench evaluates LLM agents across eight interactive environments and analyzes reasoning, decision-making, and instruction-following failures.",
+      "unit": "source-scoped system description",
+      "comparison": "prior research system",
+      "scope": "Original bibliographic record and abstract",
+      "source_ids": [
+        "liu2023agentbench"
+      ]
+    },
+    {
+      "id": "liu2025cogalpha",
+      "object": "CogAlpha represents alphas as code and combines LLM reasoning, evolutionary mutations and recombination, multi-stage prompts, and financial feedback.",
+      "value": "CogAlpha represents alphas as code and combines LLM reasoning, evolutionary mutations and recombination, multi-stage prompts, and financial feedback.",
+      "unit": "source-scoped system description",
+      "comparison": "prior research system",
+      "scope": "Original bibliographic record and abstract",
+      "source_ids": [
+        "liu2025cogalpha"
+      ]
+    },
+    {
+      "id": "yu2023generating",
+      "object": "AlphaGen uses reinforcement learning to optimize a synergistic collection of formulaic alphas through downstream combination-model performance.",
+      "value": "AlphaGen uses reinforcement learning to optimize a synergistic collection of formulaic alphas through downstream combination-model performance.",
+      "unit": "source-scoped system description",
+      "comparison": "prior research system",
+      "scope": "Original bibliographic record and abstract",
+      "source_ids": [
+        "yu2023generating"
+      ]
+    }
+  ],
+  "terminology": [
+    "research harness",
+    "active branch",
+    "frozen champion",
+    "probe-only exploration",
+    "atomic proposal",
+    "mean absolute IC",
+    "development panel",
+    "mean absolute IC",
+    "factor expression candidate",
+    "development panel"
+  ],
+  "paragraph_task": "Draft the English manuscript unit 'Related work' using only the registered evidence and verified literature sources.",
+  "adjacent_context": {
+    "before": "Introduction and research question",
+    "after": "Problem formulation and evidence scope"
+  },
+  "editor_instruction": "Verify bibliographic metadata and claim scope at the original source before citing any literature lead. The historical survey alone does not authorize a citation. Preserve every protected LaTeX block, citation, number, comparison direction, and evidence scope.  Remove defensive writing, stacked hedging, repeated justification, preemptive clarification, imaginary objections, mechanical signposts, repetitive sentence patterns, list-form prose, and uniform paragraph scaffolding. Use coherent paragraphs and keep mean absolute IC attached to factor-expression candidates.",
+  "must_preserve": [
+    "\\section{Related work}",
+    "\\citep{lu2026towards}",
+    "\\citep{schmidgall2025agent}",
+    "\\citep{yang2026aris}",
+    "\\citep{jiang2025aide}",
+    "\\citep{xu2026harness2}",
+    "\\citep{yang2024sweagent}",
+    "\\citep{romera2023mathematical}",
+    "\\citep{liu2024evolution}",
+    "\\citep{novikov2025alphaevolve}",
+    "\\citep{agrawal2025gepa}",
+    "\\citep{huang2023mlagentbench}",
+    "\\citep{chan2024mlebench}",
+    "\\citep{wijk2024rebench}",
+    "\\citep{chen2024scienceagentbench}",
+    "\\citep{jansen2024discoveryworld}",
+    "\\citep{liu2023agentbench}",
+    "\\citep{chandran2026production}",
+    "\\citep{yu2023generating}",
+    "\\citep{liu2025cogalpha}"
+  ],
+  "rewrite_from_draft": true,
+  "draft_provenance": "GPT source-bound draft auto_research/writing_runs/auto_research_harness_v003_20261031/drafts/03_related.tex"
+}

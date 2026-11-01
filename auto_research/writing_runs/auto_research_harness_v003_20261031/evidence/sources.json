@@ -1,0 +1,95 @@
+{
+  "schema": "AUTO-RESEARCH-WRITING-SOURCES-1",
+  "sources": [
+    {
+      "id": "V003-RESULT",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/source_result.json",
+      "kind": "json",
+      "role": "complete confirmatory development-panel result"
+    },
+    {
+      "id": "V003-PROTOCOL",
+      "path": "auto_research/config/paper_readiness_v003/protocol.json",
+      "kind": "json",
+      "role": "frozen tasks, budgets, model, and analysis"
+    },
+    {
+      "id": "V001-RESULT",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/source_result_v001.json",
+      "kind": "json",
+      "role": "exploratory diagnostic continuation panel"
+    },
+    {
+      "id": "V002-RESULT",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/source_result_v002.json",
+      "kind": "json",
+      "role": "exploratory cumulative-memory component panel"
+    },
+    {
+      "id": "DESIGN",
+      "path": "auto_research/docs/DESIGN_CN.md",
+      "kind": "markdown",
+      "role": "system architecture and information boundaries"
+    },
+    {
+      "id": "EXECUTION-PLAN",
+      "path": "auto_research/docs/PAPER_READINESS_V003_EXECUTION_PLAN_CN.md",
+      "kind": "markdown",
+      "role": "execution record and evidence-role summary"
+    },
+    {
+      "id": "LITERATURE-LEADS",
+      "path": "auto_research/docs/SURVEY_CN.md",
+      "kind": "markdown",
+      "role": "historical literature lead inventory; bibliographic claims require source verification"
+    },
+    {
+      "id": "V003-UNIT-EFFECTS",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/tables/unit_effects.csv",
+      "kind": "csv",
+      "role": "paper-ready derived table"
+    },
+    {
+      "id": "V003-CONTRAST-SUMMARY",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/tables/contrast_summary.csv",
+      "kind": "csv",
+      "role": "paper-ready derived table"
+    },
+    {
+      "id": "V003-TASK-EFFECTS",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/tables/task_effects.csv",
+      "kind": "csv",
+      "role": "paper-ready derived table"
+    },
+    {
+      "id": "V003-EXECUTION-COSTS",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/tables/execution_costs.csv",
+      "kind": "csv",
+      "role": "paper-ready derived table"
+    },
+    {
+      "id": "V003-BEHAVIOR-EFFECTS",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/tables/behavior_effects.csv",
+      "kind": "csv",
+      "role": "paper-ready derived table"
+    },
+    {
+      "id": "V003-AUXILIARY-EXECUTION-ANALYSIS",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/tables/auxiliary_execution_analysis.csv",
+      "kind": "csv",
+      "role": "paper-ready derived table"
+    },
+    {
+      "id": "V003-REPLICATE-STABILITY",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/tables/replicate_stability.csv",
+      "kind": "csv",
+      "role": "paper-ready derived table"
+    },
+    {
+      "id": "V003-DATE-BLOCK-SUMMARY",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/tables/date_block_summary.csv",
+      "kind": "csv",
+      "role": "paper-ready derived table"
+    }
+  ]
+}

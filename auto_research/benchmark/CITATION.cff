@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+title: "Auto-Research Benchmark: evidence-grounded factor search"
+message: "If you use this benchmark, please cite the accompanying paper."
+authors:
+  - name: "Anonymous Authors"
+version: 0.1.0
+date-released: 2026-10-22
+license: MIT

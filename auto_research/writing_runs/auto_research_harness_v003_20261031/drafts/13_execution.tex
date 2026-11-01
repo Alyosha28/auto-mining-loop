@@ -1,0 +1,36 @@
+\section{Execution, sensitivity, and cost}
+\label{sec:execution}
+
+The panel registered 288 model calls, 7{,}550{,}828 input tokens, and 1{,}200{,}323 output tokens; output usage remained below the registered output ceiling of 2{,}304{,}000 tokens. Across 384 scheduled decisions, the execution export contains 347 completed probe steps, and the result retains 37 failed or invalid decision records. Model arms realized 3{,}060 expression-candidate positions from a maximum of 3{,}456, while the random arm realized 1{,}104 from 1{,}152. Table~\ref{tab:costs} preserves the arm-level accounting, and Figure~\ref{fig:execution} shows realized decisions and candidate positions. Execution totals follow loop-state history references so that steps completed before a recovery remain in the accounting.
+
+\begin{table*}[!htbp]
+\caption{Execution and model usage by arm across the 24 paired units. Scheduled and executed columns count decisions; calls count model calls. Positions and budget count expression-candidate positions, while input and output count tokens.}
+\label{tab:costs}
+\centering
+\ProjectCaption
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrrrrr}
+\toprule
+Arm & Scheduled & Executed & Calls & Positions & Budget & Input & Output \\
+\midrule
+Scalar & 96 & 86 & 96 & 1{,}032 & 1{,}032 & 1{,}154{,}141 & 295{,}939 \\
+Memory & 96 & 92 & 96 & 1{,}104 & 1{,}104 & 2{,}963{,}168 & 395{,}516 \\
+Diagnostic & 96 & 77 & 96 & 924 & 924 & 3{,}433{,}519 & 508{,}868 \\
+Random & 96 & 92 & 0 & 1{,}104 & 1{,}152 & 0 & 0 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\begin{figure*}[!htbp]
+\centering
+\includegraphics[width=\ResearchWideWidth]{figures/figure_05_execution_realization_\ResearchFigureVariant.pdf}
+\caption{Realized execution by arm across 24 paired development-panel units. The left panel shows executed decisions among 96 scheduled decisions per arm. The right panel shows candidate positions together with each arm's recorded candidate budget. Recovered source steps are included through loop-state history references. All three model arms realize their recorded candidate budgets; the random arm realizes 1{,}104 positions against its recorded budget of 1{,}152. Execution losses remain in the primary fixed-call-budget analysis.}
+\label{fig:execution}
+\end{figure*}
+
+One diagnostic attempt for T11, development seed 29, and replicate B ended in a no-usage timeout after three executed decisions. Recovery retried the identical prepared input as the fourth registered model call, without adding a call beyond the fixed budget. The retried proposal exceeded the per-call output budget, so the fourth decision was not executed. Loop-state history preserves the three earlier probe steps and their 36 candidate positions; the frozen champion from the first decision entered the final comparison.
+
+Complete-execution subsets provide a sensitivity view of the fixed-budget results. Fifteen memory-minus-scalar units were complete, with median 0.004459; nine diagnostic-minus-memory units were complete, with median 0.0; nineteen memory-minus-random units were complete, with median 0.003494; and twenty-one memory-minus-fixed units were complete, with median 0.010647. These complete-case estimates describe execution loss but do not replace the primary analysis.
+
+Independent call replicates also show residual variability. For memory minus scalar, the median absolute A--B difference across twelve replicate pairs was 0.000771, with maximum 0.003494 and three identical pairs. Diagnostic minus memory had seven identical pairs. The replication results support reporting task-level distributions and intervals alongside the panel medians.

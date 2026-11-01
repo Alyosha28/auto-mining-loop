@@ -1,0 +1,45 @@
+{
+  "schema": "AUTO-RESEARCH-MANUSCRIPT-STATISTICAL-VERIFICATION-1",
+  "status": "PASS",
+  "implementation": "skills/current/factor-evolution-harness2/scripts/run_paper_readiness_v003.py",
+  "bootstrap_statistic": "median across all 24 unit effects after resampling six complete task clusters",
+  "sign_flip_statistic": "median across all 24 unit effects after applying one sign to all four units within each task",
+  "bootstrap_samples": 10000,
+  "sign_assignments": 64,
+  "contrasts": {
+    "memory_minus_scalar": {
+      "task_bootstrap_95pct_interval": [
+        -0.001174021059870252,
+        0.004862304054621815
+      ],
+      "exact_task_sign_flip_p": 0.625,
+      "source_fields_reproduced": true,
+      "holm_adjusted_p": 1.0
+    },
+    "diagnostic_minus_memory": {
+      "task_bootstrap_95pct_interval": [
+        0.0,
+        0.0
+      ],
+      "exact_task_sign_flip_p": 1.0,
+      "source_fields_reproduced": true,
+      "holm_adjusted_p": 1.0
+    },
+    "memory_minus_random": {
+      "task_bootstrap_95pct_interval": [
+        0.001623060462619938,
+        0.005118746302635594
+      ],
+      "exact_task_sign_flip_p": 0.03125,
+      "source_fields_reproduced": true
+    },
+    "memory_minus_fixed": {
+      "task_bootstrap_95pct_interval": [
+        0.008079793378808216,
+        0.015455539112667562
+      ],
+      "exact_task_sign_flip_p": 0.03125,
+      "source_fields_reproduced": true
+    }
+  }
+}

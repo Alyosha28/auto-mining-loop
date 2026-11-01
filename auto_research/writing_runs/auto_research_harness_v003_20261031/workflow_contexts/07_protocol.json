@@ -1,0 +1,174 @@
+{
+  "research_version": "V003",
+  "sources": [
+    {
+      "id": "C02_0",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/protocol/task_files"
+      },
+      "expected": [
+        "T9.json",
+        "T10.json",
+        "T11.json",
+        "T12.json",
+        "T13.json",
+        "T14.json"
+      ]
+    },
+    {
+      "id": "C02_1",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/protocol/seeds"
+      },
+      "expected": [
+        11,
+        29
+      ]
+    },
+    {
+      "id": "C02_2",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/protocol/model_replicates"
+      },
+      "expected": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "C03_0",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/protocol/model_id"
+      },
+      "expected": "kimi/k3.1-pro[1m]"
+    },
+    {
+      "id": "C03_1",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/protocol/generation/cli_model_override"
+      },
+      "expected": "kimi/k3.1-pro[1m]"
+    },
+    {
+      "id": "C26_0",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/protocol/continuation_decisions"
+      },
+      "expected": 4
+    },
+    {
+      "id": "C26_1",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/protocol/candidate_budget"
+      },
+      "expected": 12
+    },
+    {
+      "id": "C27_random",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/protocol/random_model_id"
+      },
+      "expected": "random-atomic-edits-v1"
+    },
+    {
+      "id": "C27_calls",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/execution_costs/3/model_calls"
+      },
+      "expected": "0"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C02",
+      "object": "V003 uses six tasks, development seeds 11 and 29, and model-call replicates A and B.",
+      "value": "V003 uses six tasks, development seeds 11 and 29, and model-call replicates A and B.",
+      "unit": "source-bound registered claim",
+      "comparison": "V003 uses six tasks, development seeds 11 and 29, and model-call replicates A and B.",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "C02_0",
+        "C02_1",
+        "C02_2"
+      ]
+    },
+    {
+      "id": "C03",
+      "object": "The proposer model is kimi/k3.1-pro[1m].",
+      "value": "The proposer model is kimi/k3.1-pro[1m].",
+      "unit": "source-bound registered claim",
+      "comparison": "The proposer model is kimi/k3.1-pro[1m].",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "C03_0",
+        "C03_1"
+      ]
+    },
+    {
+      "id": "C26",
+      "object": "Each arm has four continuation decisions with twelve candidate positions per decision.",
+      "value": "Each arm has four continuation decisions with twelve candidate positions per decision.",
+      "unit": "source-bound registered claim",
+      "comparison": "Each arm has four continuation decisions with twelve candidate positions per decision.",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "C26_0",
+        "C26_1"
+      ]
+    },
+    {
+      "id": "C27",
+      "object": "Random legal atomic edits use the same editable surface and make zero model calls.",
+      "value": "Random legal atomic edits use the same editable surface and make zero model calls.",
+      "unit": "source-bound registered claim",
+      "comparison": "Random legal atomic edits use the same editable surface and make zero model calls.",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "C27_random",
+        "C27_calls"
+      ]
+    }
+  ],
+  "terminology": [
+    "research harness",
+    "active branch",
+    "frozen champion",
+    "probe-only exploration",
+    "atomic proposal",
+    "mean absolute IC",
+    "development panel",
+    "mean absolute IC",
+    "factor expression candidate",
+    "development panel"
+  ],
+  "paragraph_task": "Draft the English manuscript unit 'Paired V003 protocol and controls' using only the registered evidence and verified literature sources.",
+  "adjacent_context": {
+    "before": "Scalar, cumulative-memory, and diagnostic information",
+    "after": "Outcomes and execution metrics"
+  },
+  "editor_instruction": "Rewrite the supplied source-bound draft as polished academic English.  Preserve every protected LaTeX block, citation, number, comparison direction, and evidence scope.  Remove defensive writing, stacked hedging, repeated justification, preemptive clarification, imaginary objections, mechanical signposts, repetitive sentence patterns, list-form prose, and uniform paragraph scaffolding. Use coherent paragraphs and keep mean absolute IC attached to factor-expression candidates.",
+  "must_preserve": [
+    "\\section{Paired development-panel protocol}",
+    "\\begin{table*}[!htbp]\n\\caption{Frozen V003 development-panel design.}\n\\label{tab:protocol}\n\\centering\n\\ProjectCaption\n\\small\n\\begin{tabular}{ll}\n\\toprule\nDesign element & Registered value \\\\\n\\midrule\nTasks & T9--T14 (six fresh tasks) \\\\\nDevelopment seeds & 11 and 29 \\\\\nModel-call replicates & A and B, independent calls \\\\\nPaired units & 24 \\\\\nContinuation decisions per model arm & 4 \\\\\nExpression-candidate positions per decision & At most 12 \\\\\nProposal schema & \\texttt{AUTO-RESEARCH-ATOMIC-PROPOSAL-1} \\\\\nModel & \\texttt{kimi/k3.1-pro[1m]} \\\\\nMaximum model calls & 288 \\\\\nMaximum output tokens & 2{,}304{,}000 \\\\\n\\bottomrule\n\\end{tabular}\n\\end{table*}"
+  ],
+  "rewrite_from_draft": true,
+  "draft_provenance": "GPT source-bound draft auto_research/writing_runs/auto_research_harness_v003_20261031/drafts/07_protocol.tex"
+}

@@ -1,0 +1,79 @@
+{
+  "schema": "AUTO-RESEARCH-WRITING-CONTEXT-1",
+  "unit_id": "16_conclusion",
+  "title": "Conclusion",
+  "research_version": "V003",
+  "status": "drafted",
+  "sources": [
+    {
+      "id": "V003-RESULT",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/source_result.json",
+      "kind": "json",
+      "role": "complete confirmatory development-panel result"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C05",
+      "object": "memory-scalar",
+      "statement": "Memory minus scalar has median +0.0002895443706825082 and Holm-adjusted p=1.0.",
+      "source_id": "V003-RESULT",
+      "locators": [
+        "/contrasts/memory_minus_scalar"
+      ]
+    },
+    {
+      "claim_id": "C06",
+      "object": "diagnostic-memory",
+      "statement": "Diagnostic minus memory has median 0.0 and Holm-adjusted p=1.0.",
+      "source_id": "V003-RESULT",
+      "locators": [
+        "/contrasts/diagnostic_minus_memory"
+      ]
+    },
+    {
+      "claim_id": "C07",
+      "object": "memory-random",
+      "statement": "Memory minus random has median +0.0035336383723919666, six positive task medians, and exact task sign-flip p=0.03125.",
+      "source_id": "V003-RESULT",
+      "locators": [
+        "/contrasts/memory_minus_random"
+      ]
+    },
+    {
+      "claim_id": "C08",
+      "object": "memory-fixed",
+      "statement": "Memory minus fixed has median +0.010976872198680074, 24 positive units, and exact task sign-flip p=0.03125.",
+      "source_id": "V003-RESULT",
+      "locators": [
+        "/contrasts/memory_minus_fixed"
+      ]
+    },
+    {
+      "claim_id": "C22",
+      "object": "data-boundary",
+      "statement": "The study does not read the score window and provides no independent real-data out-of-sample evaluation.",
+      "source_id": "V003-RESULT",
+      "locators": [
+        "/score_window_read",
+        "/independent_real_data_oos"
+      ]
+    }
+  ],
+  "terminology": [
+    "research harness",
+    "active branch",
+    "frozen champion",
+    "probe-only exploration",
+    "atomic proposal",
+    "mean absolute IC",
+    "development panel"
+  ],
+  "paragraph_task": "Draft the English manuscript unit 'Conclusion' using only the registered evidence and verified literature sources.",
+  "adjacent_context": {
+    "before": "Limitations and evidence boundary",
+    "after": "Reproduction and supplementary tables"
+  },
+  "evidence_boundary": "Confirmatory development-panel evidence within 2017-01-01 through 2020-11-30; no independent real-data out-of-sample result.",
+  "writing_status": "Source-bound manuscript draft: drafts/16_conclusion.tex"
+}

@@ -1,0 +1,41 @@
+\section{Model-driven evolution versus random and fixed references}
+\label{sec:primary}
+
+The memory condition improved mean absolute IC over both non-model references on the development panel. For memory minus random legal edits, the median paired difference across 24 units was 0.003534 and the mean was 0.004198. The six task medians were all positive, with a task-cluster 95\% interval of [0.001623, 0.005119] and an exact task sign-flip $p=0.03125$. Twenty unit differences were positive and four were negative. The fixed-harness comparison was larger: the median memory-minus-fixed difference was 0.010977, the mean was 0.014005, and all 24 unit differences were positive. Its task-cluster interval was [0.008080, 0.015456], also with exact task sign-flip $p=0.03125$.
+
+Table~\ref{tab:contrasts} places these estimates beside the two component contrasts. Figure~\ref{fig:paired} retains the underlying unit distribution, including the four negative memory-minus-random outcomes and every tied component outcome. The reference comparisons support model-guided harness adaptation within the registered tasks, development window, and call budget. They do not imply that the same effect will transfer to other models, research harnesses, or market periods.
+
+\begin{table*}[!htbp]
+\caption{Paired differences in mean absolute IC across 24 task--seed--model-replicate units. Intervals resample six complete task clusters and summarize the 24-unit median. Exact p-values come from two-sided task-cluster sign-flip tests of that median; Holm adjustment applies only to the two component contrasts.}
+\label{tab:contrasts}
+\centering
+\ProjectCaption
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lccccc}
+\toprule
+Contrast & Median & Mean & Task-cluster 95\% interval & Exact $p$ & Holm $p$ \\
+\midrule
+Memory $-$ scalar & 0.000290 & 0.001703 & [$-$0.001174, 0.004862] & 0.625 & 1.0 \\
+Diagnostic $-$ memory & 0.000000 & 0.000355 & [0.000000, 0.000000] & 1.0 & 1.0 \\
+Memory $-$ random & 0.003534 & 0.004198 & [0.001623, 0.005119] & 0.03125 & -- \\
+Memory $-$ fixed & 0.010977 & 0.014005 & [0.008080, 0.015456] & 0.03125 & -- \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\begin{figure*}[!htbp]
+\centering
+\includegraphics[width=\ResearchWideWidth]{figures/figure_02_paired_contrasts_\ResearchFigureVariant.pdf}
+\caption{Paired differences in mean absolute IC for 24 task--seed--model-replicate units. Gray points show all unit effects; blue diamonds show medians and blue bars show six-task cluster bootstrap 95\% intervals for the 24-unit median. Failed and invalid model decisions remain in the fixed-call-budget analysis. Results are confirmatory within the development panel and are not independent market-period out-of-sample estimates.}
+\label{fig:paired}
+\end{figure*}
+
+Task-level effects show how the reference comparisons vary across the panel. Memory-minus-random medians ranged from 0.000950 on T12 to 0.006804 on T13, remaining positive on every task. Memory-minus-fixed medians ranged from 0.007301 on T12 to 0.022217 on T9. Figure~\ref{fig:tasks} makes the shared direction and unequal magnitudes visible without treating the four units within each task as independent task-level replicates.
+
+\begin{figure*}[!htbp]
+\centering
+\includegraphics[width=\ResearchWideWidth]{figures/figure_03_task_heterogeneity_\ResearchFigureVariant.pdf}
+\caption{Task-level medians of paired mean-absolute-IC differences. Each marker summarizes four units formed by two development seeds and two independent model-call replicates. All panels share one horizontal scale. The development panel contains six tasks; task medians describe heterogeneity and do not constitute independent market-period out-of-sample tests.}
+\label{fig:tasks}
+\end{figure*}

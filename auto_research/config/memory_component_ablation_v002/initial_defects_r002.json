@@ -1,0 +1,211 @@
+{
+ "schema": "AUTO-RESEARCH-DIAGNOSTIC-TASK-SCREEN-1",
+ "protocol_version": "V002",
+ "select_evaluated": false,
+ "units": [
+  {
+   "task": "T5",
+   "seed": 11,
+   "screen_run": "auto_research/agents/runs/MEMORY_COMPONENT_TASK_SCREEN_R002_V002_S11",
+   "probe_metrics": {
+    "mean_abs_ic": 0.0542860219043792,
+    "top_ic_mean": 0.0831426796210467,
+    "pass_rate": 0.9166666666666666,
+    "duplicate_rate": 0.06060606060606061,
+    "novelty": 0.6666666666666666,
+    "coverage": 0.7172970819399003,
+    "turnover_proxy": 0.866997819976835,
+    "icir_p25": 0.2952078438258201,
+    "year_ic_min": NaN
+   },
+   "common_support_verified": true
+  },
+  {
+   "task": "T6",
+   "seed": 11,
+   "screen_run": "auto_research/agents/runs/MEMORY_COMPONENT_TASK_SCREEN_R002_V002_S11",
+   "probe_metrics": {
+    "mean_abs_ic": 0.04183654203571186,
+    "top_ic_mean": 0.06455652964530893,
+    "pass_rate": 0.9166666666666666,
+    "duplicate_rate": 0.0,
+    "novelty": 0.25,
+    "coverage": 0.7172970819399003,
+    "turnover_proxy": 0.8882732246191793,
+    "icir_p25": 0.2969613854071679,
+    "year_ic_min": NaN
+   },
+   "common_support_verified": true
+  },
+  {
+   "task": "T7",
+   "seed": 11,
+   "screen_run": "auto_research/agents/runs/MEMORY_COMPONENT_TASK_SCREEN_R002_V002_S11",
+   "probe_metrics": {
+    "mean_abs_ic": 0.047443593011492514,
+    "top_ic_mean": 0.07784948367684222,
+    "pass_rate": 0.9166666666666666,
+    "duplicate_rate": 0.030303030303030304,
+    "novelty": 0.5,
+    "coverage": 0.7172970819399003,
+    "turnover_proxy": 0.8647530974705845,
+    "icir_p25": 0.2477993463859509,
+    "year_ic_min": NaN
+   },
+   "common_support_verified": true
+  },
+  {
+   "task": "T8",
+   "seed": 11,
+   "screen_run": "auto_research/agents/runs/MEMORY_COMPONENT_TASK_SCREEN_R002_V002_S11",
+   "probe_metrics": {
+    "mean_abs_ic": 0.04424955805084568,
+    "top_ic_mean": 0.07320284385487523,
+    "pass_rate": 1.0,
+    "duplicate_rate": 0.07575757575757576,
+    "novelty": 0.5,
+    "coverage": 0.7172970819399003,
+    "turnover_proxy": 0.839202140886331,
+    "icir_p25": 0.2183455104518536,
+    "year_ic_min": -0.06698226733501228
+   },
+   "common_support_verified": true
+  },
+  {
+   "task": "T5",
+   "seed": 29,
+   "screen_run": "auto_research/agents/runs/MEMORY_COMPONENT_TASK_SCREEN_R002_V002_S29",
+   "probe_metrics": {
+    "mean_abs_ic": 0.04980621129248494,
+    "top_ic_mean": 0.07334756339881003,
+    "pass_rate": 0.8333333333333334,
+    "duplicate_rate": 0.09090909090909091,
+    "novelty": 0.5,
+    "coverage": 0.7029099560761347,
+    "turnover_proxy": 0.8635102332823585,
+    "icir_p25": 0.31304635112191753,
+    "year_ic_min": NaN
+   },
+   "common_support_verified": true
+  },
+  {
+   "task": "T6",
+   "seed": 29,
+   "screen_run": "auto_research/agents/runs/MEMORY_COMPONENT_TASK_SCREEN_R002_V002_S29",
+   "probe_metrics": {
+    "mean_abs_ic": 0.038453045791808416,
+    "top_ic_mean": 0.059349198107565594,
+    "pass_rate": 1.0,
+    "duplicate_rate": 0.015151515151515152,
+    "novelty": 0.375,
+    "coverage": 0.7029099560761347,
+    "turnover_proxy": 0.8913114385715261,
+    "icir_p25": 0.32767909990977806,
+    "year_ic_min": NaN
+   },
+   "common_support_verified": true
+  },
+  {
+   "task": "T7",
+   "seed": 29,
+   "screen_run": "auto_research/agents/runs/MEMORY_COMPONENT_TASK_SCREEN_R002_V002_S29",
+   "probe_metrics": {
+    "mean_abs_ic": 0.043780849613257455,
+    "top_ic_mean": 0.07200950729349953,
+    "pass_rate": 0.8333333333333334,
+    "duplicate_rate": 0.045454545454545456,
+    "novelty": 0.5,
+    "coverage": 0.7029099560761347,
+    "turnover_proxy": 0.8606495352356014,
+    "icir_p25": 0.31304635112191753,
+    "year_ic_min": NaN
+   },
+   "common_support_verified": true
+  },
+  {
+   "task": "T8",
+   "seed": 29,
+   "screen_run": "auto_research/agents/runs/MEMORY_COMPONENT_TASK_SCREEN_R002_V002_S29",
+   "probe_metrics": {
+    "mean_abs_ic": 0.05054048448217483,
+    "top_ic_mean": 0.06800766090608579,
+    "pass_rate": 1.0,
+    "duplicate_rate": 0.12121212121212122,
+    "novelty": 0.3,
+    "coverage": 0.7029099560761347,
+    "turnover_proxy": 0.8357886959039669,
+    "icir_p25": 0.34592020116492367,
+    "year_ic_min": -0.04324417502974873
+   },
+   "common_support_verified": true
+  },
+  {
+   "task": "T5",
+   "seed": 43,
+   "screen_run": "auto_research/agents/runs/MEMORY_COMPONENT_TASK_SCREEN_R002_V002_S43",
+   "probe_metrics": {
+    "mean_abs_ic": 0.04281414852167493,
+    "top_ic_mean": 0.06412187877457466,
+    "pass_rate": 0.8333333333333334,
+    "duplicate_rate": 0.07575757575757576,
+    "novelty": 0.5,
+    "coverage": 0.7874469002031644,
+    "turnover_proxy": 0.858522810224851,
+    "icir_p25": 0.2645453681549499,
+    "year_ic_min": NaN
+   },
+   "common_support_verified": true
+  },
+  {
+   "task": "T6",
+   "seed": 43,
+   "screen_run": "auto_research/agents/runs/MEMORY_COMPONENT_TASK_SCREEN_R002_V002_S43",
+   "probe_metrics": {
+    "mean_abs_ic": 0.03230602753285353,
+    "top_ic_mean": 0.051208547855649066,
+    "pass_rate": 1.0,
+    "duplicate_rate": 0.015151515151515152,
+    "novelty": 0.375,
+    "coverage": 0.7874469002031644,
+    "turnover_proxy": 0.8847606885215885,
+    "icir_p25": 0.2771669396748737,
+    "year_ic_min": NaN
+   },
+   "common_support_verified": true
+  },
+  {
+   "task": "T7",
+   "seed": 43,
+   "screen_run": "auto_research/agents/runs/MEMORY_COMPONENT_TASK_SCREEN_R002_V002_S43",
+   "probe_metrics": {
+    "mean_abs_ic": 0.038676338930982955,
+    "top_ic_mean": 0.06346298573935642,
+    "pass_rate": 0.8333333333333334,
+    "duplicate_rate": 0.045454545454545456,
+    "novelty": 0.3,
+    "coverage": 0.7874469002031644,
+    "turnover_proxy": 0.8555886944473844,
+    "icir_p25": 0.2645453681549499,
+    "year_ic_min": NaN
+   },
+   "common_support_verified": true
+  },
+  {
+   "task": "T8",
+   "seed": 43,
+   "screen_run": "auto_research/agents/runs/MEMORY_COMPONENT_TASK_SCREEN_R002_V002_S43",
+   "probe_metrics": {
+    "mean_abs_ic": 0.04812746922318162,
+    "top_ic_mean": 0.06128139944061555,
+    "pass_rate": 1.0,
+    "duplicate_rate": 0.09090909090909091,
+    "novelty": 0.3,
+    "coverage": 0.7874469002031644,
+    "turnover_proxy": 0.8222958764891303,
+    "icir_p25": 0.30952117533057455,
+    "year_ic_min": 0.0015651304570368553
+   },
+   "common_support_verified": true
+  }
+ ]
+}

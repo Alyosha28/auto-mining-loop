@@ -1,0 +1,88 @@
+{
+ "schema": "EVO-HARNESS-1",
+ "domain": "price_volume",
+ "protocol": {
+  "dev_start": "2017-01-01",
+  "dev_end": "2020-11-30",
+  "embargo": [
+   "2020-12-01",
+   "2020-12-31"
+  ],
+  "score_window": [
+   "2021-01-01",
+   "2023-12-31"
+  ],
+  "budget_candidates": 12,
+  "min_ic_pairs": 30,
+  "probe_split": 0.7,
+  "dev_split": "seeded-year-blocks"
+ },
+ "guardrails": {
+  "min_coverage": 0.96,
+  "max_runtime_seconds": 900,
+  "score_window_reads": 0,
+  "fail_closed": true,
+  "coverage_stop": false
+ },
+ "operators": [
+  "residual_size",
+  "delta4",
+  "delta13",
+  "neg"
+ ],
+ "seed_pool": [
+  {
+   "name": "turnover_mean_20",
+   "feature": "turnover_mean_20",
+   "transform": "raw"
+  },
+  {
+   "name": "volume_ratio_5_20",
+   "feature": "volume_ratio_5_20",
+   "transform": "raw"
+  },
+  {
+   "name": "amihud_20",
+   "feature": "amihud_20",
+   "transform": "raw"
+  },
+  {
+   "name": "reversal_5",
+   "feature": "reversal_5",
+   "transform": "raw"
+  },
+  {
+   "name": "momentum_20",
+   "feature": "momentum_20",
+   "transform": "raw"
+  },
+  {
+   "name": "volatility_20",
+   "feature": "volatility_20",
+   "transform": "raw"
+  }
+ ],
+ "skills": {
+  "mutation_per_seed": 1,
+  "crossover_pairs": 6,
+  "sign_by_ic": true
+ },
+ "probe": {
+  "year_split": false,
+  "duplication_corr": 0.9,
+  "duplication_min_overlap": 30
+ },
+ "memory": {
+  "experience_dir": "auto_research/agents/experience",
+  "top_k_lessons": 3
+ },
+ "plugin": {
+  "coverage_stop": false,
+  "ledger": true,
+  "fail_not_zero": true
+ },
+ "selection": {
+  "rule": "select_pass_then_ic",
+  "anonymize": true
+ }
+}

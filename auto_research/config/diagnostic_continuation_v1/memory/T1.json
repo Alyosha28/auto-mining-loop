@@ -1,0 +1,88 @@
+{
+ "schema": "AUTO-RESEARCH-SHARED-MEMORY-1",
+ "entries": [
+  {
+   "source_run": "R1_DIAG_S11_IC_002",
+   "task": "cross_task_normalization",
+   "status": "COMPLETED",
+   "scope": "historical development probe; not independent OOS; scope limited to the source harness and seed",
+   "probe_metrics": {
+    "n_candidates": 12,
+    "pass_count": 12,
+    "pass_rate": 1.0,
+    "mean_abs_ic": 0.051025451145186224,
+    "top_ic_mean": 0.06817830499427913,
+    "icir_median": 0.3973365300509036,
+    "icir_p25": 0.36555670563612885,
+    "coverage": 1.0,
+    "duplicate_rate": 0.07575757575757576,
+    "novelty": 0.5,
+    "turnover_proxy": 0.8218199392703339,
+    "year_ic_min": NaN,
+    "runtime_seconds": 5.16,
+    "failures": 0,
+    "max_date_read": "2020-11-27"
+   },
+   "edits": []
+  },
+  {
+   "source_run": "R4_LIVE_LOCAL_KIMI_S11_004",
+   "task": "failed_resource_allocation",
+   "status": "INVALID",
+   "scope": "historical development probe; not independent OOS; scope limited to the source harness and seed",
+   "edits": [
+    {
+     "id": "edit_001",
+     "kind": "DOM",
+     "component": "operators.remove",
+     "op": "remove",
+     "value": [
+      "delta4",
+      "neg"
+     ],
+     "intent": "Test whether concentrating the 12-candidate budget on residual_size, delta13 and rank across more seed families raises probe mean_abs_ic above 0.051025451145186224 and novelty above 0.5 while preserving coverage 1.0."
+    },
+    {
+     "id": "edit_002",
+     "kind": "DOM",
+     "component": "operators.remove",
+     "op": "remove",
+     "value": [
+      "delta4",
+      "delta13",
+      "neg"
+     ],
+     "intent": "Test whether allocating the fixed budget to the two strongest observed transforms, residual_size and rank, across the full six-seed pool improves mechanism-diverse mean_abs_ic and reduces duplicate_rate without reducing coverage."
+    },
+    {
+     "id": "edit_003",
+     "kind": "INV",
+     "component": "skills.crossover",
+     "op": "configure",
+     "value": {
+      "pairs": 2,
+      "rule": "signed_rank_sum",
+      "pair_selection": "diversified"
+     },
+     "intent": "Test whether two explicitly enabled, correlation-diversified signed-rank crossovers raise probe mean_abs_ic above the adopted parent while increasing novelty and keeping pass_count at 12."
+    },
+    {
+     "id": "edit_004",
+     "kind": "INV",
+     "component": "operators",
+     "op": "append",
+     "value": "zscore",
+     "intent": "Test whether adding cross-sectional scale normalization extends the observed rank-operator gain into higher probe mean_abs_ic without lowering coverage or materially increasing duplicate_rate."
+    },
+    {
+     "id": "edit_005",
+     "kind": "INV",
+     "component": "operators",
+     "op": "append",
+     "value": "winsorize",
+     "intent": "Test whether robust tail treatment improves probe mean_abs_ic and icir_p25 relative to the adopted parent while retaining full coverage and a non-decreasing novelty score."
+    }
+   ]
+  }
+ ]
+}

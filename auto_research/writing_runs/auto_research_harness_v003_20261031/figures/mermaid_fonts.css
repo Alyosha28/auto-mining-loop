@@ -1,0 +1,17 @@
+svg, text, .nodeLabel, .edgeLabel, .cluster-label {
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.nodeLabel p, .node text {
+  line-height: 1.28 !important;
+}
+
+.cluster-label p, .cluster-label text {
+  font-weight: 600;
+  letter-spacing: 0.035em;
+}
+
+.edgeLabel {
+  color: #59666F;
+  background-color: #FFFFFF;
+}

@@ -1,0 +1,49 @@
+{
+ "schema": "AUTO-RESEARCH-MEMORY-COMPONENT-TASK-1",
+ "task": "T7",
+ "research_question": "在头部候选表现不足的初始状态下，能否提高候选池共同样本平均绝对 IC？",
+ "initial_defect": "头部候选 top_ic_mean 不足",
+ "initial_harness": "auto_research/config/memory_component_ablation_v002/initial_harness/T7.json",
+ "initial_safe_trace": {
+  "11": "auto_research/config/memory_component_ablation_v002/initial_traces_r002/T7_S11.json",
+  "29": "auto_research/config/memory_component_ablation_v002/initial_traces_r002/T7_S29.json",
+  "43": "auto_research/config/memory_component_ablation_v002/initial_traces_r002/T7_S43.json"
+ },
+ "editable_surface": "runtime editable_surface.json; frozen protocol and guardrails excluded",
+ "primary_metric": "mean_abs_ic",
+ "task_diagnostics": [
+  "top_ic_mean",
+  "candidate_ic_distribution",
+  "pass_rate",
+  "duplicate_rate"
+ ],
+ "task_constraints": {
+  "min_coverage": 0.0,
+  "computable_mean_abs_ic": true,
+  "development_end": "2020-11-30"
+ },
+ "budget": {
+  "decisions_per_model_arm": 2,
+  "model_calls_per_arm": 2,
+  "candidates_per_decision": 12,
+  "input_tokens_per_arm": 120000,
+  "output_tokens_per_arm": 16000,
+  "output_tokens_per_call": 8000
+ },
+ "seed_set": [
+  11,
+  29,
+  43
+ ],
+ "stop_rule": "execute two decisions per model arm without early stop or adaptive parallel branch",
+ "select_freeze_rule": "one champion per arm evaluated once after all model decisions",
+ "shared_memory": "auto_research/config/memory_component_ablation_v002/memory/shared_research_memory.json",
+ "features": [
+  "momentum_20",
+  "volatility_20",
+  "turnover_mean_20",
+  "reversal_5",
+  "amihud_20",
+  "volume_ratio_5_20"
+ ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Auto-Research 论文写作"
+  short_description: "将 auto_research 的协议、开发面板与执行证据写成来源可核查的论文内容"
+  default_prompt: "使用 $auto-research-paper-writing 根据当前 auto_research 写作运行处理指定论文任务。"

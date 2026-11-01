@@ -1,0 +1,7 @@
+{
+ "tasks": ["planted", "weak", "null"],
+ "seeds": [1, 2, 3, 4, 5],
+ "budget": 24,
+ "baselines": ["random", "evolution", "bo", "qd"],
+ "tag": "full_v0.1"
+}

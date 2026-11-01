@@ -1,0 +1,261 @@
+{
+  "research_version": "V003",
+  "sources": [
+    {
+      "id": "C07_0",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/contrasts/memory_minus_random"
+      },
+      "expected": {
+        "median": 0.0035336383723919666,
+        "mean": 0.004198109059778949,
+        "min": -0.0016021449143608577,
+        "max": 0.01798854145236662,
+        "task_medians": {
+          "T9": 0.0011767076259988907,
+          "T10": 0.0038238776491283724,
+          "T11": 0.0038315251547075407,
+          "T12": 0.0009504640187057468,
+          "T13": 0.006804116900791021,
+          "T14": 0.004129878218460118
+        },
+        "positive_tasks": 6,
+        "task_bootstrap_95pct_interval": [
+          0.001623060462619938,
+          0.005118746302635594
+        ],
+        "exact_task_sign_flip_p": 0.03125,
+        "delta_counts": {
+          "positive": 20,
+          "zero": 0,
+          "negative": 4
+        }
+      }
+    },
+    {
+      "id": "C08_0",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/contrasts/memory_minus_fixed"
+      },
+      "expected": {
+        "median": 0.010976872198680074,
+        "mean": 0.014004525830722963,
+        "min": 0.005248717341589965,
+        "max": 0.03098335341295358,
+        "task_medians": {
+          "T9": 0.022217061831616154,
+          "T10": 0.019360321266661932,
+          "T11": 0.013967860074050327,
+          "T12": 0.007300922109832138,
+          "T13": 0.01271751833232487,
+          "T14": 0.008156839883180838
+        },
+        "positive_tasks": 6,
+        "task_bootstrap_95pct_interval": [
+          0.008079793378808216,
+          0.015455539112667562
+        ],
+        "exact_task_sign_flip_p": 0.03125,
+        "delta_counts": {
+          "positive": 24,
+          "zero": 0,
+          "negative": 0
+        }
+      }
+    },
+    {
+      "id": "C09_0",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/contrasts/memory_minus_random/task_bootstrap_95pct_interval/0"
+      },
+      "expected": 0.001623060462619938
+    },
+    {
+      "id": "C09_1",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/contrasts/memory_minus_random/task_bootstrap_95pct_interval/1"
+      },
+      "expected": 0.005118746302635594
+    },
+    {
+      "id": "C10_0",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/contrasts/memory_minus_fixed/task_bootstrap_95pct_interval/0"
+      },
+      "expected": 0.008079793378808216
+    },
+    {
+      "id": "C10_1",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/contrasts/memory_minus_fixed/task_bootstrap_95pct_interval/1"
+      },
+      "expected": 0.015455539112667562
+    },
+    {
+      "id": "random_t12",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/contrasts/memory_minus_random/task_medians/T12"
+      },
+      "expected": 0.0009504640187057468
+    },
+    {
+      "id": "random_t13",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/contrasts/memory_minus_random/task_medians/T13"
+      },
+      "expected": 0.006804116900791021
+    },
+    {
+      "id": "fixed_t12",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/contrasts/memory_minus_fixed/task_medians/T12"
+      },
+      "expected": 0.007300922109832138
+    },
+    {
+      "id": "fixed_t9",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/contrasts/memory_minus_fixed/task_medians/T9"
+      },
+      "expected": 0.022217061831616154
+    }
+  ],
+  "claims": [
+    {
+      "id": "C07",
+      "object": "Memory minus random has median +0.0035336383723919666, six positive task medians, and exact task sign-flip p=0.03125.",
+      "value": "Memory minus random has median +0.0035336383723919666, six positive task medians, and exact task sign-flip p=0.03125.",
+      "unit": "source-bound registered claim",
+      "comparison": "Memory minus random has median +0.0035336383723919666, six positive task medians, and exact task sign-flip p=0.03125.",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "C07_0"
+      ]
+    },
+    {
+      "id": "C08",
+      "object": "Memory minus fixed has median +0.010976872198680074, 24 positive units, and exact task sign-flip p=0.03125.",
+      "value": "Memory minus fixed has median +0.010976872198680074, 24 positive units, and exact task sign-flip p=0.03125.",
+      "unit": "source-bound registered claim",
+      "comparison": "Memory minus fixed has median +0.010976872198680074, 24 positive units, and exact task sign-flip p=0.03125.",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "C08_0"
+      ]
+    },
+    {
+      "id": "C09",
+      "object": "The memory-minus-random task-cluster 95% interval is +0.001623060462619938 to +0.005118746302635594.",
+      "value": "The memory-minus-random task-cluster 95% interval is +0.001623060462619938 to +0.005118746302635594.",
+      "unit": "source-bound registered claim",
+      "comparison": "The memory-minus-random task-cluster 95% interval is +0.001623060462619938 to +0.005118746302635594.",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "C09_0",
+        "C09_1"
+      ]
+    },
+    {
+      "id": "C10",
+      "object": "The memory-minus-fixed task-cluster 95% interval is +0.008079793378808216 to +0.015455539112667562.",
+      "value": "The memory-minus-fixed task-cluster 95% interval is +0.008079793378808216 to +0.015455539112667562.",
+      "unit": "source-bound registered claim",
+      "comparison": "The memory-minus-fixed task-cluster 95% interval is +0.008079793378808216 to +0.015455539112667562.",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "C10_0",
+        "C10_1"
+      ]
+    },
+    {
+      "id": "random_t12",
+      "object": "/contrasts/memory_minus_random/task_medians/T12 = 0.0009504640187057468",
+      "value": "/contrasts/memory_minus_random/task_medians/T12 = 0.0009504640187057468",
+      "unit": "source-bound registered claim",
+      "comparison": "/contrasts/memory_minus_random/task_medians/T12 = 0.0009504640187057468",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "random_t12"
+      ]
+    },
+    {
+      "id": "random_t13",
+      "object": "/contrasts/memory_minus_random/task_medians/T13 = 0.006804116900791021",
+      "value": "/contrasts/memory_minus_random/task_medians/T13 = 0.006804116900791021",
+      "unit": "source-bound registered claim",
+      "comparison": "/contrasts/memory_minus_random/task_medians/T13 = 0.006804116900791021",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "random_t13"
+      ]
+    },
+    {
+      "id": "fixed_t12",
+      "object": "/contrasts/memory_minus_fixed/task_medians/T12 = 0.007300922109832138",
+      "value": "/contrasts/memory_minus_fixed/task_medians/T12 = 0.007300922109832138",
+      "unit": "source-bound registered claim",
+      "comparison": "/contrasts/memory_minus_fixed/task_medians/T12 = 0.007300922109832138",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "fixed_t12"
+      ]
+    },
+    {
+      "id": "fixed_t9",
+      "object": "/contrasts/memory_minus_fixed/task_medians/T9 = 0.022217061831616154",
+      "value": "/contrasts/memory_minus_fixed/task_medians/T9 = 0.022217061831616154",
+      "unit": "source-bound registered claim",
+      "comparison": "/contrasts/memory_minus_fixed/task_medians/T9 = 0.022217061831616154",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "fixed_t9"
+      ]
+    }
+  ],
+  "terminology": [
+    "research harness",
+    "active branch",
+    "frozen champion",
+    "probe-only exploration",
+    "atomic proposal",
+    "mean absolute IC",
+    "development panel",
+    "mean absolute IC",
+    "factor expression candidate",
+    "development panel"
+  ],
+  "paragraph_task": "Draft the English manuscript unit 'Model-driven process versus random and fixed references' using only the registered evidence and verified literature sources.",
+  "adjacent_context": {
+    "before": "Statistical analysis",
+    "after": "Cumulative-memory and diagnostic component contrasts"
+  },
+  "editor_instruction": "Rewrite the supplied source-bound draft as polished academic English.  Preserve every protected LaTeX block, citation, number, comparison direction, and evidence scope.  Remove defensive writing, stacked hedging, repeated justification, preemptive clarification, imaginary objections, mechanical signposts, repetitive sentence patterns, list-form prose, and uniform paragraph scaffolding. Use coherent paragraphs and keep mean absolute IC attached to factor-expression candidates.",
+  "must_preserve": [
+    "\\section{Model-driven evolution versus random and fixed references}",
+    "\\begin{table*}[!htbp]\n\\caption{Paired differences in mean absolute IC across 24 task--seed--model-replicate units. Intervals resample six complete task clusters and summarize the 24-unit median. Exact p-values come from two-sided task-cluster sign-flip tests of that median; Holm adjustment applies only to the two component contrasts.}\n\\label{tab:contrasts}\n\\centering\n\\ProjectCaption\n\\scriptsize\n\\setlength{\\tabcolsep}{3pt}\n\\begin{tabular}{lccccc}\n\\toprule\nContrast & Median & Mean & Task-cluster 95\\% interval & Exact $p$ & Holm $p$ \\\\\n\\midrule\nMemory $-$ scalar & 0.000290 & 0.001703 & [$-$0.001174, 0.004862] & 0.625 & 1.0 \\\\\nDiagnostic $-$ memory & 0.000000 & 0.000355 & [0.000000, 0.000000] & 1.0 & 1.0 \\\\\nMemory $-$ random & 0.003534 & 0.004198 & [0.001623, 0.005119] & 0.03125 & -- \\\\\nMemory $-$ fixed & 0.010977 & 0.014005 & [0.008080, 0.015456] & 0.03125 & -- \\\\\n\\bottomrule\n\\end{tabular}\n\\end{table*}",
+    "\\begin{figure*}[!htbp]\n\\centering\n\\includegraphics[width=\\ResearchWideWidth]{figures/figure_02_paired_contrasts_\\ResearchFigureVariant.pdf}\n\\caption{Paired differences in mean absolute IC for 24 task--seed--model-replicate units. Gray points show all unit effects; blue diamonds show medians and blue bars show six-task cluster bootstrap 95\\% intervals for the 24-unit median. Failed and invalid model decisions remain in the fixed-call-budget analysis. Results are confirmatory within the development panel and are not independent market-period out-of-sample estimates.}\n\\label{fig:paired}\n\\end{figure*}",
+    "\\begin{figure*}[!htbp]\n\\centering\n\\includegraphics[width=\\ResearchWideWidth]{figures/figure_03_task_heterogeneity_\\ResearchFigureVariant.pdf}\n\\caption{Task-level medians of paired mean-absolute-IC differences. Each marker summarizes four units formed by two development seeds and two independent model-call replicates. All panels share one horizontal scale. The development panel contains six tasks; task medians describe heterogeneity and do not constitute independent market-period out-of-sample tests.}\n\\label{fig:tasks}\n\\end{figure*}"
+  ],
+  "rewrite_from_draft": true,
+  "draft_provenance": "GPT source-bound draft auto_research/writing_runs/auto_research_harness_v003_20261031/drafts/10_primary.tex"
+}

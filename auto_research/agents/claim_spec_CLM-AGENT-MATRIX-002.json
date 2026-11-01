@@ -1,0 +1,21 @@
+{
+ "schema": "AUTO-RESEARCH-CLAIM-SPEC-1",
+ "project": "agentic_matrix",
+ "claims": [
+  {
+   "claim_id": "CLM-AGENT-MATRIX-002",
+   "type": "experimental_result",
+   "statement": "agentic matrix（deepseek-flash，budget 12，seeds [7, 11, 17]）：full arm holdout top5 均值 0.081056（vs random 0.077542、evolution 0.030795）；逐 seed 记录 [(7, False, False), (11, False, True), (17, True, True)]；消融 arms：[('agentic_no_critic', 0.103095), ('agentic_no_reflection', 0.084245), ('agentic_no_elo', 0.036024)]。",
+   "evidence": [
+    "auto_research/agents/analysis_matrix_deepseek-flash.json",
+    "auto_research/agents/experiments/matrix_deepseek-flash.json",
+    "auto_research/agents/PLAN_CN.md"
+   ],
+   "run_refs": [
+    "auto_research/agents"
+   ],
+   "preregistration": "auto_research/PREREGISTRATION.json",
+   "score_window_read": false
+  }
+ ]
+}

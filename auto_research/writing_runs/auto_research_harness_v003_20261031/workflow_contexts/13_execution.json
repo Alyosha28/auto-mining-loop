@@ -1,0 +1,528 @@
+{
+  "research_version": "V003",
+  "sources": [
+    {
+      "id": "C16_0_scalar_model_calls",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/execution_costs/0/model_calls"
+      },
+      "expected": "96"
+    },
+    {
+      "id": "C16_0_memory_model_calls",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/execution_costs/1/model_calls"
+      },
+      "expected": "96"
+    },
+    {
+      "id": "C16_0_diagnostic_model_calls",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/execution_costs/2/model_calls"
+      },
+      "expected": "96"
+    },
+    {
+      "id": "C16_0_random_model_calls",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/execution_costs/3/model_calls"
+      },
+      "expected": "0"
+    },
+    {
+      "id": "C17_0_scalar_input_tokens",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/execution_costs/0/input_tokens"
+      },
+      "expected": "1154141"
+    },
+    {
+      "id": "C17_0_scalar_output_tokens",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/execution_costs/0/output_tokens"
+      },
+      "expected": "295939"
+    },
+    {
+      "id": "C17_0_memory_input_tokens",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/execution_costs/1/input_tokens"
+      },
+      "expected": "2963168"
+    },
+    {
+      "id": "C17_0_memory_output_tokens",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/execution_costs/1/output_tokens"
+      },
+      "expected": "395516"
+    },
+    {
+      "id": "C17_0_diagnostic_input_tokens",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/execution_costs/2/input_tokens"
+      },
+      "expected": "3433519"
+    },
+    {
+      "id": "C17_0_diagnostic_output_tokens",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/execution_costs/2/output_tokens"
+      },
+      "expected": "508868"
+    },
+    {
+      "id": "C18_0",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/failed_or_invalid_decisions"
+      },
+      "expected": 37
+    },
+    {
+      "id": "C19_0",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/execution_recoveries"
+      },
+      "expected": [
+        {
+          "arm": "diagnostic",
+          "source_run": "auto_research/agents/runs/PAPER_READINESS_T11_S29_RB_V003/T11_S29_RB_DIAGNOSTIC",
+          "reason": "retried the same prepared input after a no-usage timeout",
+          "task": "T11",
+          "seed": 29,
+          "model_replicate": "B",
+          "final_run": "auto_research/agents/runs/PAPER_READINESS_T11_S29_RB_V003/T11_S29_RB_DIAGNOSTIC_TIMEOUT_RECOVERY_001",
+          "executed_decisions": 3,
+          "candidate_positions": 36,
+          "failed_decision_rationales": [
+            "invalid or failed proposal: proposer exceeded the per-call output budget; usage preserved"
+          ],
+          "champion_decision": "T11_S29_RB_DIAGNOSTIC_d001"
+        }
+      ]
+    },
+    {
+      "id": "C20",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/interpretation/complete_execution"
+      },
+      "expected": "auxiliary complete-case sensitivity analysis only"
+    },
+    {
+      "id": "model_positions",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/usage/model_candidate_positions"
+      },
+      "expected": 3060
+    },
+    {
+      "id": "random_positions",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/usage/random_candidate_positions"
+      },
+      "expected": 1104
+    },
+    {
+      "id": "executed_decisions",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/usage/executed_decisions"
+      },
+      "expected": 347
+    },
+    {
+      "id": "rep_scalar_median",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/replicate_stability/0/median_absolute_A_minus_B"
+      },
+      "expected": "0.0007706510565473994"
+    },
+    {
+      "id": "rep_scalar_max",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/replicate_stability/0/max_absolute_A_minus_B"
+      },
+      "expected": "0.0034936805077582303"
+    },
+    {
+      "id": "rep_scalar_identical",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/replicate_stability/0/identical_pairs"
+      },
+      "expected": "3"
+    },
+    {
+      "id": "rep_diagnostic_identical",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/replicate_stability/1/identical_pairs"
+      },
+      "expected": "7"
+    },
+    {
+      "id": "complete_0_complete_units",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/auxiliary_execution_analysis/0/complete_units"
+      },
+      "expected": "15"
+    },
+    {
+      "id": "complete_0_median_delta",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/auxiliary_execution_analysis/0/median_delta"
+      },
+      "expected": "0.0044593645084783085"
+    },
+    {
+      "id": "complete_1_complete_units",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/auxiliary_execution_analysis/1/complete_units"
+      },
+      "expected": "9"
+    },
+    {
+      "id": "complete_1_median_delta",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/auxiliary_execution_analysis/1/median_delta"
+      },
+      "expected": "0.0"
+    },
+    {
+      "id": "complete_2_complete_units",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/auxiliary_execution_analysis/2/complete_units"
+      },
+      "expected": "19"
+    },
+    {
+      "id": "complete_2_median_delta",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/auxiliary_execution_analysis/2/median_delta"
+      },
+      "expected": "0.0034936803370849215"
+    },
+    {
+      "id": "complete_3_complete_units",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/auxiliary_execution_analysis/3/complete_units"
+      },
+      "expected": "21"
+    },
+    {
+      "id": "complete_3_median_delta",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/auxiliary_execution_analysis/3/median_delta"
+      },
+      "expected": "0.010647371230924768"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C16",
+      "object": "The panel records 288 model calls and zero model calls for the random arm.",
+      "value": "The panel records 288 model calls and zero model calls for the random arm.",
+      "unit": "source-bound registered claim",
+      "comparison": "The panel records 288 model calls and zero model calls for the random arm.",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "C16_0_scalar_model_calls",
+        "C16_0_memory_model_calls",
+        "C16_0_diagnostic_model_calls",
+        "C16_0_random_model_calls"
+      ]
+    },
+    {
+      "id": "C17",
+      "object": "The panel uses 7,550,828 input tokens and 1,200,323 output tokens across model arms.",
+      "value": "The panel uses 7,550,828 input tokens and 1,200,323 output tokens across model arms.",
+      "unit": "source-bound registered claim",
+      "comparison": "The panel uses 7,550,828 input tokens and 1,200,323 output tokens across model arms.",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "C17_0_scalar_input_tokens",
+        "C17_0_scalar_output_tokens",
+        "C17_0_memory_input_tokens",
+        "C17_0_memory_output_tokens",
+        "C17_0_diagnostic_input_tokens",
+        "C17_0_diagnostic_output_tokens"
+      ]
+    },
+    {
+      "id": "C18",
+      "object": "The panel retains 37 failed or invalid decision records.",
+      "value": "The panel retains 37 failed or invalid decision records.",
+      "unit": "source-bound registered claim",
+      "comparison": "The panel retains 37 failed or invalid decision records.",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "C18_0"
+      ]
+    },
+    {
+      "id": "C19",
+      "object": "One no-usage timeout recovery is recorded without an additional valid research decision.",
+      "value": "One no-usage timeout recovery is recorded without an additional valid research decision.",
+      "unit": "source-bound registered claim",
+      "comparison": "One no-usage timeout recovery is recorded without an additional valid research decision.",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "C19_0"
+      ]
+    },
+    {
+      "id": "C20",
+      "object": "Complete-execution analyses are auxiliary and do not replace the fixed-call-budget primary analysis.",
+      "value": "Complete-execution analyses are auxiliary and do not replace the fixed-call-budget primary analysis.",
+      "unit": "source-bound registered claim",
+      "comparison": "Complete-execution analyses are auxiliary and do not replace the fixed-call-budget primary analysis.",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "C20"
+      ]
+    },
+    {
+      "id": "model_positions",
+      "object": "/usage/model_candidate_positions = 3060",
+      "value": "/usage/model_candidate_positions = 3060",
+      "unit": "source-bound registered claim",
+      "comparison": "/usage/model_candidate_positions = 3060",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "model_positions"
+      ]
+    },
+    {
+      "id": "random_positions",
+      "object": "/usage/random_candidate_positions = 1104",
+      "value": "/usage/random_candidate_positions = 1104",
+      "unit": "source-bound registered claim",
+      "comparison": "/usage/random_candidate_positions = 1104",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "random_positions"
+      ]
+    },
+    {
+      "id": "executed_decisions",
+      "object": "/usage/executed_decisions = 347",
+      "value": "/usage/executed_decisions = 347",
+      "unit": "source-bound registered claim",
+      "comparison": "/usage/executed_decisions = 347",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "executed_decisions"
+      ]
+    },
+    {
+      "id": "rep_scalar_median",
+      "object": "/tables/replicate_stability/0/median_absolute_A_minus_B = 0.0007706510565473994",
+      "value": "/tables/replicate_stability/0/median_absolute_A_minus_B = 0.0007706510565473994",
+      "unit": "source-bound registered claim",
+      "comparison": "/tables/replicate_stability/0/median_absolute_A_minus_B = 0.0007706510565473994",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "rep_scalar_median"
+      ]
+    },
+    {
+      "id": "rep_scalar_max",
+      "object": "/tables/replicate_stability/0/max_absolute_A_minus_B = 0.0034936805077582303",
+      "value": "/tables/replicate_stability/0/max_absolute_A_minus_B = 0.0034936805077582303",
+      "unit": "source-bound registered claim",
+      "comparison": "/tables/replicate_stability/0/max_absolute_A_minus_B = 0.0034936805077582303",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "rep_scalar_max"
+      ]
+    },
+    {
+      "id": "rep_scalar_identical",
+      "object": "/tables/replicate_stability/0/identical_pairs = 3",
+      "value": "/tables/replicate_stability/0/identical_pairs = 3",
+      "unit": "source-bound registered claim",
+      "comparison": "/tables/replicate_stability/0/identical_pairs = 3",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "rep_scalar_identical"
+      ]
+    },
+    {
+      "id": "rep_diagnostic_identical",
+      "object": "/tables/replicate_stability/1/identical_pairs = 7",
+      "value": "/tables/replicate_stability/1/identical_pairs = 7",
+      "unit": "source-bound registered claim",
+      "comparison": "/tables/replicate_stability/1/identical_pairs = 7",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "rep_diagnostic_identical"
+      ]
+    },
+    {
+      "id": "complete_0_complete_units",
+      "object": "/tables/auxiliary_execution_analysis/0/complete_units = 15",
+      "value": "/tables/auxiliary_execution_analysis/0/complete_units = 15",
+      "unit": "source-bound registered claim",
+      "comparison": "/tables/auxiliary_execution_analysis/0/complete_units = 15",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "complete_0_complete_units"
+      ]
+    },
+    {
+      "id": "complete_0_median_delta",
+      "object": "/tables/auxiliary_execution_analysis/0/median_delta = 0.0044593645084783085",
+      "value": "/tables/auxiliary_execution_analysis/0/median_delta = 0.0044593645084783085",
+      "unit": "source-bound registered claim",
+      "comparison": "/tables/auxiliary_execution_analysis/0/median_delta = 0.0044593645084783085",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "complete_0_median_delta"
+      ]
+    },
+    {
+      "id": "complete_1_complete_units",
+      "object": "/tables/auxiliary_execution_analysis/1/complete_units = 9",
+      "value": "/tables/auxiliary_execution_analysis/1/complete_units = 9",
+      "unit": "source-bound registered claim",
+      "comparison": "/tables/auxiliary_execution_analysis/1/complete_units = 9",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "complete_1_complete_units"
+      ]
+    },
+    {
+      "id": "complete_1_median_delta",
+      "object": "/tables/auxiliary_execution_analysis/1/median_delta = 0.0",
+      "value": "/tables/auxiliary_execution_analysis/1/median_delta = 0.0",
+      "unit": "source-bound registered claim",
+      "comparison": "/tables/auxiliary_execution_analysis/1/median_delta = 0.0",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "complete_1_median_delta"
+      ]
+    },
+    {
+      "id": "complete_2_complete_units",
+      "object": "/tables/auxiliary_execution_analysis/2/complete_units = 19",
+      "value": "/tables/auxiliary_execution_analysis/2/complete_units = 19",
+      "unit": "source-bound registered claim",
+      "comparison": "/tables/auxiliary_execution_analysis/2/complete_units = 19",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "complete_2_complete_units"
+      ]
+    },
+    {
+      "id": "complete_2_median_delta",
+      "object": "/tables/auxiliary_execution_analysis/2/median_delta = 0.0034936803370849215",
+      "value": "/tables/auxiliary_execution_analysis/2/median_delta = 0.0034936803370849215",
+      "unit": "source-bound registered claim",
+      "comparison": "/tables/auxiliary_execution_analysis/2/median_delta = 0.0034936803370849215",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "complete_2_median_delta"
+      ]
+    },
+    {
+      "id": "complete_3_complete_units",
+      "object": "/tables/auxiliary_execution_analysis/3/complete_units = 21",
+      "value": "/tables/auxiliary_execution_analysis/3/complete_units = 21",
+      "unit": "source-bound registered claim",
+      "comparison": "/tables/auxiliary_execution_analysis/3/complete_units = 21",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "complete_3_complete_units"
+      ]
+    },
+    {
+      "id": "complete_3_median_delta",
+      "object": "/tables/auxiliary_execution_analysis/3/median_delta = 0.010647371230924768",
+      "value": "/tables/auxiliary_execution_analysis/3/median_delta = 0.010647371230924768",
+      "unit": "source-bound registered claim",
+      "comparison": "/tables/auxiliary_execution_analysis/3/median_delta = 0.010647371230924768",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "complete_3_median_delta"
+      ]
+    }
+  ],
+  "terminology": [
+    "research harness",
+    "active branch",
+    "frozen champion",
+    "probe-only exploration",
+    "atomic proposal",
+    "mean absolute IC",
+    "development panel",
+    "mean absolute IC",
+    "factor expression candidate",
+    "development panel"
+  ],
+  "paragraph_task": "Draft the English manuscript unit 'Execution losses, recovery, sensitivity, and cost' using only the registered evidence and verified literature sources.",
+  "adjacent_context": {
+    "before": "Novelty, duplication, and date-block diagnostics",
+    "after": "Discussion"
+  },
+  "editor_instruction": "Rewrite the supplied source-bound draft as polished academic English.  Preserve every protected LaTeX block, citation, number, comparison direction, and evidence scope.  Remove defensive writing, stacked hedging, repeated justification, preemptive clarification, imaginary objections, mechanical signposts, repetitive sentence patterns, list-form prose, and uniform paragraph scaffolding. Use coherent paragraphs and keep mean absolute IC attached to factor-expression candidates.",
+  "must_preserve": [
+    "\\section{Execution, sensitivity, and cost}",
+    "\\begin{table*}[!htbp]\n\\caption{Execution and model usage by arm across the 24 paired units. Scheduled and executed columns count decisions; calls count model calls. Positions and budget count expression-candidate positions, while input and output count tokens.}\n\\label{tab:costs}\n\\centering\n\\ProjectCaption\n\\scriptsize\n\\setlength{\\tabcolsep}{3pt}\n\\begin{tabular}{lrrrrrrr}\n\\toprule\nArm & Scheduled & Executed & Calls & Positions & Budget & Input & Output \\\\\n\\midrule\nScalar & 96 & 86 & 96 & 1{,}032 & 1{,}032 & 1{,}154{,}141 & 295{,}939 \\\\\nMemory & 96 & 92 & 96 & 1{,}104 & 1{,}104 & 2{,}963{,}168 & 395{,}516 \\\\\nDiagnostic & 96 & 77 & 96 & 924 & 924 & 3{,}433{,}519 & 508{,}868 \\\\\nRandom & 96 & 92 & 0 & 1{,}104 & 1{,}152 & 0 & 0 \\\\\n\\bottomrule\n\\end{tabular}\n\\end{table*}",
+    "\\begin{figure*}[!htbp]\n\\centering\n\\includegraphics[width=\\ResearchWideWidth]{figures/figure_05_execution_realization_\\ResearchFigureVariant.pdf}\n\\caption{Realized execution by arm across 24 paired development-panel units. The left panel shows executed decisions among 96 scheduled decisions per arm. The right panel shows candidate positions together with each arm's recorded candidate budget. Recovered source steps are included through loop-state history references. All three model arms realize their recorded candidate budgets; the random arm realizes 1{,}104 positions against its recorded budget of 1{,}152. Execution losses remain in the primary fixed-call-budget analysis.}\n\\label{fig:execution}\n\\end{figure*}"
+  ],
+  "rewrite_from_draft": true,
+  "draft_provenance": "GPT source-bound draft auto_research/writing_runs/auto_research_harness_v003_20261031/drafts/13_execution.tex"
+}

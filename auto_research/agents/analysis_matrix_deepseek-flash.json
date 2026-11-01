@@ -1,0 +1,80 @@
+{
+ "schema": "AUTO-RESEARCH-AGENT-ANALYSIS-1",
+ "created_at": "2026-10-21T17:35:48.898545+00:00",
+ "matrix": "auto_research/agents/experiments/matrix_deepseek-flash.json",
+ "model": "deepseek-flash",
+ "baseline_random_mean": 0.077542,
+ "baseline_evolution_mean": 0.030795,
+ "arms": {
+  "agentic_full": {
+   "n": 3,
+   "mean": 0.081056,
+   "median": 0.092043,
+   "min": 0.037438,
+   "max": 0.113686,
+   "delta_vs_evolution_mean": 0.050261,
+   "delta_vs_random_mean": 0.003514,
+   "elo_spearman_mean": 0.6177,
+   "valid_mean": 12.0
+  },
+  "agentic_no_critic": {
+   "n": 3,
+   "mean": 0.10275,
+   "median": 0.103095,
+   "min": 0.101822,
+   "max": 0.103334,
+   "delta_vs_evolution_mean": 0.071955,
+   "delta_vs_random_mean": 0.025208,
+   "elo_spearman_mean": 0.7739,
+   "valid_mean": 12.0
+  },
+  "agentic_no_reflection": {
+   "n": 3,
+   "mean": 0.080309,
+   "median": 0.084245,
+   "min": 0.056421,
+   "max": 0.100261,
+   "delta_vs_evolution_mean": 0.049514,
+   "delta_vs_random_mean": 0.002767,
+   "elo_spearman_mean": 0.8252,
+   "valid_mean": 12.0
+  },
+  "agentic_no_elo": {
+   "n": 3,
+   "mean": 0.091629,
+   "median": 0.113686,
+   "min": 0.036024,
+   "max": 0.125178,
+   "delta_vs_evolution_mean": 0.060834,
+   "delta_vs_random_mean": 0.014087,
+   "elo_spearman_mean": 0.1072,
+   "valid_mean": 12.0
+  }
+ },
+ "agentic_full_per_seed": [
+  {
+   "seed": 7,
+   "holdout": 0.037438,
+   "random": 0.076742,
+   "evolution": 0.077377,
+   "beat_random": false,
+   "beat_evolution": false
+  },
+  {
+   "seed": 11,
+   "holdout": 0.092043,
+   "random": 0.131761,
+   "evolution": 0.005327,
+   "beat_random": false,
+   "beat_evolution": true
+  },
+  {
+   "seed": 17,
+   "holdout": 0.113686,
+   "random": 0.024122,
+   "evolution": 0.009682,
+   "beat_random": true,
+   "beat_evolution": true
+  }
+ ]
+}

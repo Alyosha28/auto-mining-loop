@@ -1,0 +1,31 @@
+{
+ "schema": "AUTO-RESEARCH-AGENT-ANALYSIS-1",
+ "created_at": "2026-10-21T17:47:14.152557+00:00",
+ "matrix": "auto_research/agents/experiments/matrix_local_sage-a1.5_partial_seed7.json",
+ "model": "sage-a1.5",
+ "baseline_random_mean": 0.076742,
+ "baseline_evolution_mean": 0.077377,
+ "arms": {
+  "agentic_full": {
+   "n": 1,
+   "mean": 0.053277,
+   "median": 0.053277,
+   "min": 0.053277,
+   "max": 0.053277,
+   "delta_vs_evolution_mean": -0.0241,
+   "delta_vs_random_mean": -0.023465,
+   "elo_spearman_mean": 0.8,
+   "valid_mean": 12.0
+  }
+ },
+ "agentic_full_per_seed": [
+  {
+   "seed": 7,
+   "holdout": 0.053277,
+   "random": 0.076742,
+   "evolution": 0.077377,
+   "beat_random": false,
+   "beat_evolution": false
+  }
+ ]
+}

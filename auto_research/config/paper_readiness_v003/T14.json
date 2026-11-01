@@ -1,0 +1,37 @@
+{
+ "schema": "AUTO-RESEARCH-PAPER-READINESS-TASK-1",
+ "task": "T14",
+ "research_question": "在四特征小种子池上，能否提高共同样本平均绝对 IC 并保留稳定性诊断？",
+ "initial_harness": "auto_research/config/paper_readiness_v003/initial_harness/T14.json",
+ "initial_safe_trace": {
+  "11": "auto_research/config/paper_readiness_v003/initial_traces/T14_S11.json",
+  "29": "auto_research/config/paper_readiness_v003/initial_traces/T14_S29.json"
+ },
+ "primary_metric": "mean_abs_ic",
+ "task_diagnostics": [
+  "novelty",
+  "duplicate_rate",
+  "year_ic_min",
+  "icir_p25"
+ ],
+ "task_constraints": {
+  "min_coverage": 0.0,
+  "computable_mean_abs_ic": true,
+  "development_end": "2020-11-30"
+ },
+ "seed_set": [
+  11,
+  29
+ ],
+ "model_replicates": [
+  "A",
+  "B"
+ ],
+ "shared_memory": "auto_research/config/paper_readiness_v003/memory/shared_research_memory.json",
+ "features": [
+  "momentum_20",
+  "volatility_20",
+  "reversal_5",
+  "amihud_20"
+ ]
+}

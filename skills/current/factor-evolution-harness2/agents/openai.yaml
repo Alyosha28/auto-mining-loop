@@ -1,0 +1,5 @@
+interface:
+  display_name: "Factor evolution harness2"
+  short_description: "因子进化流程：局部探针 + 有界路线选择 + 经验库"
+policy:
+  allow_implicit_invocation: false

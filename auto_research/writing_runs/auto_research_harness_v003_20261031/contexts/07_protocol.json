@@ -1,0 +1,82 @@
+{
+  "schema": "AUTO-RESEARCH-WRITING-CONTEXT-1",
+  "unit_id": "07_protocol",
+  "title": "Paired V003 protocol and controls",
+  "research_version": "V003",
+  "status": "drafted",
+  "sources": [
+    {
+      "id": "V003-PROTOCOL",
+      "path": "auto_research/config/paper_readiness_v003/protocol.json",
+      "kind": "json",
+      "role": "frozen tasks, budgets, model, and analysis"
+    },
+    {
+      "id": "EXECUTION-PLAN",
+      "path": "auto_research/docs/PAPER_READINESS_V003_EXECUTION_PLAN_CN.md",
+      "kind": "markdown",
+      "role": "execution record and evidence-role summary"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C02",
+      "object": "panel-design",
+      "statement": "V003 uses six tasks, development seeds 11 and 29, and model-call replicates A and B.",
+      "source_id": "V003-PROTOCOL",
+      "locators": [
+        "/task_files",
+        "/seeds",
+        "/model_replicates"
+      ]
+    },
+    {
+      "claim_id": "C03",
+      "object": "model-identity",
+      "statement": "The proposer model is kimi/k3.1-pro[1m].",
+      "source_id": "V003-PROTOCOL",
+      "locators": [
+        "/model_id",
+        "/generation/cli_model_override"
+      ]
+    },
+    {
+      "claim_id": "C26",
+      "object": "budgets",
+      "statement": "Each arm has four continuation decisions with twelve candidate positions per decision.",
+      "source_id": "V003-PROTOCOL",
+      "locators": [
+        "/continuation_decisions",
+        "/candidate_budget"
+      ]
+    },
+    {
+      "claim_id": "C27",
+      "object": "random-control",
+      "statement": "Random legal atomic edits use the same editable surface and make zero model calls.",
+      "source_id": "EXECUTION-PLAN",
+      "locators": [
+        {
+          "kind": "heading",
+          "text": "## 5. 原子提案契约"
+        }
+      ]
+    }
+  ],
+  "terminology": [
+    "research harness",
+    "active branch",
+    "frozen champion",
+    "probe-only exploration",
+    "atomic proposal",
+    "mean absolute IC",
+    "development panel"
+  ],
+  "paragraph_task": "Draft the English manuscript unit 'Paired V003 protocol and controls' using only the registered evidence and verified literature sources.",
+  "adjacent_context": {
+    "before": "Scalar, cumulative-memory, and diagnostic information",
+    "after": "Outcomes and execution metrics"
+  },
+  "evidence_boundary": "Confirmatory development-panel evidence within 2017-01-01 through 2020-11-30; no independent real-data out-of-sample result.",
+  "writing_status": "Source-bound manuscript draft: drafts/07_protocol.tex"
+}

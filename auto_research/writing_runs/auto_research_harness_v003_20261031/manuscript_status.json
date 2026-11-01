@@ -1,0 +1,120 @@
+{
+ "schema": "AUTO-RESEARCH-MANUSCRIPT-STATUS-1",
+ "recorded_date": "2026-10-31",
+ "research_version": "V003",
+ "status": "WORKING_DRAFT_COMPLETE",
+ "workspace": "auto_research/writing_runs/auto_research_harness_v003_20261031",
+ "writing_plan": "auto_research/docs/WRITING_IMPROVEMENT_PLAN.md",
+ "title": "Budget-Bounded LLM-Driven Research-Harness Evolution: Controlled Evidence from Factor Discovery",
+ "language": "en",
+ "target_journal": "Expert Systems with Applications",
+ "source_units": {
+  "count": 18,
+  "status": "DRAFTED",
+  "directory": "drafts/",
+  "registry": "all_units.json"
+ },
+ "text_provenance": {
+  "kind": "CONTROLLER_AUTHORED_SOURCE_BOUND_DRAFT",
+  "local_models_attempted": [
+   "cajal-9b-v2-full",
+   "humanizer-12b-optiq"
+  ],
+  "local_candidate_text_accepted": false,
+  "local_candidate_units_accepted": []
+ },
+ "content_review": {
+  "status": "COMPLETE",
+  "rounds": 3,
+  "second_round": "PASS_NO_REMAINING_ISSUES_IN_REVIEWED_SCOPE",
+  "third_round": "TARGETED_ISSUES_RESOLVED_AND_REBUILT",
+  "third_round_scope": [
+   "drafts/02_introduction.tex",
+   "drafts/03_related.tex",
+   "drafts/05_harness.tex",
+   "auto_research/docs/WRITING_IMPROVEMENT_PLAN.md",
+   "skills/current/auto-research-paper-writing/references/STYLE_RULES.md"
+  ],
+  "third_round_revised": [
+   "reference, component, behavior, and auxiliary-diagnostic separation",
+   "citation scope",
+   "random-control and model-call semantics",
+   "fixed-control research-question framing",
+   "method-caption expression"
+  ],
+  "method": "independent read-only evidence audits followed by targeted controller revisions and source-bound verification",
+  "revised": [
+   "statistical estimator description",
+   "execution and recovery accounting",
+   "behavioral comparison scope",
+   "output-token ceiling wording",
+   "coverage plotting statement",
+   "derived-table paths",
+   "unsupported V002 and ARIS sentences"
+  ],
+  "scopes_checked": [
+   "numerical fidelity",
+   "comparison direction",
+   "statistical caliber",
+   "execution and recovery semantics",
+   "development-panel evidence boundary",
+   "figure and table captions",
+   "bibliographic metadata and citation scope"
+  ],
+  "record": "VERIFICATION.md"
+ },
+ "mechanical_verification": {
+  "status": "PASS",
+  "report": "mechanical_check.json",
+  "abstract_words": 207,
+  "content_sections": 16,
+  "bibliography_entries": 19,
+  "figures": 5,
+  "tables": 5
+ },
+ "statistical_verification": {
+  "status": "PASS",
+  "report": "statistical_verification.json",
+  "implementation": "skills/current/factor-evolution-harness2/scripts/run_paper_readiness_v003.py",
+  "bootstrap_samples": 10000,
+  "sign_assignments": 64
+ },
+ "visual_verification": {
+  "status": "PASS",
+  "review_contact_sheet": "rendered/review-contact.png",
+  "preview_contact_sheet": "rendered/preview-contact.png",
+  "preview_pages_inspected": 9,
+  "data_figure_variants": 2,
+  "data_figure_exports": 24,
+  "method_font": "JetBrains Mono and Menlo",
+  "all_figure_pages_inspected": true
+ },
+ "outputs": {
+  "editable_entrypoint": "main.tex",
+  "assembled_body": "content.tex",
+  "bibliography": "references.bib",
+  "review_pdf": "main.pdf",
+  "review_pages": 18,
+  "publication_preview_pdf": "journal-preview.pdf",
+  "publication_preview_pages": 9
+ },
+ "derived_evidence": {
+  "paper_materials": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/tables",
+  "superseded_export": "auto_research/agents/runs/PAPER_READINESS_RESULT_V003_PAPER_MATERIALS_002",
+  "result_unchanged": true,
+  "executed_probe_steps": 347,
+  "failed_or_invalid_decisions": 37,
+  "model_candidate_positions": 3060,
+  "random_candidate_positions": 1104
+ },
+ "evidence_scope": {
+  "market_window": "2017-01-01 through 2020-11-30",
+  "role": "confirmatory development-panel evidence",
+  "score_window_read": false,
+  "independent_real_data_oos": false
+ },
+ "author_review": "NOT_RECORDED",
+ "submission_authorized": false,
+ "watermark_verification": "UNVERIFIED",
+ "verification_record": "VERIFICATION.md"
+}

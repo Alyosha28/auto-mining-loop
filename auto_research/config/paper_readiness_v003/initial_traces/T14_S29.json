@@ -1,0 +1,110 @@
+{
+ "schema": "AUTO-RESEARCH-PROPOSER-TRACE-1",
+ "source_run": "PAPER_READINESS_TASK_SCREEN_V003_S29:T14",
+ "scope": "Initial fixed-harness development probe; no proposal or select outcomes.",
+ "seed_semantics": "seeded_year_blocks_v1",
+ "search_policy": {
+  "operators": [
+   "residual_size",
+   "delta4",
+   "delta13",
+   "neg"
+  ],
+  "seed_pool": [
+   {
+    "name": "momentum_20",
+    "feature": "momentum_20",
+    "transform": "raw"
+   },
+   {
+    "name": "volatility_20",
+    "feature": "volatility_20",
+    "transform": "raw"
+   },
+   {
+    "name": "reversal_5",
+    "feature": "reversal_5",
+    "transform": "raw"
+   },
+   {
+    "name": "amihud_20",
+    "feature": "amihud_20",
+    "transform": "raw"
+   }
+  ],
+  "skills": {
+   "mutation_per_seed": 2,
+   "crossover_pairs": 0,
+   "sign_by_ic": true
+  },
+  "probe": {
+   "year_split": true,
+   "duplication_corr": 0.9,
+   "duplication_min_overlap": 30
+  },
+  "protocol": {
+   "dev_start": "2017-01-01",
+   "dev_end": "2020-11-30",
+   "embargo": [
+    "2020-12-01",
+    "2020-12-31"
+   ],
+   "score_window": [
+    "2021-01-01",
+    "2023-12-31"
+   ],
+   "budget_candidates": 12,
+   "min_ic_pairs": 30,
+   "probe_split": 0.7,
+   "dev_split": "seeded-year-blocks"
+  }
+ },
+ "reference_probe_metrics": {
+  "n_candidates": 12,
+  "pass_count": 12,
+  "pass_rate": 1.0,
+  "mean_abs_ic": 0.04610471167904012,
+  "top_ic_mean": 0.06923665576644679,
+  "icir_median": 0.35927894398918475,
+  "icir_p25": 0.3422726833642655,
+  "coverage": 0.602867252318204,
+  "common_cells": 98822,
+  "common_dates": 50,
+  "common_support_sha256": "8262a3ae052227aa5457c5b45ed5641f4388a8ee0955e144effe7f9753b6cd13",
+  "fit_common_cells": 202695,
+  "fit_common_dates": 98,
+  "fit_common_support_sha256": "da171d35d0f69d25432efb883a63be67b6e56a5900c8e1f1b355403f51617ca1",
+  "duplicate_rate": 0.045454545454545456,
+  "novelty": 0.5,
+  "turnover_proxy": 0.8873748294209922,
+  "year_ic_min": -0.020433490542204207,
+  "runtime_seconds": 46.87,
+  "failures": 0,
+  "max_date_read": "2020-11-27"
+ },
+ "adopted_probe_metrics": {
+  "n_candidates": 12,
+  "pass_count": 12,
+  "pass_rate": 1.0,
+  "mean_abs_ic": 0.04610471167904012,
+  "top_ic_mean": 0.06923665576644679,
+  "icir_median": 0.35927894398918475,
+  "icir_p25": 0.3422726833642655,
+  "coverage": 0.602867252318204,
+  "common_cells": 98822,
+  "common_dates": 50,
+  "common_support_sha256": "8262a3ae052227aa5457c5b45ed5641f4388a8ee0955e144effe7f9753b6cd13",
+  "fit_common_cells": 202695,
+  "fit_common_dates": 98,
+  "fit_common_support_sha256": "da171d35d0f69d25432efb883a63be67b6e56a5900c8e1f1b355403f51617ca1",
+  "duplicate_rate": 0.045454545454545456,
+  "novelty": 0.5,
+  "turnover_proxy": 0.8873748294209922,
+  "year_ic_min": -0.020433490542204207,
+  "runtime_seconds": 46.87,
+  "failures": 0,
+  "max_date_read": "2020-11-27"
+ },
+ "proposals": [],
+ "kept_edits": []
+}

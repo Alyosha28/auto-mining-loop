@@ -1,0 +1,65 @@
+{
+  "schema": "AUTO-RESEARCH-WRITING-CONTEXT-1",
+  "unit_id": "06_information",
+  "title": "Scalar, cumulative-memory, and diagnostic information",
+  "research_version": "V003",
+  "status": "drafted",
+  "sources": [
+    {
+      "id": "V001-RESULT",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/source_result_v001.json",
+      "kind": "json",
+      "role": "exploratory diagnostic continuation panel"
+    },
+    {
+      "id": "V002-RESULT",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/source_result_v002.json",
+      "kind": "json",
+      "role": "exploratory cumulative-memory component panel"
+    },
+    {
+      "id": "DESIGN",
+      "path": "auto_research/docs/DESIGN_CN.md",
+      "kind": "markdown",
+      "role": "system architecture and information boundaries"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C23",
+      "object": "v001-role",
+      "statement": "V001 is an exploratory development-panel null for the diagnostic component.",
+      "source_id": "V001-RESULT",
+      "locators": [
+        "/median_paired_delta",
+        "/evidence_status"
+      ]
+    },
+    {
+      "claim_id": "C24",
+      "object": "v002-role",
+      "statement": "V002 is an exploratory development-panel null for the cumulative-memory component.",
+      "source_id": "V002-RESULT",
+      "locators": [
+        "/median_paired_delta",
+        "/evidence_status"
+      ]
+    }
+  ],
+  "terminology": [
+    "research harness",
+    "active branch",
+    "frozen champion",
+    "probe-only exploration",
+    "atomic proposal",
+    "mean absolute IC",
+    "development panel"
+  ],
+  "paragraph_task": "Draft the English manuscript unit 'Scalar, cumulative-memory, and diagnostic information' using only the registered evidence and verified literature sources.",
+  "adjacent_context": {
+    "before": "Research harness and atomic proposals",
+    "after": "Paired V003 protocol and controls"
+  },
+  "evidence_boundary": "Confirmatory development-panel evidence within 2017-01-01 through 2020-11-30; no independent real-data out-of-sample result.",
+  "writing_status": "Source-bound manuscript draft: drafts/06_information.tex"
+}

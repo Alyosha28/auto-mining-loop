@@ -1,0 +1,12 @@
+[project]
+name = "auto-research-benchmark"
+version = "0.1.0"
+description = "Evidence-grounded factor search benchmark (synthetic tasks)"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+dependencies = [
+  "numpy==2.5.3",
+  "pandas==3.0.5",
+  "scikit-learn==1.7.2",
+  "matplotlib==3.11.2",
+]

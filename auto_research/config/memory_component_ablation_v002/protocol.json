@@ -1,0 +1,52 @@
+{
+ "schema": "AUTO-RESEARCH-MEMORY-COMPONENT-PROTOCOL-1",
+ "protocol_version": "V002",
+ "date_frozen": "2026-10-30",
+ "model_id": "kimi/k3.1-pro[1m]",
+ "generation": {
+  "effort": "low",
+  "temperature": "cli-default",
+  "tools": "disabled",
+  "session_persistence": false,
+  "cli_model_override": "kimi/k3.1-pro[1m]"
+ },
+ "proposer": "skills/current/factor-evolution-harness2/scripts/claude_proposer_command.py",
+ "proposer_environment": {
+  "AUTO_RESEARCH_CLAUDE_MAX_OUTPUT_TOKENS": "8000",
+  "AUTO_RESEARCH_CLAUDE_MAX_USD": "0.50",
+  "AUTO_RESEARCH_CLAUDE_CLI_MODEL": "kimi/k3.1-pro[1m]"
+ },
+ "proposer_timeout_seconds": 600,
+ "execution_timeout_seconds": 600,
+ "run_root": "auto_research/agents/runs",
+ "task_files": [
+  "T5.json",
+  "T6.json",
+  "T7.json",
+  "T8.json"
+ ],
+ "seeds": [
+  11,
+  29,
+  43
+ ],
+ "shared_decisions": 2,
+ "continuation_decisions": 2,
+ "candidate_budget": 12,
+ "dev_split": "seeded-year-blocks",
+ "shared_contract": "auto_research/config/memory_component_ablation_v002/shared_contract.json",
+ "continuation_contract": "auto_research/config/memory_component_ablation_v002/continuation_contract.json",
+ "coverage_log_only": true,
+ "demo": false,
+ "max_parallel_units": 2,
+ "screen_run_prefix": "MEMORY_COMPONENT_TASK_SCREEN_R002",
+ "screen_summary_file": "initial_defects_r002.json",
+ "primary_estimand": "median of 12 paired memory-minus-scalar select mean_abs_ic deltas",
+ "panel_support": {
+  "minimum_positive_task_seed_medians": 3,
+  "all_leave_one_task_out_medians_positive": true,
+  "overall_median_positive": true
+ },
+ "score_window_read": false,
+ "independent_real_data_oos": false
+}

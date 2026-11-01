@@ -1,0 +1,50 @@
+{
+ "schema": "AUTO-RESEARCH-MEMORY-COMPONENT-TASK-1",
+ "task": "T5",
+ "research_question": "在高换手候选池上，能否通过改变候选生成机制提高共同样本平均绝对 IC，并保留换手诊断？",
+ "initial_defect": "高 turnover_proxy 与槽位集中",
+ "initial_harness": "auto_research/config/memory_component_ablation_v002/initial_harness/T5.json",
+ "initial_safe_trace": {
+  "11": "auto_research/config/memory_component_ablation_v002/initial_traces_r002/T5_S11.json",
+  "29": "auto_research/config/memory_component_ablation_v002/initial_traces_r002/T5_S29.json",
+  "43": "auto_research/config/memory_component_ablation_v002/initial_traces_r002/T5_S43.json"
+ },
+ "editable_surface": "runtime editable_surface.json; frozen protocol and guardrails excluded",
+ "primary_metric": "mean_abs_ic",
+ "task_diagnostics": [
+  "turnover_proxy",
+  "candidate_kind_distribution",
+  "coverage",
+  "duplicate_rate",
+  "novelty"
+ ],
+ "task_constraints": {
+  "min_coverage": 0.0,
+  "computable_mean_abs_ic": true,
+  "development_end": "2020-11-30"
+ },
+ "budget": {
+  "decisions_per_model_arm": 2,
+  "model_calls_per_arm": 2,
+  "candidates_per_decision": 12,
+  "input_tokens_per_arm": 120000,
+  "output_tokens_per_arm": 16000,
+  "output_tokens_per_call": 8000
+ },
+ "seed_set": [
+  11,
+  29,
+  43
+ ],
+ "stop_rule": "execute two decisions per model arm without early stop or adaptive parallel branch",
+ "select_freeze_rule": "one champion per arm evaluated once after all model decisions",
+ "shared_memory": "auto_research/config/memory_component_ablation_v002/memory/shared_research_memory.json",
+ "features": [
+  "momentum_20",
+  "volatility_20",
+  "turnover_mean_20",
+  "reversal_5",
+  "amihud_20",
+  "volume_ratio_5_20"
+ ]
+}

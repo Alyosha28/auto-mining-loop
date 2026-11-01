@@ -1,0 +1,67 @@
+{
+  "schema": "AUTO-RESEARCH-WRITING-CONTEXT-1",
+  "unit_id": "02_introduction",
+  "title": "Introduction and research question",
+  "research_version": "V003",
+  "status": "drafted",
+  "sources": [
+    {
+      "id": "V003-RESULT",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/source_result.json",
+      "kind": "json",
+      "role": "complete confirmatory development-panel result"
+    },
+    {
+      "id": "DESIGN",
+      "path": "auto_research/docs/DESIGN_CN.md",
+      "kind": "markdown",
+      "role": "system architecture and information boundaries"
+    },
+    {
+      "id": "EXECUTION-PLAN",
+      "path": "auto_research/docs/PAPER_READINESS_V003_EXECUTION_PLAN_CN.md",
+      "kind": "markdown",
+      "role": "execution record and evidence-role summary"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C01",
+      "object": "panel-completeness",
+      "statement": "V003 contains 24 complete paired units and all protocol checks passed.",
+      "source_id": "V003-RESULT",
+      "locators": [
+        "/paired_units",
+        "/all_protocol_checks_passed"
+      ]
+    },
+    {
+      "claim_id": "C04",
+      "object": "atomic-contract",
+      "statement": "One atomic proposal contains two to five edits and produces one final harness candidate.",
+      "source_id": "EXECUTION-PLAN",
+      "locators": [
+        {
+          "kind": "heading",
+          "text": "## 5. 原子提案契约"
+        }
+      ]
+    }
+  ],
+  "terminology": [
+    "research harness",
+    "active branch",
+    "frozen champion",
+    "probe-only exploration",
+    "atomic proposal",
+    "mean absolute IC",
+    "development panel"
+  ],
+  "paragraph_task": "Draft the English manuscript unit 'Introduction and research question' using only the registered evidence and verified literature sources.",
+  "adjacent_context": {
+    "before": "Abstract",
+    "after": "Related work"
+  },
+  "evidence_boundary": "Confirmatory development-panel evidence within 2017-01-01 through 2020-11-30; no independent real-data out-of-sample result.",
+  "writing_status": "Source-bound manuscript draft: drafts/02_introduction.tex"
+}

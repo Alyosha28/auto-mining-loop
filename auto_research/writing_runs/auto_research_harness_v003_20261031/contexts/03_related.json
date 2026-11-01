@@ -1,0 +1,33 @@
+{
+  "schema": "AUTO-RESEARCH-WRITING-CONTEXT-1",
+  "unit_id": "03_related",
+  "title": "Related work",
+  "research_version": "V003",
+  "status": "drafted",
+  "sources": [
+    {
+      "id": "LITERATURE-LEADS",
+      "path": "auto_research/docs/SURVEY_CN.md",
+      "kind": "markdown",
+      "role": "historical literature lead inventory; bibliographic claims require source verification"
+    }
+  ],
+  "claims": [],
+  "terminology": [
+    "research harness",
+    "active branch",
+    "frozen champion",
+    "probe-only exploration",
+    "atomic proposal",
+    "mean absolute IC",
+    "development panel"
+  ],
+  "paragraph_task": "Draft the English manuscript unit 'Related work' using only the registered evidence and verified literature sources.",
+  "adjacent_context": {
+    "before": "Introduction and research question",
+    "after": "Problem formulation and evidence scope"
+  },
+  "evidence_boundary": "Confirmatory development-panel evidence within 2017-01-01 through 2020-11-30; no independent real-data out-of-sample result.",
+  "writing_status": "Source-bound manuscript draft: drafts/03_related.tex",
+  "editor_instruction": "Verify bibliographic metadata and claim scope at the original source before citing any literature lead. The historical survey alone does not authorize a citation."
+}

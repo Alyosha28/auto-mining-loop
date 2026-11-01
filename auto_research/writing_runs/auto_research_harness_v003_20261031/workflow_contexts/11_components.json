@@ -1,0 +1,210 @@
+{
+  "research_version": "V003",
+  "sources": [
+    {
+      "id": "C05_0",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/contrasts/memory_minus_scalar"
+      },
+      "expected": {
+        "median": 0.0002895443706825082,
+        "mean": 0.0017032816990507152,
+        "min": -0.0068320065479087755,
+        "max": 0.008283747307535422,
+        "task_medians": {
+          "T9": 0.004259704067314581,
+          "T10": 0.00608994362129987,
+          "T11": 0.0,
+          "T12": -0.0024702354772557014,
+          "T13": -0.001305125116866146,
+          "T14": 0.0047474103749583114
+        },
+        "positive_tasks": 3,
+        "task_bootstrap_95pct_interval": [
+          -0.001174021059870252,
+          0.004862304054621815
+        ],
+        "exact_task_sign_flip_p": 0.625,
+        "delta_counts": {
+          "positive": 12,
+          "zero": 4,
+          "negative": 8
+        },
+        "holm_adjusted_p": 1.0
+      }
+    },
+    {
+      "id": "C06_0",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/contrasts/diagnostic_minus_memory"
+      },
+      "expected": {
+        "median": 0.0,
+        "mean": 0.00035476222884427665,
+        "min": -0.0018401262824157827,
+        "max": 0.006285596931079898,
+        "task_medians": {
+          "T9": 0.0,
+          "T10": 0.0,
+          "T11": 0.0,
+          "T12": 0.0010819193395773564,
+          "T13": 0.0,
+          "T14": 0.0
+        },
+        "positive_tasks": 1,
+        "task_bootstrap_95pct_interval": [
+          0.0,
+          0.0
+        ],
+        "exact_task_sign_flip_p": 1.0,
+        "delta_counts": {
+          "positive": 4,
+          "zero": 17,
+          "negative": 3
+        },
+        "holm_adjusted_p": 1.0
+      }
+    },
+    {
+      "id": "C11_0",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/contrasts/memory_minus_scalar/task_bootstrap_95pct_interval/0"
+      },
+      "expected": -0.001174021059870252
+    },
+    {
+      "id": "C11_1",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/contrasts/memory_minus_scalar/task_bootstrap_95pct_interval/1"
+      },
+      "expected": 0.004862304054621815
+    },
+    {
+      "id": "C23_0",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/exploratory_panels/V001/median_paired_delta"
+      },
+      "expected": 0.0
+    },
+    {
+      "id": "C23_1",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/exploratory_panels/V001/evidence_status"
+      },
+      "expected": "development-panel null"
+    },
+    {
+      "id": "C24_0",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/exploratory_panels/V002/median_paired_delta"
+      },
+      "expected": 0.0012239559767840066
+    },
+    {
+      "id": "C24_1",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/exploratory_panels/V002/evidence_status"
+      },
+      "expected": "development-panel null"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C05",
+      "object": "Memory minus scalar has median +0.0002895443706825082 and Holm-adjusted p=1.0.",
+      "value": "Memory minus scalar has median +0.0002895443706825082 and Holm-adjusted p=1.0.",
+      "unit": "source-bound registered claim",
+      "comparison": "Memory minus scalar has median +0.0002895443706825082 and Holm-adjusted p=1.0.",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "C05_0"
+      ]
+    },
+    {
+      "id": "C06",
+      "object": "Diagnostic minus memory has median 0.0 and Holm-adjusted p=1.0.",
+      "value": "Diagnostic minus memory has median 0.0 and Holm-adjusted p=1.0.",
+      "unit": "source-bound registered claim",
+      "comparison": "Diagnostic minus memory has median 0.0 and Holm-adjusted p=1.0.",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "C06_0"
+      ]
+    },
+    {
+      "id": "C11",
+      "object": "The memory-minus-scalar task-cluster 95% interval includes zero.",
+      "value": "The memory-minus-scalar task-cluster 95% interval includes zero.",
+      "unit": "source-bound registered claim",
+      "comparison": "The memory-minus-scalar task-cluster 95% interval includes zero.",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "C11_0",
+        "C11_1"
+      ]
+    },
+    {
+      "id": "C23",
+      "object": "V001 is an exploratory development-panel null for the diagnostic component.",
+      "value": "V001 is an exploratory development-panel null for the diagnostic component.",
+      "unit": "source-bound registered claim",
+      "comparison": "V001 is an exploratory development-panel null for the diagnostic component.",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "C23_0",
+        "C23_1"
+      ]
+    },
+    {
+      "id": "C24",
+      "object": "V002 is an exploratory development-panel null for the cumulative-memory component.",
+      "value": "V002 is an exploratory development-panel null for the cumulative-memory component.",
+      "unit": "source-bound registered claim",
+      "comparison": "V002 is an exploratory development-panel null for the cumulative-memory component.",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "C24_0",
+        "C24_1"
+      ]
+    }
+  ],
+  "terminology": [
+    "research harness",
+    "active branch",
+    "frozen champion",
+    "probe-only exploration",
+    "atomic proposal",
+    "mean absolute IC",
+    "development panel",
+    "mean absolute IC",
+    "factor expression candidate",
+    "development panel"
+  ],
+  "paragraph_task": "Draft the English manuscript unit 'Cumulative-memory and diagnostic component contrasts' using only the registered evidence and verified literature sources.",
+  "adjacent_context": {
+    "before": "Model-driven process versus random and fixed references",
+    "after": "Novelty, duplication, and date-block diagnostics"
+  },
+  "editor_instruction": "Rewrite the supplied source-bound draft as polished academic English.  Preserve every protected LaTeX block, citation, number, comparison direction, and evidence scope.  Remove defensive writing, stacked hedging, repeated justification, preemptive clarification, imaginary objections, mechanical signposts, repetitive sentence patterns, list-form prose, and uniform paragraph scaffolding. Use coherent paragraphs and keep mean absolute IC attached to factor-expression candidates.",
+  "must_preserve": [
+    "\\section{Component contrasts}"
+  ],
+  "rewrite_from_draft": true,
+  "draft_provenance": "GPT source-bound draft auto_research/writing_runs/auto_research_harness_v003_20261031/drafts/11_components.tex"
+}

@@ -1,0 +1,38 @@
+name: Auto-research checks
+
+on: [push, pull_request]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: pip
+          cache-dependency-path: |
+            requirements-dev.txt
+            requirements-factor-library.txt
+      - name: Install Poppler for figure checks
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y poppler-utils
+      - name: Create project environment
+        run: python -m venv .venv
+      - name: Install research dependencies
+        run: .venv/bin/python -m pip install -r requirements-dev.txt
+      - name: Run auto-research tests
+        run: .venv/bin/python -m pytest -q tests
+      - name: Run benchmark CI
+        run: bash auto_research/benchmark/ci.sh
+      - name: Check manuscript evidence
+        working-directory: auto_research/writing_runs/auto_research_harness_v003_20261031
+        run: |
+          ../../../.venv/bin/python scripts/build_workspace.py --check
+          ../../../.venv/bin/python scripts/verify_manuscript_statistics.py
+          ../../../.venv/bin/python scripts/assemble_manuscript.py --check
+          ../../../.venv/bin/python figures/generate_figures.py --check

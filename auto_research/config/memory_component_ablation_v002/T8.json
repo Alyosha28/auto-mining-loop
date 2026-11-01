@@ -1,0 +1,50 @@
+{
+ "schema": "AUTO-RESEARCH-MEMORY-COMPONENT-TASK-1",
+ "task": "T8",
+ "research_question": "在长周期种子池上，能否提高共同样本平均绝对 IC，并保留覆盖与年度稳定性诊断？",
+ "initial_defect": "长周期种子池的覆盖与年度稳定性",
+ "initial_harness": "auto_research/config/memory_component_ablation_v002/initial_harness/T8.json",
+ "initial_safe_trace": {
+  "11": "auto_research/config/memory_component_ablation_v002/initial_traces_r002/T8_S11.json",
+  "29": "auto_research/config/memory_component_ablation_v002/initial_traces_r002/T8_S29.json",
+  "43": "auto_research/config/memory_component_ablation_v002/initial_traces_r002/T8_S43.json"
+ },
+ "editable_surface": "runtime editable_surface.json; frozen protocol and guardrails excluded",
+ "primary_metric": "mean_abs_ic",
+ "task_diagnostics": [
+  "coverage",
+  "year_ic_min",
+  "icir_p25",
+  "novelty",
+  "duplicate_rate"
+ ],
+ "task_constraints": {
+  "min_coverage": 0.0,
+  "computable_mean_abs_ic": true,
+  "development_end": "2020-11-30"
+ },
+ "budget": {
+  "decisions_per_model_arm": 2,
+  "model_calls_per_arm": 2,
+  "candidates_per_decision": 12,
+  "input_tokens_per_arm": 120000,
+  "output_tokens_per_arm": 16000,
+  "output_tokens_per_call": 8000
+ },
+ "seed_set": [
+  11,
+  29,
+  43
+ ],
+ "stop_rule": "execute two decisions per model arm without early stop or adaptive parallel branch",
+ "select_freeze_rule": "one champion per arm evaluated once after all model decisions",
+ "shared_memory": "auto_research/config/memory_component_ablation_v002/memory/shared_research_memory.json",
+ "features": [
+  "momentum_60",
+  "volatility_60",
+  "turnover_mean_20",
+  "reversal_5",
+  "amihud_20",
+  "volume_ratio_5_20"
+ ]
+}

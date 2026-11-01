@@ -1,0 +1,25 @@
+{
+ "schema": "AUTO-RESEARCH-LOOP-CONTRACT-1",
+ "budget": {
+  "max_decisions": 4,
+  "max_candidate_budget": 48,
+  "max_model_calls": 4,
+  "max_input_tokens": 240000,
+  "max_output_tokens": 32000,
+  "max_no_improvement": 4,
+  "max_debug_depth": 2
+ },
+ "primary": {
+  "metric": "mean_abs_ic",
+  "min_delta": 0.0
+ },
+ "guards": {
+  "min_delta_coverage": -1.0,
+  "min_delta_pass_rate": -1.0,
+  "max_delta_turnover_proxy": 1.0,
+  "min_delta_novelty": -1.0,
+  "max_delta_duplicate_rate": 1.0
+ },
+ "online_evaluation": "probe",
+ "final_evaluation": "select"
+}

@@ -1,0 +1,118 @@
+{
+  "schema": "AUTO-RESEARCH-WRITING-CONTEXT-1",
+  "unit_id": "13_execution",
+  "title": "Execution losses, recovery, sensitivity, and cost",
+  "research_version": "V003",
+  "status": "drafted",
+  "sources": [
+    {
+      "id": "V003-RESULT",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/source_result.json",
+      "kind": "json",
+      "role": "complete confirmatory development-panel result"
+    },
+    {
+      "id": "V003-EXECUTION-COSTS",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/tables/execution_costs.csv",
+      "kind": "csv",
+      "role": "paper-ready derived table"
+    },
+    {
+      "id": "V003-AUXILIARY-EXECUTION-ANALYSIS",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/tables/auxiliary_execution_analysis.csv",
+      "kind": "csv",
+      "role": "paper-ready derived table"
+    },
+    {
+      "id": "V003-REPLICATE-STABILITY",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/tables/replicate_stability.csv",
+      "kind": "csv",
+      "role": "paper-ready derived table"
+    },
+    {
+      "id": "EXECUTION-PLAN",
+      "path": "auto_research/docs/PAPER_READINESS_V003_EXECUTION_PLAN_CN.md",
+      "kind": "markdown",
+      "role": "execution record and evidence-role summary"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C16",
+      "object": "model-calls",
+      "statement": "The panel records 288 model calls and zero model calls for the random arm.",
+      "source_id": "V003-EXECUTION-COSTS",
+      "locators": [
+        {
+          "field": "model_calls",
+          "all_rows": true
+        }
+      ]
+    },
+    {
+      "claim_id": "C17",
+      "object": "tokens",
+      "statement": "The panel uses 7,550,828 input tokens and 1,200,323 output tokens across model arms.",
+      "source_id": "V003-EXECUTION-COSTS",
+      "locators": [
+        {
+          "fields": [
+            "input_tokens",
+            "output_tokens"
+          ],
+          "rows": [
+            "scalar",
+            "memory",
+            "diagnostic"
+          ]
+        }
+      ]
+    },
+    {
+      "claim_id": "C18",
+      "object": "failures",
+      "statement": "The panel retains 37 failed or invalid decision records.",
+      "source_id": "V003-RESULT",
+      "locators": [
+        "/failed_or_invalid_decisions"
+      ]
+    },
+    {
+      "claim_id": "C19",
+      "object": "recovery",
+      "statement": "One no-usage timeout recovery is recorded without an additional valid research decision.",
+      "source_id": "V003-RESULT",
+      "locators": [
+        "/execution_recoveries"
+      ]
+    },
+    {
+      "claim_id": "C20",
+      "object": "complete-case",
+      "statement": "Complete-execution analyses are auxiliary and do not replace the fixed-call-budget primary analysis.",
+      "source_id": "EXECUTION-PLAN",
+      "locators": [
+        {
+          "kind": "heading",
+          "text": "### 9.4 执行敏感性与成本"
+        }
+      ]
+    }
+  ],
+  "terminology": [
+    "research harness",
+    "active branch",
+    "frozen champion",
+    "probe-only exploration",
+    "atomic proposal",
+    "mean absolute IC",
+    "development panel"
+  ],
+  "paragraph_task": "Draft the English manuscript unit 'Execution losses, recovery, sensitivity, and cost' using only the registered evidence and verified literature sources.",
+  "adjacent_context": {
+    "before": "Novelty, duplication, and date-block diagnostics",
+    "after": "Discussion"
+  },
+  "evidence_boundary": "Confirmatory development-panel evidence within 2017-01-01 through 2020-11-30; no independent real-data out-of-sample result.",
+  "writing_status": "Source-bound manuscript draft: drafts/13_execution.tex"
+}

@@ -1,0 +1,15 @@
+\section{Behavioral and temporal diagnostics}
+\label{sec:behavior}
+
+The IC gains were accompanied by changes in search behavior. Relative to scalar feedback, memory had a median novelty difference of $-$0.125000 and a median duplicate-rate difference of 0.045455. Relative to random legal edits, the corresponding differences were $-$0.091667 and 0.037879. The memory condition therefore combined higher mean absolute IC with less novelty and more repetition in the evaluated output. Diagnostic-minus-memory had zero medians for both behavioral measures. Coverage differences were also zero for all three comparisons; coverage is not plotted in Figure~\ref{fig:behavior}.
+
+\begin{figure*}[!htbp]
+\centering
+\includegraphics[width=\ResearchWideWidth]{figures/figure_04_behavior_costs_\ResearchFigureVariant.pdf}
+\caption{Median paired differences in select novelty and duplicate rate across the same 24 development-panel units. Negative novelty differences indicate less behavioral novelty; positive duplicate-rate differences indicate more duplication. Panels use separate horizontal scales. These behavior diagnostics accompany the IC contrasts and are not independent out-of-sample evaluations.}
+\label{fig:behavior}
+\end{figure*}
+
+The behavioral results qualify the interpretation of the reference gains. A process can improve the frozen IC endpoint while producing a less diverse set of candidates, so the endpoint and the composition of the search output describe different aspects of research performance. The measurements do not identify why memory produced these shifts, and they do not justify treating reduced novelty as evidence of improved focus without a separate test.
+
+Date-block diagnostics also show uneven temporal concentration. For memory minus scalar, the concentration measure was available for 19 non-null units, with median 0.208579 and maximum 0.531037. For diagnostic minus memory, seven non-null units had median 0.494103 and maximum 1.0. The latter pattern indicates that a small number of nonzero component effects can be concentrated in particular date blocks. These diagnostics use \texttt{mean\_daily\_abs\_ic\_delta} and do not alter the primary candidate-level endpoint.

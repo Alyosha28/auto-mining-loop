@@ -1,0 +1,82 @@
+{
+  "research_version": "V003",
+  "sources": [
+    {
+      "id": "C04",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/protocol/generation/proposal_schema"
+      },
+      "expected": "AUTO-RESEARCH-ATOMIC-PROPOSAL-1"
+    },
+    {
+      "id": "C27_random",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/protocol/random_model_id"
+      },
+      "expected": "random-atomic-edits-v1"
+    },
+    {
+      "id": "C27_calls",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/execution_costs/3/model_calls"
+      },
+      "expected": "0"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C04",
+      "object": "One atomic proposal contains two to five edits and produces one final harness candidate.",
+      "value": "One atomic proposal contains two to five edits and produces one final harness candidate.",
+      "unit": "source-bound registered claim",
+      "comparison": "One atomic proposal contains two to five edits and produces one final harness candidate.",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "C04"
+      ]
+    },
+    {
+      "id": "C27",
+      "object": "Random legal atomic edits use the same editable surface and make zero model calls.",
+      "value": "Random legal atomic edits use the same editable surface and make zero model calls.",
+      "unit": "source-bound registered claim",
+      "comparison": "Random legal atomic edits use the same editable surface and make zero model calls.",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "C27_random",
+        "C27_calls"
+      ]
+    }
+  ],
+  "terminology": [
+    "research harness",
+    "active branch",
+    "frozen champion",
+    "probe-only exploration",
+    "atomic proposal",
+    "mean absolute IC",
+    "development panel",
+    "mean absolute IC",
+    "factor expression candidate",
+    "development panel"
+  ],
+  "paragraph_task": "Draft the English manuscript unit 'Research harness and atomic proposals' using only the registered evidence and verified literature sources.",
+  "adjacent_context": {
+    "before": "Problem formulation and evidence scope",
+    "after": "Scalar, cumulative-memory, and diagnostic information"
+  },
+  "editor_instruction": "Rewrite the supplied source-bound draft as polished academic English.  Preserve every protected LaTeX block, citation, number, comparison direction, and evidence scope.  Remove defensive writing, stacked hedging, repeated justification, preemptive clarification, imaginary objections, mechanical signposts, repetitive sentence patterns, list-form prose, and uniform paragraph scaffolding. Use coherent paragraphs and keep mean absolute IC attached to factor-expression candidates.",
+  "must_preserve": [
+    "\\section{Research-harness evolution}",
+    "\\begin{equation}\nH_t^{c}=A(H_{t-1},e_t).\n\\label{eq:atomic}\n\\end{equation}",
+    "\\begin{figure*}[!htbp]\n\\centering\n\\includegraphics[width=\\ResearchWideWidth]{figures/figure_01_method_pipeline.pdf}\n\\caption{Budget-bounded research-harness continuation and evaluation. Scalar, cumulative-memory, and diagnostic proposers emit one atomic proposal per decision; random legal edits use zero model calls. Probe execution feeds a four-decision active branch and one frozen champion per condition, followed by the final common-support comparison. The diagram also marks the fixed candidate budget, retained failures, and exclusion of select outcomes from historical probe memory.}\n\\label{fig:method}\n\\end{figure*}"
+  ],
+  "rewrite_from_draft": true,
+  "draft_provenance": "GPT source-bound draft auto_research/writing_runs/auto_research_harness_v003_20261031/drafts/05_harness.tex"
+}

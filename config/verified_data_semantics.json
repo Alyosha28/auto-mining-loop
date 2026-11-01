@@ -1,0 +1,44 @@
+{
+  "verification_version": "2026-09-15",
+  "research_window": [
+    "2016-01-01",
+    "2022-12-31"
+  ],
+  "market_csv": {
+    "encoding": "gb18030",
+    "price_unit": "CNY_per_share",
+    "price_semantics": "raw_quotes_with_ex_day_reference_preclose_supported_by_reconciliation",
+    "volume_to_shares": 100,
+    "amount_to_CNY": 1000,
+    "share_capital_to_shares": 10000,
+    "market_cap_to_CNY": 10000,
+    "change_return": "fraction_using_exchange_reference_preclose",
+    "turnover_rate": "percentage_points",
+    "portfolio_total_return_requires_actions": true
+  },
+  "rights_csv": {
+    "encoding": "gb18030",
+    "date_semantics": "ex_date_supported_for_matched_events",
+    "cash_dividend_to_CNY_per_share": 0.1,
+    "bonus_shares_per_old_share": 0.1,
+    "rights_shares_per_old_share": 0.1,
+    "rights_price": "CNY_per_subscribed_share",
+    "cash_basis": "gross_supported_by_announcement_and_dividend_crosscheck",
+    "reference_formula": "(prior_raw_close*10-cash_per10+rights_price*rights_per10)/(10+bonus_per10+rights_per10)",
+    "comparable_events": 19380,
+    "matched_within_0_011_CNY": 19161,
+    "exception_events": 219,
+    "safe_for_unconditional_application": false,
+    "announcement_date_not_in_csv": true,
+    "cash_pay_date_source": "existing_dividend_data_when_unambiguous",
+    "share_listing_date_source": "existing_dividend_data_when_unambiguous"
+  },
+  "security_reference": {
+    "explicit_listing_and_delisting_fields_downloaded": true,
+    "BSE_common_stock_universe_cannot_start_before": "2021-11-15",
+    "current_ST_or_name_must_not_be_backfilled": true,
+    "current_to_historical_BSE_identifier_mapping_obtained": true,
+    "missing_old_BSE_quote_codes": [],
+    "historical_daily_ST_coverage_verified": false
+  }
+}

@@ -1,0 +1,238 @@
+{
+  "research_version": "V003",
+  "sources": [
+    {
+      "id": "C05_0",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/contrasts/memory_minus_scalar"
+      },
+      "expected": {
+        "median": 0.0002895443706825082,
+        "mean": 0.0017032816990507152,
+        "min": -0.0068320065479087755,
+        "max": 0.008283747307535422,
+        "task_medians": {
+          "T9": 0.004259704067314581,
+          "T10": 0.00608994362129987,
+          "T11": 0.0,
+          "T12": -0.0024702354772557014,
+          "T13": -0.001305125116866146,
+          "T14": 0.0047474103749583114
+        },
+        "positive_tasks": 3,
+        "task_bootstrap_95pct_interval": [
+          -0.001174021059870252,
+          0.004862304054621815
+        ],
+        "exact_task_sign_flip_p": 0.625,
+        "delta_counts": {
+          "positive": 12,
+          "zero": 4,
+          "negative": 8
+        },
+        "holm_adjusted_p": 1.0
+      }
+    },
+    {
+      "id": "C06_0",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/contrasts/diagnostic_minus_memory"
+      },
+      "expected": {
+        "median": 0.0,
+        "mean": 0.00035476222884427665,
+        "min": -0.0018401262824157827,
+        "max": 0.006285596931079898,
+        "task_medians": {
+          "T9": 0.0,
+          "T10": 0.0,
+          "T11": 0.0,
+          "T12": 0.0010819193395773564,
+          "T13": 0.0,
+          "T14": 0.0
+        },
+        "positive_tasks": 1,
+        "task_bootstrap_95pct_interval": [
+          0.0,
+          0.0
+        ],
+        "exact_task_sign_flip_p": 1.0,
+        "delta_counts": {
+          "positive": 4,
+          "zero": 17,
+          "negative": 3
+        },
+        "holm_adjusted_p": 1.0
+      }
+    },
+    {
+      "id": "C07_0",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/contrasts/memory_minus_random"
+      },
+      "expected": {
+        "median": 0.0035336383723919666,
+        "mean": 0.004198109059778949,
+        "min": -0.0016021449143608577,
+        "max": 0.01798854145236662,
+        "task_medians": {
+          "T9": 0.0011767076259988907,
+          "T10": 0.0038238776491283724,
+          "T11": 0.0038315251547075407,
+          "T12": 0.0009504640187057468,
+          "T13": 0.006804116900791021,
+          "T14": 0.004129878218460118
+        },
+        "positive_tasks": 6,
+        "task_bootstrap_95pct_interval": [
+          0.001623060462619938,
+          0.005118746302635594
+        ],
+        "exact_task_sign_flip_p": 0.03125,
+        "delta_counts": {
+          "positive": 20,
+          "zero": 0,
+          "negative": 4
+        }
+      }
+    },
+    {
+      "id": "C08_0",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/contrasts/memory_minus_fixed"
+      },
+      "expected": {
+        "median": 0.010976872198680074,
+        "mean": 0.014004525830722963,
+        "min": 0.005248717341589965,
+        "max": 0.03098335341295358,
+        "task_medians": {
+          "T9": 0.022217061831616154,
+          "T10": 0.019360321266661932,
+          "T11": 0.013967860074050327,
+          "T12": 0.007300922109832138,
+          "T13": 0.01271751833232487,
+          "T14": 0.008156839883180838
+        },
+        "positive_tasks": 6,
+        "task_bootstrap_95pct_interval": [
+          0.008079793378808216,
+          0.015455539112667562
+        ],
+        "exact_task_sign_flip_p": 0.03125,
+        "delta_counts": {
+          "positive": 24,
+          "zero": 0,
+          "negative": 0
+        }
+      }
+    },
+    {
+      "id": "C22_0",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/score_window_read"
+      },
+      "expected": false
+    },
+    {
+      "id": "C22_1",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/independent_real_data_oos"
+      },
+      "expected": false
+    }
+  ],
+  "claims": [
+    {
+      "id": "C05",
+      "object": "Memory minus scalar has median +0.0002895443706825082 and Holm-adjusted p=1.0.",
+      "value": "Memory minus scalar has median +0.0002895443706825082 and Holm-adjusted p=1.0.",
+      "unit": "source-bound registered claim",
+      "comparison": "Memory minus scalar has median +0.0002895443706825082 and Holm-adjusted p=1.0.",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "C05_0"
+      ]
+    },
+    {
+      "id": "C06",
+      "object": "Diagnostic minus memory has median 0.0 and Holm-adjusted p=1.0.",
+      "value": "Diagnostic minus memory has median 0.0 and Holm-adjusted p=1.0.",
+      "unit": "source-bound registered claim",
+      "comparison": "Diagnostic minus memory has median 0.0 and Holm-adjusted p=1.0.",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "C06_0"
+      ]
+    },
+    {
+      "id": "C07",
+      "object": "Memory minus random has median +0.0035336383723919666, six positive task medians, and exact task sign-flip p=0.03125.",
+      "value": "Memory minus random has median +0.0035336383723919666, six positive task medians, and exact task sign-flip p=0.03125.",
+      "unit": "source-bound registered claim",
+      "comparison": "Memory minus random has median +0.0035336383723919666, six positive task medians, and exact task sign-flip p=0.03125.",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "C07_0"
+      ]
+    },
+    {
+      "id": "C08",
+      "object": "Memory minus fixed has median +0.010976872198680074, 24 positive units, and exact task sign-flip p=0.03125.",
+      "value": "Memory minus fixed has median +0.010976872198680074, 24 positive units, and exact task sign-flip p=0.03125.",
+      "unit": "source-bound registered claim",
+      "comparison": "Memory minus fixed has median +0.010976872198680074, 24 positive units, and exact task sign-flip p=0.03125.",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "C08_0"
+      ]
+    },
+    {
+      "id": "C22",
+      "object": "The study does not read the score window and provides no independent real-data out-of-sample evaluation.",
+      "value": "The study does not read the score window and provides no independent real-data out-of-sample evaluation.",
+      "unit": "source-bound registered claim",
+      "comparison": "The study does not read the score window and provides no independent real-data out-of-sample evaluation.",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "C22_0",
+        "C22_1"
+      ]
+    }
+  ],
+  "terminology": [
+    "research harness",
+    "active branch",
+    "frozen champion",
+    "probe-only exploration",
+    "atomic proposal",
+    "mean absolute IC",
+    "development panel",
+    "mean absolute IC",
+    "factor expression candidate",
+    "development panel"
+  ],
+  "paragraph_task": "Draft the English manuscript unit 'Conclusion' using only the registered evidence and verified literature sources.",
+  "adjacent_context": {
+    "before": "Limitations and evidence boundary",
+    "after": "Reproduction and supplementary tables"
+  },
+  "editor_instruction": "Rewrite the supplied source-bound draft as polished academic English.  Preserve every protected LaTeX block, citation, number, comparison direction, and evidence scope.  Remove defensive writing, stacked hedging, repeated justification, preemptive clarification, imaginary objections, mechanical signposts, repetitive sentence patterns, list-form prose, and uniform paragraph scaffolding. Use coherent paragraphs and keep mean absolute IC attached to factor-expression candidates.",
+  "must_preserve": [
+    "\\section{Conclusion}"
+  ],
+  "rewrite_from_draft": true,
+  "draft_provenance": "GPT source-bound draft auto_research/writing_runs/auto_research_harness_v003_20261031/drafts/16_conclusion.tex"
+}

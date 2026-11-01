@@ -1,0 +1,45 @@
+flowchart LR
+    subgraph Inputs["FROZEN DEVELOPMENT INPUTS"]
+        direction TB
+        Harness["Initial harness<br/>editable surface<br/>fixed reference"]
+        Memory["Probe history<br/>no select outcomes"]
+        Task["Task contract<br/>development window"]
+    end
+
+    subgraph Loop["FOUR-DECISION CONTINUATION"]
+        direction LR
+        Propose["Model proposer<br/>scalar · memory · diagnostic<br/>atomic proposal"]
+        Random["Random control<br/>legal edits · zero calls"]
+        Probe["Probe + trace<br/>fixed budget<br/>failures retained"]
+        Branch["Active branch<br/>rejected edits continue"]
+        Propose --> Probe
+        Random --> Probe
+        Probe --> Branch
+        Branch -. "next decision" .-> Propose
+    end
+
+    subgraph Final["FROZEN FINAL EVALUATION"]
+        direction TB
+        Champion["Frozen champion<br/>contract-based updates"]
+        Compare["Common support<br/>five frozen conditions"]
+        Analysis["Paired analysis<br/>24 units"]
+        Champion --> Compare --> Analysis
+    end
+
+    Harness --> Propose
+    Harness --> Random
+    Memory --> Propose
+    Task --> Propose
+    Probe --> Champion
+
+    classDef input fill:#F4F6F8,stroke:#8B98A3,color:#20262B,stroke-width:1px;
+    classDef process fill:#EAF3F8,stroke:#0072B2,color:#20262B,stroke-width:1.2px;
+    classDef control fill:#FFFFFF,stroke:#8B98A3,color:#20262B,stroke-width:1px;
+    classDef evaluation fill:#F2F7FA,stroke:#0072B2,color:#20262B,stroke-width:1.2px;
+    class Harness,Memory,Task input;
+    class Propose,Probe,Branch process;
+    class Random control;
+    class Champion,Compare,Analysis evaluation;
+    style Inputs fill:#FAFBFC,stroke:#C8D0D6,stroke-width:1px
+    style Loop fill:#FCFDFE,stroke:#B8C9D3,stroke-width:1px
+    style Final fill:#FAFBFC,stroke:#C8D0D6,stroke-width:1px

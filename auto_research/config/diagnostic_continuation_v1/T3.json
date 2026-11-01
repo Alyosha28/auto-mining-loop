@@ -1,0 +1,55 @@
+{
+ "schema": "AUTO-RESEARCH-DIAGNOSTIC-TASK-1",
+ "task": "T3",
+ "research_question": "在合格候选不足的初始状态下，能否通过改变候选生成机制提高共同样本候选池平均绝对 IC？",
+ "initial_defect": "roster pass_rate 不足",
+ "initial_harness": "auto_research/config/diagnostic_continuation_v1/initial_harness/T3.json",
+ "initial_safe_trace": {
+  "11": "auto_research/config/diagnostic_continuation_v1/initial_traces/T3_S11.json",
+  "29": "auto_research/config/diagnostic_continuation_v1/initial_traces/T3_S29.json",
+  "43": "auto_research/config/diagnostic_continuation_v1/initial_traces/T3_S43.json"
+ },
+ "editable_surface": "runtime editable_surface.json; frozen protocol and guardrails excluded",
+ "primary_metric": "mean_abs_ic",
+ "task_diagnostics": [
+  "pass_rate",
+  "candidate_ic",
+  "candidate_icir",
+  "coverage",
+  "novelty",
+  "duplicate_rate",
+  "turnover_proxy"
+ ],
+ "task_constraints": {
+  "min_coverage": 0.0,
+  "computable_mean_abs_ic": true,
+  "development_end": "2020-11-30"
+ },
+ "budget": {
+  "shared_decisions": 2,
+  "continuation_decisions_per_arm": 2,
+  "candidates_per_decision": 12,
+  "model_calls_per_stage": 2,
+  "input_tokens_per_stage": 120000,
+  "output_tokens_per_stage": 16000,
+  "output_tokens_per_call": 8000,
+  "bounded_repairs_per_unit": 1
+ },
+ "seed_set": [
+  11,
+  29,
+  43
+ ],
+ "stop_rule": "execute the frozen decision count; no early stop or adaptive parallel branch",
+ "select_freeze_rule": "evaluate one champion per arm once after all continuation decisions",
+ "shared_memory": "auto_research/config/diagnostic_continuation_v1/memory/T3.json",
+ "features": [
+  "momentum_20",
+  "volatility_20",
+  "turnover_mean_20",
+  "reversal_5",
+  "amihud_20",
+  "volume_ratio_5_20"
+ ],
+ "defect_confirmation": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_TASK_SCREEN_V001_S11/result.json"
+}

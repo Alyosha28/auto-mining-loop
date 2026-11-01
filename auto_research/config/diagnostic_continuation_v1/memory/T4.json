@@ -1,0 +1,111 @@
+{
+ "schema": "AUTO-RESEARCH-SHARED-MEMORY-1",
+ "entries": [
+  {
+   "source_run": "R2_TRACE_S11_001",
+   "task": "cross_task_allocation",
+   "status": "COMPLETED",
+   "scope": "historical development probe; not independent OOS; scope limited to the source harness and seed",
+   "probe_metrics": {
+    "n_candidates": 12,
+    "pass_count": 11,
+    "pass_rate": 0.9166666666666666,
+    "mean_abs_ic": 0.05306142138680822,
+    "top_ic_mean": 0.08243625644785296,
+    "icir_median": 0.4324242995533313,
+    "icir_p25": 0.32882743945329596,
+    "coverage": 1.0,
+    "duplicate_rate": 0.10606060606060606,
+    "novelty": 0.125,
+    "turnover_proxy": 0.7726325842007478,
+    "year_ic_min": NaN,
+    "runtime_seconds": 5.39,
+    "failures": 0,
+    "max_date_read": "2020-11-27"
+   },
+   "edits": [
+    {
+     "id": "edit_001",
+     "kind": "INV",
+     "component": "skills.crossover_pairs",
+     "op": "set",
+     "value": 0,
+     "intent": "Deficiency: the two reserved crossover slots yield the weakest and only failing candidates in the current roster - rank_minus pairs carry |IC| 0.0171 and 0.0103 while every mutation and raw candidate is at least 0.0245, and turnover_mean_20 minus momentum_20 is the single failure (abs_icir_below_threshold, ICIR 0.0542). Semantics: crossover slots are reserved before mutations and raw-seed padding, so 0 should release both. Mechanism: released slots fall to raw padding, which currently covers only the first four seed_pool entries and never amihud_20 or volume_ratio_5_20. Expect operator:raw n=6, pass 12/12, duplicate_rate above the current 0.0909 because more seeds appear twice, and mean_abs_ic up iff the two new raw |IC| sum above 0.0274, the amount the two crossovers contribute now. Uncertainty: two crossover observations cannot separate 'composition is weak' from 'rank_minus is a weak composition operator'; if the slots are not reallocated the roster will keep 2 crossovers or fall below 12 candidates, which falsifies the reallocation premise. Note the prior builder returned an identical roster for crossover_pairs=4, but this roster actually shows 2 crossovers occupying slots, so the lever is live."
+    }
+   ]
+  },
+  {
+   "source_run": "R3_TRACE_S43_002",
+   "task": "failed_stability_composition",
+   "status": "NULL",
+   "scope": "historical development probe; not independent OOS; scope limited to the source harness and seed",
+   "probe_metrics": {
+    "n_candidates": 12,
+    "pass_count": 12,
+    "pass_rate": 1.0,
+    "mean_abs_ic": 0.04516169670035542,
+    "top_ic_mean": 0.06031948090665376,
+    "icir_median": 0.34098742464232235,
+    "icir_p25": 0.32758257610190206,
+    "coverage": 1.0,
+    "duplicate_rate": 0.12121212121212122,
+    "novelty": 0.125,
+    "turnover_proxy": 0.7722387041501889,
+    "year_ic_min": NaN,
+    "runtime_seconds": 2.51,
+    "failures": 0,
+    "max_date_read": "2020-11-27"
+   },
+   "edits": [
+    {
+     "id": "r3_signed_diversified_one_slot",
+     "kind": "INV",
+     "component": "skills.crossover",
+     "op": "configure",
+     "value": {
+      "pairs": 1,
+      "rule": "signed_rank_sum",
+      "pair_selection": "diversified"
+     },
+     "intent": "当前 raw-slot 父臂完全取消组合，而旧 execution_trace 只显示 legacy rank_minus 组合较弱，不能据此否定所有双亲组合。最小化启用一个组合槽：signed_rank_sum 按 fit-only mean IC 对齐双亲方向，diversified 按强度与低相关的乘积优先选择互补双亲；若其边际 held-out dev 表现优于被替换的 raw 槽，mean_abs_ic 应提高，新结构也有望维持 novelty 并避免增加 duplicate_rate。以同一 raw-slot 父臂为对照，mean_abs_ic 不提高、novelty 降低或 duplicate_rate 增加均证伪该单槽假设。不确定性：单对结果可能由双亲身份偶然主导，且该联合编辑不能分别归因于符号对齐和互补选pair。"
+    },
+    {
+     "id": "r3_signed_diversified_two_slots",
+     "kind": "INV",
+     "component": "skills.crossover",
+     "op": "configure",
+     "value": {
+      "pairs": 2,
+      "rule": "signed_rank_sum",
+      "pair_selection": "diversified"
+     },
+     "intent": "在与旧 trace 相同的组合占用量下同时更换组合规则和选pair机制，检验旧 rank_minus 的弱表现是否来自方向处理或冗余双亲，而非双亲组合本身。两个 fit-only 符号一致的互补组合若比相应 raw padding 更有价值，应提高 held-out dev mean_abs_ic，并相对 raw-slot 父臂保持 novelty 不下降、duplicate_rate 不增加；任一条件失败即否定该配置。不确定性：旧 trace 的日期样本与当前 reference 诊断并不保证相同，且旧组合弱也可能源于具体双亲，因此不能预先把收益归因于新规则。"
+    },
+    {
+     "id": "r3_signed_diversified_four_slots",
+     "kind": "INV",
+     "component": "skills.crossover",
+     "op": "configure",
+     "value": {
+      "pairs": 4,
+      "rule": "signed_rank_sum",
+      "pair_selection": "diversified"
+     },
+     "intent": "用四个符号一致、互补性优先的双亲组合替换更多 raw padding，检验少量组合的潜在收益能否扩展，而不是把单对或双对结果直接外推。若后续组合仍比被替换 raw 槽更强且彼此足够不同，held-out dev mean_abs_ic 应超过 raw-slot 父臂，同时 novelty 不下降、duplicate_rate 不增加；若收益消失或任一多样性约束恶化，则证伪该较大配置。不确定性：diversified 只按 fit IC 序列相关性排序，不能保证 held-out 上仍互补，更多组合也可能耗尽高质量低相关双亲并增加与既有候选的重复。"
+    },
+    {
+     "id": "r3_signed_diversified_full_raw_replacement",
+     "kind": "INV",
+     "component": "skills.crossover",
+     "op": "configure",
+     "value": {
+      "pairs": 6,
+      "rule": "signed_rank_sum",
+      "pair_selection": "diversified"
+     },
+     "intent": "以六个 signed_rank_sum、diversified 组合覆盖当前六个 raw padding 槽，测试完全以符号一致且互补性优先的双亲组合替代 raw-slot 的边界情形。只有 held-out dev mean_abs_ic 超过 raw-slot 父臂且 novelty 不下降、duplicate_rate 不增加时，才支持完全替换；即使 mean_abs_ic 提高，只要任一多样性指标恶化也应否定该配置。不确定性：这是最高暴露配置，后续可选双亲可能更强依赖 fit 噪声，signed sum 也可能比旧差分更接近既有父因子，因此平均质量和重复风险均无法由现有 reference 证据预先判定。"
+    }
+   ]
+  }
+ ]
+}

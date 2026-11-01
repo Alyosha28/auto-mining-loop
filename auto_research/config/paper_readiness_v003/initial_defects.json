@@ -1,0 +1,211 @@
+{
+ "schema": "AUTO-RESEARCH-DIAGNOSTIC-TASK-SCREEN-1",
+ "protocol_version": "V003",
+ "select_evaluated": false,
+ "units": [
+  {
+   "task": "T9",
+   "seed": 11,
+   "screen_run": "auto_research/agents/runs/PAPER_READINESS_TASK_SCREEN_V003_S11",
+   "probe_metrics": {
+    "mean_abs_ic": 0.04421991169745434,
+    "top_ic_mean": 0.07517892600739641,
+    "pass_rate": 0.9166666666666666,
+    "duplicate_rate": 0.015151515151515152,
+    "novelty": 0.25,
+    "coverage": 0.6226623525576791,
+    "turnover_proxy": 0.8793939240076203,
+    "icir_p25": 0.2436995270878206,
+    "year_ic_min": NaN
+   },
+   "common_support_verified": true
+  },
+  {
+   "task": "T10",
+   "seed": 11,
+   "screen_run": "auto_research/agents/runs/PAPER_READINESS_TASK_SCREEN_V003_S11",
+   "probe_metrics": {
+    "mean_abs_ic": 0.04325530078248301,
+    "top_ic_mean": 0.06821741870658399,
+    "pass_rate": 0.9166666666666666,
+    "duplicate_rate": 0.0,
+    "novelty": 0.25,
+    "coverage": 0.6226623525576791,
+    "turnover_proxy": 0.8986167915739912,
+    "icir_p25": 0.298370471624485,
+    "year_ic_min": NaN
+   },
+   "common_support_verified": true
+  },
+  {
+   "task": "T11",
+   "seed": 11,
+   "screen_run": "auto_research/agents/runs/PAPER_READINESS_TASK_SCREEN_V003_S11",
+   "probe_metrics": {
+    "mean_abs_ic": 0.05915380964675709,
+    "top_ic_mean": 0.09004396866387927,
+    "pass_rate": 0.9166666666666666,
+    "duplicate_rate": 0.09090909090909091,
+    "novelty": 0.6666666666666666,
+    "coverage": 0.6226623525576791,
+    "turnover_proxy": 0.8790896103644641,
+    "icir_p25": 0.319636734974894,
+    "year_ic_min": NaN
+   },
+   "common_support_verified": true
+  },
+  {
+   "task": "T12",
+   "seed": 11,
+   "screen_run": "auto_research/agents/runs/PAPER_READINESS_TASK_SCREEN_V003_S11",
+   "probe_metrics": {
+    "mean_abs_ic": 0.04283312630008835,
+    "top_ic_mean": 0.06355404190751905,
+    "pass_rate": 0.9166666666666666,
+    "duplicate_rate": 0.015151515151515152,
+    "novelty": 0.375,
+    "coverage": 0.6226623525576791,
+    "turnover_proxy": 0.8992053800909844,
+    "icir_p25": 0.2530775649806719,
+    "year_ic_min": -0.04348485308326359
+   },
+   "common_support_verified": true
+  },
+  {
+   "task": "T13",
+   "seed": 11,
+   "screen_run": "auto_research/agents/runs/PAPER_READINESS_TASK_SCREEN_V003_S11",
+   "probe_metrics": {
+    "mean_abs_ic": 0.04876100491103827,
+    "top_ic_mean": 0.08033335044661644,
+    "pass_rate": 0.9166666666666666,
+    "duplicate_rate": 0.030303030303030304,
+    "novelty": 0.5,
+    "coverage": 0.6226623525576791,
+    "turnover_proxy": 0.8772856233906529,
+    "icir_p25": 0.2436995270878206,
+    "year_ic_min": NaN
+   },
+   "common_support_verified": true
+  },
+  {
+   "task": "T14",
+   "seed": 11,
+   "screen_run": "auto_research/agents/runs/PAPER_READINESS_TASK_SCREEN_V003_S11",
+   "probe_metrics": {
+    "mean_abs_ic": 0.04781172735022619,
+    "top_ic_mean": 0.08050556845196974,
+    "pass_rate": 0.8333333333333334,
+    "duplicate_rate": 0.045454545454545456,
+    "novelty": 0.5,
+    "coverage": 0.6226623525576791,
+    "turnover_proxy": 0.8921325692005019,
+    "icir_p25": 0.26209461280309954,
+    "year_ic_min": -0.05445092433220309
+   },
+   "common_support_verified": true
+  },
+  {
+   "task": "T9",
+   "seed": 29,
+   "screen_run": "auto_research/agents/runs/PAPER_READINESS_TASK_SCREEN_V003_S29",
+   "probe_metrics": {
+    "mean_abs_ic": 0.03895260439727247,
+    "top_ic_mean": 0.06659622192036267,
+    "pass_rate": 0.9166666666666666,
+    "duplicate_rate": 0.030303030303030304,
+    "novelty": 0.375,
+    "coverage": 0.602867252318204,
+    "turnover_proxy": 0.8759131357903633,
+    "icir_p25": 0.31615678624751953,
+    "year_ic_min": NaN
+   },
+   "common_support_verified": true
+  },
+  {
+   "task": "T10",
+   "seed": 29,
+   "screen_run": "auto_research/agents/runs/PAPER_READINESS_TASK_SCREEN_V003_S29",
+   "probe_metrics": {
+    "mean_abs_ic": 0.040028979345747014,
+    "top_ic_mean": 0.05992511386813317,
+    "pass_rate": 1.0,
+    "duplicate_rate": 0.015151515151515152,
+    "novelty": 0.375,
+    "coverage": 0.602867252318204,
+    "turnover_proxy": 0.9001649670304367,
+    "icir_p25": 0.31822639234482786,
+    "year_ic_min": NaN
+   },
+   "common_support_verified": true
+  },
+  {
+   "task": "T11",
+   "seed": 29,
+   "screen_run": "auto_research/agents/runs/PAPER_READINESS_TASK_SCREEN_V003_S29",
+   "probe_metrics": {
+    "mean_abs_ic": 0.05320714041950736,
+    "top_ic_mean": 0.07669057725194177,
+    "pass_rate": 0.9166666666666666,
+    "duplicate_rate": 0.09090909090909091,
+    "novelty": 0.5,
+    "coverage": 0.602867252318204,
+    "turnover_proxy": 0.8735898703052276,
+    "icir_p25": 0.3286638347283637,
+    "year_ic_min": NaN
+   },
+   "common_support_verified": true
+  },
+  {
+   "task": "T12",
+   "seed": 29,
+   "screen_run": "auto_research/agents/runs/PAPER_READINESS_TASK_SCREEN_V003_S29",
+   "probe_metrics": {
+    "mean_abs_ic": 0.04406706941628826,
+    "top_ic_mean": 0.0681650177348188,
+    "pass_rate": 0.9166666666666666,
+    "duplicate_rate": 0.0,
+    "novelty": 0.375,
+    "coverage": 0.602867252318204,
+    "turnover_proxy": 0.8984166201690179,
+    "icir_p25": 0.34327302194013215,
+    "year_ic_min": -0.046915765815459344
+   },
+   "common_support_verified": true
+  },
+  {
+   "task": "T13",
+   "seed": 29,
+   "screen_run": "auto_research/agents/runs/PAPER_READINESS_TASK_SCREEN_V003_S29",
+   "probe_metrics": {
+    "mean_abs_ic": 0.045261077796573485,
+    "top_ic_mean": 0.0744750974191909,
+    "pass_rate": 0.9166666666666666,
+    "duplicate_rate": 0.045454545454545456,
+    "novelty": 0.5,
+    "coverage": 0.602867252318204,
+    "turnover_proxy": 0.8717269508866395,
+    "icir_p25": 0.3191181814773196,
+    "year_ic_min": NaN
+   },
+   "common_support_verified": true
+  },
+  {
+   "task": "T14",
+   "seed": 29,
+   "screen_run": "auto_research/agents/runs/PAPER_READINESS_TASK_SCREEN_V003_S29",
+   "probe_metrics": {
+    "mean_abs_ic": 0.04610471167904012,
+    "top_ic_mean": 0.06923665576644679,
+    "pass_rate": 1.0,
+    "duplicate_rate": 0.045454545454545456,
+    "novelty": 0.5,
+    "coverage": 0.602867252318204,
+    "turnover_proxy": 0.8873748294209922,
+    "icir_p25": 0.3422726833642655,
+    "year_ic_min": -0.020433490542204207
+   },
+   "common_support_verified": true
+  }
+ ]
+}

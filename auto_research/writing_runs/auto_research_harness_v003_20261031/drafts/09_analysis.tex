@@ -1,0 +1,10 @@
+\section{Statistical analysis}
+\label{sec:analysis}
+
+The observational unit for a paired effect is one task--development-seed--model-replicate combination. For each of the 24 units, I calculate memory-minus-scalar, diagnostic-minus-memory, memory-minus-random, and memory-minus-fixed differences in mean absolute IC. The primary summary reports the unit-level median, mean, range, and direction counts. Task-level medians aggregate four paired units for descriptive heterogeneity; they do not replace the 24-unit statistic used for inference.
+
+Uncertainty is summarized with a 95\% bootstrap interval for the median across all 24 paired unit effects. Each bootstrap sample draws six tasks with replacement and retains all four units from every selected task, so a repeated task contributes a repeated four-unit cluster. The protocol fixes 10{,}000 samples and bootstrap seed 20261031, and the interval uses the 2.5th and 97.5th percentiles of the resulting 24-unit medians. The exact two-sided sign-flip test enumerates all $2^6=64$ assignments of one sign to the four unit effects within each task. It recomputes the median across all 24 signed effects for each assignment and compares absolute medians with the observed statistic. The smallest attainable two-sided p-value is $2/64=0.03125$.
+
+Holm correction covers the two component contrasts, memory-minus-scalar and diagnostic-minus-memory. The random and fixed reference contrasts retain their exact task-test p-values without being described as Holm-adjusted. A component result is interpreted through its effect distribution, task directions, and adjusted test together; a zero median or an interval containing zero does not prove a zero component effect.
+
+The primary analysis preserves the fixed-call-budget, end-to-end execution record, including failed and invalid model decisions. Complete-execution analyses answer a separate sensitivity question on subsets where both relevant conditions executed completely. Date-block concentration and replicate differences provide further diagnostics. None of these auxiliary analyses replaces the fixed-budget primary comparison.

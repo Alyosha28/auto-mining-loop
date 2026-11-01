@@ -1,0 +1,64 @@
+{
+ "schema": "AUTO-RESEARCH-AGENT-ANALYSIS-1",
+ "created_at": "2026-10-21T15:31:46.830622+00:00",
+ "matrix": "auto_research/agents/experiments/matrix_gemma-4-26b-a4b-styletune-qk-heretic-i1.json",
+ "model": "gemma-4-26b-a4b-styletune-qk-heretic-i1",
+ "baseline_random_mean": 0.022385,
+ "baseline_evolution_mean": 0.09345,
+ "arms": {
+  "agentic_full": {
+   "n": 1,
+   "mean": 0.055471,
+   "median": 0.055471,
+   "min": 0.055471,
+   "max": 0.055471,
+   "delta_vs_evolution_mean": -0.037979,
+   "delta_vs_random_mean": 0.033086,
+   "elo_spearman_mean": 0.7818,
+   "valid_mean": 11.0
+  },
+  "agentic_no_critic": {
+   "n": 1,
+   "mean": 0.055471,
+   "median": 0.055471,
+   "min": 0.055471,
+   "max": 0.055471,
+   "delta_vs_evolution_mean": -0.037979,
+   "delta_vs_random_mean": 0.033086,
+   "elo_spearman_mean": 0.7818,
+   "valid_mean": 11.0
+  },
+  "agentic_no_reflection": {
+   "n": 1,
+   "mean": 0.055471,
+   "median": 0.055471,
+   "min": 0.055471,
+   "max": 0.055471,
+   "delta_vs_evolution_mean": -0.037979,
+   "delta_vs_random_mean": 0.033086,
+   "elo_spearman_mean": 0.7818,
+   "valid_mean": 11.0
+  },
+  "agentic_no_elo": {
+   "n": 1,
+   "mean": 0.055471,
+   "median": 0.055471,
+   "min": 0.055471,
+   "max": 0.055471,
+   "delta_vs_evolution_mean": -0.037979,
+   "delta_vs_random_mean": 0.033086,
+   "elo_spearman_mean": 0.1818,
+   "valid_mean": 11.0
+  }
+ },
+ "agentic_full_per_seed": [
+  {
+   "seed": 1,
+   "holdout": 0.055471,
+   "random": 0.022385,
+   "evolution": 0.09345,
+   "beat_random": true,
+   "beat_evolution": false
+  }
+ ]
+}

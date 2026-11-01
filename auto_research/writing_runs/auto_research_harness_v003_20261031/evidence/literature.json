@@ -1,0 +1,450 @@
+{
+  "schema": "AUTO-RESEARCH-VERIFIED-LITERATURE-1",
+  "verified_on": "2026-10-31",
+  "entries": {
+    "lu2026towards": {
+      "title": "Towards end-to-end automation of AI research",
+      "authors": [
+        "Chris Lu",
+        "Cong Lu",
+        "Robert Tjarko Lange",
+        "Yutaro Yamada",
+        "Shengran Hu",
+        "Jakob Foerster",
+        "David Ha",
+        "Jeff Clune"
+      ],
+      "year": 2026,
+      "container": "Nature",
+      "volume": "651",
+      "issue": "8107",
+      "pages": "914–919",
+      "doi": "10.1038/s41586-026-10265-5",
+      "source_urls": [
+        "https://api.crossref.org/works/10.1038/s41586-026-10265-5",
+        "https://sakana.ai/ai-scientist-nature/"
+      ],
+      "supported_claim": "The AI Scientist links idea generation, experiment coding and execution, analysis, manuscript writing, and automated review in an end-to-end research pipeline."
+    },
+    "xu2026harness2": {
+      "title": "Harness^2: Recursive Agent Harnessing for an Open World",
+      "authors": [
+        "Ruiyao Xu",
+        "Yanfei Chen",
+        "Zhongying CuiZhu",
+        "Bhavana Dalvi Mishra",
+        "Yifei Ming",
+        "Han Yu",
+        "Rujun Han",
+        "Chen-Yu Lee",
+        "Tomas Pfister"
+      ],
+      "year": 2026,
+      "container": "arXiv:2610.14224",
+      "doi": "10.48550/arXiv.2610.14224",
+      "source_urls": [
+        "https://arxiv.org/abs/2610.14224"
+      ],
+      "supported_claim": "Harness^2 uses task-level contrastive Propose–Probe–Compose recursion and a harnessing-level recursion that extracts experience from edits for later tasks."
+    },
+    "yang2026aris": {
+      "title": "ARIS: Autonomous Research via Adversarial Multi-Agent Collaboration",
+      "authors": [
+        "Ruofeng Yang",
+        "Yongcan Li",
+        "Shuai Li"
+      ],
+      "year": 2026,
+      "container": "arXiv:2605.03042",
+      "doi": "10.48550/arXiv.2605.03042",
+      "source_urls": [
+        "https://arxiv.org/abs/2605.03042"
+      ],
+      "supported_claim": "ARIS combines execution skills and a persistent research wiki with integrity verification, result-to-claim mapping, claim auditing, and reviewer-approved harness improvements."
+    },
+    "chandran2026production": {
+      "title": "AutoResearch at Production Scale: Failure Modes and a Multi-Agent Framework",
+      "authors": [
+        "Aparajith Chandran",
+        "Juwon Kim",
+        "Saurav Jha",
+        "Pablo Castells",
+        "Florian Hottier"
+      ],
+      "year": 2026,
+      "container": "arXiv:2609.30541; accepted at IEEE ICDM 2026 Applied Track",
+      "doi": "10.48550/arXiv.2609.30541",
+      "source_urls": [
+        "https://arxiv.org/abs/2609.30541"
+      ],
+      "supported_claim": "Production-scale AutoResearch reports infrastructure fragility, agent memory decay, search-direction stagnation, iteration-cost asymmetry, and metric fixation, addressed through prevent, persist, and redirect principles."
+    },
+    "romera2023mathematical": {
+      "title": "Mathematical discoveries from program search with large language models",
+      "authors": [
+        "Bernardino Romera-Paredes",
+        "Mohammadamin Barekatain",
+        "Alexander Novikov",
+        "Matej Balog",
+        "M. Pawan Kumar",
+        "Emilien Dupont",
+        "Francisco J. R. Ruiz",
+        "Jordan S. Ellenberg",
+        "Pengming Wang",
+        "Omar Fawzi",
+        "Pushmeet Kohli",
+        "Alhussein Fawzi"
+      ],
+      "year": 2023,
+      "container": "Nature",
+      "volume": "625",
+      "pages": "468--475",
+      "doi": "10.1038/s41586-023-06924-6",
+      "source_urls": [
+        "https://api.crossref.org/works/10.1038/s41586-023-06924-6"
+      ],
+      "supported_claim": "FunSearch pairs a pretrained LLM with a systematic evaluator in an evolutionary search over solution-generating programs."
+    },
+    "agrawal2025gepa": {
+      "title": "GEPA: Reflective Prompt Evolution Can Outperform Reinforcement Learning",
+      "authors": [
+        "Lakshya A Agrawal",
+        "Shangyin Tan",
+        "Dilara Soylu",
+        "Noah Ziems",
+        "Rishi Khare",
+        "Krista Opsahl-Ong",
+        "Arnav Singhvi",
+        "Herumb Shandilya",
+        "Michael J Ryan",
+        "Meng Jiang",
+        "Christopher Potts",
+        "Koushik Sen",
+        "Alexandros G. Dimakis",
+        "Ion Stoica",
+        "Dan Klein",
+        "Matei Zaharia",
+        "Omar Khattab"
+      ],
+      "year": 2025,
+      "container": "arXiv:2507.19457",
+      "doi": "10.48550/arXiv.2507.19457",
+      "source_urls": [
+        "https://arxiv.org/abs/2507.19457"
+      ],
+      "supported_claim": "GEPA reflects on execution traces in natural language to propose and test prompt updates and combines complementary candidates from a Pareto frontier."
+    },
+    "huang2023mlagentbench": {
+      "title": "MLAgentBench: Evaluating Language Agents on Machine Learning Experimentation",
+      "authors": [
+        "Qian Huang",
+        "Jian Vora",
+        "Percy Liang",
+        "Jure Leskovec"
+      ],
+      "year": 2023,
+      "container": "arXiv:2310.03302",
+      "doi": "10.48550/arXiv.2310.03302",
+      "source_urls": [
+        "https://arxiv.org/abs/2310.03302"
+      ],
+      "supported_claim": "MLAgentBench evaluates language agents on 13 machine-learning experimentation tasks through actions including file editing, code execution, and output inspection."
+    },
+    "novikov2025alphaevolve": {
+      "title": "AlphaEvolve: A coding agent for scientific and algorithmic discovery",
+      "authors": [
+        "Alexander Novikov",
+        "Ngân Vũ",
+        "Marvin Eisenberger",
+        "Emilien Dupont",
+        "Po-Sen Huang",
+        "Adam Zsolt Wagner",
+        "Sergey Shirobokov",
+        "Borislav Kozlovskii",
+        "Francisco J. R. Ruiz",
+        "Abbas Mehrabian",
+        "M. Pawan Kumar",
+        "Abigail See",
+        "Swarat Chaudhuri",
+        "George Holland",
+        "Alex Davies",
+        "Sebastian Nowozin",
+        "Pushmeet Kohli",
+        "Matej Balog"
+      ],
+      "year": 2025,
+      "container": "arXiv:2506.13131",
+      "doi": "10.48550/arXiv.2506.13131",
+      "source_urls": [
+        "https://arxiv.org/abs/2506.13131"
+      ],
+      "supported_claim": "AlphaEvolve evolves code through an autonomous LLM pipeline with feedback from one or more evaluators."
+    },
+    "liu2024evolution": {
+      "title": "Evolution of Heuristics: Towards Efficient Automatic Algorithm Design Using Large Language Model",
+      "authors": [
+        "Fei Liu",
+        "Xialiang Tong",
+        "Mingxuan Yuan",
+        "Xi Lin",
+        "Fu Luo",
+        "Zhenkun Wang",
+        "Zhichao Lu",
+        "Qingfu Zhang"
+      ],
+      "year": 2024,
+      "container": "arXiv:2401.02051",
+      "doi": "10.48550/arXiv.2401.02051",
+      "source_urls": [
+        "https://arxiv.org/abs/2401.02051"
+      ],
+      "supported_claim": "EoH evolves natural-language heuristic ideas and their executable code within an evolutionary search framework."
+    },
+    "jiang2025aide": {
+      "title": "AIDE: AI-Driven Exploration in the Space of Code",
+      "authors": [
+        "Zhengyao Jiang",
+        "Dominik Schmidt",
+        "Dhruv Srikanth",
+        "Dixing Xu",
+        "Ian Kaplan",
+        "Deniss Jacenko",
+        "Yuxiang Wu"
+      ],
+      "year": 2025,
+      "container": "arXiv:2502.13138",
+      "doi": "10.48550/arXiv.2502.13138",
+      "source_urls": [
+        "https://arxiv.org/abs/2502.13138"
+      ],
+      "supported_claim": "AIDE formulates machine-learning engineering as code optimization and uses tree search to reuse and refine promising solutions."
+    },
+    "schmidgall2025agent": {
+      "title": "Agent Laboratory: Using LLM Agents as Research Assistants",
+      "authors": [
+        "Samuel Schmidgall",
+        "Yusheng Su",
+        "Ze Wang",
+        "Ximeng Sun",
+        "Jialian Wu",
+        "Xiaodong Yu",
+        "Jiang Liu",
+        "Michael Moor",
+        "Zicheng Liu",
+        "Emad Barsoum"
+      ],
+      "year": 2025,
+      "container": "arXiv:2501.04227",
+      "doi": "10.48550/arXiv.2501.04227",
+      "source_urls": [
+        "https://arxiv.org/abs/2501.04227"
+      ],
+      "supported_claim": "Agent Laboratory organizes LLM agents across literature review, experimentation, and report writing, while allowing human feedback at each stage."
+    },
+    "wijk2024rebench": {
+      "title": "RE-Bench: Evaluating frontier AI R&D capabilities of language model agents against human experts",
+      "authors": [
+        "Hjalmar Wijk",
+        "Tao Lin",
+        "Joel Becker",
+        "Sami Jawhar",
+        "Neev Parikh",
+        "Thomas Broadley",
+        "Lawrence Chan",
+        "Michael Chen",
+        "Josh Clymer",
+        "Jai Dhyani",
+        "Elena Ericheva",
+        "Katharyn Garcia",
+        "Brian Goodrich",
+        "Nikola Jurkovic",
+        "Holden Karnofsky",
+        "Megan Kinniment",
+        "Aron Lajko",
+        "Seraphina Nix",
+        "Lucas Sato",
+        "William Saunders",
+        "Maksym Taran",
+        "Ben West",
+        "Elizabeth Barnes"
+      ],
+      "year": 2024,
+      "container": "arXiv:2411.15114",
+      "doi": "10.48550/arXiv.2411.15114",
+      "source_urls": [
+        "https://arxiv.org/abs/2411.15114"
+      ],
+      "supported_claim": "RE-Bench compares language-model agents and human experts in seven open-ended ML research-engineering environments under varying time budgets."
+    },
+    "chan2024mlebench": {
+      "title": "MLE-bench: Evaluating Machine Learning Agents on Machine Learning Engineering",
+      "authors": [
+        "Jun Shern Chan",
+        "Neil Chowdhury",
+        "Oliver Jaffe",
+        "James Aung",
+        "Dane Sherburn",
+        "Evan Mays",
+        "Giulio Starace",
+        "Kevin Liu",
+        "Leon Maksin",
+        "Tejal Patwardhan",
+        "Lilian Weng",
+        "Aleksander Mądry"
+      ],
+      "year": 2024,
+      "container": "arXiv:2410.07095",
+      "doi": "10.48550/arXiv.2410.07095",
+      "source_urls": [
+        "https://arxiv.org/abs/2410.07095"
+      ],
+      "supported_claim": "MLE-bench evaluates agents on 75 Kaggle machine-learning engineering competitions and includes human leaderboard baselines."
+    },
+    "yang2024sweagent": {
+      "title": "SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering",
+      "authors": [
+        "John Yang",
+        "Carlos E. Jimenez",
+        "Alexander Wettig",
+        "Kilian Lieret",
+        "Shunyu Yao",
+        "Karthik Narasimhan",
+        "Ofir Press"
+      ],
+      "year": 2024,
+      "container": "arXiv:2405.15793",
+      "doi": "10.48550/arXiv.2405.15793",
+      "source_urls": [
+        "https://arxiv.org/abs/2405.15793"
+      ],
+      "supported_claim": "SWE-agent studies how agent-computer interface design affects code editing, repository navigation, test execution, and agent performance."
+    },
+    "chen2024scienceagentbench": {
+      "title": "ScienceAgentBench: Toward Rigorous Assessment of Language Agents for Data-Driven Scientific Discovery",
+      "authors": [
+        "Ziru Chen",
+        "Shijie Chen",
+        "Yuting Ning",
+        "Qianheng Zhang",
+        "Boshi Wang",
+        "Botao Yu",
+        "Yifei Li",
+        "Zeyi Liao",
+        "Chen Wei",
+        "Zitong Lu",
+        "Vishal Dey",
+        "Mingyi Xue",
+        "Frazier N. Baker",
+        "Benjamin Burns",
+        "Daniel Adu-Ampratwum",
+        "Xuhui Huang",
+        "Xia Ning",
+        "Song Gao",
+        "Yu Su",
+        "Huan Sun"
+      ],
+      "year": 2024,
+      "container": "arXiv:2410.05080",
+      "doi": "10.48550/arXiv.2410.05080",
+      "source_urls": [
+        "https://arxiv.org/abs/2410.05080"
+      ],
+      "supported_claim": "ScienceAgentBench evaluates 102 expert-validated data-driven discovery tasks using program quality, execution results, and cost."
+    },
+    "jansen2024discoveryworld": {
+      "title": "DISCOVERYWORLD: A Virtual Environment for Developing and Evaluating Automated Scientific Discovery Agents",
+      "authors": [
+        "Peter Jansen",
+        "Marc-Alexandre Côté",
+        "Tushar Khot",
+        "Erin Bransom",
+        "Bhavana Dalvi Mishra",
+        "Bodhisattwa Prasad Majumder",
+        "Oyvind Tafjord",
+        "Peter Clark"
+      ],
+      "year": 2024,
+      "container": "arXiv:2406.06769",
+      "doi": "10.48550/arXiv.2406.06769",
+      "source_urls": [
+        "https://arxiv.org/abs/2406.06769"
+      ],
+      "supported_claim": "DiscoveryWorld provides 120 simulated tasks requiring hypotheses, experiment design and execution, analysis, and conclusions."
+    },
+    "liu2023agentbench": {
+      "title": "AgentBench: Evaluating LLMs as Agents",
+      "authors": [
+        "Xiao Liu",
+        "Hao Yu",
+        "Hanchen Zhang",
+        "Yifan Xu",
+        "Xuanyu Lei",
+        "Hanyu Lai",
+        "Yu Gu",
+        "Hangliang Ding",
+        "Kaiwen Men",
+        "Kejuan Yang",
+        "Shudan Zhang",
+        "Xiang Deng",
+        "Aohan Zeng",
+        "Zhengxiao Du",
+        "Chenhui Zhang",
+        "Sheng Shen",
+        "Tianjun Zhang",
+        "Yu Su",
+        "Huan Sun",
+        "Minlie Huang",
+        "Yuxiao Dong",
+        "Jie Tang"
+      ],
+      "year": 2023,
+      "container": "arXiv:2308.03688",
+      "doi": "10.48550/arXiv.2308.03688",
+      "source_urls": [
+        "https://arxiv.org/abs/2308.03688"
+      ],
+      "supported_claim": "AgentBench evaluates LLM agents across eight interactive environments and analyzes reasoning, decision-making, and instruction-following failures."
+    },
+    "liu2025cogalpha": {
+      "title": "Cognitive Alpha Mining via LLM-Driven Code-Based Evolution",
+      "authors": [
+        "Fengyuan Liu",
+        "Yi Huang",
+        "Sichun Luo",
+        "Yuqi Wang",
+        "Yazheng Yang",
+        "Xinye Li",
+        "Zefa Hu",
+        "Junlan Feng",
+        "Qi Liu"
+      ],
+      "year": 2025,
+      "container": "arXiv:2511.18850",
+      "doi": "10.48550/arXiv.2511.18850",
+      "source_urls": [
+        "https://arxiv.org/abs/2511.18850"
+      ],
+      "supported_claim": "CogAlpha represents alphas as code and combines LLM reasoning, evolutionary mutations and recombination, multi-stage prompts, and financial feedback."
+    },
+    "yu2023generating": {
+      "title": "Generating Synergistic Formulaic Alpha Collections via Reinforcement Learning",
+      "authors": [
+        "Shuo Yu",
+        "Hongyan Xue",
+        "Xiang Ao",
+        "Feiyang Pan",
+        "Jia He",
+        "Dandan Tu",
+        "Qing He"
+      ],
+      "year": 2023,
+      "container": "Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+      "doi": "10.1145/3580305.3599831",
+      "source_urls": [
+        "https://doi.org/10.1145/3580305.3599831",
+        "https://arxiv.org/abs/2306.12964"
+      ],
+      "supported_claim": "AlphaGen uses reinforcement learning to optimize a synergistic collection of formulaic alphas through downstream combination-model performance."
+    }
+  }
+}

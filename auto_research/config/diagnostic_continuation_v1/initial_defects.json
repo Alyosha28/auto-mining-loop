@@ -1,0 +1,199 @@
+{
+ "schema": "AUTO-RESEARCH-DIAGNOSTIC-TASK-SCREEN-1",
+ "protocol_version": "V001",
+ "select_evaluated": false,
+ "units": [
+  {
+   "task": "T1",
+   "seed": 11,
+   "screen_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_TASK_SCREEN_V001_S11",
+   "probe_metrics": {
+    "mean_abs_ic": 0.049768473849777554,
+    "pass_rate": 0.9166666666666666,
+    "duplicate_rate": 0.07575757575757576,
+    "novelty": 0.5,
+    "coverage": 0.8307476849895568,
+    "turnover_proxy": 0.8157320698542134,
+    "icir_p25": 0.27353400702378544,
+    "year_ic_min": NaN
+   },
+   "common_support_verified": true
+  },
+  {
+   "task": "T2",
+   "seed": 11,
+   "screen_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_TASK_SCREEN_V001_S11",
+   "probe_metrics": {
+    "mean_abs_ic": 0.05214118407092432,
+    "pass_rate": 0.9166666666666666,
+    "duplicate_rate": 0.09090909090909091,
+    "novelty": 0.125,
+    "coverage": 0.8307476849895568,
+    "turnover_proxy": 0.8179432462784282,
+    "icir_p25": 0.3103952081009434,
+    "year_ic_min": NaN
+   },
+   "common_support_verified": true
+  },
+  {
+   "task": "T3",
+   "seed": 11,
+   "screen_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_TASK_SCREEN_V001_S11",
+   "probe_metrics": {
+    "mean_abs_ic": 0.043621847994942474,
+    "pass_rate": 0.9166666666666666,
+    "duplicate_rate": 0.015151515151515152,
+    "novelty": 0.25,
+    "coverage": 0.8307476849895568,
+    "turnover_proxy": 0.8350553285761061,
+    "icir_p25": 0.2320335613589356,
+    "year_ic_min": NaN
+   },
+   "common_support_verified": true
+  },
+  {
+   "task": "T4",
+   "seed": 11,
+   "screen_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_TASK_SCREEN_V001_S11",
+   "probe_metrics": {
+    "mean_abs_ic": 0.04211473425530218,
+    "pass_rate": 0.9166666666666666,
+    "duplicate_rate": 0.0,
+    "novelty": 0.25,
+    "coverage": 0.8307476849895568,
+    "turnover_proxy": 0.8625307632186524,
+    "icir_p25": 0.30253803924320666,
+    "year_ic_min": -0.024412907252961705
+   },
+   "common_support_verified": true
+  },
+  {
+   "task": "T1",
+   "seed": 29,
+   "screen_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_TASK_SCREEN_V001_S29",
+   "probe_metrics": {
+    "mean_abs_ic": 0.04519654585853194,
+    "pass_rate": 0.9166666666666666,
+    "duplicate_rate": 0.12121212121212122,
+    "novelty": 0.5,
+    "coverage": 0.8132198633479746,
+    "turnover_proxy": 0.825296618874402,
+    "icir_p25": 0.33186406122683415,
+    "year_ic_min": NaN
+   },
+   "common_support_verified": true
+  },
+  {
+   "task": "T2",
+   "seed": 29,
+   "screen_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_TASK_SCREEN_V001_S29",
+   "probe_metrics": {
+    "mean_abs_ic": 0.049493518722979,
+    "pass_rate": 1.0,
+    "duplicate_rate": 0.13636363636363635,
+    "novelty": 0.125,
+    "coverage": 0.8132198633479746,
+    "turnover_proxy": 0.824176536701161,
+    "icir_p25": 0.3400381037823022,
+    "year_ic_min": NaN
+   },
+   "common_support_verified": true
+  },
+  {
+   "task": "T3",
+   "seed": 29,
+   "screen_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_TASK_SCREEN_V001_S29",
+   "probe_metrics": {
+    "mean_abs_ic": 0.037336019694081186,
+    "pass_rate": 0.8333333333333334,
+    "duplicate_rate": 0.030303030303030304,
+    "novelty": 0.375,
+    "coverage": 0.8132198633479746,
+    "turnover_proxy": 0.8447848008855767,
+    "icir_p25": 0.29568897391775445,
+    "year_ic_min": NaN
+   },
+   "common_support_verified": true
+  },
+  {
+   "task": "T4",
+   "seed": 29,
+   "screen_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_TASK_SCREEN_V001_S29",
+   "probe_metrics": {
+    "mean_abs_ic": 0.03738126536674197,
+    "pass_rate": 1.0,
+    "duplicate_rate": 0.015151515151515152,
+    "novelty": 0.375,
+    "coverage": 0.8132198633479746,
+    "turnover_proxy": 0.87571067267378,
+    "icir_p25": 0.32914989019682567,
+    "year_ic_min": -0.02582810672804216
+   },
+   "common_support_verified": true
+  },
+  {
+   "task": "T1",
+   "seed": 43,
+   "screen_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_TASK_SCREEN_V001_S43",
+   "probe_metrics": {
+    "mean_abs_ic": 0.04322625246098393,
+    "pass_rate": 0.9166666666666666,
+    "duplicate_rate": 0.09090909090909091,
+    "novelty": 0.3,
+    "coverage": 0.8594840854521948,
+    "turnover_proxy": 0.8239896939059295,
+    "icir_p25": 0.3176577948436816,
+    "year_ic_min": NaN
+   },
+   "common_support_verified": true
+  },
+  {
+   "task": "T2",
+   "seed": 43,
+   "screen_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_TASK_SCREEN_V001_S43",
+   "probe_metrics": {
+    "mean_abs_ic": 0.04458989866467975,
+    "pass_rate": 1.0,
+    "duplicate_rate": 0.10606060606060606,
+    "novelty": 0.125,
+    "coverage": 0.8594840854521948,
+    "turnover_proxy": 0.809321967216511,
+    "icir_p25": 0.3190617955248215,
+    "year_ic_min": NaN
+   },
+   "common_support_verified": true
+  },
+  {
+   "task": "T3",
+   "seed": 43,
+   "screen_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_TASK_SCREEN_V001_S43",
+   "probe_metrics": {
+    "mean_abs_ic": 0.03718283117860615,
+    "pass_rate": 0.8333333333333334,
+    "duplicate_rate": 0.030303030303030304,
+    "novelty": 0.375,
+    "coverage": 0.8594840854521948,
+    "turnover_proxy": 0.8513016336453136,
+    "icir_p25": 0.31713991441306744,
+    "year_ic_min": NaN
+   },
+   "common_support_verified": true
+  },
+  {
+   "task": "T4",
+   "seed": 43,
+   "screen_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_TASK_SCREEN_V001_S43",
+   "probe_metrics": {
+    "mean_abs_ic": 0.032283467451422916,
+    "pass_rate": 1.0,
+    "duplicate_rate": 0.015151515151515152,
+    "novelty": 0.375,
+    "coverage": 0.8594840854521948,
+    "turnover_proxy": 0.8681882937490564,
+    "icir_p25": 0.27043177057069256,
+    "year_ic_min": -0.017094512000509824
+   },
+   "common_support_verified": true
+  }
+ ]
+}

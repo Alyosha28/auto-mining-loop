@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "Budget-bounded research-harness evolution",
+    "locale": "en",
+    "quality_profile": "showcase",
+    "output": ".archify/workflow-research-harness-20261031-233426/research-harness.html"
+  },
+  "lanes": [
+    { "id": "inputs", "label": "Frozen development inputs" },
+    { "id": "memory", "label": "Probe memory" },
+    { "id": "loop", "label": "Four-decision continuation" },
+    { "id": "evaluation", "label": "Frozen final evaluation" }
+  ],
+  "mainPath": ["harness", "proposer", "probe", "champion", "comparison", "analysis"],
+  "nodes": [
+    { "id": "harness", "lane": "inputs", "col": 0, "type": "backend", "label": "Harness + dev task", "sublabel": "editable · fixed reference", "width": 144 },
+    { "id": "random", "lane": "inputs", "col": 1, "type": "external", "label": "Random control", "sublabel": "legal edits · zero calls", "width": 144 },
+    { "id": "history", "lane": "memory", "col": 0, "type": "database", "label": "Probe history", "sublabel": "no select outcomes", "width": 136 },
+    { "id": "proposer", "lane": "loop", "col": 1, "type": "backend", "label": "Model proposer", "sublabel": "scalar · memory · diagnostic", "tag": "atomic proposal", "width": 152 },
+    { "id": "probe", "lane": "loop", "col": 2, "type": "messagebus", "label": "Probe + trace", "sublabel": "fixed budget · failures kept", "width": 152 },
+    { "id": "branch", "lane": "loop", "col": 3, "type": "backend", "label": "Active → proposer", "sublabel": "rejected edits continue", "width": 144 },
+    { "id": "champion", "lane": "evaluation", "col": 2, "type": "security", "label": "Frozen champion", "sublabel": "contract-based updates", "width": 152 },
+    { "id": "comparison", "lane": "evaluation", "col": 4, "type": "messagebus", "label": "Common support", "sublabel": "five frozen conditions", "width": 144 },
+    { "id": "analysis", "lane": "evaluation", "col": 5, "type": "frontend", "label": "Paired analysis", "sublabel": "24 units", "width": 136 }
+  ],
+  "edges": [
+    { "id": "harness-proposer", "from": "harness", "to": "proposer", "variant": "emphasis", "role": "main" },
+    { "id": "harness-random", "from": "harness", "to": "random", "variant": "default", "role": "branch" },
+    { "id": "random-probe", "from": "random", "to": "probe", "variant": "default", "role": "branch" },
+    { "id": "history-proposer", "from": "history", "to": "proposer", "variant": "dashed", "role": "branch" },
+    { "id": "proposer-probe", "from": "proposer", "to": "probe", "variant": "emphasis", "role": "main" },
+    { "id": "probe-branch", "from": "probe", "to": "branch", "variant": "default", "role": "branch" },
+    { "id": "probe-champion", "from": "probe", "to": "champion", "variant": "emphasis", "role": "main" },
+    { "id": "champion-comparison", "from": "champion", "to": "comparison", "variant": "emphasis", "role": "main" },
+    { "id": "comparison-analysis", "from": "comparison", "to": "analysis", "variant": "emphasis", "role": "main" }
+  ]
+}

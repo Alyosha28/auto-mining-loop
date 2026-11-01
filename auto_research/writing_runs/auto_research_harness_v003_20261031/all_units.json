@@ -1,0 +1,146 @@
+[
+  {
+    "id": "00_title",
+    "run_id": "auto-research-v003-00_title",
+    "purpose": "source_bound_manuscript_unit",
+    "status": "drafted",
+    "draft": "auto_research/writing_runs/auto_research_harness_v003_20261031/drafts/00_title.tex",
+    "context": "auto_research/writing_runs/auto_research_harness_v003_20261031/contexts/00_title.json"
+  },
+  {
+    "id": "01_abstract",
+    "run_id": "auto-research-v003-01_abstract",
+    "purpose": "source_bound_manuscript_unit",
+    "status": "drafted",
+    "draft": "auto_research/writing_runs/auto_research_harness_v003_20261031/drafts/01_abstract.tex",
+    "context": "auto_research/writing_runs/auto_research_harness_v003_20261031/contexts/01_abstract.json"
+  },
+  {
+    "id": "02_introduction",
+    "run_id": "auto-research-v003-02_introduction",
+    "purpose": "source_bound_manuscript_unit",
+    "status": "drafted",
+    "draft": "auto_research/writing_runs/auto_research_harness_v003_20261031/drafts/02_introduction.tex",
+    "context": "auto_research/writing_runs/auto_research_harness_v003_20261031/contexts/02_introduction.json"
+  },
+  {
+    "id": "03_related",
+    "run_id": "auto-research-v003-03_related",
+    "purpose": "source_bound_manuscript_unit",
+    "status": "drafted",
+    "draft": "auto_research/writing_runs/auto_research_harness_v003_20261031/drafts/03_related.tex",
+    "context": "auto_research/writing_runs/auto_research_harness_v003_20261031/contexts/03_related.json"
+  },
+  {
+    "id": "04_problem",
+    "run_id": "auto-research-v003-04_problem",
+    "purpose": "source_bound_manuscript_unit",
+    "status": "drafted",
+    "draft": "auto_research/writing_runs/auto_research_harness_v003_20261031/drafts/04_problem.tex",
+    "context": "auto_research/writing_runs/auto_research_harness_v003_20261031/contexts/04_problem.json"
+  },
+  {
+    "id": "05_harness",
+    "run_id": "auto-research-v003-05_harness",
+    "purpose": "source_bound_manuscript_unit",
+    "status": "drafted",
+    "draft": "auto_research/writing_runs/auto_research_harness_v003_20261031/drafts/05_harness.tex",
+    "context": "auto_research/writing_runs/auto_research_harness_v003_20261031/contexts/05_harness.json"
+  },
+  {
+    "id": "06_information",
+    "run_id": "auto-research-v003-06_information",
+    "purpose": "source_bound_manuscript_unit",
+    "status": "drafted",
+    "draft": "auto_research/writing_runs/auto_research_harness_v003_20261031/drafts/06_information.tex",
+    "context": "auto_research/writing_runs/auto_research_harness_v003_20261031/contexts/06_information.json"
+  },
+  {
+    "id": "07_protocol",
+    "run_id": "auto-research-v003-07_protocol",
+    "purpose": "source_bound_manuscript_unit",
+    "status": "drafted",
+    "draft": "auto_research/writing_runs/auto_research_harness_v003_20261031/drafts/07_protocol.tex",
+    "context": "auto_research/writing_runs/auto_research_harness_v003_20261031/contexts/07_protocol.json"
+  },
+  {
+    "id": "08_metrics",
+    "run_id": "auto-research-v003-08_metrics",
+    "purpose": "source_bound_manuscript_unit",
+    "status": "drafted",
+    "draft": "auto_research/writing_runs/auto_research_harness_v003_20261031/drafts/08_metrics.tex",
+    "context": "auto_research/writing_runs/auto_research_harness_v003_20261031/contexts/08_metrics.json"
+  },
+  {
+    "id": "09_analysis",
+    "run_id": "auto-research-v003-09_analysis",
+    "purpose": "source_bound_manuscript_unit",
+    "status": "drafted",
+    "draft": "auto_research/writing_runs/auto_research_harness_v003_20261031/drafts/09_analysis.tex",
+    "context": "auto_research/writing_runs/auto_research_harness_v003_20261031/contexts/09_analysis.json"
+  },
+  {
+    "id": "10_primary",
+    "run_id": "auto-research-v003-10_primary",
+    "purpose": "source_bound_manuscript_unit",
+    "status": "drafted",
+    "draft": "auto_research/writing_runs/auto_research_harness_v003_20261031/drafts/10_primary.tex",
+    "context": "auto_research/writing_runs/auto_research_harness_v003_20261031/contexts/10_primary.json"
+  },
+  {
+    "id": "11_components",
+    "run_id": "auto-research-v003-11_components",
+    "purpose": "source_bound_manuscript_unit",
+    "status": "drafted",
+    "draft": "auto_research/writing_runs/auto_research_harness_v003_20261031/drafts/11_components.tex",
+    "context": "auto_research/writing_runs/auto_research_harness_v003_20261031/contexts/11_components.json"
+  },
+  {
+    "id": "12_behavior",
+    "run_id": "auto-research-v003-12_behavior",
+    "purpose": "source_bound_manuscript_unit",
+    "status": "drafted",
+    "draft": "auto_research/writing_runs/auto_research_harness_v003_20261031/drafts/12_behavior.tex",
+    "context": "auto_research/writing_runs/auto_research_harness_v003_20261031/contexts/12_behavior.json"
+  },
+  {
+    "id": "13_execution",
+    "run_id": "auto-research-v003-13_execution",
+    "purpose": "source_bound_manuscript_unit",
+    "status": "drafted",
+    "draft": "auto_research/writing_runs/auto_research_harness_v003_20261031/drafts/13_execution.tex",
+    "context": "auto_research/writing_runs/auto_research_harness_v003_20261031/contexts/13_execution.json"
+  },
+  {
+    "id": "14_discussion",
+    "run_id": "auto-research-v003-14_discussion",
+    "purpose": "source_bound_manuscript_unit",
+    "status": "drafted",
+    "draft": "auto_research/writing_runs/auto_research_harness_v003_20261031/drafts/14_discussion.tex",
+    "context": "auto_research/writing_runs/auto_research_harness_v003_20261031/contexts/14_discussion.json"
+  },
+  {
+    "id": "15_limitations",
+    "run_id": "auto-research-v003-15_limitations",
+    "purpose": "source_bound_manuscript_unit",
+    "status": "drafted",
+    "draft": "auto_research/writing_runs/auto_research_harness_v003_20261031/drafts/15_limitations.tex",
+    "context": "auto_research/writing_runs/auto_research_harness_v003_20261031/contexts/15_limitations.json"
+  },
+  {
+    "id": "16_conclusion",
+    "run_id": "auto-research-v003-16_conclusion",
+    "purpose": "source_bound_manuscript_unit",
+    "status": "drafted",
+    "draft": "auto_research/writing_runs/auto_research_harness_v003_20261031/drafts/16_conclusion.tex",
+    "context": "auto_research/writing_runs/auto_research_harness_v003_20261031/contexts/16_conclusion.json"
+  },
+  {
+    "id": "17_appendix",
+    "run_id": "auto-research-v003-17_appendix",
+    "purpose": "source_bound_manuscript_unit",
+    "status": "drafted",
+    "draft": "auto_research/writing_runs/auto_research_harness_v003_20261031/drafts/17_appendix.tex",
+    "context": "auto_research/writing_runs/auto_research_harness_v003_20261031/contexts/17_appendix.json"
+  }
+]

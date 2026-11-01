@@ -1,0 +1,29 @@
+% Anonymous V003 working manuscript using the shared ESWA layout.
+\ifdefined\JournalPreview
+  \documentclass[5p,twocolumn,authoryear,lefttitle]{elsarticle}
+\else
+  \documentclass[preprint,12pt,authoryear]{elsarticle}
+\fi
+\input{project-style.tex}
+\ifdefined\JournalPreview
+  \newcommand{\ResearchWideWidth}{183.48mm}
+  \newcommand{\ResearchFigureVariant}{preview_wide}
+\else
+  \newcommand{\ResearchWideWidth}{150mm}
+  \newcommand{\ResearchFigureVariant}{review_wide}
+\fi
+\journal{Expert Systems with Applications}
+\begin{document}
+\begin{frontmatter}
+\title{\ProjectTitleText{Budget-Bounded LLM-Driven Research-Harness Evolution: Controlled Evidence from Factor Discovery}}
+\begin{abstract}
+\input{drafts/01_abstract.tex}
+\end{abstract}
+\begin{keyword}
+Research harness \sep Large language models \sep Autonomous research \sep Genetic programming \sep Factor discovery
+\end{keyword}
+\end{frontmatter}
+\input{content.tex}
+\bibliographystyle{elsarticle-harv}
+\bibliography{references}
+\end{document}

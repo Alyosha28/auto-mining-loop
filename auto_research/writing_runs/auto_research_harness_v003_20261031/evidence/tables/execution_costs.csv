@@ -1,0 +1,5 @@
+arm,decisions,model_calls,candidate_budget,input_tokens,output_tokens,executed_decisions,candidate_positions
+scalar,96,96,1032,1154141,295939,86,1032
+memory,96,96,1104,2963168,395516,92,1104
+diagnostic,96,96,924,3433519,508868,77,924
+random,96,0,1152,0,0,92,1104

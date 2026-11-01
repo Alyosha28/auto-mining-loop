@@ -1,0 +1,12 @@
+Copyright (c) 2026 Alyosha28
+
+All rights reserved.
+
+This repository is made publicly visible for research review and reproducibility.
+No license to copy, modify, redistribute, sublicense, or create derivative works
+is granted for the repository as a whole without explicit written permission.
+
+Third-party components retain their own licenses and copyright notices. In
+particular, auto_research/benchmark is distributed under its included MIT
+License, bundled fonts use their included SIL Open Font License texts, and
+LaTeX packages use their included license notices.

@@ -1,0 +1,5 @@
+contrast,paired_replicates,identical_pairs,median_absolute_A_minus_B,max_absolute_A_minus_B
+memory_minus_scalar,12,3,0.0007706510565473994,0.0034936805077582303
+diagnostic_minus_memory,12,7,0.0,0.0034936805077582303
+memory_minus_random,12,0,0.0040006401221778995,0.01598601101099694
+memory_minus_fixed,12,6,3.08061663369108e-06,0.0034936805077582303

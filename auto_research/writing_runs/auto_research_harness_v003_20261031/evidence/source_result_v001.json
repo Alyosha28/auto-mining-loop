@@ -1,0 +1,5019 @@
+{
+ "schema": "AUTO-RESEARCH-DIAGNOSTIC-CONTINUATION-RESULT-1",
+ "protocol_version": "V001",
+ "model": "kimi/k3.1-pro[1m]",
+ "task_count": 4,
+ "seeds": [
+  11,
+  29,
+  43
+ ],
+ "paired_units": [
+  {
+   "schema": "AUTO-RESEARCH-DIAGNOSTIC-CONTINUATION-UNIT-1",
+   "protocol_version": "V001",
+   "task": "T1",
+   "seed": 11,
+   "status": "COMPLETED",
+   "shared_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T1_S11_V001/T1_S11_SHARED",
+   "parent_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T1_S11_V001/T1_S11_PARENT",
+   "diagnostic_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T1_S11_V001/T1_S11_DIAGNOSTIC",
+   "comparison_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T1_S11_V001/common_comparison",
+   "parent_champion": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T1_S11_V001/T1_S11_SHARED/decisions/T1_S11_SHARED_d002/child/step/harness/adopted.json",
+   "diagnostic_champion": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T1_S11_V001/T1_S11_DIAGNOSTIC/decisions/T1_S11_DIAGNOSTIC_d002/child/step/harness/adopted.json",
+   "select_diagnostic_minus_parent": 0.009034469716543814,
+   "select_parent_minus_fixed": 0.015344057259836237,
+   "select_diagnostic_minus_fixed": 0.02437852697638005,
+   "select_shared_minus_fixed": 0.015344057259836237,
+   "select_metrics": {
+    "parent": {
+     "n_candidates": 12,
+     "pass_count": 12,
+     "pass_rate": 1.0,
+     "mean_abs_ic": 0.06890409258109613,
+     "top_ic_mean": 0.09218751070850352,
+     "icir_median": 0.5529261330939049,
+     "icir_p25": 0.48954404001526997,
+     "coverage": 0.876326165468341,
+     "common_cells": 132242,
+     "common_dates": 47,
+     "common_support_sha256": "ac45292a514e108a0a97e74c920552554e3027b522281bab63cc524c6927cdc8",
+     "fit_common_cells": 302512,
+     "fit_common_dates": 102,
+     "fit_common_support_sha256": "3e476f92acfa203e1a45ac2eb0c03d3a96c9c546fc232ff343a99783bc25b224",
+     "duplicate_rate": 0.07575757575757576,
+     "novelty": 0.1,
+     "turnover_proxy": 0.8089180384282125,
+     "year_ic_min": NaN,
+     "runtime_seconds": 14.1,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    },
+    "diagnostic": {
+     "n_candidates": 12,
+     "pass_count": 12,
+     "pass_rate": 1.0,
+     "mean_abs_ic": 0.07793856229763994,
+     "top_ic_mean": 0.09525527808023644,
+     "icir_median": 0.5385670981591584,
+     "icir_p25": 0.4898003026002207,
+     "coverage": 0.876326165468341,
+     "common_cells": 132242,
+     "common_dates": 47,
+     "common_support_sha256": "ac45292a514e108a0a97e74c920552554e3027b522281bab63cc524c6927cdc8",
+     "fit_common_cells": 302512,
+     "fit_common_dates": 102,
+     "fit_common_support_sha256": "3e476f92acfa203e1a45ac2eb0c03d3a96c9c546fc232ff343a99783bc25b224",
+     "duplicate_rate": 0.18181818181818182,
+     "novelty": 0.16666666666666666,
+     "turnover_proxy": 0.8190688401922317,
+     "year_ic_min": NaN,
+     "runtime_seconds": 14.77,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    },
+    "fixed": {
+     "n_candidates": 12,
+     "pass_count": 11,
+     "pass_rate": 0.9166666666666666,
+     "mean_abs_ic": 0.05356003532125989,
+     "top_ic_mean": 0.07633888673487431,
+     "icir_median": 0.4970208986804977,
+     "icir_p25": 0.3880655345297374,
+     "coverage": 0.876326165468341,
+     "common_cells": 132242,
+     "common_dates": 47,
+     "common_support_sha256": "ac45292a514e108a0a97e74c920552554e3027b522281bab63cc524c6927cdc8",
+     "fit_common_cells": 302512,
+     "fit_common_dates": 102,
+     "fit_common_support_sha256": "3e476f92acfa203e1a45ac2eb0c03d3a96c9c546fc232ff343a99783bc25b224",
+     "duplicate_rate": 0.07575757575757576,
+     "novelty": 0.5,
+     "turnover_proxy": 0.797716984954793,
+     "year_ic_min": NaN,
+     "runtime_seconds": 15.43,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    },
+    "shared": {
+     "n_candidates": 12,
+     "pass_count": 12,
+     "pass_rate": 1.0,
+     "mean_abs_ic": 0.06890409258109613,
+     "top_ic_mean": 0.09218751070850352,
+     "icir_median": 0.5529261330939049,
+     "icir_p25": 0.48954404001526997,
+     "coverage": 0.876326165468341,
+     "common_cells": 132242,
+     "common_dates": 47,
+     "common_support_sha256": "ac45292a514e108a0a97e74c920552554e3027b522281bab63cc524c6927cdc8",
+     "fit_common_cells": 302512,
+     "fit_common_dates": 102,
+     "fit_common_support_sha256": "3e476f92acfa203e1a45ac2eb0c03d3a96c9c546fc232ff343a99783bc25b224",
+     "duplicate_rate": 0.07575757575757576,
+     "novelty": 0.1,
+     "turnover_proxy": 0.8089180384282125,
+     "year_ic_min": NaN,
+     "runtime_seconds": 16.09,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    }
+   },
+   "date_block_diagnostic": {
+    "metric": "mean_daily_abs_ic_delta",
+    "block_size_dates": 4,
+    "dates": [
+     {
+      "date": "2017-01-06",
+      "mean_daily_abs_ic_delta": 0.027931534534215263
+     },
+     {
+      "date": "2017-01-13",
+      "mean_daily_abs_ic_delta": 0.022918251563038616
+     },
+     {
+      "date": "2017-01-20",
+      "mean_daily_abs_ic_delta": 0.010944217991474853
+     },
+     {
+      "date": "2017-01-26",
+      "mean_daily_abs_ic_delta": 0.01664900708590611
+     },
+     {
+      "date": "2017-07-21",
+      "mean_daily_abs_ic_delta": 0.04119180802101509
+     },
+     {
+      "date": "2017-07-28",
+      "mean_daily_abs_ic_delta": 0.014577838531023596
+     },
+     {
+      "date": "2017-08-04",
+      "mean_daily_abs_ic_delta": 0.013914368904978325
+     },
+     {
+      "date": "2017-08-11",
+      "mean_daily_abs_ic_delta": 0.013262393493237074
+     },
+     {
+      "date": "2017-10-20",
+      "mean_daily_abs_ic_delta": 0.0035017677099909925
+     },
+     {
+      "date": "2017-10-27",
+      "mean_daily_abs_ic_delta": 0.015968324530352435
+     },
+     {
+      "date": "2017-11-03",
+      "mean_daily_abs_ic_delta": 0.006664641327108561
+     },
+     {
+      "date": "2017-11-10",
+      "mean_daily_abs_ic_delta": 0.032974754301278636
+     },
+     {
+      "date": "2018-01-05",
+      "mean_daily_abs_ic_delta": 0.004069432992770031
+     },
+     {
+      "date": "2018-01-12",
+      "mean_daily_abs_ic_delta": 0.018195287654811265
+     },
+     {
+      "date": "2018-01-19",
+      "mean_daily_abs_ic_delta": 0.0140720430546325
+     },
+     {
+      "date": "2018-01-26",
+      "mean_daily_abs_ic_delta": 0.020150018064040473
+     },
+     {
+      "date": "2018-06-22",
+      "mean_daily_abs_ic_delta": 0.05919081747459373
+     },
+     {
+      "date": "2018-06-29",
+      "mean_daily_abs_ic_delta": -0.0018158616891194579
+     },
+     {
+      "date": "2018-07-06",
+      "mean_daily_abs_ic_delta": 0.012122063688814688
+     },
+     {
+      "date": "2018-07-13",
+      "mean_daily_abs_ic_delta": 0.01618275165180981
+     },
+     {
+      "date": "2018-12-14",
+      "mean_daily_abs_ic_delta": 0.008745430513525582
+     },
+     {
+      "date": "2018-12-21",
+      "mean_daily_abs_ic_delta": 0.004983453718513664
+     },
+     {
+      "date": "2018-12-28",
+      "mean_daily_abs_ic_delta": 0.020006776303244406
+     },
+     {
+      "date": "2019-01-04",
+      "mean_daily_abs_ic_delta": 0.004994962446287297
+     },
+     {
+      "date": "2019-01-11",
+      "mean_daily_abs_ic_delta": 0.0248757993655572
+     },
+     {
+      "date": "2019-01-18",
+      "mean_daily_abs_ic_delta": -0.0012178989199129464
+     },
+     {
+      "date": "2019-01-25",
+      "mean_daily_abs_ic_delta": 0.03359745478733714
+     },
+     {
+      "date": "2019-03-08",
+      "mean_daily_abs_ic_delta": 0.05214017101548962
+     },
+     {
+      "date": "2019-03-15",
+      "mean_daily_abs_ic_delta": 0.013981860462194962
+     },
+     {
+      "date": "2019-03-22",
+      "mean_daily_abs_ic_delta": 0.007763294460790146
+     },
+     {
+      "date": "2019-03-29",
+      "mean_daily_abs_ic_delta": 0.01337822195162311
+     },
+     {
+      "date": "2019-07-26",
+      "mean_daily_abs_ic_delta": 0.010774351105363712
+     },
+     {
+      "date": "2019-08-02",
+      "mean_daily_abs_ic_delta": 0.009596619765912761
+     },
+     {
+      "date": "2019-08-09",
+      "mean_daily_abs_ic_delta": -0.004407187431824736
+     },
+     {
+      "date": "2019-08-16",
+      "mean_daily_abs_ic_delta": 0.00993763760743789
+     },
+     {
+      "date": "2020-04-03",
+      "mean_daily_abs_ic_delta": 0.015127764538256261
+     },
+     {
+      "date": "2020-04-10",
+      "mean_daily_abs_ic_delta": -0.0032097371907564565
+     },
+     {
+      "date": "2020-04-17",
+      "mean_daily_abs_ic_delta": -0.0011115252111819213
+     },
+     {
+      "date": "2020-04-24",
+      "mean_daily_abs_ic_delta": 0.0030124504903639437
+     },
+     {
+      "date": "2020-05-29",
+      "mean_daily_abs_ic_delta": 0.010016536768776965
+     },
+     {
+      "date": "2020-06-05",
+      "mean_daily_abs_ic_delta": 0.01406755790844079
+     },
+     {
+      "date": "2020-06-12",
+      "mean_daily_abs_ic_delta": 0.008525679714675195
+     },
+     {
+      "date": "2020-06-19",
+      "mean_daily_abs_ic_delta": 0.006153193433488982
+     },
+     {
+      "date": "2020-06-24",
+      "mean_daily_abs_ic_delta": 0.00434528562681584
+     },
+     {
+      "date": "2020-07-03",
+      "mean_daily_abs_ic_delta": 0.0022788893843455615
+     },
+     {
+      "date": "2020-07-10",
+      "mean_daily_abs_ic_delta": 0.06722383249507963
+     },
+     {
+      "date": "2020-07-17",
+      "mean_daily_abs_ic_delta": 0.007953151715703793
+     }
+    ],
+    "blocks": [
+     {
+      "start": "2017-01-06",
+      "end": "2017-01-26",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.01961075279365871
+     },
+     {
+      "start": "2017-07-21",
+      "end": "2017-08-11",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.02073660223756352
+     },
+     {
+      "start": "2017-10-20",
+      "end": "2017-11-10",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.014777371967182656
+     },
+     {
+      "start": "2018-01-05",
+      "end": "2018-01-26",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.014121695441563567
+     },
+     {
+      "start": "2018-06-22",
+      "end": "2018-07-13",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.021419942781524693
+     },
+     {
+      "start": "2018-12-14",
+      "end": "2019-01-04",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.009682655745392737
+     },
+     {
+      "start": "2019-01-11",
+      "end": "2019-03-08",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.027348881562117754
+     },
+     {
+      "start": "2019-03-15",
+      "end": "2019-07-26",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.011474431994992982
+     },
+     {
+      "start": "2019-08-02",
+      "end": "2020-04-03",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.007563708619945544
+     },
+     {
+      "start": "2020-04-10",
+      "end": "2020-05-29",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.002176931214300633
+     },
+     {
+      "start": "2020-06-05",
+      "end": "2020-06-24",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.008272929170855202
+     },
+     {
+      "start": "2020-07-03",
+      "end": "2020-07-17",
+      "n_dates": 3,
+      "mean_daily_abs_ic_delta": 0.02581862453170966
+     }
+    ],
+    "largest_positive_block_share": 0.14944374246865863
+   },
+   "usage": {
+    "shared": {
+     "decisions": 2,
+     "candidate_budget": 24,
+     "model_calls": 2,
+     "input_tokens": 20794,
+     "output_tokens": 5060
+    },
+    "parent": {
+     "decisions": 2,
+     "candidate_budget": 24,
+     "model_calls": 2,
+     "input_tokens": 29899,
+     "output_tokens": 5223
+    },
+    "diagnostic": {
+     "decisions": 2,
+     "candidate_budget": 24,
+     "model_calls": 2,
+     "input_tokens": 55427,
+     "output_tokens": 10720
+    }
+   },
+   "failed_or_invalid_decisions": 0,
+   "common_support_verified": true,
+   "actual_model_calls_equal": true,
+   "actual_decisions_equal": true,
+   "split_verified": true,
+   "branchpoint_identity_verified": true,
+   "shared_memory_verified": true,
+   "frozen_champions_verified": true,
+   "internal_select_excluded": true,
+   "task_constraints_satisfied": true,
+   "score_window_read": false,
+   "independent_real_data_oos": false,
+   "finished_at": "2026-10-30T08:09:00.707076+00:00"
+  },
+  {
+   "schema": "AUTO-RESEARCH-DIAGNOSTIC-CONTINUATION-UNIT-1",
+   "protocol_version": "V001",
+   "task": "T1",
+   "seed": 29,
+   "status": "COMPLETED",
+   "shared_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T1_S29_V001/T1_S29_SHARED",
+   "parent_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T1_S29_V001/T1_S29_PARENT",
+   "diagnostic_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T1_S29_V001/T1_S29_DIAGNOSTIC",
+   "comparison_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T1_S29_V001/common_comparison",
+   "parent_champion": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T1_S29_V001/T1_S29_PARENT/decisions/T1_S29_PARENT_d002/child/step/harness/adopted.json",
+   "diagnostic_champion": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T1_S29_V001/T1_S29_DIAGNOSTIC/decisions/T1_S29_DIAGNOSTIC_d002/child/step/harness/adopted.json",
+   "select_diagnostic_minus_parent": 0.0,
+   "select_parent_minus_fixed": 0.008719114998853257,
+   "select_diagnostic_minus_fixed": 0.008719114998853257,
+   "select_shared_minus_fixed": 0.004474365023942099,
+   "select_metrics": {
+    "parent": {
+     "n_candidates": 12,
+     "pass_count": 12,
+     "pass_rate": 1.0,
+     "mean_abs_ic": 0.039049100836417584,
+     "top_ic_mean": 0.046412618092196295,
+     "icir_median": 0.2998716851468537,
+     "icir_p25": 0.2621177264106926,
+     "coverage": 0.9260042975813003,
+     "common_cells": 141349,
+     "common_dates": 48,
+     "common_support_sha256": "84c5b96da4d1a6bcb5d989b66aa20dceae3b161e26c749f641f455928f70d6f1",
+     "fit_common_cells": 296368,
+     "fit_common_dates": 102,
+     "fit_common_support_sha256": "6b3f9f81ea06de3b9fb0887054fe4bde3bdfdd9c0ccd4f52270add9bcd9a5579",
+     "duplicate_rate": 0.07575757575757576,
+     "novelty": 0.1,
+     "turnover_proxy": 0.7950879349696717,
+     "year_ic_min": NaN,
+     "runtime_seconds": 13.31,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    },
+    "diagnostic": {
+     "n_candidates": 12,
+     "pass_count": 12,
+     "pass_rate": 1.0,
+     "mean_abs_ic": 0.039049100836417584,
+     "top_ic_mean": 0.046412618092196295,
+     "icir_median": 0.2998716851468537,
+     "icir_p25": 0.2621177264106926,
+     "coverage": 0.9260042975813003,
+     "common_cells": 141349,
+     "common_dates": 48,
+     "common_support_sha256": "84c5b96da4d1a6bcb5d989b66aa20dceae3b161e26c749f641f455928f70d6f1",
+     "fit_common_cells": 296368,
+     "fit_common_dates": 102,
+     "fit_common_support_sha256": "6b3f9f81ea06de3b9fb0887054fe4bde3bdfdd9c0ccd4f52270add9bcd9a5579",
+     "duplicate_rate": 0.07575757575757576,
+     "novelty": 0.1,
+     "turnover_proxy": 0.7950879349696717,
+     "year_ic_min": NaN,
+     "runtime_seconds": 14.01,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    },
+    "fixed": {
+     "n_candidates": 12,
+     "pass_count": 10,
+     "pass_rate": 0.8333333333333334,
+     "mean_abs_ic": 0.030329985837564327,
+     "top_ic_mean": 0.04102675655794382,
+     "icir_median": 0.2620282515219893,
+     "icir_p25": 0.22055246184829141,
+     "coverage": 0.9260042975813003,
+     "common_cells": 141349,
+     "common_dates": 48,
+     "common_support_sha256": "84c5b96da4d1a6bcb5d989b66aa20dceae3b161e26c749f641f455928f70d6f1",
+     "fit_common_cells": 296368,
+     "fit_common_dates": 102,
+     "fit_common_support_sha256": "6b3f9f81ea06de3b9fb0887054fe4bde3bdfdd9c0ccd4f52270add9bcd9a5579",
+     "duplicate_rate": 0.09090909090909091,
+     "novelty": 0.5,
+     "turnover_proxy": 0.7677936508132983,
+     "year_ic_min": NaN,
+     "runtime_seconds": 14.7,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    },
+    "shared": {
+     "n_candidates": 12,
+     "pass_count": 12,
+     "pass_rate": 1.0,
+     "mean_abs_ic": 0.034804350861506426,
+     "top_ic_mean": 0.04221624671066521,
+     "icir_median": 0.2700680050412195,
+     "icir_p25": 0.2518181264605128,
+     "coverage": 0.9260042975813003,
+     "common_cells": 141349,
+     "common_dates": 48,
+     "common_support_sha256": "84c5b96da4d1a6bcb5d989b66aa20dceae3b161e26c749f641f455928f70d6f1",
+     "fit_common_cells": 296368,
+     "fit_common_dates": 102,
+     "fit_common_support_sha256": "6b3f9f81ea06de3b9fb0887054fe4bde3bdfdd9c0ccd4f52270add9bcd9a5579",
+     "duplicate_rate": 0.09090909090909091,
+     "novelty": 0.1111111111111111,
+     "turnover_proxy": 0.764640987098448,
+     "year_ic_min": NaN,
+     "runtime_seconds": 15.4,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    }
+   },
+   "date_block_diagnostic": {
+    "metric": "mean_daily_abs_ic_delta",
+    "block_size_dates": 4,
+    "dates": [
+     {
+      "date": "2017-02-03",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-02-10",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-02-17",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-02-24",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-03-03",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-03-10",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-03-17",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-03-24",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-04-28",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-05-05",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-05-12",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-05-19",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-03-02",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-03-09",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-03-16",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-03-23",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-04-27",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-05-04",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-05-11",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-05-18",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-10-19",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-10-26",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-11-02",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-11-09",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-04-04",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-04-12",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-04-19",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-04-26",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-07-26",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-08-02",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-08-09",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-08-16",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-10-18",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-10-25",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-11-01",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-11-08",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-01-03",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-01-10",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-01-17",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-01-23",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-04-03",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-04-10",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-04-17",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-04-24",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-05-29",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-06-05",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-06-12",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-06-19",
+      "mean_daily_abs_ic_delta": 0.0
+     }
+    ],
+    "blocks": [
+     {
+      "start": "2017-02-03",
+      "end": "2017-02-24",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2017-03-03",
+      "end": "2017-03-24",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2017-04-28",
+      "end": "2017-05-19",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2018-03-02",
+      "end": "2018-03-23",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2018-04-27",
+      "end": "2018-05-18",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2018-10-19",
+      "end": "2018-11-09",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2019-04-04",
+      "end": "2019-04-26",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2019-07-26",
+      "end": "2019-08-16",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2019-10-18",
+      "end": "2019-11-08",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2020-01-03",
+      "end": "2020-01-23",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2020-04-03",
+      "end": "2020-04-24",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2020-05-29",
+      "end": "2020-06-19",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     }
+    ],
+    "largest_positive_block_share": null
+   },
+   "usage": {
+    "shared": {
+     "decisions": 2,
+     "candidate_budget": 24,
+     "model_calls": 2,
+     "input_tokens": 12109,
+     "output_tokens": 6367
+    },
+    "parent": {
+     "decisions": 2,
+     "candidate_budget": 24,
+     "model_calls": 2,
+     "input_tokens": 21589,
+     "output_tokens": 5175
+    },
+    "diagnostic": {
+     "decisions": 2,
+     "candidate_budget": 24,
+     "model_calls": 2,
+     "input_tokens": 33563,
+     "output_tokens": 6194
+    }
+   },
+   "failed_or_invalid_decisions": 0,
+   "common_support_verified": true,
+   "actual_model_calls_equal": true,
+   "actual_decisions_equal": true,
+   "split_verified": true,
+   "branchpoint_identity_verified": true,
+   "shared_memory_verified": true,
+   "frozen_champions_verified": true,
+   "internal_select_excluded": true,
+   "task_constraints_satisfied": true,
+   "score_window_read": false,
+   "independent_real_data_oos": false,
+   "finished_at": "2026-10-30T08:23:34.245588+00:00"
+  },
+  {
+   "schema": "AUTO-RESEARCH-DIAGNOSTIC-CONTINUATION-UNIT-1",
+   "protocol_version": "V001",
+   "task": "T1",
+   "seed": 43,
+   "status": "COMPLETED",
+   "shared_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T1_S43_V001/T1_S43_SHARED",
+   "parent_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T1_S43_V001/T1_S43_PARENT",
+   "diagnostic_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T1_S43_V001/T1_S43_DIAGNOSTIC",
+   "comparison_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T1_S43_V001/common_comparison",
+   "parent_champion": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T1_S43_V001/T1_S43_PARENT/decisions/T1_S43_PARENT_d001/child/step/harness/adopted.json",
+   "diagnostic_champion": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T1_S43_V001/T1_S43_DIAGNOSTIC/decisions/T1_S43_DIAGNOSTIC_d001/child/step/harness/adopted.json",
+   "select_diagnostic_minus_parent": 0.0,
+   "select_parent_minus_fixed": 0.01759140887132824,
+   "select_diagnostic_minus_fixed": 0.01759140887132824,
+   "select_shared_minus_fixed": 0.01141476655752157,
+   "select_metrics": {
+    "parent": {
+     "n_candidates": 12,
+     "pass_count": 12,
+     "pass_rate": 1.0,
+     "mean_abs_ic": 0.07196305739228581,
+     "top_ic_mean": 0.10140914105476657,
+     "icir_median": 0.6609284610749411,
+     "icir_p25": 0.3012306885562154,
+     "coverage": 0.8631680976612898,
+     "common_cells": 131798,
+     "common_dates": 48,
+     "common_support_sha256": "89acf50f83c3ebec8cfd004fca1ab6b5d497c15c4a85186981fbf66328001917",
+     "fit_common_cells": 307803,
+     "fit_common_dates": 101,
+     "fit_common_support_sha256": "69909edff2332494f0d50847fecd2a30991e6881a53ad48ed9bf527ac636e320",
+     "duplicate_rate": 0.13636363636363635,
+     "novelty": 0.25,
+     "turnover_proxy": 0.8429559726272399,
+     "year_ic_min": NaN,
+     "runtime_seconds": 14.39,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    },
+    "diagnostic": {
+     "n_candidates": 12,
+     "pass_count": 12,
+     "pass_rate": 1.0,
+     "mean_abs_ic": 0.07196305739228581,
+     "top_ic_mean": 0.10140914105476657,
+     "icir_median": 0.6609284610749411,
+     "icir_p25": 0.3012306885562154,
+     "coverage": 0.8631680976612898,
+     "common_cells": 131798,
+     "common_dates": 48,
+     "common_support_sha256": "89acf50f83c3ebec8cfd004fca1ab6b5d497c15c4a85186981fbf66328001917",
+     "fit_common_cells": 307803,
+     "fit_common_dates": 101,
+     "fit_common_support_sha256": "69909edff2332494f0d50847fecd2a30991e6881a53ad48ed9bf527ac636e320",
+     "duplicate_rate": 0.13636363636363635,
+     "novelty": 0.25,
+     "turnover_proxy": 0.8429559726272399,
+     "year_ic_min": NaN,
+     "runtime_seconds": 15.05,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    },
+    "fixed": {
+     "n_candidates": 12,
+     "pass_count": 12,
+     "pass_rate": 1.0,
+     "mean_abs_ic": 0.05437164852095757,
+     "top_ic_mean": 0.09894276937236142,
+     "icir_median": 0.2884932031214015,
+     "icir_p25": 0.23298302486497718,
+     "coverage": 0.8631680976612898,
+     "common_cells": 131798,
+     "common_dates": 48,
+     "common_support_sha256": "89acf50f83c3ebec8cfd004fca1ab6b5d497c15c4a85186981fbf66328001917",
+     "fit_common_cells": 307803,
+     "fit_common_dates": 101,
+     "fit_common_support_sha256": "69909edff2332494f0d50847fecd2a30991e6881a53ad48ed9bf527ac636e320",
+     "duplicate_rate": 0.12121212121212122,
+     "novelty": 0.3,
+     "turnover_proxy": 0.8347939123338896,
+     "year_ic_min": NaN,
+     "runtime_seconds": 15.71,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    },
+    "shared": {
+     "n_candidates": 12,
+     "pass_count": 12,
+     "pass_rate": 1.0,
+     "mean_abs_ic": 0.06578641507847914,
+     "top_ic_mean": 0.09433435679519207,
+     "icir_median": 0.5854604498591838,
+     "icir_p25": 0.3012306885562154,
+     "coverage": 0.8631680976612898,
+     "common_cells": 131798,
+     "common_dates": 48,
+     "common_support_sha256": "89acf50f83c3ebec8cfd004fca1ab6b5d497c15c4a85186981fbf66328001917",
+     "fit_common_cells": 307803,
+     "fit_common_dates": 101,
+     "fit_common_support_sha256": "69909edff2332494f0d50847fecd2a30991e6881a53ad48ed9bf527ac636e320",
+     "duplicate_rate": 0.07575757575757576,
+     "novelty": 0.1,
+     "turnover_proxy": 0.8435440763356961,
+     "year_ic_min": NaN,
+     "runtime_seconds": 16.37,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    }
+   },
+   "date_block_diagnostic": {
+    "metric": "mean_daily_abs_ic_delta",
+    "block_size_dates": 4,
+    "dates": [
+     {
+      "date": "2017-01-06",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-01-13",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-01-20",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-01-26",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-03-31",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-04-07",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-04-14",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-04-21",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-06-23",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-06-30",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-07-07",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-07-14",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-01-05",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-01-12",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-01-19",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-01-26",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-06-22",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-06-29",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-07-06",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-07-13",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-11-16",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-11-23",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-11-30",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-12-07",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-06-28",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-07-05",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-07-12",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-07-19",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-07-26",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-08-02",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-08-09",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-08-16",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-09-20",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-09-27",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-09-30",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-10-11",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-02-07",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-02-14",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-02-21",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-02-28",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-06-24",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-07-03",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-07-10",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-07-17",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-08-21",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-08-28",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-09-04",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-09-11",
+      "mean_daily_abs_ic_delta": 0.0
+     }
+    ],
+    "blocks": [
+     {
+      "start": "2017-01-06",
+      "end": "2017-01-26",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2017-03-31",
+      "end": "2017-04-21",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2017-06-23",
+      "end": "2017-07-14",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2018-01-05",
+      "end": "2018-01-26",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2018-06-22",
+      "end": "2018-07-13",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2018-11-16",
+      "end": "2018-12-07",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2019-06-28",
+      "end": "2019-07-19",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2019-07-26",
+      "end": "2019-08-16",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2019-09-20",
+      "end": "2019-10-11",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2020-02-07",
+      "end": "2020-02-28",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2020-06-24",
+      "end": "2020-07-17",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2020-08-21",
+      "end": "2020-09-11",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     }
+    ],
+    "largest_positive_block_share": null
+   },
+   "usage": {
+    "shared": {
+     "decisions": 2,
+     "candidate_budget": 24,
+     "model_calls": 2,
+     "input_tokens": 21821,
+     "output_tokens": 9546
+    },
+    "parent": {
+     "decisions": 2,
+     "candidate_budget": 24,
+     "model_calls": 2,
+     "input_tokens": 30616,
+     "output_tokens": 5865
+    },
+    "diagnostic": {
+     "decisions": 2,
+     "candidate_budget": 24,
+     "model_calls": 2,
+     "input_tokens": 19416,
+     "output_tokens": 3555
+    }
+   },
+   "failed_or_invalid_decisions": 0,
+   "common_support_verified": true,
+   "actual_model_calls_equal": true,
+   "actual_decisions_equal": true,
+   "split_verified": true,
+   "branchpoint_identity_verified": true,
+   "shared_memory_verified": true,
+   "frozen_champions_verified": true,
+   "internal_select_excluded": true,
+   "task_constraints_satisfied": true,
+   "score_window_read": false,
+   "independent_real_data_oos": false,
+   "finished_at": "2026-10-30T08:38:12.541622+00:00"
+  },
+  {
+   "schema": "AUTO-RESEARCH-DIAGNOSTIC-CONTINUATION-UNIT-1",
+   "protocol_version": "V001",
+   "task": "T2",
+   "seed": 11,
+   "status": "COMPLETED",
+   "shared_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T2_S11_V001/T2_S11_SHARED",
+   "parent_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T2_S11_V001/T2_S11_PARENT",
+   "diagnostic_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T2_S11_V001/T2_S11_DIAGNOSTIC",
+   "comparison_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T2_S11_V001/common_comparison",
+   "parent_champion": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T2_S11_V001/T2_S11_PARENT/decisions/T2_S11_PARENT_d002/child/step/harness/adopted.json",
+   "diagnostic_champion": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T2_S11_V001/T2_S11_DIAGNOSTIC/decisions/T2_S11_DIAGNOSTIC_d002/child/step/harness/adopted.json",
+   "select_diagnostic_minus_parent": 0.0,
+   "select_parent_minus_fixed": 0.01160110533029999,
+   "select_diagnostic_minus_fixed": 0.01160110533029999,
+   "select_shared_minus_fixed": 0.003515264499900951,
+   "select_metrics": {
+    "parent": {
+     "n_candidates": 12,
+     "pass_count": 12,
+     "pass_rate": 1.0,
+     "mean_abs_ic": 0.06797802867804598,
+     "top_ic_mean": 0.08848325509630288,
+     "icir_median": 0.5529261330939049,
+     "icir_p25": 0.48954404001526997,
+     "coverage": 0.876326165468341,
+     "common_cells": 132242,
+     "common_dates": 47,
+     "common_support_sha256": "ac45292a514e108a0a97e74c920552554e3027b522281bab63cc524c6927cdc8",
+     "fit_common_cells": 302512,
+     "fit_common_dates": 102,
+     "fit_common_support_sha256": "3e476f92acfa203e1a45ac2eb0c03d3a96c9c546fc232ff343a99783bc25b224",
+     "duplicate_rate": 0.07575757575757576,
+     "novelty": 0.1,
+     "turnover_proxy": 0.8075656427337662,
+     "year_ic_min": 0.011526864531318244,
+     "runtime_seconds": 62.88,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    },
+    "diagnostic": {
+     "n_candidates": 12,
+     "pass_count": 12,
+     "pass_rate": 1.0,
+     "mean_abs_ic": 0.06797802867804598,
+     "top_ic_mean": 0.08848325509630288,
+     "icir_median": 0.5529261330939049,
+     "icir_p25": 0.48954404001526997,
+     "coverage": 0.876326165468341,
+     "common_cells": 132242,
+     "common_dates": 47,
+     "common_support_sha256": "ac45292a514e108a0a97e74c920552554e3027b522281bab63cc524c6927cdc8",
+     "fit_common_cells": 302512,
+     "fit_common_dates": 102,
+     "fit_common_support_sha256": "3e476f92acfa203e1a45ac2eb0c03d3a96c9c546fc232ff343a99783bc25b224",
+     "duplicate_rate": 0.07575757575757576,
+     "novelty": 0.1,
+     "turnover_proxy": 0.8075656427337662,
+     "year_ic_min": 0.011526864531318244,
+     "runtime_seconds": 64.04,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    },
+    "fixed": {
+     "n_candidates": 12,
+     "pass_count": 11,
+     "pass_rate": 0.9166666666666666,
+     "mean_abs_ic": 0.05637692334774599,
+     "top_ic_mean": 0.07633888673487431,
+     "icir_median": 0.4970208986804977,
+     "icir_p25": 0.45502347119667824,
+     "coverage": 0.876326165468341,
+     "common_cells": 132242,
+     "common_dates": 47,
+     "common_support_sha256": "ac45292a514e108a0a97e74c920552554e3027b522281bab63cc524c6927cdc8",
+     "fit_common_cells": 302512,
+     "fit_common_dates": 102,
+     "fit_common_support_sha256": "3e476f92acfa203e1a45ac2eb0c03d3a96c9c546fc232ff343a99783bc25b224",
+     "duplicate_rate": 0.09090909090909091,
+     "novelty": 0.125,
+     "turnover_proxy": 0.7985466538394992,
+     "year_ic_min": NaN,
+     "runtime_seconds": 65.17,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    },
+    "shared": {
+     "n_candidates": 12,
+     "pass_count": 11,
+     "pass_rate": 0.9166666666666666,
+     "mean_abs_ic": 0.05989218784764694,
+     "top_ic_mean": 0.08072081692991406,
+     "icir_median": 0.5042900279044695,
+     "icir_p25": 0.45502347119667824,
+     "coverage": 0.876326165468341,
+     "common_cells": 132242,
+     "common_dates": 47,
+     "common_support_sha256": "ac45292a514e108a0a97e74c920552554e3027b522281bab63cc524c6927cdc8",
+     "fit_common_cells": 302512,
+     "fit_common_dates": 102,
+     "fit_common_support_sha256": "3e476f92acfa203e1a45ac2eb0c03d3a96c9c546fc232ff343a99783bc25b224",
+     "duplicate_rate": 0.12121212121212122,
+     "novelty": 0.1111111111111111,
+     "turnover_proxy": 0.780306828648909,
+     "year_ic_min": -0.03565547177800306,
+     "runtime_seconds": 66.21,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    }
+   },
+   "date_block_diagnostic": {
+    "metric": "mean_daily_abs_ic_delta",
+    "block_size_dates": 4,
+    "dates": [
+     {
+      "date": "2017-01-06",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-01-13",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-01-20",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-01-26",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-07-21",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-07-28",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-08-04",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-08-11",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-10-20",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-10-27",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-11-03",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-11-10",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-01-05",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-01-12",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-01-19",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-01-26",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-06-22",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-06-29",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-07-06",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-07-13",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-12-14",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-12-21",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-12-28",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-01-04",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-01-11",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-01-18",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-01-25",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-03-08",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-03-15",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-03-22",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-03-29",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-07-26",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-08-02",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-08-09",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-08-16",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-04-03",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-04-10",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-04-17",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-04-24",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-05-29",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-06-05",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-06-12",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-06-19",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-06-24",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-07-03",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-07-10",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-07-17",
+      "mean_daily_abs_ic_delta": 0.0
+     }
+    ],
+    "blocks": [
+     {
+      "start": "2017-01-06",
+      "end": "2017-01-26",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2017-07-21",
+      "end": "2017-08-11",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2017-10-20",
+      "end": "2017-11-10",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2018-01-05",
+      "end": "2018-01-26",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2018-06-22",
+      "end": "2018-07-13",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2018-12-14",
+      "end": "2019-01-04",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2019-01-11",
+      "end": "2019-03-08",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2019-03-15",
+      "end": "2019-07-26",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2019-08-02",
+      "end": "2020-04-03",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2020-04-10",
+      "end": "2020-05-29",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2020-06-05",
+      "end": "2020-06-24",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2020-07-03",
+      "end": "2020-07-17",
+      "n_dates": 3,
+      "mean_daily_abs_ic_delta": 0.0
+     }
+    ],
+    "largest_positive_block_share": null
+   },
+   "usage": {
+    "shared": {
+     "decisions": 2,
+     "candidate_budget": 24,
+     "model_calls": 2,
+     "input_tokens": 25823,
+     "output_tokens": 10645
+    },
+    "parent": {
+     "decisions": 2,
+     "candidate_budget": 24,
+     "model_calls": 2,
+     "input_tokens": 35804,
+     "output_tokens": 7500
+    },
+    "diagnostic": {
+     "decisions": 2,
+     "candidate_budget": 24,
+     "model_calls": 2,
+     "input_tokens": 38948,
+     "output_tokens": 7207
+    }
+   },
+   "failed_or_invalid_decisions": 0,
+   "common_support_verified": true,
+   "actual_model_calls_equal": true,
+   "actual_decisions_equal": true,
+   "split_verified": true,
+   "branchpoint_identity_verified": true,
+   "shared_memory_verified": true,
+   "frozen_champions_verified": true,
+   "internal_select_excluded": true,
+   "task_constraints_satisfied": true,
+   "score_window_read": false,
+   "independent_real_data_oos": false,
+   "finished_at": "2026-10-30T08:59:29.207957+00:00"
+  },
+  {
+   "schema": "AUTO-RESEARCH-DIAGNOSTIC-CONTINUATION-UNIT-1",
+   "protocol_version": "V001",
+   "task": "T2",
+   "seed": 29,
+   "status": "COMPLETED",
+   "shared_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T2_S29_V001/T2_S29_SHARED",
+   "parent_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T2_S29_V001/T2_S29_PARENT",
+   "diagnostic_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T2_S29_V001/T2_S29_DIAGNOSTIC",
+   "comparison_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T2_S29_V001/common_comparison",
+   "parent_champion": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T2_S29_V001/T2_S29_PARENT/decisions/T2_S29_PARENT_d002/child/step/harness/adopted.json",
+   "diagnostic_champion": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T2_S29_V001/T2_S29_DIAGNOSTIC/decisions/T2_S29_DIAGNOSTIC_d002/child/step/harness/adopted.json",
+   "select_diagnostic_minus_parent": 0.003061080209593413,
+   "select_parent_minus_fixed": 0.0037949056032923548,
+   "select_diagnostic_minus_fixed": 0.006855985812885768,
+   "select_shared_minus_fixed": 0.0006985831639048645,
+   "select_metrics": {
+    "parent": {
+     "n_candidates": 12,
+     "pass_count": 12,
+     "pass_rate": 1.0,
+     "mean_abs_ic": 0.03790067330089392,
+     "top_ic_mean": 0.04494624453016118,
+     "icir_median": 0.2871774514994362,
+     "icir_p25": 0.2615205460568025,
+     "coverage": 0.9260042975813003,
+     "common_cells": 141349,
+     "common_dates": 48,
+     "common_support_sha256": "84c5b96da4d1a6bcb5d989b66aa20dceae3b161e26c749f641f455928f70d6f1",
+     "fit_common_cells": 296368,
+     "fit_common_dates": 102,
+     "fit_common_support_sha256": "6b3f9f81ea06de3b9fb0887054fe4bde3bdfdd9c0ccd4f52270add9bcd9a5579",
+     "duplicate_rate": 0.09090909090909091,
+     "novelty": 0.1,
+     "turnover_proxy": 0.7775728147246871,
+     "year_ic_min": -0.030463665130789935,
+     "runtime_seconds": 13.8,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    },
+    "diagnostic": {
+     "n_candidates": 12,
+     "pass_count": 12,
+     "pass_rate": 1.0,
+     "mean_abs_ic": 0.04096175351048733,
+     "top_ic_mean": 0.046412618092196295,
+     "icir_median": 0.2998716851468537,
+     "icir_p25": 0.2615205460568025,
+     "coverage": 0.9260042975813003,
+     "common_cells": 141349,
+     "common_dates": 48,
+     "common_support_sha256": "84c5b96da4d1a6bcb5d989b66aa20dceae3b161e26c749f641f455928f70d6f1",
+     "fit_common_cells": 296368,
+     "fit_common_dates": 102,
+     "fit_common_support_sha256": "6b3f9f81ea06de3b9fb0887054fe4bde3bdfdd9c0ccd4f52270add9bcd9a5579",
+     "duplicate_rate": 0.10606060606060606,
+     "novelty": 0.0,
+     "turnover_proxy": 0.7952515767000241,
+     "year_ic_min": -0.03098171777921077,
+     "runtime_seconds": 14.61,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    },
+    "fixed": {
+     "n_candidates": 12,
+     "pass_count": 12,
+     "pass_rate": 1.0,
+     "mean_abs_ic": 0.03410576769760156,
+     "top_ic_mean": 0.04102675655794382,
+     "icir_median": 0.2700680050412195,
+     "icir_p25": 0.2518181264605128,
+     "coverage": 0.9260042975813003,
+     "common_cells": 141349,
+     "common_dates": 48,
+     "common_support_sha256": "84c5b96da4d1a6bcb5d989b66aa20dceae3b161e26c749f641f455928f70d6f1",
+     "fit_common_cells": 296368,
+     "fit_common_dates": 102,
+     "fit_common_support_sha256": "6b3f9f81ea06de3b9fb0887054fe4bde3bdfdd9c0ccd4f52270add9bcd9a5579",
+     "duplicate_rate": 0.10606060606060606,
+     "novelty": 0.125,
+     "turnover_proxy": 0.7669414229077647,
+     "year_ic_min": NaN,
+     "runtime_seconds": 15.42,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    },
+    "shared": {
+     "n_candidates": 12,
+     "pass_count": 12,
+     "pass_rate": 1.0,
+     "mean_abs_ic": 0.034804350861506426,
+     "top_ic_mean": 0.04221624671066521,
+     "icir_median": 0.2700680050412195,
+     "icir_p25": 0.2518181264605128,
+     "coverage": 0.9260042975813003,
+     "common_cells": 141349,
+     "common_dates": 48,
+     "common_support_sha256": "84c5b96da4d1a6bcb5d989b66aa20dceae3b161e26c749f641f455928f70d6f1",
+     "fit_common_cells": 296368,
+     "fit_common_dates": 102,
+     "fit_common_support_sha256": "6b3f9f81ea06de3b9fb0887054fe4bde3bdfdd9c0ccd4f52270add9bcd9a5579",
+     "duplicate_rate": 0.09090909090909091,
+     "novelty": 0.1111111111111111,
+     "turnover_proxy": 0.764640987098448,
+     "year_ic_min": -0.07242167286334619,
+     "runtime_seconds": 16.23,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    }
+   },
+   "date_block_diagnostic": {
+    "metric": "mean_daily_abs_ic_delta",
+    "block_size_dates": 4,
+    "dates": [
+     {
+      "date": "2017-02-03",
+      "mean_daily_abs_ic_delta": -0.007000624847767471
+     },
+     {
+      "date": "2017-02-10",
+      "mean_daily_abs_ic_delta": 0.011178038031326137
+     },
+     {
+      "date": "2017-02-17",
+      "mean_daily_abs_ic_delta": 0.0191458591049916
+     },
+     {
+      "date": "2017-02-24",
+      "mean_daily_abs_ic_delta": -0.007797493277739556
+     },
+     {
+      "date": "2017-03-03",
+      "mean_daily_abs_ic_delta": -0.002087416581162592
+     },
+     {
+      "date": "2017-03-10",
+      "mean_daily_abs_ic_delta": 0.0039520682739997565
+     },
+     {
+      "date": "2017-03-17",
+      "mean_daily_abs_ic_delta": 0.008029183521097424
+     },
+     {
+      "date": "2017-03-24",
+      "mean_daily_abs_ic_delta": 0.01683880525724038
+     },
+     {
+      "date": "2017-04-28",
+      "mean_daily_abs_ic_delta": 0.002763919561555278
+     },
+     {
+      "date": "2017-05-05",
+      "mean_daily_abs_ic_delta": -0.0037305233103167856
+     },
+     {
+      "date": "2017-05-12",
+      "mean_daily_abs_ic_delta": 0.013583264202019912
+     },
+     {
+      "date": "2017-05-19",
+      "mean_daily_abs_ic_delta": 0.007806619240204704
+     },
+     {
+      "date": "2018-03-02",
+      "mean_daily_abs_ic_delta": 0.016626360260019596
+     },
+     {
+      "date": "2018-03-09",
+      "mean_daily_abs_ic_delta": 0.027262068202698747
+     },
+     {
+      "date": "2018-03-16",
+      "mean_daily_abs_ic_delta": 0.02048674663516631
+     },
+     {
+      "date": "2018-03-23",
+      "mean_daily_abs_ic_delta": -0.0031036557482524985
+     },
+     {
+      "date": "2018-04-27",
+      "mean_daily_abs_ic_delta": -0.0069271597436794535
+     },
+     {
+      "date": "2018-05-04",
+      "mean_daily_abs_ic_delta": 0.008026501525142199
+     },
+     {
+      "date": "2018-05-11",
+      "mean_daily_abs_ic_delta": -0.003898969090846041
+     },
+     {
+      "date": "2018-05-18",
+      "mean_daily_abs_ic_delta": 0.011519555957276217
+     },
+     {
+      "date": "2018-10-19",
+      "mean_daily_abs_ic_delta": 0.022326906161902527
+     },
+     {
+      "date": "2018-10-26",
+      "mean_daily_abs_ic_delta": 0.02094107179469165
+     },
+     {
+      "date": "2018-11-02",
+      "mean_daily_abs_ic_delta": 0.0114663310411173
+     },
+     {
+      "date": "2018-11-09",
+      "mean_daily_abs_ic_delta": 0.017218576377787606
+     },
+     {
+      "date": "2019-04-04",
+      "mean_daily_abs_ic_delta": 0.008492829956505604
+     },
+     {
+      "date": "2019-04-12",
+      "mean_daily_abs_ic_delta": 0.007968288345804042
+     },
+     {
+      "date": "2019-04-19",
+      "mean_daily_abs_ic_delta": 0.014628294886353088
+     },
+     {
+      "date": "2019-04-26",
+      "mean_daily_abs_ic_delta": -0.0011054588486172356
+     },
+     {
+      "date": "2019-07-26",
+      "mean_daily_abs_ic_delta": 0.012952288023661822
+     },
+     {
+      "date": "2019-08-02",
+      "mean_daily_abs_ic_delta": 0.005146016922971747
+     },
+     {
+      "date": "2019-08-09",
+      "mean_daily_abs_ic_delta": -0.004505240313255429
+     },
+     {
+      "date": "2019-08-16",
+      "mean_daily_abs_ic_delta": 0.010330947595498324
+     },
+     {
+      "date": "2019-10-18",
+      "mean_daily_abs_ic_delta": 0.01061972167687246
+     },
+     {
+      "date": "2019-10-25",
+      "mean_daily_abs_ic_delta": 0.004065369565542057
+     },
+     {
+      "date": "2019-11-01",
+      "mean_daily_abs_ic_delta": -0.0007823448594694651
+     },
+     {
+      "date": "2019-11-08",
+      "mean_daily_abs_ic_delta": 0.01757957504582134
+     },
+     {
+      "date": "2020-01-03",
+      "mean_daily_abs_ic_delta": -0.01164773793761932
+     },
+     {
+      "date": "2020-01-10",
+      "mean_daily_abs_ic_delta": 0.0016073993572919415
+     },
+     {
+      "date": "2020-01-17",
+      "mean_daily_abs_ic_delta": -4.848834100690258e-05
+     },
+     {
+      "date": "2020-01-23",
+      "mean_daily_abs_ic_delta": 0.022061026122564054
+     },
+     {
+      "date": "2020-04-03",
+      "mean_daily_abs_ic_delta": 0.01388408105828115
+     },
+     {
+      "date": "2020-04-10",
+      "mean_daily_abs_ic_delta": -0.0014661740199470724
+     },
+     {
+      "date": "2020-04-17",
+      "mean_daily_abs_ic_delta": 0.0011326890798536854
+     },
+     {
+      "date": "2020-04-24",
+      "mean_daily_abs_ic_delta": 0.005287914035141977
+     },
+     {
+      "date": "2020-05-29",
+      "mean_daily_abs_ic_delta": 0.0032056963144
+     },
+     {
+      "date": "2020-06-05",
+      "mean_daily_abs_ic_delta": 0.014689875226001375
+     },
+     {
+      "date": "2020-06-12",
+      "mean_daily_abs_ic_delta": 0.011971838760774144
+     },
+     {
+      "date": "2020-06-19",
+      "mean_daily_abs_ic_delta": 0.001144933589990918
+     }
+    ],
+    "blocks": [
+     {
+      "start": "2017-02-03",
+      "end": "2017-02-24",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0038814447527026775
+     },
+     {
+      "start": "2017-03-03",
+      "end": "2017-03-24",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.006683160117793742
+     },
+     {
+      "start": "2017-04-28",
+      "end": "2017-05-19",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.005105819923365777
+     },
+     {
+      "start": "2018-03-02",
+      "end": "2018-03-23",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.015317879837408038
+     },
+     {
+      "start": "2018-04-27",
+      "end": "2018-05-18",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0021799821619732304
+     },
+     {
+      "start": "2018-10-19",
+      "end": "2018-11-09",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.01798822134387477
+     },
+     {
+      "start": "2019-04-04",
+      "end": "2019-04-26",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.007495988585011375
+     },
+     {
+      "start": "2019-07-26",
+      "end": "2019-08-16",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.005981003057219116
+     },
+     {
+      "start": "2019-10-18",
+      "end": "2019-11-08",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.007870580357191598
+     },
+     {
+      "start": "2020-01-03",
+      "end": "2020-01-23",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.002993049800307443
+     },
+     {
+      "start": "2020-04-03",
+      "end": "2020-04-24",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.004709627538332435
+     },
+     {
+      "start": "2020-05-29",
+      "end": "2020-06-19",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.007753085972791609
+     }
+    ],
+    "largest_positive_block_share": 0.2045049267796252
+   },
+   "usage": {
+    "shared": {
+     "decisions": 2,
+     "candidate_budget": 24,
+     "model_calls": 2,
+     "input_tokens": 26271,
+     "output_tokens": 10863
+    },
+    "parent": {
+     "decisions": 2,
+     "candidate_budget": 24,
+     "model_calls": 2,
+     "input_tokens": 38592,
+     "output_tokens": 10690
+    },
+    "diagnostic": {
+     "decisions": 2,
+     "candidate_budget": 24,
+     "model_calls": 2,
+     "input_tokens": 52574,
+     "output_tokens": 8949
+    }
+   },
+   "failed_or_invalid_decisions": 0,
+   "common_support_verified": true,
+   "actual_model_calls_equal": true,
+   "actual_decisions_equal": true,
+   "split_verified": true,
+   "branchpoint_identity_verified": true,
+   "shared_memory_verified": true,
+   "frozen_champions_verified": true,
+   "internal_select_excluded": true,
+   "task_constraints_satisfied": true,
+   "score_window_read": false,
+   "independent_real_data_oos": false,
+   "finished_at": "2026-10-30T09:28:31.653558+00:00"
+  },
+  {
+   "schema": "AUTO-RESEARCH-DIAGNOSTIC-CONTINUATION-UNIT-1",
+   "protocol_version": "V001",
+   "task": "T2",
+   "seed": 43,
+   "status": "COMPLETED",
+   "shared_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T2_S43_V001/T2_S43_SHARED",
+   "parent_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T2_S43_V001/T2_S43_PARENT",
+   "diagnostic_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T2_S43_V001/T2_S43_DIAGNOSTIC",
+   "comparison_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T2_S43_V001/common_comparison",
+   "parent_champion": "auto_research/config/diagnostic_continuation_v1/initial_harness/T2.json",
+   "diagnostic_champion": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T2_S43_V001/T2_S43_DIAGNOSTIC/decisions/T2_S43_DIAGNOSTIC_d002/child/step/harness/adopted.json",
+   "select_diagnostic_minus_parent": 0.010561021251544261,
+   "select_parent_minus_fixed": -0.0,
+   "select_diagnostic_minus_fixed": 0.010561021251544261,
+   "select_shared_minus_fixed": 0.0,
+   "select_metrics": {
+    "parent": {
+     "n_candidates": 12,
+     "pass_count": 12,
+     "pass_rate": 1.0,
+     "mean_abs_ic": 0.049352573078747526,
+     "top_ic_mean": 0.09654613789458073,
+     "icir_median": 0.2983468285200001,
+     "icir_p25": 0.19920536799711075,
+     "coverage": 0.6646822668002699,
+     "common_cells": 101491,
+     "common_dates": 44,
+     "common_support_sha256": "2c77f8359bf2158770a5c833bdfeb291ca2bbe8e90f54a994e788ec5b7c30c24",
+     "fit_common_cells": 278414,
+     "fit_common_dates": 100,
+     "fit_common_support_sha256": "063897a0194edd9f8e2ac676da962504d81a2e816d1feb3cb5d0961049b509f2",
+     "duplicate_rate": 0.09090909090909091,
+     "novelty": 0.125,
+     "turnover_proxy": 0.862426770134551,
+     "year_ic_min": NaN,
+     "runtime_seconds": 12.54,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    },
+    "diagnostic": {
+     "n_candidates": 12,
+     "pass_count": 11,
+     "pass_rate": 0.9166666666666666,
+     "mean_abs_ic": 0.05991359433029179,
+     "top_ic_mean": 0.09692199531911176,
+     "icir_median": 0.5361155599107014,
+     "icir_p25": 0.23487147529179336,
+     "coverage": 0.6646822668002699,
+     "common_cells": 101491,
+     "common_dates": 44,
+     "common_support_sha256": "2c77f8359bf2158770a5c833bdfeb291ca2bbe8e90f54a994e788ec5b7c30c24",
+     "fit_common_cells": 278414,
+     "fit_common_dates": 100,
+     "fit_common_support_sha256": "063897a0194edd9f8e2ac676da962504d81a2e816d1feb3cb5d0961049b509f2",
+     "duplicate_rate": 0.06060606060606061,
+     "novelty": 0.4166666666666667,
+     "turnover_proxy": 0.8986649052255079,
+     "year_ic_min": NaN,
+     "runtime_seconds": 13.12,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    },
+    "fixed": {
+     "n_candidates": 12,
+     "pass_count": 12,
+     "pass_rate": 1.0,
+     "mean_abs_ic": 0.049352573078747526,
+     "top_ic_mean": 0.09654613789458073,
+     "icir_median": 0.2983468285200001,
+     "icir_p25": 0.19920536799711075,
+     "coverage": 0.6646822668002699,
+     "common_cells": 101491,
+     "common_dates": 44,
+     "common_support_sha256": "2c77f8359bf2158770a5c833bdfeb291ca2bbe8e90f54a994e788ec5b7c30c24",
+     "fit_common_cells": 278414,
+     "fit_common_dates": 100,
+     "fit_common_support_sha256": "063897a0194edd9f8e2ac676da962504d81a2e816d1feb3cb5d0961049b509f2",
+     "duplicate_rate": 0.09090909090909091,
+     "novelty": 0.125,
+     "turnover_proxy": 0.862426770134551,
+     "year_ic_min": NaN,
+     "runtime_seconds": 13.7,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    },
+    "shared": {
+     "n_candidates": 12,
+     "pass_count": 12,
+     "pass_rate": 1.0,
+     "mean_abs_ic": 0.049352573078747526,
+     "top_ic_mean": 0.09654613789458073,
+     "icir_median": 0.2983468285200001,
+     "icir_p25": 0.19920536799711075,
+     "coverage": 0.6646822668002699,
+     "common_cells": 101491,
+     "common_dates": 44,
+     "common_support_sha256": "2c77f8359bf2158770a5c833bdfeb291ca2bbe8e90f54a994e788ec5b7c30c24",
+     "fit_common_cells": 278414,
+     "fit_common_dates": 100,
+     "fit_common_support_sha256": "063897a0194edd9f8e2ac676da962504d81a2e816d1feb3cb5d0961049b509f2",
+     "duplicate_rate": 0.09090909090909091,
+     "novelty": 0.125,
+     "turnover_proxy": 0.862426770134551,
+     "year_ic_min": NaN,
+     "runtime_seconds": 14.29,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    }
+   },
+   "date_block_diagnostic": {
+    "metric": "mean_daily_abs_ic_delta",
+    "block_size_dates": 4,
+    "dates": [
+     {
+      "date": "2017-03-31",
+      "mean_daily_abs_ic_delta": 0.01770619514588167
+     },
+     {
+      "date": "2017-04-07",
+      "mean_daily_abs_ic_delta": -0.050244296851884196
+     },
+     {
+      "date": "2017-04-14",
+      "mean_daily_abs_ic_delta": -0.056309661850294804
+     },
+     {
+      "date": "2017-04-21",
+      "mean_daily_abs_ic_delta": 0.016803584204064193
+     },
+     {
+      "date": "2017-06-23",
+      "mean_daily_abs_ic_delta": -0.00017542915226485822
+     },
+     {
+      "date": "2017-06-30",
+      "mean_daily_abs_ic_delta": 0.042574706033095766
+     },
+     {
+      "date": "2017-07-07",
+      "mean_daily_abs_ic_delta": 0.02653777954131986
+     },
+     {
+      "date": "2017-07-14",
+      "mean_daily_abs_ic_delta": 0.0033994386128896603
+     },
+     {
+      "date": "2018-01-05",
+      "mean_daily_abs_ic_delta": 0.0036108808360985414
+     },
+     {
+      "date": "2018-01-12",
+      "mean_daily_abs_ic_delta": -0.0013374501800258662
+     },
+     {
+      "date": "2018-01-19",
+      "mean_daily_abs_ic_delta": 0.011685749170414678
+     },
+     {
+      "date": "2018-01-26",
+      "mean_daily_abs_ic_delta": -0.04791412435794076
+     },
+     {
+      "date": "2018-06-22",
+      "mean_daily_abs_ic_delta": 0.031071579329369797
+     },
+     {
+      "date": "2018-06-29",
+      "mean_daily_abs_ic_delta": 0.00270884523259754
+     },
+     {
+      "date": "2018-07-06",
+      "mean_daily_abs_ic_delta": 0.000964549177125254
+     },
+     {
+      "date": "2018-07-13",
+      "mean_daily_abs_ic_delta": -0.004243188361335706
+     },
+     {
+      "date": "2018-11-16",
+      "mean_daily_abs_ic_delta": 0.043752184962492835
+     },
+     {
+      "date": "2018-11-23",
+      "mean_daily_abs_ic_delta": 0.006072485149394999
+     },
+     {
+      "date": "2018-11-30",
+      "mean_daily_abs_ic_delta": -0.019043155830748892
+     },
+     {
+      "date": "2018-12-07",
+      "mean_daily_abs_ic_delta": 0.05474221246708455
+     },
+     {
+      "date": "2019-06-28",
+      "mean_daily_abs_ic_delta": 0.033341518451737745
+     },
+     {
+      "date": "2019-07-05",
+      "mean_daily_abs_ic_delta": -0.0381387117943944
+     },
+     {
+      "date": "2019-07-12",
+      "mean_daily_abs_ic_delta": 0.007909167150320737
+     },
+     {
+      "date": "2019-07-19",
+      "mean_daily_abs_ic_delta": 0.014215531988410746
+     },
+     {
+      "date": "2019-07-26",
+      "mean_daily_abs_ic_delta": 0.009922983392495505
+     },
+     {
+      "date": "2019-08-02",
+      "mean_daily_abs_ic_delta": -0.004803119384790777
+     },
+     {
+      "date": "2019-08-09",
+      "mean_daily_abs_ic_delta": -0.010300841918837914
+     },
+     {
+      "date": "2019-08-16",
+      "mean_daily_abs_ic_delta": 0.010679087694117781
+     },
+     {
+      "date": "2019-09-20",
+      "mean_daily_abs_ic_delta": 0.011985745158398925
+     },
+     {
+      "date": "2019-09-27",
+      "mean_daily_abs_ic_delta": 0.015933582159053827
+     },
+     {
+      "date": "2019-09-30",
+      "mean_daily_abs_ic_delta": -0.010029917516018949
+     },
+     {
+      "date": "2019-10-11",
+      "mean_daily_abs_ic_delta": -0.017159262758472155
+     },
+     {
+      "date": "2020-02-07",
+      "mean_daily_abs_ic_delta": 0.019245486769469106
+     },
+     {
+      "date": "2020-02-14",
+      "mean_daily_abs_ic_delta": 0.020221726671514964
+     },
+     {
+      "date": "2020-02-21",
+      "mean_daily_abs_ic_delta": 0.007727816234893492
+     },
+     {
+      "date": "2020-02-28",
+      "mean_daily_abs_ic_delta": 0.046843271066630054
+     },
+     {
+      "date": "2020-06-24",
+      "mean_daily_abs_ic_delta": -0.012284081778835748
+     },
+     {
+      "date": "2020-07-03",
+      "mean_daily_abs_ic_delta": -0.019223400463075135
+     },
+     {
+      "date": "2020-07-10",
+      "mean_daily_abs_ic_delta": 0.051003999115141224
+     },
+     {
+      "date": "2020-07-17",
+      "mean_daily_abs_ic_delta": -0.01266347935279645
+     },
+     {
+      "date": "2020-08-21",
+      "mean_daily_abs_ic_delta": 0.014372718170661838
+     },
+     {
+      "date": "2020-08-28",
+      "mean_daily_abs_ic_delta": -0.006281957471007071
+     },
+     {
+      "date": "2020-09-04",
+      "mean_daily_abs_ic_delta": -0.0033523024676915814
+     },
+     {
+      "date": "2020-09-11",
+      "mean_daily_abs_ic_delta": -0.03153057179867033
+     }
+    ],
+    "blocks": [
+     {
+      "start": "2017-03-31",
+      "end": "2017-04-21",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": -0.018011044838058286
+     },
+     {
+      "start": "2017-06-23",
+      "end": "2017-07-14",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.018084123758760107
+     },
+     {
+      "start": "2018-01-05",
+      "end": "2018-01-26",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": -0.008488736132863352
+     },
+     {
+      "start": "2018-06-22",
+      "end": "2018-07-13",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.007625446344439221
+     },
+     {
+      "start": "2018-11-16",
+      "end": "2018-12-07",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.021380931687055873
+     },
+     {
+      "start": "2019-06-28",
+      "end": "2019-07-19",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.004331876449018706
+     },
+     {
+      "start": "2019-07-26",
+      "end": "2019-08-16",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0013745274457461487
+     },
+     {
+      "start": "2019-09-20",
+      "end": "2019-10-11",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.00018253676074041214
+     },
+     {
+      "start": "2020-02-07",
+      "end": "2020-02-28",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.023509575185626904
+     },
+     {
+      "start": "2020-06-24",
+      "end": "2020-07-17",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0017082593801084726
+     },
+     {
+      "start": "2020-08-21",
+      "end": "2020-09-11",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": -0.0066980283916767865
+     }
+    ],
+    "largest_positive_block_share": 0.3006444224671755
+   },
+   "usage": {
+    "shared": {
+     "decisions": 2,
+     "candidate_budget": 24,
+     "model_calls": 2,
+     "input_tokens": 27965,
+     "output_tokens": 9233
+    },
+    "parent": {
+     "decisions": 2,
+     "candidate_budget": 24,
+     "model_calls": 2,
+     "input_tokens": 38101,
+     "output_tokens": 9958
+    },
+    "diagnostic": {
+     "decisions": 2,
+     "candidate_budget": 24,
+     "model_calls": 2,
+     "input_tokens": 47630,
+     "output_tokens": 13773
+    }
+   },
+   "failed_or_invalid_decisions": 0,
+   "common_support_verified": true,
+   "actual_model_calls_equal": true,
+   "actual_decisions_equal": true,
+   "split_verified": true,
+   "branchpoint_identity_verified": true,
+   "shared_memory_verified": true,
+   "frozen_champions_verified": true,
+   "internal_select_excluded": true,
+   "task_constraints_satisfied": true,
+   "score_window_read": false,
+   "independent_real_data_oos": false,
+   "finished_at": "2026-10-30T09:53:03.751236+00:00"
+  },
+  {
+   "schema": "AUTO-RESEARCH-DIAGNOSTIC-CONTINUATION-UNIT-1",
+   "protocol_version": "V001",
+   "task": "T3",
+   "seed": 11,
+   "status": "COMPLETED",
+   "shared_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T3_S11_V001/T3_S11_SHARED",
+   "parent_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T3_S11_V001/T3_S11_PARENT",
+   "diagnostic_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T3_S11_V001/T3_S11_DIAGNOSTIC",
+   "comparison_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T3_S11_V001/common_comparison",
+   "parent_champion": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T3_S11_V001/T3_S11_PARENT/decisions/T3_S11_PARENT_d002/child/step/harness/adopted.json",
+   "diagnostic_champion": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T3_S11_V001/T3_S11_DIAGNOSTIC/decisions/T3_S11_DIAGNOSTIC_d001/child/step/harness/adopted.json",
+   "select_diagnostic_minus_parent": 0.0,
+   "select_parent_minus_fixed": 0.029739762929083383,
+   "select_diagnostic_minus_fixed": 0.029739762929083383,
+   "select_shared_minus_fixed": 0.018571253159427342,
+   "select_metrics": {
+    "parent": {
+     "n_candidates": 12,
+     "pass_count": 12,
+     "pass_rate": 1.0,
+     "mean_abs_ic": 0.0748349854313572,
+     "top_ic_mean": 0.09168898617276178,
+     "icir_median": 0.5742505687571176,
+     "icir_p25": 0.512001298429887,
+     "coverage": 0.7050793545608164,
+     "common_cells": 106400,
+     "common_dates": 43,
+     "common_support_sha256": "1023647ea5397622190e34986c70b27570993ecd8939294a332683e401bf5c3b",
+     "fit_common_cells": 280724,
+     "fit_common_dates": 102,
+     "fit_common_support_sha256": "08cf360a02d04b8cb71a83644be5feec1aeb57e267db5687d4ac9925d974db0f",
+     "duplicate_rate": 0.12121212121212122,
+     "novelty": 0.16666666666666666,
+     "turnover_proxy": 0.8397296184748249,
+     "year_ic_min": NaN,
+     "runtime_seconds": 28.21,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    },
+    "diagnostic": {
+     "n_candidates": 12,
+     "pass_count": 12,
+     "pass_rate": 1.0,
+     "mean_abs_ic": 0.0748349854313572,
+     "top_ic_mean": 0.09168898617276178,
+     "icir_median": 0.5742505687571176,
+     "icir_p25": 0.512001298429887,
+     "coverage": 0.7050793545608164,
+     "common_cells": 106400,
+     "common_dates": 43,
+     "common_support_sha256": "1023647ea5397622190e34986c70b27570993ecd8939294a332683e401bf5c3b",
+     "fit_common_cells": 280724,
+     "fit_common_dates": 102,
+     "fit_common_support_sha256": "08cf360a02d04b8cb71a83644be5feec1aeb57e267db5687d4ac9925d974db0f",
+     "duplicate_rate": 0.12121212121212122,
+     "novelty": 0.16666666666666666,
+     "turnover_proxy": 0.8397296184748249,
+     "year_ic_min": NaN,
+     "runtime_seconds": 29.24,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    },
+    "fixed": {
+     "n_candidates": 12,
+     "pass_count": 9,
+     "pass_rate": 0.75,
+     "mean_abs_ic": 0.045095222502273824,
+     "top_ic_mean": 0.07928306957501986,
+     "icir_median": 0.5084565347481078,
+     "icir_p25": 0.28520505772701044,
+     "coverage": 0.7050793545608164,
+     "common_cells": 106400,
+     "common_dates": 43,
+     "common_support_sha256": "1023647ea5397622190e34986c70b27570993ecd8939294a332683e401bf5c3b",
+     "fit_common_cells": 280724,
+     "fit_common_dates": 102,
+     "fit_common_support_sha256": "08cf360a02d04b8cb71a83644be5feec1aeb57e267db5687d4ac9925d974db0f",
+     "duplicate_rate": 0.015151515151515152,
+     "novelty": 0.25,
+     "turnover_proxy": 0.8407782163263655,
+     "year_ic_min": NaN,
+     "runtime_seconds": 30.29,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    },
+    "shared": {
+     "n_candidates": 12,
+     "pass_count": 12,
+     "pass_rate": 1.0,
+     "mean_abs_ic": 0.06366647566170117,
+     "top_ic_mean": 0.08760975635882613,
+     "icir_median": 0.5607109276204787,
+     "icir_p25": 0.512001298429887,
+     "coverage": 0.7050793545608164,
+     "common_cells": 106400,
+     "common_dates": 43,
+     "common_support_sha256": "1023647ea5397622190e34986c70b27570993ecd8939294a332683e401bf5c3b",
+     "fit_common_cells": 280724,
+     "fit_common_dates": 102,
+     "fit_common_support_sha256": "08cf360a02d04b8cb71a83644be5feec1aeb57e267db5687d4ac9925d974db0f",
+     "duplicate_rate": 0.030303030303030304,
+     "novelty": 0.25,
+     "turnover_proxy": 0.841442067179718,
+     "year_ic_min": NaN,
+     "runtime_seconds": 31.3,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    }
+   },
+   "date_block_diagnostic": {
+    "metric": "mean_daily_abs_ic_delta",
+    "block_size_dates": 4,
+    "dates": [
+     {
+      "date": "2017-07-21",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-07-28",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-08-04",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-08-11",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-10-20",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-10-27",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-11-03",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-11-10",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-01-05",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-01-12",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-01-19",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-01-26",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-06-22",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-06-29",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-07-06",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-07-13",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-12-14",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-12-21",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-12-28",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-01-04",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-01-11",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-01-18",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-01-25",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-03-08",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-03-15",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-03-22",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-03-29",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-07-26",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-08-02",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-08-09",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-08-16",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-04-03",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-04-10",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-04-17",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-04-24",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-05-29",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-06-05",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-06-12",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-06-19",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-06-24",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-07-03",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-07-10",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-07-17",
+      "mean_daily_abs_ic_delta": 0.0
+     }
+    ],
+    "blocks": [
+     {
+      "start": "2017-07-21",
+      "end": "2017-08-11",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2017-10-20",
+      "end": "2017-11-10",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2018-01-05",
+      "end": "2018-01-26",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2018-06-22",
+      "end": "2018-07-13",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2018-12-14",
+      "end": "2019-01-04",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2019-01-11",
+      "end": "2019-03-08",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2019-03-15",
+      "end": "2019-07-26",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2019-08-02",
+      "end": "2020-04-03",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2020-04-10",
+      "end": "2020-05-29",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2020-06-05",
+      "end": "2020-06-24",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2020-07-03",
+      "end": "2020-07-17",
+      "n_dates": 3,
+      "mean_daily_abs_ic_delta": 0.0
+     }
+    ],
+    "largest_positive_block_share": null
+   },
+   "usage": {
+    "shared": {
+     "decisions": 2,
+     "candidate_budget": 24,
+     "model_calls": 2,
+     "input_tokens": 21256,
+     "output_tokens": 8883
+    },
+    "parent": {
+     "decisions": 2,
+     "candidate_budget": 24,
+     "model_calls": 2,
+     "input_tokens": 22589,
+     "output_tokens": 7138
+    },
+    "diagnostic": {
+     "decisions": 2,
+     "candidate_budget": 24,
+     "model_calls": 2,
+     "input_tokens": 42637,
+     "output_tokens": 13186
+    }
+   },
+   "failed_or_invalid_decisions": 1,
+   "common_support_verified": true,
+   "actual_model_calls_equal": true,
+   "actual_decisions_equal": true,
+   "split_verified": true,
+   "branchpoint_identity_verified": true,
+   "shared_memory_verified": true,
+   "frozen_champions_verified": true,
+   "internal_select_excluded": true,
+   "task_constraints_satisfied": true,
+   "score_window_read": false,
+   "independent_real_data_oos": false,
+   "finished_at": "2026-10-30T10:14:18.929503+00:00"
+  },
+  {
+   "schema": "AUTO-RESEARCH-DIAGNOSTIC-CONTINUATION-UNIT-1",
+   "protocol_version": "V001",
+   "task": "T3",
+   "seed": 29,
+   "status": "COMPLETED",
+   "shared_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T3_S29_V001/T3_S29_SHARED",
+   "parent_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T3_S29_V001/T3_S29_PARENT",
+   "diagnostic_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T3_S29_V001/T3_S29_DIAGNOSTIC",
+   "comparison_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T3_S29_V001/common_comparison",
+   "parent_champion": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T3_S29_V001/T3_S29_PARENT/decisions/T3_S29_PARENT_d001/child/step/harness/adopted.json",
+   "diagnostic_champion": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T3_S29_V001/T3_S29_DIAGNOSTIC/decisions/T3_S29_DIAGNOSTIC_d001/child/step/harness/adopted.json",
+   "select_diagnostic_minus_parent": 0.0,
+   "select_parent_minus_fixed": 0.014537096344838612,
+   "select_diagnostic_minus_fixed": 0.014537096344838612,
+   "select_shared_minus_fixed": 0.013123247515166202,
+   "select_metrics": {
+    "parent": {
+     "n_candidates": 12,
+     "pass_count": 12,
+     "pass_rate": 1.0,
+     "mean_abs_ic": 0.04185712413477072,
+     "top_ic_mean": 0.04714036307153934,
+     "icir_median": 0.30385201800956496,
+     "icir_p25": 0.27275293634486425,
+     "coverage": 0.8762021435496974,
+     "common_cells": 133747,
+     "common_dates": 48,
+     "common_support_sha256": "9ff757d27d8ffe08cfe5bc7e6f52d4cf266ab2559df622fef6d3320e897d0a17",
+     "fit_common_cells": 257694,
+     "fit_common_dates": 98,
+     "fit_common_support_sha256": "6d4b8ff8cbe4325415f0f34ad39aeda6c17600734ed9077b843f0e37558ab609",
+     "duplicate_rate": 0.09090909090909091,
+     "novelty": 0.0,
+     "turnover_proxy": 0.8097238326477789,
+     "year_ic_min": NaN,
+     "runtime_seconds": 17.59,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    },
+    "diagnostic": {
+     "n_candidates": 12,
+     "pass_count": 12,
+     "pass_rate": 1.0,
+     "mean_abs_ic": 0.04185712413477072,
+     "top_ic_mean": 0.04714036307153934,
+     "icir_median": 0.30385201800956496,
+     "icir_p25": 0.27275293634486425,
+     "coverage": 0.8762021435496974,
+     "common_cells": 133747,
+     "common_dates": 48,
+     "common_support_sha256": "9ff757d27d8ffe08cfe5bc7e6f52d4cf266ab2559df622fef6d3320e897d0a17",
+     "fit_common_cells": 257694,
+     "fit_common_dates": 98,
+     "fit_common_support_sha256": "6d4b8ff8cbe4325415f0f34ad39aeda6c17600734ed9077b843f0e37558ab609",
+     "duplicate_rate": 0.09090909090909091,
+     "novelty": 0.0,
+     "turnover_proxy": 0.8097238326477789,
+     "year_ic_min": NaN,
+     "runtime_seconds": 18.39,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    },
+    "fixed": {
+     "n_candidates": 12,
+     "pass_count": 9,
+     "pass_rate": 0.75,
+     "mean_abs_ic": 0.027320027789932106,
+     "top_ic_mean": 0.04444658887849806,
+     "icir_median": 0.2710899542401801,
+     "icir_p25": 0.20142029773738168,
+     "coverage": 0.8762021435496974,
+     "common_cells": 133747,
+     "common_dates": 48,
+     "common_support_sha256": "9ff757d27d8ffe08cfe5bc7e6f52d4cf266ab2559df622fef6d3320e897d0a17",
+     "fit_common_cells": 257694,
+     "fit_common_dates": 98,
+     "fit_common_support_sha256": "6d4b8ff8cbe4325415f0f34ad39aeda6c17600734ed9077b843f0e37558ab609",
+     "duplicate_rate": 0.015151515151515152,
+     "novelty": 0.375,
+     "turnover_proxy": 0.8075744454693213,
+     "year_ic_min": NaN,
+     "runtime_seconds": 19.17,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    },
+    "shared": {
+     "n_candidates": 12,
+     "pass_count": 12,
+     "pass_rate": 1.0,
+     "mean_abs_ic": 0.04044327530509831,
+     "top_ic_mean": 0.04714036307153934,
+     "icir_median": 0.32587641767393905,
+     "icir_p25": 0.27275293634486425,
+     "coverage": 0.8762021435496974,
+     "common_cells": 133747,
+     "common_dates": 48,
+     "common_support_sha256": "9ff757d27d8ffe08cfe5bc7e6f52d4cf266ab2559df622fef6d3320e897d0a17",
+     "fit_common_cells": 257694,
+     "fit_common_dates": 98,
+     "fit_common_support_sha256": "6d4b8ff8cbe4325415f0f34ad39aeda6c17600734ed9077b843f0e37558ab609",
+     "duplicate_rate": 0.045454545454545456,
+     "novelty": 0.1,
+     "turnover_proxy": 0.803985290204316,
+     "year_ic_min": NaN,
+     "runtime_seconds": 19.97,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    }
+   },
+   "date_block_diagnostic": {
+    "metric": "mean_daily_abs_ic_delta",
+    "block_size_dates": 4,
+    "dates": [
+     {
+      "date": "2017-02-03",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-02-10",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-02-17",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-02-24",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-03-03",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-03-10",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-03-17",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-03-24",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-04-28",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-05-05",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-05-12",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-05-19",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-03-02",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-03-09",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-03-16",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-03-23",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-04-27",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-05-04",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-05-11",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-05-18",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-10-19",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-10-26",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-11-02",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-11-09",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-04-04",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-04-12",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-04-19",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-04-26",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-07-26",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-08-02",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-08-09",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-08-16",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-10-18",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-10-25",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-11-01",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-11-08",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-01-03",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-01-10",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-01-17",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-01-23",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-04-03",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-04-10",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-04-17",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-04-24",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-05-29",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-06-05",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-06-12",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-06-19",
+      "mean_daily_abs_ic_delta": 0.0
+     }
+    ],
+    "blocks": [
+     {
+      "start": "2017-02-03",
+      "end": "2017-02-24",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2017-03-03",
+      "end": "2017-03-24",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2017-04-28",
+      "end": "2017-05-19",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2018-03-02",
+      "end": "2018-03-23",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2018-04-27",
+      "end": "2018-05-18",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2018-10-19",
+      "end": "2018-11-09",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2019-04-04",
+      "end": "2019-04-26",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2019-07-26",
+      "end": "2019-08-16",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2019-10-18",
+      "end": "2019-11-08",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2020-01-03",
+      "end": "2020-01-23",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2020-04-03",
+      "end": "2020-04-24",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2020-05-29",
+      "end": "2020-06-19",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     }
+    ],
+    "largest_positive_block_share": null
+   },
+   "usage": {
+    "shared": {
+     "decisions": 2,
+     "candidate_budget": 24,
+     "model_calls": 2,
+     "input_tokens": 23523,
+     "output_tokens": 8142
+    },
+    "parent": {
+     "decisions": 2,
+     "candidate_budget": 24,
+     "model_calls": 2,
+     "input_tokens": 32307,
+     "output_tokens": 7337
+    },
+    "diagnostic": {
+     "decisions": 2,
+     "candidate_budget": 24,
+     "model_calls": 2,
+     "input_tokens": 21400,
+     "output_tokens": 9746
+    }
+   },
+   "failed_or_invalid_decisions": 0,
+   "common_support_verified": true,
+   "actual_model_calls_equal": true,
+   "actual_decisions_equal": true,
+   "split_verified": true,
+   "branchpoint_identity_verified": true,
+   "shared_memory_verified": true,
+   "frozen_champions_verified": true,
+   "internal_select_excluded": true,
+   "task_constraints_satisfied": true,
+   "score_window_read": false,
+   "independent_real_data_oos": false,
+   "finished_at": "2026-10-30T10:33:11.584904+00:00"
+  },
+  {
+   "schema": "AUTO-RESEARCH-DIAGNOSTIC-CONTINUATION-UNIT-1",
+   "protocol_version": "V001",
+   "task": "T3",
+   "seed": 43,
+   "status": "COMPLETED",
+   "shared_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T3_S43_V001/T3_S43_SHARED",
+   "parent_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T3_S43_V001/T3_S43_PARENT_BUDGET_RECOVERY_001",
+   "diagnostic_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T3_S43_V001/T3_S43_DIAGNOSTIC",
+   "shared_recovered_from": null,
+   "parent_recovered_from": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T3_S43_V001/T3_S43_PARENT",
+   "diagnostic_recovered_from": null,
+   "comparison_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T3_S43_V001/common_comparison",
+   "parent_champion": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T3_S43_V001/T3_S43_SHARED/decisions/T3_S43_SHARED_d002/child/step/harness/adopted.json",
+   "diagnostic_champion": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T3_S43_V001/T3_S43_DIAGNOSTIC/decisions/T3_S43_DIAGNOSTIC_d001/child/step/harness/adopted.json",
+   "select_diagnostic_minus_parent": 0.005459744118235826,
+   "select_parent_minus_fixed": 0.017738396989752866,
+   "select_diagnostic_minus_fixed": 0.023198141107988693,
+   "select_shared_minus_fixed": 0.017738396989752866,
+   "select_metrics": {
+    "parent": {
+     "n_candidates": 12,
+     "pass_count": 12,
+     "pass_rate": 1.0,
+     "mean_abs_ic": 0.06341751908160272,
+     "top_ic_mean": 0.09388466089336837,
+     "icir_median": 0.5376286160203901,
+     "icir_p25": 0.31970362828136667,
+     "coverage": 0.6658021756357612,
+     "common_cells": 101662,
+     "common_dates": 44,
+     "common_support_sha256": "670d796e63850d372cd77cc695f422a23ca8a8c8239e779f0f7c9ba6154973d5",
+     "fit_common_cells": 283476,
+     "fit_common_dates": 101,
+     "fit_common_support_sha256": "22fc373a10f99b5a854933e9486308aaeef9d76c4116bbe504992510587dba5a",
+     "duplicate_rate": 0.06060606060606061,
+     "novelty": 0.1,
+     "turnover_proxy": 0.8756175321645692,
+     "year_ic_min": NaN,
+     "runtime_seconds": 22.25,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    },
+    "diagnostic": {
+     "n_candidates": 12,
+     "pass_count": 12,
+     "pass_rate": 1.0,
+     "mean_abs_ic": 0.06887726319983854,
+     "top_ic_mean": 0.09884173287421466,
+     "icir_median": 0.6113242286107896,
+     "icir_p25": 0.3278349817820015,
+     "coverage": 0.6658021756357612,
+     "common_cells": 101662,
+     "common_dates": 44,
+     "common_support_sha256": "670d796e63850d372cd77cc695f422a23ca8a8c8239e779f0f7c9ba6154973d5",
+     "fit_common_cells": 283476,
+     "fit_common_dates": 101,
+     "fit_common_support_sha256": "22fc373a10f99b5a854933e9486308aaeef9d76c4116bbe504992510587dba5a",
+     "duplicate_rate": 0.12121212121212122,
+     "novelty": 0.25,
+     "turnover_proxy": 0.8787728107053852,
+     "year_ic_min": NaN,
+     "runtime_seconds": 23.11,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    },
+    "fixed": {
+     "n_candidates": 12,
+     "pass_count": 12,
+     "pass_rate": 1.0,
+     "mean_abs_ic": 0.04567912209184985,
+     "top_ic_mean": 0.0800290343135887,
+     "icir_median": 0.28987950188937806,
+     "icir_p25": 0.21446720582814044,
+     "coverage": 0.6658021756357612,
+     "common_cells": 101662,
+     "common_dates": 44,
+     "common_support_sha256": "670d796e63850d372cd77cc695f422a23ca8a8c8239e779f0f7c9ba6154973d5",
+     "fit_common_cells": 283476,
+     "fit_common_dates": 101,
+     "fit_common_support_sha256": "22fc373a10f99b5a854933e9486308aaeef9d76c4116bbe504992510587dba5a",
+     "duplicate_rate": 0.030303030303030304,
+     "novelty": 0.375,
+     "turnover_proxy": 0.8909716934980293,
+     "year_ic_min": NaN,
+     "runtime_seconds": 23.97,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    },
+    "shared": {
+     "n_candidates": 12,
+     "pass_count": 12,
+     "pass_rate": 1.0,
+     "mean_abs_ic": 0.06341751908160272,
+     "top_ic_mean": 0.09388466089336837,
+     "icir_median": 0.5376286160203901,
+     "icir_p25": 0.31970362828136667,
+     "coverage": 0.6658021756357612,
+     "common_cells": 101662,
+     "common_dates": 44,
+     "common_support_sha256": "670d796e63850d372cd77cc695f422a23ca8a8c8239e779f0f7c9ba6154973d5",
+     "fit_common_cells": 283476,
+     "fit_common_dates": 101,
+     "fit_common_support_sha256": "22fc373a10f99b5a854933e9486308aaeef9d76c4116bbe504992510587dba5a",
+     "duplicate_rate": 0.06060606060606061,
+     "novelty": 0.1,
+     "turnover_proxy": 0.8756175321645692,
+     "year_ic_min": NaN,
+     "runtime_seconds": 24.86,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    }
+   },
+   "date_block_diagnostic": {
+    "metric": "mean_daily_abs_ic_delta",
+    "block_size_dates": 4,
+    "dates": [
+     {
+      "date": "2017-03-31",
+      "mean_daily_abs_ic_delta": 0.007355556514149278
+     },
+     {
+      "date": "2017-04-07",
+      "mean_daily_abs_ic_delta": -0.001337390309676889
+     },
+     {
+      "date": "2017-04-14",
+      "mean_daily_abs_ic_delta": -0.027074839932473893
+     },
+     {
+      "date": "2017-04-21",
+      "mean_daily_abs_ic_delta": 0.01341813224939474
+     },
+     {
+      "date": "2017-06-23",
+      "mean_daily_abs_ic_delta": 0.0013516905683244596
+     },
+     {
+      "date": "2017-06-30",
+      "mean_daily_abs_ic_delta": 0.0062319490922597975
+     },
+     {
+      "date": "2017-07-07",
+      "mean_daily_abs_ic_delta": 0.009997059358532456
+     },
+     {
+      "date": "2017-07-14",
+      "mean_daily_abs_ic_delta": 0.01055116550936197
+     },
+     {
+      "date": "2018-01-05",
+      "mean_daily_abs_ic_delta": 0.0017660778684111256
+     },
+     {
+      "date": "2018-01-12",
+      "mean_daily_abs_ic_delta": 0.01759992673530273
+     },
+     {
+      "date": "2018-01-19",
+      "mean_daily_abs_ic_delta": 0.004334190837918264
+     },
+     {
+      "date": "2018-01-26",
+      "mean_daily_abs_ic_delta": -0.0027563364317471917
+     },
+     {
+      "date": "2018-06-22",
+      "mean_daily_abs_ic_delta": 0.039517025604989875
+     },
+     {
+      "date": "2018-06-29",
+      "mean_daily_abs_ic_delta": 0.0037145703620865347
+     },
+     {
+      "date": "2018-07-06",
+      "mean_daily_abs_ic_delta": 0.0021712734684428414
+     },
+     {
+      "date": "2018-07-13",
+      "mean_daily_abs_ic_delta": 0.0013650544137020354
+     },
+     {
+      "date": "2018-11-16",
+      "mean_daily_abs_ic_delta": 0.013135547376068368
+     },
+     {
+      "date": "2018-11-23",
+      "mean_daily_abs_ic_delta": -0.0043969871708194885
+     },
+     {
+      "date": "2018-11-30",
+      "mean_daily_abs_ic_delta": 0.007317864479908703
+     },
+     {
+      "date": "2018-12-07",
+      "mean_daily_abs_ic_delta": 0.020279225984546706
+     },
+     {
+      "date": "2019-06-28",
+      "mean_daily_abs_ic_delta": 0.02317345056330522
+     },
+     {
+      "date": "2019-07-05",
+      "mean_daily_abs_ic_delta": 0.013345110649291336
+     },
+     {
+      "date": "2019-07-12",
+      "mean_daily_abs_ic_delta": 0.006247876147170185
+     },
+     {
+      "date": "2019-07-19",
+      "mean_daily_abs_ic_delta": 0.005497287389491602
+     },
+     {
+      "date": "2019-07-26",
+      "mean_daily_abs_ic_delta": 0.005044684950398948
+     },
+     {
+      "date": "2019-08-02",
+      "mean_daily_abs_ic_delta": 0.0066354313814903955
+     },
+     {
+      "date": "2019-08-09",
+      "mean_daily_abs_ic_delta": -0.002655120695530047
+     },
+     {
+      "date": "2019-08-16",
+      "mean_daily_abs_ic_delta": 0.009018050766552863
+     },
+     {
+      "date": "2019-09-20",
+      "mean_daily_abs_ic_delta": 0.006866696781039794
+     },
+     {
+      "date": "2019-09-27",
+      "mean_daily_abs_ic_delta": 0.011812730796134624
+     },
+     {
+      "date": "2019-09-30",
+      "mean_daily_abs_ic_delta": -0.008727727260470889
+     },
+     {
+      "date": "2019-10-11",
+      "mean_daily_abs_ic_delta": 0.005028861594750952
+     },
+     {
+      "date": "2020-02-07",
+      "mean_daily_abs_ic_delta": -0.009451309309685102
+     },
+     {
+      "date": "2020-02-14",
+      "mean_daily_abs_ic_delta": 0.012758552787910937
+     },
+     {
+      "date": "2020-02-21",
+      "mean_daily_abs_ic_delta": 0.0012802951801704765
+     },
+     {
+      "date": "2020-02-28",
+      "mean_daily_abs_ic_delta": 0.04102840665394783
+     },
+     {
+      "date": "2020-06-24",
+      "mean_daily_abs_ic_delta": 0.010524250824223383
+     },
+     {
+      "date": "2020-07-03",
+      "mean_daily_abs_ic_delta": 0.007715543401693337
+     },
+     {
+      "date": "2020-07-10",
+      "mean_daily_abs_ic_delta": 0.03849287681436975
+     },
+     {
+      "date": "2020-07-17",
+      "mean_daily_abs_ic_delta": 0.009339721949418414
+     },
+     {
+      "date": "2020-08-21",
+      "mean_daily_abs_ic_delta": 0.004751549115925069
+     },
+     {
+      "date": "2020-08-28",
+      "mean_daily_abs_ic_delta": -0.010655721524957099
+     },
+     {
+      "date": "2020-09-04",
+      "mean_daily_abs_ic_delta": 0.012558497094380394
+     },
+     {
+      "date": "2020-09-11",
+      "mean_daily_abs_ic_delta": 0.017476265088273255
+     }
+    ],
+    "blocks": [
+     {
+      "start": "2017-03-31",
+      "end": "2017-04-21",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": -0.001909635369651691
+     },
+     {
+      "start": "2017-06-23",
+      "end": "2017-07-14",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.007032966132119671
+     },
+     {
+      "start": "2018-01-05",
+      "end": "2018-01-26",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.005235964752471232
+     },
+     {
+      "start": "2018-06-22",
+      "end": "2018-07-13",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.011691980962305322
+     },
+     {
+      "start": "2018-11-16",
+      "end": "2018-12-07",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.009083912667426072
+     },
+     {
+      "start": "2019-06-28",
+      "end": "2019-07-19",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.012065931187314586
+     },
+     {
+      "start": "2019-07-26",
+      "end": "2019-08-16",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.00451076160072804
+     },
+     {
+      "start": "2019-09-20",
+      "end": "2019-10-11",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0037451404778636203
+     },
+     {
+      "start": "2020-02-07",
+      "end": "2020-02-28",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.011403986328086035
+     },
+     {
+      "start": "2020-06-24",
+      "end": "2020-07-17",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.01651809824742622
+     },
+     {
+      "start": "2020-08-21",
+      "end": "2020-09-11",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.006032647443405405
+     }
+    ],
+    "largest_positive_block_share": 0.18916439930033876
+   },
+   "usage": {
+    "shared": {
+     "decisions": 2,
+     "candidate_budget": 24,
+     "model_calls": 2,
+     "input_tokens": 24592,
+     "output_tokens": 7786
+    },
+    "parent": {
+     "decisions": 2,
+     "candidate_budget": 12,
+     "model_calls": 2,
+     "input_tokens": 12854,
+     "output_tokens": 13823
+    },
+    "diagnostic": {
+     "decisions": 2,
+     "candidate_budget": 24,
+     "model_calls": 2,
+     "input_tokens": 35521,
+     "output_tokens": 9634
+    }
+   },
+   "failed_or_invalid_decisions": 1,
+   "common_support_verified": true,
+   "actual_model_calls_equal": true,
+   "actual_decisions_equal": true,
+   "split_verified": true,
+   "branchpoint_identity_verified": true,
+   "shared_memory_verified": true,
+   "frozen_champions_verified": true,
+   "internal_select_excluded": true,
+   "task_constraints_satisfied": true,
+   "score_window_read": false,
+   "independent_real_data_oos": false,
+   "finished_at": "2026-10-30T10:07:37.438758+00:00"
+  },
+  {
+   "schema": "AUTO-RESEARCH-DIAGNOSTIC-CONTINUATION-UNIT-1",
+   "protocol_version": "V001",
+   "task": "T4",
+   "seed": 11,
+   "status": "COMPLETED",
+   "shared_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T4_S11_V001/T4_S11_SHARED",
+   "parent_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T4_S11_V001/T4_S11_PARENT",
+   "diagnostic_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T4_S11_V001/T4_S11_DIAGNOSTIC",
+   "comparison_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T4_S11_V001/common_comparison",
+   "parent_champion": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T4_S11_V001/T4_S11_PARENT/decisions/T4_S11_PARENT_d002/child/step/harness/adopted.json",
+   "diagnostic_champion": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T4_S11_V001/T4_S11_DIAGNOSTIC/decisions/T4_S11_DIAGNOSTIC_d002/child/step/harness/adopted.json",
+   "select_diagnostic_minus_parent": 0.007349858740205842,
+   "select_parent_minus_fixed": 0.009892019388112905,
+   "select_diagnostic_minus_fixed": 0.017241878128318747,
+   "select_shared_minus_fixed": 0.006974052986350239,
+   "select_metrics": {
+    "parent": {
+     "n_candidates": 12,
+     "pass_count": 11,
+     "pass_rate": 0.9166666666666666,
+     "mean_abs_ic": 0.058556325936451825,
+     "top_ic_mean": 0.07513762538958381,
+     "icir_median": 0.5308489461285786,
+     "icir_p25": 0.4679085694907414,
+     "coverage": 0.7050793545608164,
+     "common_cells": 106400,
+     "common_dates": 43,
+     "common_support_sha256": "1023647ea5397622190e34986c70b27570993ecd8939294a332683e401bf5c3b",
+     "fit_common_cells": 280724,
+     "fit_common_dates": 102,
+     "fit_common_support_sha256": "08cf360a02d04b8cb71a83644be5feec1aeb57e267db5687d4ac9925d974db0f",
+     "duplicate_rate": 0.07575757575757576,
+     "novelty": 0.1111111111111111,
+     "turnover_proxy": 0.8152125174050016,
+     "year_ic_min": -0.03385808027172152,
+     "runtime_seconds": 13.76,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    },
+    "diagnostic": {
+     "n_candidates": 12,
+     "pass_count": 12,
+     "pass_rate": 1.0,
+     "mean_abs_ic": 0.06590618467665767,
+     "top_ic_mean": 0.0816453743255106,
+     "icir_median": 0.5406033209471572,
+     "icir_p25": 0.4946826520276478,
+     "coverage": 0.7050793545608164,
+     "common_cells": 106400,
+     "common_dates": 43,
+     "common_support_sha256": "1023647ea5397622190e34986c70b27570993ecd8939294a332683e401bf5c3b",
+     "fit_common_cells": 280724,
+     "fit_common_dates": 102,
+     "fit_common_support_sha256": "08cf360a02d04b8cb71a83644be5feec1aeb57e267db5687d4ac9925d974db0f",
+     "duplicate_rate": 0.12121212121212122,
+     "novelty": 0.1,
+     "turnover_proxy": 0.81531904290168,
+     "year_ic_min": 0.01844385779302023,
+     "runtime_seconds": 14.42,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    },
+    "fixed": {
+     "n_candidates": 12,
+     "pass_count": 12,
+     "pass_rate": 1.0,
+     "mean_abs_ic": 0.04866430654833892,
+     "top_ic_mean": 0.06757602491003002,
+     "icir_median": 0.5078537037850255,
+     "icir_p25": 0.4330014755072775,
+     "coverage": 0.7050793545608164,
+     "common_cells": 106400,
+     "common_dates": 43,
+     "common_support_sha256": "1023647ea5397622190e34986c70b27570993ecd8939294a332683e401bf5c3b",
+     "fit_common_cells": 280724,
+     "fit_common_dates": 102,
+     "fit_common_support_sha256": "08cf360a02d04b8cb71a83644be5feec1aeb57e267db5687d4ac9925d974db0f",
+     "duplicate_rate": 0.015151515151515152,
+     "novelty": 0.25,
+     "turnover_proxy": 0.8744714286018201,
+     "year_ic_min": -0.01392423533391013,
+     "runtime_seconds": 15.08,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    },
+    "shared": {
+     "n_candidates": 12,
+     "pass_count": 11,
+     "pass_rate": 0.9166666666666666,
+     "mean_abs_ic": 0.05563835953468916,
+     "top_ic_mean": 0.07238904735235885,
+     "icir_median": 0.5106818000753115,
+     "icir_p25": 0.4679085694907414,
+     "coverage": 0.7050793545608164,
+     "common_cells": 106400,
+     "common_dates": 43,
+     "common_support_sha256": "1023647ea5397622190e34986c70b27570993ecd8939294a332683e401bf5c3b",
+     "fit_common_cells": 280724,
+     "fit_common_dates": 102,
+     "fit_common_support_sha256": "08cf360a02d04b8cb71a83644be5feec1aeb57e267db5687d4ac9925d974db0f",
+     "duplicate_rate": 0.09090909090909091,
+     "novelty": 0.125,
+     "turnover_proxy": 0.8194972694857136,
+     "year_ic_min": -0.03385808027172152,
+     "runtime_seconds": 15.74,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    }
+   },
+   "date_block_diagnostic": {
+    "metric": "mean_daily_abs_ic_delta",
+    "block_size_dates": 4,
+    "dates": [
+     {
+      "date": "2017-07-21",
+      "mean_daily_abs_ic_delta": -0.021408752505187117
+     },
+     {
+      "date": "2017-07-28",
+      "mean_daily_abs_ic_delta": 0.0020897020928022786
+     },
+     {
+      "date": "2017-08-04",
+      "mean_daily_abs_ic_delta": 0.016066053467570243
+     },
+     {
+      "date": "2017-08-11",
+      "mean_daily_abs_ic_delta": -0.010664394129314192
+     },
+     {
+      "date": "2017-10-20",
+      "mean_daily_abs_ic_delta": 0.0022952055687883513
+     },
+     {
+      "date": "2017-10-27",
+      "mean_daily_abs_ic_delta": -0.0063165481763979014
+     },
+     {
+      "date": "2017-11-03",
+      "mean_daily_abs_ic_delta": 0.012309275750792437
+     },
+     {
+      "date": "2017-11-10",
+      "mean_daily_abs_ic_delta": 0.02663625875306283
+     },
+     {
+      "date": "2018-01-05",
+      "mean_daily_abs_ic_delta": 0.012358565281028557
+     },
+     {
+      "date": "2018-01-12",
+      "mean_daily_abs_ic_delta": 0.00699626961776631
+     },
+     {
+      "date": "2018-01-19",
+      "mean_daily_abs_ic_delta": 0.0006840014071690659
+     },
+     {
+      "date": "2018-01-26",
+      "mean_daily_abs_ic_delta": -0.012952593090103381
+     },
+     {
+      "date": "2018-06-22",
+      "mean_daily_abs_ic_delta": -0.012773095601223555
+     },
+     {
+      "date": "2018-06-29",
+      "mean_daily_abs_ic_delta": 0.007408483347660769
+     },
+     {
+      "date": "2018-07-06",
+      "mean_daily_abs_ic_delta": -0.024484188790682898
+     },
+     {
+      "date": "2018-07-13",
+      "mean_daily_abs_ic_delta": -0.0017454481989441495
+     },
+     {
+      "date": "2018-12-14",
+      "mean_daily_abs_ic_delta": -0.0008516639857080455
+     },
+     {
+      "date": "2018-12-21",
+      "mean_daily_abs_ic_delta": 0.016274525856107863
+     },
+     {
+      "date": "2018-12-28",
+      "mean_daily_abs_ic_delta": -0.011874217243069807
+     },
+     {
+      "date": "2019-01-04",
+      "mean_daily_abs_ic_delta": -0.00830458206418263
+     },
+     {
+      "date": "2019-01-11",
+      "mean_daily_abs_ic_delta": 0.040231539369647434
+     },
+     {
+      "date": "2019-01-18",
+      "mean_daily_abs_ic_delta": 0.008312632696406273
+     },
+     {
+      "date": "2019-01-25",
+      "mean_daily_abs_ic_delta": 0.010944146736068139
+     },
+     {
+      "date": "2019-03-08",
+      "mean_daily_abs_ic_delta": 0.004173620603263178
+     },
+     {
+      "date": "2019-03-15",
+      "mean_daily_abs_ic_delta": 0.01177866235366043
+     },
+     {
+      "date": "2019-03-22",
+      "mean_daily_abs_ic_delta": 0.024763771642233784
+     },
+     {
+      "date": "2019-03-29",
+      "mean_daily_abs_ic_delta": 0.0009193897154385483
+     },
+     {
+      "date": "2019-07-26",
+      "mean_daily_abs_ic_delta": -0.006824792314703065
+     },
+     {
+      "date": "2019-08-02",
+      "mean_daily_abs_ic_delta": -0.011386490182294172
+     },
+     {
+      "date": "2019-08-09",
+      "mean_daily_abs_ic_delta": 0.006992905990162876
+     },
+     {
+      "date": "2019-08-16",
+      "mean_daily_abs_ic_delta": 0.0028784544734444806
+     },
+     {
+      "date": "2020-04-03",
+      "mean_daily_abs_ic_delta": 0.00314005272498169
+     },
+     {
+      "date": "2020-04-10",
+      "mean_daily_abs_ic_delta": -0.02266962955502369
+     },
+     {
+      "date": "2020-04-17",
+      "mean_daily_abs_ic_delta": 0.004537994298645487
+     },
+     {
+      "date": "2020-04-24",
+      "mean_daily_abs_ic_delta": 0.00223403153391466
+     },
+     {
+      "date": "2020-05-29",
+      "mean_daily_abs_ic_delta": -0.014766634416091454
+     },
+     {
+      "date": "2020-06-05",
+      "mean_daily_abs_ic_delta": 0.0013731221376106079
+     },
+     {
+      "date": "2020-06-12",
+      "mean_daily_abs_ic_delta": -0.011630545682354103
+     },
+     {
+      "date": "2020-06-19",
+      "mean_daily_abs_ic_delta": -0.007851206894663107
+     },
+     {
+      "date": "2020-06-24",
+      "mean_daily_abs_ic_delta": 0.008370448359249147
+     },
+     {
+      "date": "2020-07-03",
+      "mean_daily_abs_ic_delta": 0.018165305092466888
+     },
+     {
+      "date": "2020-07-10",
+      "mean_daily_abs_ic_delta": 0.0215804264484378
+     },
+     {
+      "date": "2020-07-17",
+      "mean_daily_abs_ic_delta": 0.007374525694567952
+     }
+    ],
+    "blocks": [
+     {
+      "start": "2017-07-21",
+      "end": "2017-08-11",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": -0.003479347768532197
+     },
+     {
+      "start": "2017-10-20",
+      "end": "2017-11-10",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.00873104797406143
+     },
+     {
+      "start": "2018-01-05",
+      "end": "2018-01-26",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0017715608039651377
+     },
+     {
+      "start": "2018-06-22",
+      "end": "2018-07-13",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": -0.007898562310797459
+     },
+     {
+      "start": "2018-12-14",
+      "end": "2019-01-04",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": -0.0011889843592131546
+     },
+     {
+      "start": "2019-01-11",
+      "end": "2019-03-08",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.015915484851346258
+     },
+     {
+      "start": "2019-03-15",
+      "end": "2019-07-26",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.007659257849157424
+     },
+     {
+      "start": "2019-08-02",
+      "end": "2020-04-03",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.00040623075157371867
+     },
+     {
+      "start": "2020-04-10",
+      "end": "2020-05-29",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": -0.007666059534638749
+     },
+     {
+      "start": "2020-06-05",
+      "end": "2020-06-24",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": -0.0024345455200393638
+     },
+     {
+      "start": "2020-07-03",
+      "end": "2020-07-17",
+      "n_dates": 3,
+      "mean_daily_abs_ic_delta": 0.015706752411824215
+     }
+    ],
+    "largest_positive_block_share": 0.31710258488794224
+   },
+   "usage": {
+    "shared": {
+     "decisions": 2,
+     "candidate_budget": 24,
+     "model_calls": 2,
+     "input_tokens": 34886,
+     "output_tokens": 8275
+    },
+    "parent": {
+     "decisions": 2,
+     "candidate_budget": 24,
+     "model_calls": 2,
+     "input_tokens": 26962,
+     "output_tokens": 8799
+    },
+    "diagnostic": {
+     "decisions": 2,
+     "candidate_budget": 24,
+     "model_calls": 2,
+     "input_tokens": 37369,
+     "output_tokens": 9643
+    }
+   },
+   "failed_or_invalid_decisions": 0,
+   "common_support_verified": true,
+   "actual_model_calls_equal": true,
+   "actual_decisions_equal": true,
+   "split_verified": true,
+   "branchpoint_identity_verified": true,
+   "shared_memory_verified": true,
+   "frozen_champions_verified": true,
+   "internal_select_excluded": true,
+   "task_constraints_satisfied": true,
+   "score_window_read": false,
+   "independent_real_data_oos": false,
+   "finished_at": "2026-10-30T09:55:05.936969+00:00"
+  },
+  {
+   "schema": "AUTO-RESEARCH-DIAGNOSTIC-CONTINUATION-UNIT-1",
+   "protocol_version": "V001",
+   "task": "T4",
+   "seed": 29,
+   "status": "COMPLETED",
+   "shared_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T4_S29_V001/T4_S29_SHARED",
+   "parent_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T4_S29_V001/T4_S29_PARENT",
+   "diagnostic_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T4_S29_V001/T4_S29_DIAGNOSTIC",
+   "comparison_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T4_S29_V001/common_comparison",
+   "parent_champion": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T4_S29_V001/T4_S29_PARENT/decisions/T4_S29_PARENT_d002/child/step/harness/adopted.json",
+   "diagnostic_champion": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T4_S29_V001/T4_S29_DIAGNOSTIC/decisions/T4_S29_DIAGNOSTIC_d002/child/step/harness/adopted.json",
+   "select_diagnostic_minus_parent": -0.002521369064897326,
+   "select_parent_minus_fixed": 0.01097885043132285,
+   "select_diagnostic_minus_fixed": 0.008457481366425525,
+   "select_shared_minus_fixed": 0.00039711500640742317,
+   "select_metrics": {
+    "parent": {
+     "n_candidates": 12,
+     "pass_count": 12,
+     "pass_rate": 1.0,
+     "mean_abs_ic": 0.04044327530509831,
+     "top_ic_mean": 0.04714036307153934,
+     "icir_median": 0.32587641767393905,
+     "icir_p25": 0.27275293634486425,
+     "coverage": 0.8762021435496974,
+     "common_cells": 133747,
+     "common_dates": 48,
+     "common_support_sha256": "9ff757d27d8ffe08cfe5bc7e6f52d4cf266ab2559df622fef6d3320e897d0a17",
+     "fit_common_cells": 257694,
+     "fit_common_dates": 98,
+     "fit_common_support_sha256": "6d4b8ff8cbe4325415f0f34ad39aeda6c17600734ed9077b843f0e37558ab609",
+     "duplicate_rate": 0.045454545454545456,
+     "novelty": 0.1,
+     "turnover_proxy": 0.803985290204316,
+     "year_ic_min": -0.031029269221266396,
+     "runtime_seconds": 14.97,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    },
+    "diagnostic": {
+     "n_candidates": 12,
+     "pass_count": 12,
+     "pass_rate": 1.0,
+     "mean_abs_ic": 0.03792190624020098,
+     "top_ic_mean": 0.04413434283191553,
+     "icir_median": 0.27711396780265873,
+     "icir_p25": 0.2448054259268387,
+     "coverage": 0.8762021435496974,
+     "common_cells": 133747,
+     "common_dates": 48,
+     "common_support_sha256": "9ff757d27d8ffe08cfe5bc7e6f52d4cf266ab2559df622fef6d3320e897d0a17",
+     "fit_common_cells": 257694,
+     "fit_common_dates": 98,
+     "fit_common_support_sha256": "6d4b8ff8cbe4325415f0f34ad39aeda6c17600734ed9077b843f0e37558ab609",
+     "duplicate_rate": 0.12121212121212122,
+     "novelty": 0.125,
+     "turnover_proxy": 0.7800972616381228,
+     "year_ic_min": -0.031029269221266396,
+     "runtime_seconds": 15.73,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    },
+    "fixed": {
+     "n_candidates": 12,
+     "pass_count": 11,
+     "pass_rate": 0.9166666666666666,
+     "mean_abs_ic": 0.029464424873775458,
+     "top_ic_mean": 0.04134692299527627,
+     "icir_median": 0.2710899542401801,
+     "icir_p25": 0.24416248337328442,
+     "coverage": 0.8762021435496974,
+     "common_cells": 133747,
+     "common_dates": 48,
+     "common_support_sha256": "9ff757d27d8ffe08cfe5bc7e6f52d4cf266ab2559df622fef6d3320e897d0a17",
+     "fit_common_cells": 257694,
+     "fit_common_dates": 98,
+     "fit_common_support_sha256": "6d4b8ff8cbe4325415f0f34ad39aeda6c17600734ed9077b843f0e37558ab609",
+     "duplicate_rate": 0.0,
+     "novelty": 0.375,
+     "turnover_proxy": 0.8458868351327169,
+     "year_ic_min": -0.029309699309200535,
+     "runtime_seconds": 16.46,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    },
+    "shared": {
+     "n_candidates": 12,
+     "pass_count": 11,
+     "pass_rate": 0.9166666666666666,
+     "mean_abs_ic": 0.02986153988018288,
+     "top_ic_mean": 0.04139597365396694,
+     "icir_median": 0.26272310092187373,
+     "icir_p25": 0.23288622260159722,
+     "coverage": 0.8762021435496974,
+     "common_cells": 133747,
+     "common_dates": 48,
+     "common_support_sha256": "9ff757d27d8ffe08cfe5bc7e6f52d4cf266ab2559df622fef6d3320e897d0a17",
+     "fit_common_cells": 257694,
+     "fit_common_dates": 98,
+     "fit_common_support_sha256": "6d4b8ff8cbe4325415f0f34ad39aeda6c17600734ed9077b843f0e37558ab609",
+     "duplicate_rate": 0.015151515151515152,
+     "novelty": 0.375,
+     "turnover_proxy": 0.827900976218236,
+     "year_ic_min": -0.031029269221266396,
+     "runtime_seconds": 17.22,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    }
+   },
+   "date_block_diagnostic": {
+    "metric": "mean_daily_abs_ic_delta",
+    "block_size_dates": 4,
+    "dates": [
+     {
+      "date": "2017-02-03",
+      "mean_daily_abs_ic_delta": 0.008205018296961936
+     },
+     {
+      "date": "2017-02-10",
+      "mean_daily_abs_ic_delta": 0.009393903504818807
+     },
+     {
+      "date": "2017-02-17",
+      "mean_daily_abs_ic_delta": -0.025248861344248114
+     },
+     {
+      "date": "2017-02-24",
+      "mean_daily_abs_ic_delta": 0.02132103180401701
+     },
+     {
+      "date": "2017-03-03",
+      "mean_daily_abs_ic_delta": 0.0017319767376085746
+     },
+     {
+      "date": "2017-03-10",
+      "mean_daily_abs_ic_delta": -0.00811334726335497
+     },
+     {
+      "date": "2017-03-17",
+      "mean_daily_abs_ic_delta": -0.005368718577736409
+     },
+     {
+      "date": "2017-03-24",
+      "mean_daily_abs_ic_delta": 0.016578984316705736
+     },
+     {
+      "date": "2017-04-28",
+      "mean_daily_abs_ic_delta": 0.0031203763042302463
+     },
+     {
+      "date": "2017-05-05",
+      "mean_daily_abs_ic_delta": 0.005048377531501724
+     },
+     {
+      "date": "2017-05-12",
+      "mean_daily_abs_ic_delta": -0.012636643944857862
+     },
+     {
+      "date": "2017-05-19",
+      "mean_daily_abs_ic_delta": 0.020343558060015837
+     },
+     {
+      "date": "2018-03-02",
+      "mean_daily_abs_ic_delta": 0.017353992497940174
+     },
+     {
+      "date": "2018-03-09",
+      "mean_daily_abs_ic_delta": -0.01568279245168952
+     },
+     {
+      "date": "2018-03-16",
+      "mean_daily_abs_ic_delta": 0.0031014234597748214
+     },
+     {
+      "date": "2018-03-23",
+      "mean_daily_abs_ic_delta": 0.062222619257633116
+     },
+     {
+      "date": "2018-04-27",
+      "mean_daily_abs_ic_delta": 0.007698208946111659
+     },
+     {
+      "date": "2018-05-04",
+      "mean_daily_abs_ic_delta": -0.012770902085766422
+     },
+     {
+      "date": "2018-05-11",
+      "mean_daily_abs_ic_delta": -0.014663685818477344
+     },
+     {
+      "date": "2018-05-18",
+      "mean_daily_abs_ic_delta": -0.0009331121749738686
+     },
+     {
+      "date": "2018-10-19",
+      "mean_daily_abs_ic_delta": -0.016118003976395956
+     },
+     {
+      "date": "2018-10-26",
+      "mean_daily_abs_ic_delta": 0.02539548978610129
+     },
+     {
+      "date": "2018-11-02",
+      "mean_daily_abs_ic_delta": 0.001136138398849379
+     },
+     {
+      "date": "2018-11-09",
+      "mean_daily_abs_ic_delta": -0.01640166743288514
+     },
+     {
+      "date": "2019-04-04",
+      "mean_daily_abs_ic_delta": 0.0038572614662671367
+     },
+     {
+      "date": "2019-04-12",
+      "mean_daily_abs_ic_delta": 0.0021457639148360075
+     },
+     {
+      "date": "2019-04-19",
+      "mean_daily_abs_ic_delta": -0.005910434600616743
+     },
+     {
+      "date": "2019-04-26",
+      "mean_daily_abs_ic_delta": 0.035249008645559576
+     },
+     {
+      "date": "2019-07-26",
+      "mean_daily_abs_ic_delta": -0.016209613072908323
+     },
+     {
+      "date": "2019-08-02",
+      "mean_daily_abs_ic_delta": 0.002290219949475574
+     },
+     {
+      "date": "2019-08-09",
+      "mean_daily_abs_ic_delta": 0.010408488930762808
+     },
+     {
+      "date": "2019-08-16",
+      "mean_daily_abs_ic_delta": -0.005850146646969895
+     },
+     {
+      "date": "2019-10-18",
+      "mean_daily_abs_ic_delta": -0.005908224214150867
+     },
+     {
+      "date": "2019-10-25",
+      "mean_daily_abs_ic_delta": 0.008428677444771354
+     },
+     {
+      "date": "2019-11-01",
+      "mean_daily_abs_ic_delta": 0.00012415853662926107
+     },
+     {
+      "date": "2019-11-08",
+      "mean_daily_abs_ic_delta": -0.01576932488482606
+     },
+     {
+      "date": "2020-01-03",
+      "mean_daily_abs_ic_delta": 0.013301008379781681
+     },
+     {
+      "date": "2020-01-10",
+      "mean_daily_abs_ic_delta": -0.003936273004535931
+     },
+     {
+      "date": "2020-01-17",
+      "mean_daily_abs_ic_delta": 0.009150114317198837
+     },
+     {
+      "date": "2020-01-23",
+      "mean_daily_abs_ic_delta": -0.009755877171461536
+     },
+     {
+      "date": "2020-04-03",
+      "mean_daily_abs_ic_delta": -0.012579329824957047
+     },
+     {
+      "date": "2020-04-10",
+      "mean_daily_abs_ic_delta": -0.004757082628049705
+     },
+     {
+      "date": "2020-04-17",
+      "mean_daily_abs_ic_delta": 0.010094490341876303
+     },
+     {
+      "date": "2020-04-24",
+      "mean_daily_abs_ic_delta": -0.007668693097775209
+     },
+     {
+      "date": "2020-05-29",
+      "mean_daily_abs_ic_delta": -0.006929778792218358
+     },
+     {
+      "date": "2020-06-05",
+      "mean_daily_abs_ic_delta": -0.008087896193049018
+     },
+     {
+      "date": "2020-06-12",
+      "mean_daily_abs_ic_delta": -0.017720974786803893
+     },
+     {
+      "date": "2020-06-19",
+      "mean_daily_abs_ic_delta": 0.00879584562979794
+     }
+    ],
+    "blocks": [
+     {
+      "start": "2017-02-03",
+      "end": "2017-02-24",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0034177730653874097
+     },
+     {
+      "start": "2017-03-03",
+      "end": "2017-03-24",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.001207223803305733
+     },
+     {
+      "start": "2017-04-28",
+      "end": "2017-05-19",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0039689169877224866
+     },
+     {
+      "start": "2018-03-02",
+      "end": "2018-03-23",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.016748810690914648
+     },
+     {
+      "start": "2018-04-27",
+      "end": "2018-05-18",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": -0.005167372783276494
+     },
+     {
+      "start": "2018-10-19",
+      "end": "2018-11-09",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": -0.001497010806082607
+     },
+     {
+      "start": "2019-04-04",
+      "end": "2019-04-26",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.008835399856511494
+     },
+     {
+      "start": "2019-07-26",
+      "end": "2019-08-16",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": -0.002340262709909959
+     },
+     {
+      "start": "2019-10-18",
+      "end": "2019-11-08",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": -0.0032811782793940782
+     },
+     {
+      "start": "2020-01-03",
+      "end": "2020-01-23",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.002189743130245763
+     },
+     {
+      "start": "2020-04-03",
+      "end": "2020-04-24",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": -0.0037276538022264147
+     },
+     {
+      "start": "2020-05-29",
+      "end": "2020-06-19",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": -0.0059857010355683325
+     }
+    ],
+    "largest_positive_block_share": 0.4605387070115128
+   },
+   "usage": {
+    "shared": {
+     "decisions": 2,
+     "candidate_budget": 24,
+     "model_calls": 2,
+     "input_tokens": 13882,
+     "output_tokens": 8408
+    },
+    "parent": {
+     "decisions": 2,
+     "candidate_budget": 24,
+     "model_calls": 2,
+     "input_tokens": 14579,
+     "output_tokens": 5198
+    },
+    "diagnostic": {
+     "decisions": 2,
+     "candidate_budget": 24,
+     "model_calls": 2,
+     "input_tokens": 23998,
+     "output_tokens": 9708
+    }
+   },
+   "failed_or_invalid_decisions": 0,
+   "common_support_verified": true,
+   "actual_model_calls_equal": true,
+   "actual_decisions_equal": true,
+   "split_verified": true,
+   "branchpoint_identity_verified": true,
+   "shared_memory_verified": true,
+   "frozen_champions_verified": true,
+   "internal_select_excluded": true,
+   "task_constraints_satisfied": true,
+   "score_window_read": false,
+   "independent_real_data_oos": false,
+   "finished_at": "2026-10-30T09:53:49.521417+00:00"
+  },
+  {
+   "schema": "AUTO-RESEARCH-DIAGNOSTIC-CONTINUATION-UNIT-1",
+   "protocol_version": "V001",
+   "task": "T4",
+   "seed": 43,
+   "status": "COMPLETED",
+   "shared_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T4_S43_V001/T4_S43_SHARED",
+   "parent_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T4_S43_V001/T4_S43_PARENT",
+   "diagnostic_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T4_S43_V001/T4_S43_DIAGNOSTIC",
+   "comparison_run": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T4_S43_V001/common_comparison",
+   "parent_champion": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T4_S43_V001/T4_S43_PARENT/decisions/T4_S43_PARENT_d002/child/step/harness/adopted.json",
+   "diagnostic_champion": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_T4_S43_V001/T4_S43_DIAGNOSTIC/decisions/T4_S43_DIAGNOSTIC_d002/child/step/harness/adopted.json",
+   "select_diagnostic_minus_parent": 0.0,
+   "select_parent_minus_fixed": 0.03220377263689061,
+   "select_diagnostic_minus_fixed": 0.03220377263689061,
+   "select_shared_minus_fixed": 0.01729959603946596,
+   "select_metrics": {
+    "parent": {
+     "n_candidates": 12,
+     "pass_count": 12,
+     "pass_rate": 1.0,
+     "mean_abs_ic": 0.06887726319983854,
+     "top_ic_mean": 0.09884173287421466,
+     "icir_median": 0.6113242286107896,
+     "icir_p25": 0.3278349817820015,
+     "coverage": 0.6658021756357612,
+     "common_cells": 101662,
+     "common_dates": 44,
+     "common_support_sha256": "670d796e63850d372cd77cc695f422a23ca8a8c8239e779f0f7c9ba6154973d5",
+     "fit_common_cells": 283476,
+     "fit_common_dates": 101,
+     "fit_common_support_sha256": "22fc373a10f99b5a854933e9486308aaeef9d76c4116bbe504992510587dba5a",
+     "duplicate_rate": 0.12121212121212122,
+     "novelty": 0.25,
+     "turnover_proxy": 0.8787728107053852,
+     "year_ic_min": -0.09177873872419107,
+     "runtime_seconds": 14.38,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    },
+    "diagnostic": {
+     "n_candidates": 12,
+     "pass_count": 12,
+     "pass_rate": 1.0,
+     "mean_abs_ic": 0.06887726319983854,
+     "top_ic_mean": 0.09884173287421466,
+     "icir_median": 0.6113242286107896,
+     "icir_p25": 0.3278349817820015,
+     "coverage": 0.6658021756357612,
+     "common_cells": 101662,
+     "common_dates": 44,
+     "common_support_sha256": "670d796e63850d372cd77cc695f422a23ca8a8c8239e779f0f7c9ba6154973d5",
+     "fit_common_cells": 283476,
+     "fit_common_dates": 101,
+     "fit_common_support_sha256": "22fc373a10f99b5a854933e9486308aaeef9d76c4116bbe504992510587dba5a",
+     "duplicate_rate": 0.12121212121212122,
+     "novelty": 0.25,
+     "turnover_proxy": 0.8787728107053852,
+     "year_ic_min": -0.09177873872419107,
+     "runtime_seconds": 14.98,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    },
+    "fixed": {
+     "n_candidates": 12,
+     "pass_count": 10,
+     "pass_rate": 0.8333333333333334,
+     "mean_abs_ic": 0.036673490562947934,
+     "top_ic_mean": 0.06893016823477079,
+     "icir_median": 0.29634513990580014,
+     "icir_p25": 0.17885445746101458,
+     "coverage": 0.6658021756357612,
+     "common_cells": 101662,
+     "common_dates": 44,
+     "common_support_sha256": "670d796e63850d372cd77cc695f422a23ca8a8c8239e779f0f7c9ba6154973d5",
+     "fit_common_cells": 283476,
+     "fit_common_dates": 101,
+     "fit_common_support_sha256": "22fc373a10f99b5a854933e9486308aaeef9d76c4116bbe504992510587dba5a",
+     "duplicate_rate": 0.030303030303030304,
+     "novelty": 0.375,
+     "turnover_proxy": 0.9031514591933889,
+     "year_ic_min": -0.0820519215859467,
+     "runtime_seconds": 15.57,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    },
+    "shared": {
+     "n_candidates": 12,
+     "pass_count": 12,
+     "pass_rate": 1.0,
+     "mean_abs_ic": 0.05397308660241389,
+     "top_ic_mean": 0.09574559092636026,
+     "icir_median": 0.3950067357433345,
+     "icir_p25": 0.2125535767040646,
+     "coverage": 0.6658021756357612,
+     "common_cells": 101662,
+     "common_dates": 44,
+     "common_support_sha256": "670d796e63850d372cd77cc695f422a23ca8a8c8239e779f0f7c9ba6154973d5",
+     "fit_common_cells": 283476,
+     "fit_common_dates": 101,
+     "fit_common_support_sha256": "22fc373a10f99b5a854933e9486308aaeef9d76c4116bbe504992510587dba5a",
+     "duplicate_rate": 0.07575757575757576,
+     "novelty": 0.1111111111111111,
+     "turnover_proxy": 0.8631552506792068,
+     "year_ic_min": -0.08694892189456864,
+     "runtime_seconds": 16.16,
+     "failures": 0,
+     "max_date_read": "2020-11-27"
+    }
+   },
+   "date_block_diagnostic": {
+    "metric": "mean_daily_abs_ic_delta",
+    "block_size_dates": 4,
+    "dates": [
+     {
+      "date": "2017-03-31",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-04-07",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-04-14",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-04-21",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-06-23",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-06-30",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-07-07",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2017-07-14",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-01-05",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-01-12",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-01-19",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-01-26",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-06-22",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-06-29",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-07-06",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-07-13",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-11-16",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-11-23",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-11-30",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2018-12-07",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-06-28",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-07-05",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-07-12",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-07-19",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-07-26",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-08-02",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-08-09",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-08-16",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-09-20",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-09-27",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-09-30",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2019-10-11",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-02-07",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-02-14",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-02-21",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-02-28",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-06-24",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-07-03",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-07-10",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-07-17",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-08-21",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-08-28",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-09-04",
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "date": "2020-09-11",
+      "mean_daily_abs_ic_delta": 0.0
+     }
+    ],
+    "blocks": [
+     {
+      "start": "2017-03-31",
+      "end": "2017-04-21",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2017-06-23",
+      "end": "2017-07-14",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2018-01-05",
+      "end": "2018-01-26",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2018-06-22",
+      "end": "2018-07-13",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2018-11-16",
+      "end": "2018-12-07",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2019-06-28",
+      "end": "2019-07-19",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2019-07-26",
+      "end": "2019-08-16",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2019-09-20",
+      "end": "2019-10-11",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2020-02-07",
+      "end": "2020-02-28",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2020-06-24",
+      "end": "2020-07-17",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     },
+     {
+      "start": "2020-08-21",
+      "end": "2020-09-11",
+      "n_dates": 4,
+      "mean_daily_abs_ic_delta": 0.0
+     }
+    ],
+    "largest_positive_block_share": null
+   },
+   "usage": {
+    "shared": {
+     "decisions": 2,
+     "candidate_budget": 24,
+     "model_calls": 2,
+     "input_tokens": 37608,
+     "output_tokens": 10734
+    },
+    "parent": {
+     "decisions": 2,
+     "candidate_budget": 24,
+     "model_calls": 2,
+     "input_tokens": 26084,
+     "output_tokens": 7609
+    },
+    "diagnostic": {
+     "decisions": 2,
+     "candidate_budget": 24,
+     "model_calls": 2,
+     "input_tokens": 22904,
+     "output_tokens": 6911
+    }
+   },
+   "failed_or_invalid_decisions": 0,
+   "common_support_verified": true,
+   "actual_model_calls_equal": true,
+   "actual_decisions_equal": true,
+   "split_verified": true,
+   "branchpoint_identity_verified": true,
+   "shared_memory_verified": true,
+   "frozen_champions_verified": true,
+   "internal_select_excluded": true,
+   "task_constraints_satisfied": true,
+   "score_window_read": false,
+   "independent_real_data_oos": false,
+   "finished_at": "2026-10-30T09:54:29.008910+00:00"
+  }
+ ],
+ "paired_deltas": [
+  {
+   "task": "T1",
+   "seed": 11,
+   "delta": 0.009034469716543814
+  },
+  {
+   "task": "T1",
+   "seed": 29,
+   "delta": 0.0
+  },
+  {
+   "task": "T1",
+   "seed": 43,
+   "delta": 0.0
+  },
+  {
+   "task": "T2",
+   "seed": 11,
+   "delta": 0.0
+  },
+  {
+   "task": "T2",
+   "seed": 29,
+   "delta": 0.003061080209593413
+  },
+  {
+   "task": "T2",
+   "seed": 43,
+   "delta": 0.010561021251544261
+  },
+  {
+   "task": "T3",
+   "seed": 11,
+   "delta": 0.0
+  },
+  {
+   "task": "T3",
+   "seed": 29,
+   "delta": 0.0
+  },
+  {
+   "task": "T3",
+   "seed": 43,
+   "delta": 0.005459744118235826
+  },
+  {
+   "task": "T4",
+   "seed": 11,
+   "delta": 0.007349858740205842
+  },
+  {
+   "task": "T4",
+   "seed": 29,
+   "delta": -0.002521369064897326
+  },
+  {
+   "task": "T4",
+   "seed": 43,
+   "delta": 0.0
+  }
+ ],
+ "median_paired_delta": 0.0,
+ "task_seed_medians": {
+  "T1": 0.0,
+  "T2": 0.003061080209593413,
+  "T3": 0.0,
+  "T4": 0.0
+ },
+ "tasks_with_positive_seed_median": 1,
+ "leave_one_task_out_medians": {
+  "T1": 0.0,
+  "T2": 0.0,
+  "T3": 0.0,
+  "T4": 0.0
+ },
+ "all_protocol_checks_passed": true,
+ "evidence_status": "development-panel null",
+ "usage": {
+  "model_calls": 72,
+  "input_tokens": 1051893,
+  "output_tokens": 307483,
+  "candidate_budget": 852,
+  "decisions": 72
+ },
+ "failed_or_invalid_decisions": 2,
+ "score_window_read": false,
+ "independent_real_data_oos": false,
+ "finished_at": "2026-10-30T10:33:11.601479+00:00"
+}

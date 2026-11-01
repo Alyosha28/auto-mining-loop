@@ -1,0 +1,771 @@
+{
+ "schema": "AUTO-RESEARCH-SHARED-MEMORY-1",
+ "entries": [
+  {
+   "source_run": "R1_DIAG_S11_IC_002",
+   "task": "cross_task_normalization",
+   "status": "COMPLETED",
+   "scope": "historical development probe; no select outcomes supplied; applicability limited to source harness and seed",
+   "probe_metrics": {
+    "n_candidates": 12,
+    "pass_count": 12,
+    "pass_rate": 1.0,
+    "mean_abs_ic": 0.051025451145186224,
+    "top_ic_mean": 0.06817830499427913,
+    "icir_median": 0.3973365300509036,
+    "icir_p25": 0.36555670563612885,
+    "coverage": 1.0,
+    "duplicate_rate": 0.07575757575757576,
+    "novelty": 0.5,
+    "turnover_proxy": 0.8218199392703339,
+    "year_ic_min": NaN,
+    "runtime_seconds": 5.16,
+    "failures": 0,
+    "max_date_read": "2020-11-27"
+   },
+   "edits": [
+    {
+     "id": "edit_001",
+     "kind": "INV",
+     "component": "operators",
+     "op": "append",
+     "value": "rank",
+     "intent": "Deficiency: the operator list (residual_size, delta4, delta13, neg) contains no cross-sectional normalization, and all six seeds enter as raw features, so a heavy-tailed seed can earn pooled IC that is tail-driven. Indirect support: the only de-confounding transform in use, residual_size, is best on both mean_ic and icir in 4/4 probed seeds and keeps all 140 dates, while delta13 drops to 127. Mechanism: a monotone cross-sectional rank applied before mutation makes the IC tail-robust without a lookback warm-up. Expect |IC| and icir gains concentrated on the raw skewed seeds and no loss of n_dates. Uncertainty: the supplied evidence has no per-feature skew measure, so the deficiency is inferred from operator coverage, and it cannot separate rank from winsorize or zscore."
+    }
+   ],
+   "harness": {
+    "schema": "EVO-HARNESS-1",
+    "domain": "price_volume",
+    "protocol": {
+     "dev_start": "2017-01-01",
+     "dev_end": "2020-11-30",
+     "embargo": [
+      "2020-12-01",
+      "2020-12-31"
+     ],
+     "score_window": [
+      "2021-01-01",
+      "2023-12-31"
+     ],
+     "budget_candidates": 12,
+     "min_ic_pairs": 30,
+     "probe_split": 0.7
+    },
+    "guardrails": {
+     "min_coverage": 0.96,
+     "max_runtime_seconds": 900,
+     "score_window_reads": 0,
+     "fail_closed": true,
+     "coverage_stop": false
+    },
+    "operators": [
+     "residual_size",
+     "delta4",
+     "delta13",
+     "neg",
+     "rank"
+    ],
+    "seed_pool": [
+     {
+      "name": "momentum_20",
+      "feature": "momentum_20",
+      "transform": "raw"
+     },
+     {
+      "name": "volatility_20",
+      "feature": "volatility_20",
+      "transform": "raw"
+     },
+     {
+      "name": "turnover_mean_20",
+      "feature": "turnover_mean_20",
+      "transform": "raw"
+     },
+     {
+      "name": "reversal_5",
+      "feature": "reversal_5",
+      "transform": "raw"
+     },
+     {
+      "name": "amihud_20",
+      "feature": "amihud_20",
+      "transform": "raw"
+     },
+     {
+      "name": "volume_ratio_5_20",
+      "feature": "volume_ratio_5_20",
+      "transform": "raw"
+     }
+    ],
+    "skills": {
+     "mutation_per_seed": 1,
+     "crossover_pairs": 2,
+     "sign_by_ic": true
+    },
+    "probe": {
+     "year_split": false,
+     "duplication_corr": 0.9
+    },
+    "memory": {
+     "experience_dir": "auto_research/agents/runs/R1_IC_SHARED_EXPERIENCE",
+     "top_k_lessons": 3
+    },
+    "plugin": {
+     "coverage_stop": false,
+     "ledger": true,
+     "fail_not_zero": true
+    },
+    "selection": {
+     "rule": "select_pass_then_ic",
+     "anonymize": true
+    }
+   }
+  },
+  {
+   "source_run": "R2_TRACE_S11_001",
+   "task": "cross_task_allocation",
+   "status": "COMPLETED",
+   "scope": "historical development probe; no select outcomes supplied; applicability limited to source harness and seed",
+   "probe_metrics": {
+    "n_candidates": 12,
+    "pass_count": 11,
+    "pass_rate": 0.9166666666666666,
+    "mean_abs_ic": 0.05306142138680822,
+    "top_ic_mean": 0.08243625644785296,
+    "icir_median": 0.4324242995533313,
+    "icir_p25": 0.32882743945329596,
+    "coverage": 1.0,
+    "duplicate_rate": 0.10606060606060606,
+    "novelty": 0.125,
+    "turnover_proxy": 0.7726325842007478,
+    "year_ic_min": NaN,
+    "runtime_seconds": 5.39,
+    "failures": 0,
+    "max_date_read": "2020-11-27"
+   },
+   "edits": [
+    {
+     "id": "edit_001",
+     "kind": "INV",
+     "component": "skills.crossover_pairs",
+     "op": "set",
+     "value": 0,
+     "intent": "Deficiency: the two reserved crossover slots yield the weakest and only failing candidates in the current roster - rank_minus pairs carry |IC| 0.0171 and 0.0103 while every mutation and raw candidate is at least 0.0245, and turnover_mean_20 minus momentum_20 is the single failure (abs_icir_below_threshold, ICIR 0.0542). Semantics: crossover slots are reserved before mutations and raw-seed padding, so 0 should release both. Mechanism: released slots fall to raw padding, which currently covers only the first four seed_pool entries and never amihud_20 or volume_ratio_5_20. Expect operator:raw n=6, pass 12/12, duplicate_rate above the current 0.0909 because more seeds appear twice, and mean_abs_ic up iff the two new raw |IC| sum above 0.0274, the amount the two crossovers contribute now. Uncertainty: two crossover observations cannot separate 'composition is weak' from 'rank_minus is a weak composition operator'; if the slots are not reallocated the roster will keep 2 crossovers or fall below 12 candidates, which falsifies the reallocation premise. Note the prior builder returned an identical roster for crossover_pairs=4, but this roster actually shows 2 crossovers occupying slots, so the lever is live."
+    }
+   ],
+   "harness": {
+    "schema": "EVO-HARNESS-1",
+    "domain": "price_volume",
+    "protocol": {
+     "dev_start": "2017-01-01",
+     "dev_end": "2020-11-30",
+     "embargo": [
+      "2020-12-01",
+      "2020-12-31"
+     ],
+     "score_window": [
+      "2021-01-01",
+      "2023-12-31"
+     ],
+     "budget_candidates": 12,
+     "min_ic_pairs": 30,
+     "probe_split": 0.7,
+     "dev_split": "seeded-year-blocks"
+    },
+    "guardrails": {
+     "min_coverage": 0.96,
+     "max_runtime_seconds": 900,
+     "score_window_reads": 0,
+     "fail_closed": true,
+     "coverage_stop": false
+    },
+    "operators": [
+     "residual_size",
+     "delta4",
+     "delta13",
+     "neg",
+     "rank"
+    ],
+    "seed_pool": [
+     {
+      "name": "momentum_20",
+      "feature": "momentum_20",
+      "transform": "raw"
+     },
+     {
+      "name": "volatility_20",
+      "feature": "volatility_20",
+      "transform": "raw"
+     },
+     {
+      "name": "turnover_mean_20",
+      "feature": "turnover_mean_20",
+      "transform": "raw"
+     },
+     {
+      "name": "reversal_5",
+      "feature": "reversal_5",
+      "transform": "raw"
+     },
+     {
+      "name": "amihud_20",
+      "feature": "amihud_20",
+      "transform": "raw"
+     },
+     {
+      "name": "volume_ratio_5_20",
+      "feature": "volume_ratio_5_20",
+      "transform": "raw"
+     }
+    ],
+    "skills": {
+     "mutation_per_seed": 1,
+     "crossover_pairs": 0,
+     "sign_by_ic": true
+    },
+    "probe": {
+     "year_split": false,
+     "duplication_corr": 0.9,
+     "duplication_min_overlap": 30
+    },
+    "memory": {
+     "experience_dir": "auto_research/agents/runs/R2_SHARED_EXPERIENCE",
+     "top_k_lessons": 3
+    },
+    "plugin": {
+     "coverage_stop": false,
+     "ledger": true,
+     "fail_not_zero": true
+    },
+    "selection": {
+     "rule": "select_pass_then_ic",
+     "anonymize": true
+    }
+   }
+  },
+  {
+   "source_run": "T1_S11_DIAGNOSTIC_d002_step",
+   "task": "resource_allocation_probe",
+   "status": "COMPLETED",
+   "scope": "historical development probe; no select outcomes supplied; applicability limited to source harness and seed",
+   "probe_metrics": {
+    "n_candidates": 12,
+    "pass_count": 12,
+    "pass_rate": 1.0,
+    "mean_abs_ic": 0.07473448211193684,
+    "top_ic_mean": 0.09014532200176302,
+    "icir_median": 0.5071380694988374,
+    "icir_p25": 0.4359957497433529,
+    "coverage": 0.8307476849895568,
+    "common_cells": 137620,
+    "common_dates": 51,
+    "common_support_sha256": "b538305483e96fc23247db0936245b80c3be4ff48146749ec996104dfb8a581f",
+    "fit_common_cells": 280724,
+    "fit_common_dates": 102,
+    "fit_common_support_sha256": "08cf360a02d04b8cb71a83644be5feec1aeb57e267db5687d4ac9925d974db0f",
+    "duplicate_rate": 0.13636363636363635,
+    "novelty": 0.16666666666666666,
+    "turnover_proxy": 0.8337579392208804,
+    "year_ic_min": NaN,
+    "runtime_seconds": 16.7,
+    "failures": 0,
+    "max_date_read": "2020-11-27"
+   },
+   "edits": [
+    {
+     "id": "edit_003",
+     "kind": "DOM",
+     "component": "operators.remove",
+     "op": "remove",
+     "value": [
+      "residual_size",
+      "delta4",
+      "delta13",
+      "neg"
+     ],
+     "intent": "Leave rank as the sole mutation operator so the four mutation slots use rank instead of residual_size at the adopted eight-crossover-slot allocation. Test whether this raises common-sample mean_abs_ic above 0.07351343962188846 with pass_count=12 and no coverage decrease; the comparison is motivated by raw volatility_20 and turnover_mean_20 having higher probe IC than their residual_size counterparts, not by an assumed outcome for rank."
+    }
+   ],
+   "harness": {
+    "schema": "EVO-HARNESS-1",
+    "domain": "price_volume",
+    "protocol": {
+     "dev_start": "2017-01-01",
+     "dev_end": "2020-11-30",
+     "embargo": [
+      "2020-12-01",
+      "2020-12-31"
+     ],
+     "score_window": [
+      "2021-01-01",
+      "2023-12-31"
+     ],
+     "budget_candidates": 12,
+     "min_ic_pairs": 30,
+     "probe_split": 0.7,
+     "dev_split": "seeded-year-blocks"
+    },
+    "guardrails": {
+     "min_coverage": 0.96,
+     "max_runtime_seconds": 900,
+     "score_window_reads": 0,
+     "fail_closed": true,
+     "coverage_stop": false
+    },
+    "operators": [
+     "rank"
+    ],
+    "seed_pool": [
+     {
+      "name": "momentum_20",
+      "feature": "momentum_20",
+      "transform": "raw"
+     },
+     {
+      "name": "volatility_20",
+      "feature": "volatility_20",
+      "transform": "raw"
+     },
+     {
+      "name": "turnover_mean_20",
+      "feature": "turnover_mean_20",
+      "transform": "raw"
+     },
+     {
+      "name": "reversal_5",
+      "feature": "reversal_5",
+      "transform": "raw"
+     },
+     {
+      "name": "amihud_20",
+      "feature": "amihud_20",
+      "transform": "raw"
+     },
+     {
+      "name": "volume_ratio_5_20",
+      "feature": "volume_ratio_5_20",
+      "transform": "raw"
+     }
+    ],
+    "skills": {
+     "mutation_per_seed": 1,
+     "crossover_pairs": 8,
+     "sign_by_ic": true,
+     "crossover_rule": "signed_rank_sum",
+     "pair_selection": "strength_then_corr"
+    },
+    "probe": {
+     "year_split": false,
+     "duplication_corr": 0.9,
+     "duplication_min_overlap": 30
+    },
+    "memory": {
+     "experience_dir": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_SHARED_EXPERIENCE_V001",
+     "top_k_lessons": 3
+    },
+    "plugin": {
+     "coverage_stop": false,
+     "ledger": true,
+     "fail_not_zero": true
+    },
+    "selection": {
+     "rule": "select_pass_then_ic",
+     "anonymize": true
+    }
+   }
+  },
+  {
+   "source_run": "T2_S43_DIAGNOSTIC_d002_step",
+   "task": "duplicate_roster_probe",
+   "status": "COMPLETED",
+   "scope": "historical development probe; no select outcomes supplied; applicability limited to source harness and seed",
+   "probe_metrics": {
+    "n_candidates": 12,
+    "pass_count": 12,
+    "pass_rate": 1.0,
+    "mean_abs_ic": 0.05173487181215703,
+    "top_ic_mean": 0.06724904279618688,
+    "icir_median": 0.4095098077784616,
+    "icir_p25": 0.30939589247298593,
+    "coverage": 0.8520408791479407,
+    "common_cells": 138397,
+    "common_dates": 51,
+    "common_support_sha256": "f67833d681bb13bc86d27897b847a7ecaccd1466fa2a63858f908aa49e2ab65d",
+    "fit_common_cells": 278414,
+    "fit_common_dates": 100,
+    "fit_common_support_sha256": "063897a0194edd9f8e2ac676da962504d81a2e816d1feb3cb5d0961049b509f2",
+    "duplicate_rate": 0.045454545454545456,
+    "novelty": 0.4166666666666667,
+    "turnover_proxy": 0.870265019947463,
+    "year_ic_min": NaN,
+    "runtime_seconds": 15.23,
+    "failures": 0,
+    "max_date_read": "2020-11-27"
+   },
+   "edits": [
+    {
+     "id": "xov_signed_diversified_eight_slots",
+     "kind": "INV",
+     "component": "skills.crossover",
+     "op": "configure",
+     "value": {
+      "pairs": 8,
+      "rule": "signed_rank_sum",
+      "pair_selection": "diversified"
+     },
+     "intent": "在固定12候选预算下，将已采用的6个组合槽推进到上限8。父臂6个 signed/diversified 组合的 |IC| 为0.0528–0.0686；按既有种子顺序，8槽预计形成8个组合和4个 delta_w 变异，并移除 amihud_20__delta_w（0.0117）与 volume_ratio_5_20__delta_w（0.0420）。只有候选名册确实如此变化且共同样本 mean_abs_ic 高于父臂0.0469359457，才支持继续扩展；新增两组合的 |IC| 合计若不超过被移除两者合计约0.05375，则该边际机制不成立。保持 probe.duplication_corr=0.9、duplication_min_overlap=30 不变并继续报告 duplicate_rate，其上升应计为扩展代价。不确定性：剩余互补父对可能更弱或彼此更重复。"
+    }
+   ],
+   "harness": {
+    "schema": "EVO-HARNESS-1",
+    "domain": "price_volume",
+    "protocol": {
+     "dev_start": "2017-01-01",
+     "dev_end": "2020-11-30",
+     "embargo": [
+      "2020-12-01",
+      "2020-12-31"
+     ],
+     "score_window": [
+      "2021-01-01",
+      "2023-12-31"
+     ],
+     "budget_candidates": 12,
+     "min_ic_pairs": 30,
+     "probe_split": 0.7,
+     "dev_split": "seeded-year-blocks"
+    },
+    "guardrails": {
+     "min_coverage": 0.96,
+     "max_runtime_seconds": 900,
+     "score_window_reads": 0,
+     "fail_closed": true,
+     "coverage_stop": false
+    },
+    "operators": [
+     "delta_w"
+    ],
+    "seed_pool": [
+     {
+      "name": "momentum_20",
+      "feature": "momentum_20",
+      "transform": "raw"
+     },
+     {
+      "name": "volatility_20",
+      "feature": "volatility_20",
+      "transform": "raw"
+     },
+     {
+      "name": "turnover_mean_20",
+      "feature": "turnover_mean_20",
+      "transform": "raw"
+     },
+     {
+      "name": "reversal_5",
+      "feature": "reversal_5",
+      "transform": "raw"
+     },
+     {
+      "name": "amihud_20",
+      "feature": "amihud_20",
+      "transform": "raw"
+     },
+     {
+      "name": "volume_ratio_5_20",
+      "feature": "volume_ratio_5_20",
+      "transform": "raw"
+     }
+    ],
+    "skills": {
+     "mutation_per_seed": 1,
+     "crossover_pairs": 8,
+     "crossover_rule": "signed_rank_sum",
+     "pair_selection": "diversified",
+     "sign_by_ic": true
+    },
+    "probe": {
+     "year_split": false,
+     "duplication_corr": 0.9,
+     "duplication_min_overlap": 30
+    },
+    "memory": {
+     "experience_dir": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_SHARED_EXPERIENCE_V001",
+     "top_k_lessons": 3
+    },
+    "plugin": {
+     "coverage_stop": false,
+     "ledger": true,
+     "fail_not_zero": true
+    },
+    "selection": {
+     "rule": "select_pass_then_ic",
+     "anonymize": true
+    }
+   }
+  },
+  {
+   "source_run": "T3_S43_DIAGNOSTIC_d001_step",
+   "task": "pass_rate_probe",
+   "status": "COMPLETED",
+   "scope": "historical development probe; no select outcomes supplied; applicability limited to source harness and seed",
+   "probe_metrics": {
+    "n_candidates": 12,
+    "pass_count": 12,
+    "pass_rate": 1.0,
+    "mean_abs_ic": 0.05758445077967193,
+    "top_ic_mean": 0.06821032170579072,
+    "icir_median": 0.37061057698368394,
+    "icir_p25": 0.3371994377838209,
+    "coverage": 0.9086745059410207,
+    "common_cells": 147596,
+    "common_dates": 51,
+    "common_support_sha256": "3da3d3143470fa4faa66317e18f87ae5b2a3f0b7e6f6f32f07a2736b76c46d3c",
+    "fit_common_cells": 307803,
+    "fit_common_dates": 101,
+    "fit_common_support_sha256": "69909edff2332494f0d50847fecd2a30991e6881a53ad48ed9bf527ac636e320",
+    "duplicate_rate": 0.10606060606060606,
+    "novelty": 0.25,
+    "turnover_proxy": 0.8204380503466255,
+    "year_ic_min": NaN,
+    "runtime_seconds": 13.42,
+    "failures": 0,
+    "max_date_read": "2020-11-27"
+   },
+   "edits": [
+    {
+     "id": "edit_001",
+     "kind": "INV",
+     "component": "skills.crossover_pairs",
+     "op": "set",
+     "value": 8,
+     "intent": "Deficiency: in the adopted 12-candidate roster, the six signed_rank_sum crossovers average about 0.0617 absolute IC, versus about 0.0421 for the six residual_size mutations; the amihud_20 and volume_ratio_5_20 residuals are the weakest at 0.031403 and 0.029718. Semantics: crossover slots are reserved before mutations and raw-seed padding within the fixed budget of 12. Mechanism: raising the reservation from 6 to 8 should produce eight crossovers and four round-robin residual_size mutations, replacing the two weakest residual candidates if the existing seed order is retained. Expect n_candidates=12 and pass_count=12; mean_abs_ic exceeds the adopted 0.0528727 if the two added crossovers contribute more combined absolute IC than the 0.0611215 removed with those two residuals, while roster_effect must be changed. Monitor novelty and duplicate_rate because the prior expansion reduced novelty from 0.375 to 0.1. Uncertainty: the additional pairs may involve weaker seeds or highly correlated parents, and six observed crossovers do not establish that every added pair will be stronger; failure to obtain the expected 8-crossover/4-mutation composition falsifies the reallocation premise, and failure to raise common-support mean_abs_ic falsifies the intended benefit."
+    }
+   ],
+   "harness": {
+    "schema": "EVO-HARNESS-1",
+    "domain": "price_volume",
+    "protocol": {
+     "dev_start": "2017-01-01",
+     "dev_end": "2020-11-30",
+     "embargo": [
+      "2020-12-01",
+      "2020-12-31"
+     ],
+     "score_window": [
+      "2021-01-01",
+      "2023-12-31"
+     ],
+     "budget_candidates": 12,
+     "min_ic_pairs": 30,
+     "probe_split": 0.7,
+     "dev_split": "seeded-year-blocks"
+    },
+    "guardrails": {
+     "min_coverage": 0.96,
+     "max_runtime_seconds": 900,
+     "score_window_reads": 0,
+     "fail_closed": true,
+     "coverage_stop": false
+    },
+    "operators": [
+     "residual_size",
+     "delta4",
+     "delta13",
+     "neg"
+    ],
+    "seed_pool": [
+     {
+      "name": "momentum_20",
+      "feature": "momentum_20",
+      "transform": "raw"
+     },
+     {
+      "name": "volatility_20",
+      "feature": "volatility_20",
+      "transform": "raw"
+     },
+     {
+      "name": "turnover_mean_20",
+      "feature": "turnover_mean_20",
+      "transform": "raw"
+     },
+     {
+      "name": "reversal_5",
+      "feature": "reversal_5",
+      "transform": "raw"
+     },
+     {
+      "name": "amihud_20",
+      "feature": "amihud_20",
+      "transform": "raw"
+     },
+     {
+      "name": "volume_ratio_5_20",
+      "feature": "volume_ratio_5_20",
+      "transform": "raw"
+     }
+    ],
+    "skills": {
+     "mutation_per_seed": 2,
+     "crossover_pairs": 8,
+     "sign_by_ic": true,
+     "crossover_rule": "signed_rank_sum",
+     "pair_selection": "diversified"
+    },
+    "probe": {
+     "year_split": false,
+     "duplication_corr": 0.9,
+     "duplication_min_overlap": 30
+    },
+    "memory": {
+     "experience_dir": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_SHARED_EXPERIENCE_V001",
+     "top_k_lessons": 3
+    },
+    "plugin": {
+     "coverage_stop": false,
+     "ledger": true,
+     "fail_not_zero": true
+    },
+    "selection": {
+     "rule": "select_pass_then_ic",
+     "anonymize": true
+    }
+   }
+  },
+  {
+   "source_run": "T4_S29_DIAGNOSTIC_d002_step",
+   "task": "stability_probe",
+   "status": "COMPLETED",
+   "scope": "historical development probe; no select outcomes supplied; applicability limited to source harness and seed",
+   "probe_metrics": {
+    "n_candidates": 12,
+    "pass_count": 12,
+    "pass_rate": 1.0,
+    "mean_abs_ic": 0.06003480187344027,
+    "top_ic_mean": 0.07775688968195077,
+    "icir_median": 0.4047151874477921,
+    "icir_p25": 0.37512231663904927,
+    "coverage": 0.9119082479258175,
+    "common_cells": 149480,
+    "common_dates": 50,
+    "common_support_sha256": "bd0d4f840fe804459f658e3a440e1eabc11bd6bac64b3064cd4d1ad80a69fb37",
+    "fit_common_cells": 296368,
+    "fit_common_dates": 102,
+    "fit_common_support_sha256": "6b3f9f81ea06de3b9fb0887054fe4bde3bdfdd9c0ccd4f52270add9bcd9a5579",
+    "duplicate_rate": 0.18181818181818182,
+    "novelty": 0.125,
+    "turnover_proxy": 0.7877171479508797,
+    "year_ic_min": 0.00040934369262981526,
+    "runtime_seconds": 20.36,
+    "failures": 0,
+    "max_date_read": "2020-11-27"
+   },
+   "edits": [
+    {
+     "id": "edit_002",
+     "kind": "INV",
+     "component": "skills.crossover_pairs",
+     "op": "set",
+     "value": 3,
+     "intent": "Probe the next crossover allocation point rather than extrapolating from one extra pair. Three slots should leave six residual_size and three rank mutations, so the second and third crossovers must compensate for losing reversal_5__rank and amihud_20__rank. Support requires mean_abs_ic above 0.052857 with pass_rate remaining 1.0, no negative year_ic_min, and no decline in icir_p25; failure of the mean-IC condition or either stability check rejects scaling to three. Track novelty and duplicate_rate because additional strength-selected pairs may be redundant."
+    }
+   ],
+   "harness": {
+    "schema": "EVO-HARNESS-1",
+    "domain": "price_volume",
+    "protocol": {
+     "dev_start": "2017-01-01",
+     "dev_end": "2020-11-30",
+     "embargo": [
+      "2020-12-01",
+      "2020-12-31"
+     ],
+     "score_window": [
+      "2021-01-01",
+      "2023-12-31"
+     ],
+     "budget_candidates": 12,
+     "min_ic_pairs": 30,
+     "probe_split": 0.7,
+     "dev_split": "seeded-year-blocks"
+    },
+    "guardrails": {
+     "min_coverage": 0.96,
+     "max_runtime_seconds": 900,
+     "score_window_reads": 0,
+     "fail_closed": true,
+     "coverage_stop": false
+    },
+    "operators": [
+     "residual_size",
+     "rank"
+    ],
+    "seed_pool": [
+     {
+      "name": "momentum_20",
+      "feature": "momentum_20",
+      "transform": "raw"
+     },
+     {
+      "name": "volatility_20",
+      "feature": "volatility_20",
+      "transform": "raw"
+     },
+     {
+      "name": "turnover_mean_20",
+      "feature": "turnover_mean_20",
+      "transform": "raw"
+     },
+     {
+      "name": "reversal_5",
+      "feature": "reversal_5",
+      "transform": "raw"
+     },
+     {
+      "name": "amihud_20",
+      "feature": "amihud_20",
+      "transform": "raw"
+     },
+     {
+      "name": "volume_ratio_5_20",
+      "feature": "volume_ratio_5_20",
+      "transform": "raw"
+     }
+    ],
+    "skills": {
+     "mutation_per_seed": 2,
+     "crossover_pairs": 3,
+     "sign_by_ic": true,
+     "crossover_rule": "signed_rank_sum",
+     "pair_selection": "strength_then_corr"
+    },
+    "probe": {
+     "year_split": true,
+     "duplication_corr": 0.9,
+     "duplication_min_overlap": 30
+    },
+    "memory": {
+     "experience_dir": "auto_research/agents/runs/DIAGNOSTIC_CONTINUATION_SHARED_EXPERIENCE_V001",
+     "top_k_lessons": 3
+    },
+    "plugin": {
+     "coverage_stop": false,
+     "ledger": true,
+     "fail_not_zero": true
+    },
+    "selection": {
+     "rule": "select_pass_then_ic",
+     "anonymize": true
+    }
+   }
+  },
+  {
+   "source_run": "T3_S43_PARENT_d001",
+   "task": "output_budget_failure",
+   "status": "FAILED",
+   "scope": "per-call output failure; no candidate execution; retained to make budget failure visible",
+   "edits": []
+  }
+ ]
+}

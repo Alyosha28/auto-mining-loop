@@ -1,0 +1,15 @@
+\section{Outcomes and execution measurements}
+\label{sec:metrics}
+
+The primary endpoint is mean absolute IC. For factor-expression candidate $i$, let $\rho_{i,t}$ be the cross-sectional Spearman correlation between the candidate and its frozen label on date $t$. With $T_i$ evaluated dates and $N$ candidates in the final frozen evaluation, the endpoint is
+\begin{equation}
+M=\frac{1}{N}\sum_{i=1}^{N}\left|\frac{1}{T_i}\sum_{t=1}^{T_i}\rho_{i,t}\right|.
+\label{eq:mean-abs-ic}
+\end{equation}
+The absolute value follows the temporal mean for each candidate, followed by averaging across candidates. Paired effects subtract the reference condition's $M$ from the named left-hand condition on the same support.
+
+Behavioral measurements describe the search output accompanying this endpoint. I report novelty and duplicate rate from the frozen evaluator, together with coverage, pass rate, and turnover diagnostics where they clarify execution. A negative novelty difference indicates less behavioral novelty, while a positive duplicate-rate difference indicates more repetition. These quantities describe observed output characteristics and do not identify a cognitive mechanism.
+
+Execution accounting separates model decisions from expression evaluation. Model calls, input and output tokens, executed decisions, and realized candidate positions are recorded by arm. Failed or invalid decisions remain visible, and infrastructure recovery is classified separately from a new research decision. Execution recovery resumes from persisted state, either replaying a persisted proposal or retrying identical prepared input after a no-usage timeout, and it stays within the registered model-call budget.
+
+Date-block diagnostics use \texttt{mean\_daily\_abs\_ic\_delta} to describe whether nonzero effects concentrate in a small number of blocks. This auxiliary quantity does not replace $M$ in the primary contrasts. Complete-execution subsets, per-success gains, and replicate stability are also reported as sensitivity analyses rather than alternative primary estimands.

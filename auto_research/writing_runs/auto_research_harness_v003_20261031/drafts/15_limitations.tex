@@ -1,0 +1,10 @@
+\section{Limitations}
+\label{sec:limitations}
+
+The panel contains six tasks, two development seeds, and two independent model-call replicates. Task-cluster inference therefore has limited resolution, and the exact six-task sign-flip test cannot produce a two-sided p-value below 0.03125. Unequal task effects and replicate differences remain substantial enough that the pooled means should not be interpreted without their distributions. The random backend uses the frozen protocol seed 20261031 and does not exhaust the legal proposal space.
+
+All estimates use one language model, one editable harness surface, and the registered factor-discovery evaluator. Changing the model, operator catalog, task contract, or continuation budget could alter both the reference gains and the component contrasts. The development window is 2017-01-01 through 2020-11-30, with no untouched independent market-period out-of-sample evaluation. Fresh tasks within that window measure generalization across research tasks under the protocol, not temporal generalization to unseen market regimes.
+
+Common-support evaluation removes sample mismatch from the paired comparisons, but coverage differences and incomplete execution still shape the observed process. Complete-case subsets are vulnerable to selection on execution success and are reported only as sensitivity analyses. Independent model-call replicates capture call-level variability; they do not provide provider-controlled model seeds or independent market replications.
+
+Novelty, duplicate rate, turnover, and date-block concentration are evaluator-specific behavioral measures. They reveal costs and temporal patterns in the produced candidates, but they do not by themselves establish economic value, causal mechanisms, or performance under production admission rules.

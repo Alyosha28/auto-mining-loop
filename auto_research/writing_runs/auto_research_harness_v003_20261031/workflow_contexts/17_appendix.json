@@ -1,0 +1,1061 @@
+{
+  "research_version": "V003",
+  "sources": [
+    {
+      "id": "C01_0",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/paired_units"
+      },
+      "expected": 24
+    },
+    {
+      "id": "C01_1",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/evidence_status"
+      },
+      "expected": "development-panel complete"
+    },
+    {
+      "id": "C02_0",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/protocol/task_files"
+      },
+      "expected": [
+        "T9.json",
+        "T10.json",
+        "T11.json",
+        "T12.json",
+        "T13.json",
+        "T14.json"
+      ]
+    },
+    {
+      "id": "C02_1",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/protocol/seeds"
+      },
+      "expected": [
+        11,
+        29
+      ]
+    },
+    {
+      "id": "C02_2",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/protocol/model_replicates"
+      },
+      "expected": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "C03_0",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/protocol/model_id"
+      },
+      "expected": "kimi/k3.1-pro[1m]"
+    },
+    {
+      "id": "C03_1",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/protocol/generation/cli_model_override"
+      },
+      "expected": "kimi/k3.1-pro[1m]"
+    },
+    {
+      "id": "C16_0_scalar_model_calls",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/execution_costs/0/model_calls"
+      },
+      "expected": "96"
+    },
+    {
+      "id": "C16_0_memory_model_calls",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/execution_costs/1/model_calls"
+      },
+      "expected": "96"
+    },
+    {
+      "id": "C16_0_diagnostic_model_calls",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/execution_costs/2/model_calls"
+      },
+      "expected": "96"
+    },
+    {
+      "id": "C16_0_random_model_calls",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/execution_costs/3/model_calls"
+      },
+      "expected": "0"
+    },
+    {
+      "id": "C18_0",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/failed_or_invalid_decisions"
+      },
+      "expected": 37
+    },
+    {
+      "id": "C25_0",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/protocol/analysis"
+      },
+      "expected": {
+        "task_bootstrap_samples": 10000,
+        "task_sign_flip_exact": true,
+        "component_multiplicity": "Holm",
+        "bootstrap_seed": 20261031
+      }
+    },
+    {
+      "id": "range_0_min",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/contrasts/memory_minus_scalar/min"
+      },
+      "expected": -0.0068320065479087755
+    },
+    {
+      "id": "range_0_max",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/contrasts/memory_minus_scalar/max"
+      },
+      "expected": 0.008283747307535422
+    },
+    {
+      "id": "count_0_positive",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/contrasts/memory_minus_scalar/delta_counts/positive"
+      },
+      "expected": 12
+    },
+    {
+      "id": "count_0_zero",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/contrasts/memory_minus_scalar/delta_counts/zero"
+      },
+      "expected": 4
+    },
+    {
+      "id": "count_0_negative",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/contrasts/memory_minus_scalar/delta_counts/negative"
+      },
+      "expected": 8
+    },
+    {
+      "id": "range_1_min",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/contrasts/diagnostic_minus_memory/min"
+      },
+      "expected": -0.0018401262824157827
+    },
+    {
+      "id": "range_1_max",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/contrasts/diagnostic_minus_memory/max"
+      },
+      "expected": 0.006285596931079898
+    },
+    {
+      "id": "count_1_positive",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/contrasts/diagnostic_minus_memory/delta_counts/positive"
+      },
+      "expected": 4
+    },
+    {
+      "id": "count_1_zero",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/contrasts/diagnostic_minus_memory/delta_counts/zero"
+      },
+      "expected": 17
+    },
+    {
+      "id": "count_1_negative",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/contrasts/diagnostic_minus_memory/delta_counts/negative"
+      },
+      "expected": 3
+    },
+    {
+      "id": "range_2_min",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/contrasts/memory_minus_random/min"
+      },
+      "expected": -0.0016021449143608577
+    },
+    {
+      "id": "range_2_max",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/contrasts/memory_minus_random/max"
+      },
+      "expected": 0.01798854145236662
+    },
+    {
+      "id": "count_2_positive",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/contrasts/memory_minus_random/delta_counts/positive"
+      },
+      "expected": 20
+    },
+    {
+      "id": "count_2_zero",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/contrasts/memory_minus_random/delta_counts/zero"
+      },
+      "expected": 0
+    },
+    {
+      "id": "count_2_negative",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/contrasts/memory_minus_random/delta_counts/negative"
+      },
+      "expected": 4
+    },
+    {
+      "id": "range_3_min",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/contrasts/memory_minus_fixed/min"
+      },
+      "expected": 0.005248717341589965
+    },
+    {
+      "id": "range_3_max",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/contrasts/memory_minus_fixed/max"
+      },
+      "expected": 0.03098335341295358
+    },
+    {
+      "id": "count_3_positive",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/contrasts/memory_minus_fixed/delta_counts/positive"
+      },
+      "expected": 24
+    },
+    {
+      "id": "count_3_zero",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/contrasts/memory_minus_fixed/delta_counts/zero"
+      },
+      "expected": 0
+    },
+    {
+      "id": "count_3_negative",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/contrasts/memory_minus_fixed/delta_counts/negative"
+      },
+      "expected": 0
+    },
+    {
+      "id": "appendix_complete_0_complete_units",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/auxiliary_execution_analysis/0/complete_units"
+      },
+      "expected": "15"
+    },
+    {
+      "id": "appendix_complete_0_median_delta",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/auxiliary_execution_analysis/0/median_delta"
+      },
+      "expected": "0.0044593645084783085"
+    },
+    {
+      "id": "appendix_complete_0_mean_delta",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/auxiliary_execution_analysis/0/mean_delta"
+      },
+      "expected": "0.002131844862137915"
+    },
+    {
+      "id": "appendix_complete_0_median_delta_per_joint_executed_decision",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/auxiliary_execution_analysis/0/median_delta_per_joint_executed_decision"
+      },
+      "expected": "0.0011148411271195771"
+    },
+    {
+      "id": "appendix_complete_1_complete_units",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/auxiliary_execution_analysis/1/complete_units"
+      },
+      "expected": "9"
+    },
+    {
+      "id": "appendix_complete_1_median_delta",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/auxiliary_execution_analysis/1/median_delta"
+      },
+      "expected": "0.0"
+    },
+    {
+      "id": "appendix_complete_1_mean_delta",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/auxiliary_execution_analysis/1/mean_delta"
+      },
+      "expected": "0.0010545117221158898"
+    },
+    {
+      "id": "appendix_complete_1_median_delta_per_joint_executed_decision",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/auxiliary_execution_analysis/1/median_delta_per_joint_executed_decision"
+      },
+      "expected": "0.0"
+    },
+    {
+      "id": "appendix_complete_2_complete_units",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/auxiliary_execution_analysis/2/complete_units"
+      },
+      "expected": "19"
+    },
+    {
+      "id": "appendix_complete_2_median_delta",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/auxiliary_execution_analysis/2/median_delta"
+      },
+      "expected": "0.0034936803370849215"
+    },
+    {
+      "id": "appendix_complete_2_mean_delta",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/auxiliary_execution_analysis/2/mean_delta"
+      },
+      "expected": "0.004058263906952614"
+    },
+    {
+      "id": "appendix_complete_2_median_delta_per_joint_executed_decision",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/auxiliary_execution_analysis/2/median_delta_per_joint_executed_decision"
+      },
+      "expected": "0.0008734200842712304"
+    },
+    {
+      "id": "appendix_complete_3_complete_units",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/auxiliary_execution_analysis/3/complete_units"
+      },
+      "expected": "21"
+    },
+    {
+      "id": "appendix_complete_3_median_delta",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/auxiliary_execution_analysis/3/median_delta"
+      },
+      "expected": "0.010647371230924768"
+    },
+    {
+      "id": "appendix_complete_3_mean_delta",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/auxiliary_execution_analysis/3/mean_delta"
+      },
+      "expected": "0.01405245539313128"
+    },
+    {
+      "id": "appendix_complete_3_median_delta_per_joint_executed_decision",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/tables/auxiliary_execution_analysis/3/median_delta_per_joint_executed_decision"
+      },
+      "expected": "0.002661842807731192"
+    },
+    {
+      "id": "cli_version",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/protocol/generation/cli_version"
+      },
+      "expected": "2.1.314"
+    },
+    {
+      "id": "python_version",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/protocol/generation/python_version"
+      },
+      "expected": "3.13.15"
+    },
+    {
+      "id": "random_seed",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/protocol/random_seed"
+      },
+      "expected": 20261031
+    },
+    {
+      "id": "bootstrap_seed",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/protocol/analysis/bootstrap_seed"
+      },
+      "expected": 20261031
+    },
+    {
+      "id": "output_call_cap",
+      "path": "auto_research/writing_runs/auto_research_harness_v003_20261031/evidence/results_packet.json",
+      "locator": {
+        "kind": "json_pointer",
+        "pointer": "/protocol/proposer_environment/AUTO_RESEARCH_CLAUDE_MAX_OUTPUT_TOKENS"
+      },
+      "expected": "8000"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C01",
+      "object": "V003 contains 24 complete paired units and all protocol checks passed.",
+      "value": "V003 contains 24 complete paired units and all protocol checks passed.",
+      "unit": "source-bound registered claim",
+      "comparison": "V003 contains 24 complete paired units and all protocol checks passed.",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "C01_0",
+        "C01_1"
+      ]
+    },
+    {
+      "id": "C02",
+      "object": "V003 uses six tasks, development seeds 11 and 29, and model-call replicates A and B.",
+      "value": "V003 uses six tasks, development seeds 11 and 29, and model-call replicates A and B.",
+      "unit": "source-bound registered claim",
+      "comparison": "V003 uses six tasks, development seeds 11 and 29, and model-call replicates A and B.",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "C02_0",
+        "C02_1",
+        "C02_2"
+      ]
+    },
+    {
+      "id": "C03",
+      "object": "The proposer model is kimi/k3.1-pro[1m].",
+      "value": "The proposer model is kimi/k3.1-pro[1m].",
+      "unit": "source-bound registered claim",
+      "comparison": "The proposer model is kimi/k3.1-pro[1m].",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "C03_0",
+        "C03_1"
+      ]
+    },
+    {
+      "id": "C16",
+      "object": "The panel records 288 model calls and zero model calls for the random arm.",
+      "value": "The panel records 288 model calls and zero model calls for the random arm.",
+      "unit": "source-bound registered claim",
+      "comparison": "The panel records 288 model calls and zero model calls for the random arm.",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "C16_0_scalar_model_calls",
+        "C16_0_memory_model_calls",
+        "C16_0_diagnostic_model_calls",
+        "C16_0_random_model_calls"
+      ]
+    },
+    {
+      "id": "C18",
+      "object": "The panel retains 37 failed or invalid decision records.",
+      "value": "The panel retains 37 failed or invalid decision records.",
+      "unit": "source-bound registered claim",
+      "comparison": "The panel retains 37 failed or invalid decision records.",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "C18_0"
+      ]
+    },
+    {
+      "id": "C25",
+      "object": "The protocol uses 10,000 task-cluster bootstrap samples, exact task sign-flip tests, and Holm correction for component contrasts.",
+      "value": "The protocol uses 10,000 task-cluster bootstrap samples, exact task sign-flip tests, and Holm correction for component contrasts.",
+      "unit": "source-bound registered claim",
+      "comparison": "The protocol uses 10,000 task-cluster bootstrap samples, exact task sign-flip tests, and Holm correction for component contrasts.",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "C25_0"
+      ]
+    },
+    {
+      "id": "range_0_min",
+      "object": "/contrasts/memory_minus_scalar/min = -0.0068320065479087755",
+      "value": "/contrasts/memory_minus_scalar/min = -0.0068320065479087755",
+      "unit": "source-bound registered claim",
+      "comparison": "/contrasts/memory_minus_scalar/min = -0.0068320065479087755",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "range_0_min"
+      ]
+    },
+    {
+      "id": "range_0_max",
+      "object": "/contrasts/memory_minus_scalar/max = 0.008283747307535422",
+      "value": "/contrasts/memory_minus_scalar/max = 0.008283747307535422",
+      "unit": "source-bound registered claim",
+      "comparison": "/contrasts/memory_minus_scalar/max = 0.008283747307535422",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "range_0_max"
+      ]
+    },
+    {
+      "id": "count_0_positive",
+      "object": "/contrasts/memory_minus_scalar/delta_counts/positive = 12",
+      "value": "/contrasts/memory_minus_scalar/delta_counts/positive = 12",
+      "unit": "source-bound registered claim",
+      "comparison": "/contrasts/memory_minus_scalar/delta_counts/positive = 12",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "count_0_positive"
+      ]
+    },
+    {
+      "id": "count_0_zero",
+      "object": "/contrasts/memory_minus_scalar/delta_counts/zero = 4",
+      "value": "/contrasts/memory_minus_scalar/delta_counts/zero = 4",
+      "unit": "source-bound registered claim",
+      "comparison": "/contrasts/memory_minus_scalar/delta_counts/zero = 4",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "count_0_zero"
+      ]
+    },
+    {
+      "id": "count_0_negative",
+      "object": "/contrasts/memory_minus_scalar/delta_counts/negative = 8",
+      "value": "/contrasts/memory_minus_scalar/delta_counts/negative = 8",
+      "unit": "source-bound registered claim",
+      "comparison": "/contrasts/memory_minus_scalar/delta_counts/negative = 8",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "count_0_negative"
+      ]
+    },
+    {
+      "id": "range_1_min",
+      "object": "/contrasts/diagnostic_minus_memory/min = -0.0018401262824157827",
+      "value": "/contrasts/diagnostic_minus_memory/min = -0.0018401262824157827",
+      "unit": "source-bound registered claim",
+      "comparison": "/contrasts/diagnostic_minus_memory/min = -0.0018401262824157827",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "range_1_min"
+      ]
+    },
+    {
+      "id": "range_1_max",
+      "object": "/contrasts/diagnostic_minus_memory/max = 0.006285596931079898",
+      "value": "/contrasts/diagnostic_minus_memory/max = 0.006285596931079898",
+      "unit": "source-bound registered claim",
+      "comparison": "/contrasts/diagnostic_minus_memory/max = 0.006285596931079898",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "range_1_max"
+      ]
+    },
+    {
+      "id": "count_1_positive",
+      "object": "/contrasts/diagnostic_minus_memory/delta_counts/positive = 4",
+      "value": "/contrasts/diagnostic_minus_memory/delta_counts/positive = 4",
+      "unit": "source-bound registered claim",
+      "comparison": "/contrasts/diagnostic_minus_memory/delta_counts/positive = 4",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "count_1_positive"
+      ]
+    },
+    {
+      "id": "count_1_zero",
+      "object": "/contrasts/diagnostic_minus_memory/delta_counts/zero = 17",
+      "value": "/contrasts/diagnostic_minus_memory/delta_counts/zero = 17",
+      "unit": "source-bound registered claim",
+      "comparison": "/contrasts/diagnostic_minus_memory/delta_counts/zero = 17",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "count_1_zero"
+      ]
+    },
+    {
+      "id": "count_1_negative",
+      "object": "/contrasts/diagnostic_minus_memory/delta_counts/negative = 3",
+      "value": "/contrasts/diagnostic_minus_memory/delta_counts/negative = 3",
+      "unit": "source-bound registered claim",
+      "comparison": "/contrasts/diagnostic_minus_memory/delta_counts/negative = 3",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "count_1_negative"
+      ]
+    },
+    {
+      "id": "range_2_min",
+      "object": "/contrasts/memory_minus_random/min = -0.0016021449143608577",
+      "value": "/contrasts/memory_minus_random/min = -0.0016021449143608577",
+      "unit": "source-bound registered claim",
+      "comparison": "/contrasts/memory_minus_random/min = -0.0016021449143608577",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "range_2_min"
+      ]
+    },
+    {
+      "id": "range_2_max",
+      "object": "/contrasts/memory_minus_random/max = 0.01798854145236662",
+      "value": "/contrasts/memory_minus_random/max = 0.01798854145236662",
+      "unit": "source-bound registered claim",
+      "comparison": "/contrasts/memory_minus_random/max = 0.01798854145236662",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "range_2_max"
+      ]
+    },
+    {
+      "id": "count_2_positive",
+      "object": "/contrasts/memory_minus_random/delta_counts/positive = 20",
+      "value": "/contrasts/memory_minus_random/delta_counts/positive = 20",
+      "unit": "source-bound registered claim",
+      "comparison": "/contrasts/memory_minus_random/delta_counts/positive = 20",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "count_2_positive"
+      ]
+    },
+    {
+      "id": "count_2_zero",
+      "object": "/contrasts/memory_minus_random/delta_counts/zero = 0",
+      "value": "/contrasts/memory_minus_random/delta_counts/zero = 0",
+      "unit": "source-bound registered claim",
+      "comparison": "/contrasts/memory_minus_random/delta_counts/zero = 0",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "count_2_zero"
+      ]
+    },
+    {
+      "id": "count_2_negative",
+      "object": "/contrasts/memory_minus_random/delta_counts/negative = 4",
+      "value": "/contrasts/memory_minus_random/delta_counts/negative = 4",
+      "unit": "source-bound registered claim",
+      "comparison": "/contrasts/memory_minus_random/delta_counts/negative = 4",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "count_2_negative"
+      ]
+    },
+    {
+      "id": "range_3_min",
+      "object": "/contrasts/memory_minus_fixed/min = 0.005248717341589965",
+      "value": "/contrasts/memory_minus_fixed/min = 0.005248717341589965",
+      "unit": "source-bound registered claim",
+      "comparison": "/contrasts/memory_minus_fixed/min = 0.005248717341589965",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "range_3_min"
+      ]
+    },
+    {
+      "id": "range_3_max",
+      "object": "/contrasts/memory_minus_fixed/max = 0.03098335341295358",
+      "value": "/contrasts/memory_minus_fixed/max = 0.03098335341295358",
+      "unit": "source-bound registered claim",
+      "comparison": "/contrasts/memory_minus_fixed/max = 0.03098335341295358",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "range_3_max"
+      ]
+    },
+    {
+      "id": "count_3_positive",
+      "object": "/contrasts/memory_minus_fixed/delta_counts/positive = 24",
+      "value": "/contrasts/memory_minus_fixed/delta_counts/positive = 24",
+      "unit": "source-bound registered claim",
+      "comparison": "/contrasts/memory_minus_fixed/delta_counts/positive = 24",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "count_3_positive"
+      ]
+    },
+    {
+      "id": "count_3_zero",
+      "object": "/contrasts/memory_minus_fixed/delta_counts/zero = 0",
+      "value": "/contrasts/memory_minus_fixed/delta_counts/zero = 0",
+      "unit": "source-bound registered claim",
+      "comparison": "/contrasts/memory_minus_fixed/delta_counts/zero = 0",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "count_3_zero"
+      ]
+    },
+    {
+      "id": "count_3_negative",
+      "object": "/contrasts/memory_minus_fixed/delta_counts/negative = 0",
+      "value": "/contrasts/memory_minus_fixed/delta_counts/negative = 0",
+      "unit": "source-bound registered claim",
+      "comparison": "/contrasts/memory_minus_fixed/delta_counts/negative = 0",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "count_3_negative"
+      ]
+    },
+    {
+      "id": "appendix_complete_0_complete_units",
+      "object": "/tables/auxiliary_execution_analysis/0/complete_units = 15",
+      "value": "/tables/auxiliary_execution_analysis/0/complete_units = 15",
+      "unit": "source-bound registered claim",
+      "comparison": "/tables/auxiliary_execution_analysis/0/complete_units = 15",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "appendix_complete_0_complete_units"
+      ]
+    },
+    {
+      "id": "appendix_complete_0_median_delta",
+      "object": "/tables/auxiliary_execution_analysis/0/median_delta = 0.0044593645084783085",
+      "value": "/tables/auxiliary_execution_analysis/0/median_delta = 0.0044593645084783085",
+      "unit": "source-bound registered claim",
+      "comparison": "/tables/auxiliary_execution_analysis/0/median_delta = 0.0044593645084783085",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "appendix_complete_0_median_delta"
+      ]
+    },
+    {
+      "id": "appendix_complete_0_mean_delta",
+      "object": "/tables/auxiliary_execution_analysis/0/mean_delta = 0.002131844862137915",
+      "value": "/tables/auxiliary_execution_analysis/0/mean_delta = 0.002131844862137915",
+      "unit": "source-bound registered claim",
+      "comparison": "/tables/auxiliary_execution_analysis/0/mean_delta = 0.002131844862137915",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "appendix_complete_0_mean_delta"
+      ]
+    },
+    {
+      "id": "appendix_complete_0_median_delta_per_joint_executed_decision",
+      "object": "/tables/auxiliary_execution_analysis/0/median_delta_per_joint_executed_decision = 0.0011148411271195771",
+      "value": "/tables/auxiliary_execution_analysis/0/median_delta_per_joint_executed_decision = 0.0011148411271195771",
+      "unit": "source-bound registered claim",
+      "comparison": "/tables/auxiliary_execution_analysis/0/median_delta_per_joint_executed_decision = 0.0011148411271195771",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "appendix_complete_0_median_delta_per_joint_executed_decision"
+      ]
+    },
+    {
+      "id": "appendix_complete_1_complete_units",
+      "object": "/tables/auxiliary_execution_analysis/1/complete_units = 9",
+      "value": "/tables/auxiliary_execution_analysis/1/complete_units = 9",
+      "unit": "source-bound registered claim",
+      "comparison": "/tables/auxiliary_execution_analysis/1/complete_units = 9",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "appendix_complete_1_complete_units"
+      ]
+    },
+    {
+      "id": "appendix_complete_1_median_delta",
+      "object": "/tables/auxiliary_execution_analysis/1/median_delta = 0.0",
+      "value": "/tables/auxiliary_execution_analysis/1/median_delta = 0.0",
+      "unit": "source-bound registered claim",
+      "comparison": "/tables/auxiliary_execution_analysis/1/median_delta = 0.0",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "appendix_complete_1_median_delta"
+      ]
+    },
+    {
+      "id": "appendix_complete_1_mean_delta",
+      "object": "/tables/auxiliary_execution_analysis/1/mean_delta = 0.0010545117221158898",
+      "value": "/tables/auxiliary_execution_analysis/1/mean_delta = 0.0010545117221158898",
+      "unit": "source-bound registered claim",
+      "comparison": "/tables/auxiliary_execution_analysis/1/mean_delta = 0.0010545117221158898",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "appendix_complete_1_mean_delta"
+      ]
+    },
+    {
+      "id": "appendix_complete_1_median_delta_per_joint_executed_decision",
+      "object": "/tables/auxiliary_execution_analysis/1/median_delta_per_joint_executed_decision = 0.0",
+      "value": "/tables/auxiliary_execution_analysis/1/median_delta_per_joint_executed_decision = 0.0",
+      "unit": "source-bound registered claim",
+      "comparison": "/tables/auxiliary_execution_analysis/1/median_delta_per_joint_executed_decision = 0.0",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "appendix_complete_1_median_delta_per_joint_executed_decision"
+      ]
+    },
+    {
+      "id": "appendix_complete_2_complete_units",
+      "object": "/tables/auxiliary_execution_analysis/2/complete_units = 19",
+      "value": "/tables/auxiliary_execution_analysis/2/complete_units = 19",
+      "unit": "source-bound registered claim",
+      "comparison": "/tables/auxiliary_execution_analysis/2/complete_units = 19",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "appendix_complete_2_complete_units"
+      ]
+    },
+    {
+      "id": "appendix_complete_2_median_delta",
+      "object": "/tables/auxiliary_execution_analysis/2/median_delta = 0.0034936803370849215",
+      "value": "/tables/auxiliary_execution_analysis/2/median_delta = 0.0034936803370849215",
+      "unit": "source-bound registered claim",
+      "comparison": "/tables/auxiliary_execution_analysis/2/median_delta = 0.0034936803370849215",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "appendix_complete_2_median_delta"
+      ]
+    },
+    {
+      "id": "appendix_complete_2_mean_delta",
+      "object": "/tables/auxiliary_execution_analysis/2/mean_delta = 0.004058263906952614",
+      "value": "/tables/auxiliary_execution_analysis/2/mean_delta = 0.004058263906952614",
+      "unit": "source-bound registered claim",
+      "comparison": "/tables/auxiliary_execution_analysis/2/mean_delta = 0.004058263906952614",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "appendix_complete_2_mean_delta"
+      ]
+    },
+    {
+      "id": "appendix_complete_2_median_delta_per_joint_executed_decision",
+      "object": "/tables/auxiliary_execution_analysis/2/median_delta_per_joint_executed_decision = 0.0008734200842712304",
+      "value": "/tables/auxiliary_execution_analysis/2/median_delta_per_joint_executed_decision = 0.0008734200842712304",
+      "unit": "source-bound registered claim",
+      "comparison": "/tables/auxiliary_execution_analysis/2/median_delta_per_joint_executed_decision = 0.0008734200842712304",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "appendix_complete_2_median_delta_per_joint_executed_decision"
+      ]
+    },
+    {
+      "id": "appendix_complete_3_complete_units",
+      "object": "/tables/auxiliary_execution_analysis/3/complete_units = 21",
+      "value": "/tables/auxiliary_execution_analysis/3/complete_units = 21",
+      "unit": "source-bound registered claim",
+      "comparison": "/tables/auxiliary_execution_analysis/3/complete_units = 21",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "appendix_complete_3_complete_units"
+      ]
+    },
+    {
+      "id": "appendix_complete_3_median_delta",
+      "object": "/tables/auxiliary_execution_analysis/3/median_delta = 0.010647371230924768",
+      "value": "/tables/auxiliary_execution_analysis/3/median_delta = 0.010647371230924768",
+      "unit": "source-bound registered claim",
+      "comparison": "/tables/auxiliary_execution_analysis/3/median_delta = 0.010647371230924768",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "appendix_complete_3_median_delta"
+      ]
+    },
+    {
+      "id": "appendix_complete_3_mean_delta",
+      "object": "/tables/auxiliary_execution_analysis/3/mean_delta = 0.01405245539313128",
+      "value": "/tables/auxiliary_execution_analysis/3/mean_delta = 0.01405245539313128",
+      "unit": "source-bound registered claim",
+      "comparison": "/tables/auxiliary_execution_analysis/3/mean_delta = 0.01405245539313128",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "appendix_complete_3_mean_delta"
+      ]
+    },
+    {
+      "id": "appendix_complete_3_median_delta_per_joint_executed_decision",
+      "object": "/tables/auxiliary_execution_analysis/3/median_delta_per_joint_executed_decision = 0.002661842807731192",
+      "value": "/tables/auxiliary_execution_analysis/3/median_delta_per_joint_executed_decision = 0.002661842807731192",
+      "unit": "source-bound registered claim",
+      "comparison": "/tables/auxiliary_execution_analysis/3/median_delta_per_joint_executed_decision = 0.002661842807731192",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "appendix_complete_3_median_delta_per_joint_executed_decision"
+      ]
+    },
+    {
+      "id": "cli_version",
+      "object": "/protocol/generation/cli_version = 2.1.314",
+      "value": "/protocol/generation/cli_version = 2.1.314",
+      "unit": "source-bound registered claim",
+      "comparison": "/protocol/generation/cli_version = 2.1.314",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "cli_version"
+      ]
+    },
+    {
+      "id": "python_version",
+      "object": "/protocol/generation/python_version = 3.13.15",
+      "value": "/protocol/generation/python_version = 3.13.15",
+      "unit": "source-bound registered claim",
+      "comparison": "/protocol/generation/python_version = 3.13.15",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "python_version"
+      ]
+    },
+    {
+      "id": "random_seed",
+      "object": "/protocol/random_seed = 20261031",
+      "value": "/protocol/random_seed = 20261031",
+      "unit": "source-bound registered claim",
+      "comparison": "/protocol/random_seed = 20261031",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "random_seed"
+      ]
+    },
+    {
+      "id": "bootstrap_seed",
+      "object": "/protocol/analysis/bootstrap_seed = 20261031",
+      "value": "/protocol/analysis/bootstrap_seed = 20261031",
+      "unit": "source-bound registered claim",
+      "comparison": "/protocol/analysis/bootstrap_seed = 20261031",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "bootstrap_seed"
+      ]
+    },
+    {
+      "id": "output_call_cap",
+      "object": "/protocol/proposer_environment/AUTO_RESEARCH_CLAUDE_MAX_OUTPUT_TOKENS = 8000",
+      "value": "/protocol/proposer_environment/AUTO_RESEARCH_CLAUDE_MAX_OUTPUT_TOKENS = 8000",
+      "unit": "source-bound registered claim",
+      "comparison": "/protocol/proposer_environment/AUTO_RESEARCH_CLAUDE_MAX_OUTPUT_TOKENS = 8000",
+      "scope": "V003 development panel",
+      "source_ids": [
+        "output_call_cap"
+      ]
+    }
+  ],
+  "terminology": [
+    "research harness",
+    "active branch",
+    "frozen champion",
+    "probe-only exploration",
+    "atomic proposal",
+    "mean absolute IC",
+    "development panel",
+    "mean absolute IC",
+    "factor expression candidate",
+    "development panel"
+  ],
+  "paragraph_task": "Draft the English manuscript unit 'Reproduction and supplementary tables' using only the registered evidence and verified literature sources.",
+  "adjacent_context": {
+    "before": "Conclusion",
+    "after": "Document end"
+  },
+  "editor_instruction": "Rewrite the supplied source-bound draft as polished academic English.  Preserve every protected LaTeX block, citation, number, comparison direction, and evidence scope.  Remove defensive writing, stacked hedging, repeated justification, preemptive clarification, imaginary objections, mechanical signposts, repetitive sentence patterns, list-form prose, and uniform paragraph scaffolding. Use coherent paragraphs and keep mean absolute IC attached to factor-expression candidates.",
+  "must_preserve": [
+    "\\section{Reproduction and supplementary analyses}",
+    "\\appendix",
+    "\\begin{table*}[!htbp]\n\\caption{Unit ranges and direction counts for the four paired contrasts. Counts are positive, zero, and negative units among 24.}\n\\label{tab:ranges}\n\\centering\n\\ProjectCaption\n\\small\n\\begin{tabular}{lccc}\n\\toprule\nContrast & Minimum & Maximum & Positive / zero / negative \\\\\n\\midrule\nMemory $-$ scalar & $-$0.006832 & 0.008284 & 12 / 4 / 8 \\\\\nDiagnostic $-$ memory & $-$0.001840 & 0.006286 & 4 / 17 / 3 \\\\\nMemory $-$ random & $-$0.001602 & 0.017989 & 20 / 0 / 4 \\\\\nMemory $-$ fixed & 0.005249 & 0.030983 & 24 / 0 / 0 \\\\\n\\bottomrule\n\\end{tabular}\n\\end{table*}",
+    "\\begin{table*}[!htbp]\n\\caption{Auxiliary complete-execution sensitivity analysis.}\n\\label{tab:complete}\n\\centering\n\\ProjectCaption\n\\small\n\\begin{tabular}{lcccc}\n\\toprule\nContrast & Complete units & Median & Mean & Median per joint decision \\\\\n\\midrule\nMemory $-$ scalar & 15 & 0.004459 & 0.002132 & 0.001115 \\\\\nDiagnostic $-$ memory & 9 & 0.000000 & 0.001055 & 0.000000 \\\\\nMemory $-$ random & 19 & 0.003494 & 0.004058 & 0.000873 \\\\\nMemory $-$ fixed & 21 & 0.010647 & 0.014052 & 0.002662 \\\\\n\\bottomrule\n\\end{tabular}\n\\end{table*}"
+  ],
+  "rewrite_from_draft": true,
+  "draft_provenance": "GPT source-bound draft auto_research/writing_runs/auto_research_harness_v003_20261031/drafts/17_appendix.tex"
+}

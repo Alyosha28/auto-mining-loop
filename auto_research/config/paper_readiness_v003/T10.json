@@ -1,0 +1,39 @@
+{
+ "schema": "AUTO-RESEARCH-PAPER-READINESS-TASK-1",
+ "task": "T10",
+ "research_question": "在有限算子与零组合槽的初始配置上，能否提高共同样本平均绝对 IC？",
+ "initial_harness": "auto_research/config/paper_readiness_v003/initial_harness/T10.json",
+ "initial_safe_trace": {
+  "11": "auto_research/config/paper_readiness_v003/initial_traces/T10_S11.json",
+  "29": "auto_research/config/paper_readiness_v003/initial_traces/T10_S29.json"
+ },
+ "primary_metric": "mean_abs_ic",
+ "task_diagnostics": [
+  "novelty",
+  "duplicate_rate",
+  "coverage",
+  "top_ic_mean"
+ ],
+ "task_constraints": {
+  "min_coverage": 0.0,
+  "computable_mean_abs_ic": true,
+  "development_end": "2020-11-30"
+ },
+ "seed_set": [
+  11,
+  29
+ ],
+ "model_replicates": [
+  "A",
+  "B"
+ ],
+ "shared_memory": "auto_research/config/paper_readiness_v003/memory/shared_research_memory.json",
+ "features": [
+  "momentum_20",
+  "volatility_20",
+  "turnover_mean_20",
+  "reversal_5",
+  "amihud_20",
+  "volume_ratio_5_20"
+ ]
+}

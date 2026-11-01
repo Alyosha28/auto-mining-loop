@@ -1,0 +1,34 @@
+\section{Paired development-panel protocol}
+\label{sec:protocol}
+
+The frozen V003 protocol contains six tasks, T9 through T14, screened with real probe-only execution before the panel. Screening did not run select evaluation. Each task is paired with two development seeds, 11 and 29, and two independent model-call replicates, A and B, producing 24 task--seed--replicate units. A replicate is a separate API call; the provider does not expose a controlled model seed, so replicates measure call-level variability rather than deterministic model-seed effects.
+
+Every model condition receives four continuation decisions and at most twelve factor-expression candidate positions per decision. One model call produces one atomic harness proposal; the candidate positions belong to the subsequent expression evaluation. The random condition follows the same decision schedule and candidate budget with zero model calls. The fixed harness is included in the final common-support comparison for each unit.
+
+Table~\ref{tab:protocol} records the shared design. The proposer is \texttt{kimi/k3.1-pro[1m]} with tools and session persistence disabled and an output ceiling of 8{,}000 tokens per call. Across the complete panel, the protocol permits 288 model calls and 2{,}304{,}000 output tokens. Invalid proposals, empty outputs, and output-limit failures consume their decision and remain in the primary end-to-end analysis.
+
+\begin{table*}[!htbp]
+\caption{Frozen V003 development-panel design.}
+\label{tab:protocol}
+\centering
+\ProjectCaption
+\small
+\begin{tabular}{ll}
+\toprule
+Design element & Registered value \\
+\midrule
+Tasks & T9--T14 (six fresh tasks) \\
+Development seeds & 11 and 29 \\
+Model-call replicates & A and B, independent calls \\
+Paired units & 24 \\
+Continuation decisions per model arm & 4 \\
+Expression-candidate positions per decision & At most 12 \\
+Proposal schema & \texttt{AUTO-RESEARCH-ATOMIC-PROPOSAL-1} \\
+Model & \texttt{kimi/k3.1-pro[1m]} \\
+Maximum model calls & 288 \\
+Maximum output tokens & 2{,}304{,}000 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+After continuation, each arm contributes one frozen champion to the final comparison. The evaluator computes common support before calculating select metrics, retaining coverage as a diagnostic. Production scoring and admission do not enter the research loop.

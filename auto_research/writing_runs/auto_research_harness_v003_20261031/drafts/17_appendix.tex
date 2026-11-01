@@ -1,0 +1,51 @@
+\appendix
+\section{Reproduction and supplementary analyses}
+\label{app:reproduction}
+
+The V003 protocol, task contracts, shared historical probe memory, and comparison contracts are stored under \texttt{auto\_research/config/paper\_readiness\_v003/}. The proposer environment pins \texttt{kimi/k3.1-pro[1m]}, Claude CLI 2.1.314, Python 3.13.15, and \texttt{AUTO-RESEARCH-ATOMIC-PROPOSAL-1}. Random legal edits use protocol seed 20261031. Task-cluster bootstrap uses 10{,}000 samples with seed 20261031. Model tools and session persistence are disabled, and each call has an output ceiling of 8{,}000 tokens.
+
+The complete panel result is \path{PAPER_READINESS_RESULT_V003/result.json}. Paper-ready tables are exported in \path{PAPER_READINESS_RESULT_V003_PAPER_MATERIALS_003/}. The export includes \path{unit_effects.csv}, \path{contrast_summary.csv}, and \path{task_effects.csv}.
+
+Execution costs and behavior are recorded in \path{execution_costs.csv} and \path{behavior_effects.csv}. Execution totals follow loop-state history references, including source steps linked from recovery runs. Auxiliary execution results are in \path{auxiliary_execution_analysis.csv}. Remaining diagnostics are in \path{replicate_stability.csv} and \path{date_block_summary.csv}. Figure generation reads these derived tables and does not execute research or read a raw market panel.
+
+Table~\ref{tab:ranges} reports the complete unit ranges and direction counts underlying the main contrasts. Zeroes are retained in the component analyses, including seventeen tied diagnostic-minus-memory outcomes.
+
+\begin{table*}[!htbp]
+\caption{Unit ranges and direction counts for the four paired contrasts. Counts are positive, zero, and negative units among 24.}
+\label{tab:ranges}
+\centering
+\ProjectCaption
+\small
+\begin{tabular}{lccc}
+\toprule
+Contrast & Minimum & Maximum & Positive / zero / negative \\
+\midrule
+Memory $-$ scalar & $-$0.006832 & 0.008284 & 12 / 4 / 8 \\
+Diagnostic $-$ memory & $-$0.001840 & 0.006286 & 4 / 17 / 3 \\
+Memory $-$ random & $-$0.001602 & 0.017989 & 20 / 0 / 4 \\
+Memory $-$ fixed & 0.005249 & 0.030983 & 24 / 0 / 0 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+The complete-execution analysis is an auxiliary sensitivity calculation. Table~\ref{tab:complete} includes its mean and median gain per jointly executed decision in addition to the medians reported in the main text. These quantities describe the selected complete-case subsets and do not share the fixed-call-budget estimand.
+
+\begin{table*}[!htbp]
+\caption{Auxiliary complete-execution sensitivity analysis.}
+\label{tab:complete}
+\centering
+\ProjectCaption
+\small
+\begin{tabular}{lcccc}
+\toprule
+Contrast & Complete units & Median & Mean & Median per joint decision \\
+\midrule
+Memory $-$ scalar & 15 & 0.004459 & 0.002132 & 0.001115 \\
+Diagnostic $-$ memory & 9 & 0.000000 & 0.001055 & 0.000000 \\
+Memory $-$ random & 19 & 0.003494 & 0.004058 & 0.000873 \\
+Memory $-$ fixed & 21 & 0.010647 & 0.014052 & 0.002662 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+The manuscript workspace contains the source-bound writing-unit contexts, claim map, literature verification records, figure contracts, deterministic figure generator, and layout configuration. Raw market panels remain outside the writing workflow. Derived result paths identify the development-panel provenance and preserve \texttt{score\_window\_read=false} and \texttt{independent\_real\_data\_oos=false}.

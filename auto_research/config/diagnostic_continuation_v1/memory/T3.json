@@ -1,0 +1,62 @@
+{
+ "schema": "AUTO-RESEARCH-SHARED-MEMORY-1",
+ "entries": [
+  {
+   "source_run": "R1_DIAG_S11_IC_002",
+   "task": "cross_task_normalization",
+   "status": "COMPLETED",
+   "scope": "historical development probe; not independent OOS; scope limited to the source harness and seed",
+   "probe_metrics": {
+    "n_candidates": 12,
+    "pass_count": 12,
+    "pass_rate": 1.0,
+    "mean_abs_ic": 0.051025451145186224,
+    "top_ic_mean": 0.06817830499427913,
+    "icir_median": 0.3973365300509036,
+    "icir_p25": 0.36555670563612885,
+    "coverage": 1.0,
+    "duplicate_rate": 0.07575757575757576,
+    "novelty": 0.5,
+    "turnover_proxy": 0.8218199392703339,
+    "year_ic_min": NaN,
+    "runtime_seconds": 5.16,
+    "failures": 0,
+    "max_date_read": "2020-11-27"
+   },
+   "edits": []
+  },
+  {
+   "source_run": "R2_TRACE_S11_001",
+   "task": "cross_task_allocation",
+   "status": "COMPLETED",
+   "scope": "historical development probe; not independent OOS; scope limited to the source harness and seed",
+   "probe_metrics": {
+    "n_candidates": 12,
+    "pass_count": 11,
+    "pass_rate": 0.9166666666666666,
+    "mean_abs_ic": 0.05306142138680822,
+    "top_ic_mean": 0.08243625644785296,
+    "icir_median": 0.4324242995533313,
+    "icir_p25": 0.32882743945329596,
+    "coverage": 1.0,
+    "duplicate_rate": 0.10606060606060606,
+    "novelty": 0.125,
+    "turnover_proxy": 0.7726325842007478,
+    "year_ic_min": NaN,
+    "runtime_seconds": 5.39,
+    "failures": 0,
+    "max_date_read": "2020-11-27"
+   },
+   "edits": [
+    {
+     "id": "edit_001",
+     "kind": "INV",
+     "component": "skills.crossover_pairs",
+     "op": "set",
+     "value": 0,
+     "intent": "Deficiency: the two reserved crossover slots yield the weakest and only failing candidates in the current roster - rank_minus pairs carry |IC| 0.0171 and 0.0103 while every mutation and raw candidate is at least 0.0245, and turnover_mean_20 minus momentum_20 is the single failure (abs_icir_below_threshold, ICIR 0.0542). Semantics: crossover slots are reserved before mutations and raw-seed padding, so 0 should release both. Mechanism: released slots fall to raw padding, which currently covers only the first four seed_pool entries and never amihud_20 or volume_ratio_5_20. Expect operator:raw n=6, pass 12/12, duplicate_rate above the current 0.0909 because more seeds appear twice, and mean_abs_ic up iff the two new raw |IC| sum above 0.0274, the amount the two crossovers contribute now. Uncertainty: two crossover observations cannot separate 'composition is weak' from 'rank_minus is a weak composition operator'; if the slots are not reallocated the roster will keep 2 crossovers or fall below 12 candidates, which falsifies the reallocation premise. Note the prior builder returned an identical roster for crossover_pairs=4, but this roster actually shows 2 crossovers occupying slots, so the lever is live."
+    }
+   ]
+  }
+ ]
+}
